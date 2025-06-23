@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,22 +43,30 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-purple-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-pink-50 to-blue-50 font-poppins">
       {/* Header */}
       <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-yellow-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-yellow-500 via-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 rounded-full flex items-center justify-center">
                 <Camera className="w-6 h-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold bg-gradient-to-r from-yellow-600 via-purple-600 to-blue-600 bg-clip-text text-transparent font-sans tracking-wide">
-                  photoSURF
-                </span>
-                <span className="text-sm text-purple-600 font-script -mt-1" style={{ fontFamily: 'cursive' }}>
-                  pays basque
-                </span>
+                <div className="text-2xl font-bold font-poppins">
+                  <span className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                    photo
+                  </span>
+                  <span className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent font-black">
+                    SURF
+                  </span>
+                </div>
+                <div className="relative">
+                  <span className="text-lg text-purple-600 font-script font-medium">
+                    pays basque
+                  </span>
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-purple-600 to-transparent"></div>
+                </div>
               </div>
             </div>
             <nav className="hidden md:flex space-x-6">
@@ -78,12 +85,20 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="max-w-5xl mx-auto">
             <div className="mb-8">
-              <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-to-r from-yellow-600 via-purple-600 to-blue-600 bg-clip-text text-transparent font-sans tracking-wide">
-                photoSURF
-              </h1>
-              <p className="text-3xl md:text-4xl text-purple-600 mb-6 font-script" style={{ fontFamily: 'cursive' }}>
-                pays basque
-              </p>
+              <div className="text-6xl md:text-8xl font-bold mb-4 font-poppins">
+                <span className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                  photo
+                </span>
+                <span className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent font-black">
+                  SURF
+                </span>
+              </div>
+              <div className="relative inline-block">
+                <p className="text-3xl md:text-4xl text-purple-600 mb-6 font-script font-medium">
+                  pays basque
+                </p>
+                <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-transparent"></div>
+              </div>
             </div>
             
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl max-w-4xl mx-auto">
@@ -119,7 +134,7 @@ const Index = () => {
       {/* Galerie Section */}
       <section id="galerie" className="py-16 px-4 bg-white/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins">
             Galerie
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">Quelques moments capturés sur la côte basque</p>
@@ -176,7 +191,7 @@ const Index = () => {
       {/* Spots Section */}
       <section id="spots" className="py-16 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins">
             Mes spots
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">Je couvre les plus beaux spots de la côte basque</p>
@@ -214,7 +229,7 @@ const Index = () => {
       {/* Tarifs Section */}
       <section id="tarifs" className="py-16 px-4 bg-white/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-400 to-purple-600 bg-clip-text text-transparent font-poppins">
             Tarifs
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">Des prix transparents pour des souvenirs inoubliables</p>
@@ -266,7 +281,7 @@ const Index = () => {
       {/* Contact/Réservation Section */}
       <section id="contact" className="py-16 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-yellow-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-yellow-400 bg-clip-text text-transparent font-poppins">
             Réservation
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">Réserve ta session et immortalise tes vagues</p>
@@ -392,7 +407,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-yellow-600 via-purple-600 to-blue-600 text-white py-12">
+      <footer className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
@@ -400,8 +415,13 @@ const Index = () => {
                 <Camera className="w-5 h-5 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-bold font-sans tracking-wide">photoSURF</span>
-                <span className="text-sm font-script -mt-1" style={{ fontFamily: 'cursive' }}>pays basque</span>
+                <div className="text-xl font-bold font-poppins">
+                  <span>photo</span><span className="font-black">SURF</span>
+                </div>
+                <div className="relative">
+                  <span className="text-sm font-script">pays basque</span>
+                  <div className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-white/40"></div>
+                </div>
               </div>
             </div>
             <div className="flex items-center space-x-8">

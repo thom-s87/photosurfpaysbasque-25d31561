@@ -3,21 +3,23 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Camera, ExternalLink, Phone, MessageCircle } from "lucide-react";
 
 // Import gallery images
-
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import surfNight from "@/assets/gallery/surf-night-session.jpg";
-
 import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
 import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
+import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
+import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
 
 const PHONE_NUMBER = "0695349187";
 
 const galleryImages = [
+  { src: surfeurProNight, alt: 'Surfeur professionnel session nocturne - photographe surf Pays Basque nuit', label: 'Night Pro', position: 'center' },
   { src: surfeuseBiarritz, alt: 'Surfeuse shortboard Biarritz - photo sport nautique côte basque', label: 'Surf Biarritz', position: 'center' },
+  { src: surfeusePinkBoard, alt: 'Surfeuse planche rose - shooting surf féminin Pays Basque', label: 'Surf Style', position: 'center' },
   { src: surfNight, alt: 'Session surf nocturne flash - photographe surf Pays Basque nuit', label: 'Night Session', position: 'center' },
   { src: bodyboard, alt: 'Bodyboard Pays Basque - vidéaste sport nautique Anglet', label: 'Bodyboard', position: 'center' },
   { src: surfGlassy, alt: 'Session surf glassy côte basque - photographe surf Bidart Guéthary', label: 'Surf Glassy', position: 'center right' },

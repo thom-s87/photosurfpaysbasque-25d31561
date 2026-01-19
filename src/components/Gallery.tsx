@@ -13,8 +13,8 @@ import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
-import surfVirageAnglet from "@/assets/gallery/surf-virage-anglet.jpg";
-import surfeurProCompetition from "@/assets/gallery/surfeur-pro-competition.jpg";
+import surfClub from "@/assets/gallery/surf-club.jpg";
+import duoFriends from "@/assets/gallery/duo-friends.jpg";
 
 const galleryImages = [
   { src: surfeurProNight, alt: 'Surfeur professionnel session nocturne - photographe surf Pays Basque nuit', label: 'Night Pro', position: 'center' },
@@ -27,8 +27,8 @@ const galleryImages = [
   { src: bodyboardDay, alt: 'Bodyboard session jour Anglet - photographe sport nautique Pays Basque', label: 'Bodyboard Day', position: 'center' },
   { src: photoAquatique, alt: 'Shooting aquatique artistique noir et blanc - photographe underwater Pays Basque', label: 'Photo Aquatique', position: 'top center' },
   { src: shootingMaternite, alt: 'Shooting maternité aquatique - photographe grossesse underwater côte basque', label: 'Maternité Aquatique', position: 'center' },
-  { src: surfVirageAnglet, alt: 'Virage surf Anglet - photographe surf action Pays Basque', label: 'Surf Anglet', position: 'center' },
-  { src: surfeurProCompetition, alt: 'Surfeur professionnel compétition - photographe surf pro côte basque', label: 'Compétition Pro', position: 'center' },
+  { src: surfClub, alt: 'Cours de surf école sur la plage - photographe surf club Pays Basque', label: 'Surf Club', position: 'center' },
+  { src: duoFriends, alt: 'Duo surfeurs amis sur la plage - photographe surf lifestyle côte basque', label: 'Duo Friends', position: 'center' },
 ];
 
 export const Gallery = () => {

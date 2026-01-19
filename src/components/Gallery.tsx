@@ -7,7 +7,7 @@ import surfVirage from "@/assets/gallery/surf-virage-anglet.jpg";
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import surfNight from "@/assets/gallery/surf-night-session.jpg";
-import surfeurPro from "@/assets/gallery/surfeur-pro-competition.jpg";
+
 import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
@@ -21,7 +21,6 @@ const galleryImages = [
   { src: surfeuseBiarritz, alt: 'Surfeuse shortboard Biarritz - photo sport nautique côte basque', label: 'Surf Biarritz', position: 'center' },
   { src: surfNight, alt: 'Session surf nocturne flash - photographe surf Pays Basque nuit', label: 'Night Session', position: 'center' },
   { src: bodyboard, alt: 'Bodyboard Pays Basque - vidéaste sport nautique Anglet', label: 'Bodyboard', position: 'center' },
-  { src: surfeurPro, alt: 'Surfeur professionnel compétition - photo surf Hossegor', label: 'Compétition', position: 'center' },
   { src: surfGlassy, alt: 'Session surf glassy côte basque - photographe surf Bidart Guéthary', label: 'Surf Glassy', position: 'center right' },
   { src: surfeuseHossegor, alt: 'Surfeuse vague Hossegor - shooting surf féminin Pays Basque', label: 'Surf Hossegor', position: 'center' },
   { src: bodyboardDay, alt: 'Bodyboard session jour Anglet - photographe sport nautique Pays Basque', label: 'Bodyboard Day', position: 'center' },

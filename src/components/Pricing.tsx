@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Camera, Clock, Users, ExternalLink, Phone, MessageCircle, AlertCircle } from "lucide-react";
 
-const PHONE_NUMBER = "0600000000";
+const PHONE_NUMBER = "0695349187";
 
 export const Pricing = () => {
   return (
@@ -30,9 +30,10 @@ export const Pricing = () => {
               <CardDescription className="text-gray-700 text-base">Solo, couple ou entre amis</CardDescription>
             </CardHeader>
             <CardContent className="text-center">
-              <div className="text-5xl font-bold text-transparent bg-gradient-to-r from-yellow-600 via-purple-600 to-blue-600 bg-clip-text mb-6">
-                80<span className="text-2xl">€</span>
+              <div className="text-4xl font-bold text-transparent bg-gradient-to-r from-yellow-600 via-purple-600 to-blue-600 bg-clip-text mb-2">
+                À partir de 80<span className="text-xl">€</span>
               </div>
+              <p className="text-gray-600 text-sm mb-6">en fonction solo / duo / groupe</p>
               <div className="space-y-3 text-gray-700 mb-6 text-left">
                 <div className="flex items-center">
                   <Clock className="w-4 h-4 mr-2 text-purple-500" />
@@ -44,7 +45,7 @@ export const Pricing = () => {
                 </div>
                 <div className="flex items-center">
                   <Users className="w-4 h-4 mr-2 text-purple-500" />
-                  <span>Jusqu'à 3 personnes</span>
+                  <span>Solo, duo ou groupe</span>
                 </div>
                 <div className="flex items-center">
                   <ExternalLink className="w-4 h-4 mr-2 text-purple-500" />

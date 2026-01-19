@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { MapPin, Wind, Phone, MessageCircle } from "lucide-react";
 
-const PHONE_NUMBER = "0600000000";
+const PHONE_NUMBER = "0695349187";
 
 const spots = [
   { name: "Anglet", description: "Plages variées idéales pour tous niveaux – shooting surf Anglet" },

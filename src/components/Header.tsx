@@ -1,4 +1,7 @@
-import { Camera } from "lucide-react";
+import { Camera, Phone, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const PHONE_NUMBER = "0600000000";
 
 export const Header = () => {
   return (
@@ -26,13 +29,43 @@ export const Header = () => {
               </div>
             </div>
           </div>
-          <nav className="hidden md:flex space-x-6">
+          
+          <nav className="hidden md:flex items-center space-x-6">
             <a href="#accueil" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Accueil</a>
             <a href="#galerie" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Galerie</a>
             <a href="#spots" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Spots</a>
             <a href="#tarifs" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Tarifs</a>
-            <a href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors font-medium">Réservation</a>
+            
+            {/* CTA Buttons */}
+            <div className="flex items-center gap-2">
+              <Button size="sm" className="bg-purple-600 hover:bg-purple-700" asChild>
+                <a href={`tel:${PHONE_NUMBER}`}>
+                  <Phone className="w-4 h-4 mr-1" />
+                  Appeler
+                </a>
+              </Button>
+              <Button size="sm" variant="outline" className="border-purple-500 text-purple-600" asChild>
+                <a href={`sms:${PHONE_NUMBER}`}>
+                  <MessageCircle className="w-4 h-4 mr-1" />
+                  SMS
+                </a>
+              </Button>
+            </div>
           </nav>
+
+          {/* Mobile CTA */}
+          <div className="flex md:hidden items-center gap-2">
+            <Button size="sm" className="bg-purple-600 hover:bg-purple-700" asChild>
+              <a href={`tel:${PHONE_NUMBER}`}>
+                <Phone className="w-4 h-4" />
+              </a>
+            </Button>
+            <Button size="sm" variant="outline" className="border-purple-500 text-purple-600" asChild>
+              <a href={`sms:${PHONE_NUMBER}`}>
+                <MessageCircle className="w-4 h-4" />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </header>

@@ -39,12 +39,12 @@ export const Particuliers = () => {
               <div className="text-5xl font-bold text-transparent bg-gradient-to-r from-yellow-600 via-purple-600 to-blue-600 bg-clip-text mb-2">
                 À partir de 80<span className="text-2xl">€</span>
               </div>
-              <p className="text-gray-600 mb-8">en fonction solo / duo / groupe</p>
+              <p className="text-gray-600 mb-8">solo / duo / groupe</p>
               
               <div className="grid grid-cols-2 gap-4 text-gray-700 mb-8">
                 <div className="flex items-center justify-center gap-2 bg-purple-50 p-4 rounded-xl">
                   <Clock className="w-5 h-5 text-purple-500" />
-                  <span className="font-medium">1h de shooting</span>
+                  <span className="font-medium">1h de shooting et plus</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 bg-purple-50 p-4 rounded-xl">
                   <Camera className="w-5 h-5 text-purple-500" />

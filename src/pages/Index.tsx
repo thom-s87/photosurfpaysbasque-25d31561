@@ -9,10 +9,8 @@ import { ContactCTA } from "@/components/ContactCTA";
 import { About } from "@/components/About";
 import { SeoAccordion } from "@/components/SeoAccordion";
 import { Footer } from "@/components/Footer";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-pink-50 to-blue-50 font-poppins">
+  return <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-pink-50 to-blue-50 font-poppins">
       <Header />
       <main>
         {/* 1. Hero - Ce que je propose */}
@@ -37,14 +35,12 @@ const Index = () => {
         <ContactCTA />
         
         {/* 8. Présentation personnelle courte */}
-        <About />
+        
         
         {/* 9. Section SEO - Accordéon discret */}
         <SeoAccordion />
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Camera, Wind } from "lucide-react";
 
-const PHONE_NUMBER = "0695349187";
 const WHATSAPP_URL = `https://wa.me/33695349187`;
 
 // WhatsApp Icon Component
@@ -40,6 +38,14 @@ export const Hero = () => {
             </p>
           </div>
           
+          {/* Sous-titre descriptif */}
+          <p className="text-xl md:text-2xl text-white/90 font-medium mb-2">
+            Photographe & vidéaste surf
+          </p>
+          <p className="text-lg md:text-xl text-purple-200/80 mb-10">
+            Anglet • Biarritz • Hossegor
+          </p>
+          
           {/* Tagline */}
           <p className="text-2xl md:text-3xl text-yellow-400 font-medium mb-10 italic">
             Capture tes plus belles vagues
@@ -60,7 +66,7 @@ export const Hero = () => {
           {/* Scroll indicator */}
           <div className="mt-16 animate-bounce">
             <button 
-              onClick={() => document.getElementById('galerie')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('particuliers')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-white/70 hover:text-white transition-colors"
             >
               <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,130 +82,3 @@ export const Hero = () => {
 
 // WhatsApp Icon for export
 export { WhatsAppIcon };
-
-// Section séparée pour le contenu détaillé
-export const HeroContent = () => {
-  return (
-    <section className="py-16 px-4 bg-gradient-to-b from-purple-50 to-white">
-      <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto">
-          {/* Section Particuliers */}
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl mb-8">
-            <div className="inline-block bg-gradient-to-r from-yellow-400 to-purple-500 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
-              🏄 Pour toi, surfeur
-            </div>
-            <p className="text-xl md:text-2xl text-gray-800 mb-4 font-medium">
-              Moi c'est <span className="text-purple-600 font-bold">Thom</span>, photographe et vidéaste passionné de surf.
-            </p>
-            <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
-              <strong>Envie de garder un souvenir inoubliable de ta session ?</strong> Je capture tes plus belles vagues à <strong>Anglet</strong>, <strong>Biarritz</strong>, <strong>Hossegor</strong> et tous les spots mythiques du Pays Basque.
-            </p>
-            <p className="text-base text-gray-600 mb-8">
-              Solo, en duo ou entre potes – photos HD et vidéos livrées rapidement. Un message suffit !
-            </p>
-            
-            <div className="flex justify-center">
-              <Button 
-                size="lg" 
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 text-lg font-semibold shadow-lg rounded-full"
-                asChild
-              >
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                  <WhatsAppIcon className="w-5 h-5 mr-2" />
-                  Contacte-moi
-                </a>
-              </Button>
-            </div>
-          </div>
-
-          {/* Section Clubs & Écoles */}
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-purple-200 rounded-2xl p-6 md:p-8">
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <div className="flex-1 text-left">
-                <div className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-3">
-                  🏫 Clubs & Écoles de surf
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3">
-                  Offre des souvenirs à tes élèves
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  Partenariat simple et flexible : je photographie tes cours et stages, tes élèves repartent avec des images pro de leur progression. Tarifs adaptés aux volumes.
-                </p>
-                <div className="flex justify-center md:justify-start">
-                  <Button 
-                    size="default" 
-                    className="bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full"
-                    asChild
-                  >
-                    <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                      <WhatsAppIcon className="w-4 h-4 mr-2" />
-                      Discutons-en
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* SEO Text Block */}
-          <article className="mt-12 text-left bg-white rounded-2xl p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Ton photographe surf et vidéaste professionnel au Pays Basque
-            </h2>
-            <div className="prose prose-lg text-gray-700 space-y-4">
-              <p>
-                Tu cherches un <strong>photographe surf au Pays Basque</strong> capable de capturer l'intensité de tes sessions ? 
-                Je suis Thom, <strong>vidéaste surf</strong> et photographe spécialisé dans les sports nautiques depuis plusieurs années. 
-                Mon objectif : t'offrir des images et vidéos professionnelles qui immortalisent tes plus beaux moments sur l'eau.
-              </p>
-              <p>
-                Que tu sois surfeur débutant ou confirmé, mes services de <strong>photo vidéo sport nautique</strong> s'adaptent à tous les niveaux. 
-                Je couvre l'ensemble de la côte basque française : <strong>shooting surf Anglet</strong>, <strong>Biarritz</strong>, <strong>Hossegor</strong>, 
-                mais aussi les spots légendaires de Bidart, Guéthary, Lafitenia et Hendaye.
-              </p>
-              <p>
-                Chaque session photo ou vidéo est unique. Je sélectionne les meilleurs créneaux en fonction des conditions météo, 
-                de la houle et des marées pour garantir des images exceptionnelles. Ma connaissance du terrain et mon expérience 
-                me permettent de te proposer le spot idéal au moment parfait.
-              </p>
-              <p>
-                En tant que <strong>photographe sport nautique Anglet, Biarritz et Hossegor</strong>, j'utilise un équipement professionnel 
-                adapté aux conditions marines : appareils haute performance, objectifs longue focale, et bientôt caisson étanche 
-                pour des prises de vue depuis l'eau. Tu reçois tes clichés HD et vidéos via une plateforme sécurisée.
-              </p>
-              <p>
-                Pourquoi choisir photoSURF pays basque ? Parce que je suis passionné, réactif et disponible. 
-                Un simple message WhatsApp suffit pour organiser ta session. Les créneaux sont validés après échange 
-                pour s'assurer que les conditions seront optimales. Pas de formulaire compliqué, pas d'attente : 
-                contacte-moi directement et surfons ensemble vers tes plus beaux souvenirs.
-              </p>
-            </div>
-          </article>
-
-          {/* Weather Conditions Notice */}
-          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Wind className="w-6 h-6 text-blue-600" />
-              <h3 className="text-lg font-semibold text-blue-800">Conditions météo</h3>
-            </div>
-            <p className="text-blue-700 mb-4 text-center">
-              Les séances photo et vidéo dépendent des conditions météo réelles (houle, vent et lumière). 
-              Le créneau est validé après échange sur WhatsApp.
-            </p>
-            <div className="text-center">
-              <a 
-                href="https://www.windy.com/?43.483,-1.522,5"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors"
-              >
-                <Wind className="w-4 h-4" />
-                Voir les conditions sur Windy →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};

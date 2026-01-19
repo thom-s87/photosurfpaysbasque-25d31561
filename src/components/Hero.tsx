@@ -28,25 +28,31 @@ export const Hero = () => {
             </div>
           </div>
           
+          {/* Section Particuliers - Priorité 1 */}
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-gray-800 mb-6 font-medium">
+            <div className="inline-block bg-gradient-to-r from-yellow-400 to-purple-500 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
+              🏄 Pour les surfeurs
+            </div>
+            <p className="text-xl md:text-2xl text-gray-800 mb-4 font-medium">
               Moi c'est <span className="text-purple-600 font-bold">Thom</span>, photographe et vidéaste passionné de surf.
             </p>
-            <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
-              Basé sur la côte basque, je capture vos plus belles sessions surf à <strong>Anglet</strong>, <strong>Biarritz</strong>, <strong>Hossegor</strong> et tous les spots mythiques du Pays Basque. 
-              Photo et vidéo sport nautique de qualité professionnelle pour immortaliser chaque vague, chaque ride.
+            <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+              <strong>Envie de garder un souvenir inoubliable de votre session ?</strong> Je capture vos plus belles vagues à <strong>Anglet</strong>, <strong>Biarritz</strong>, <strong>Hossegor</strong> et tous les spots mythiques du Pays Basque.
+            </p>
+            <p className="text-base text-gray-600 mb-8">
+              Solo, en couple ou entre amis – photos HD et vidéos livrées rapidement. Un appel ou SMS suffit !
             </p>
             
-            {/* CTA Appel / SMS */}
+            {/* CTA Appel / SMS - Particuliers */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-yellow-500 via-purple-500 to-blue-500 hover:from-yellow-600 hover:via-purple-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold"
+                className="bg-gradient-to-r from-yellow-500 via-purple-500 to-blue-500 hover:from-yellow-600 hover:via-purple-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold shadow-lg"
                 asChild
               >
                 <a href={`tel:${PHONE_NUMBER}`}>
                   <Phone className="w-5 h-5 mr-2" />
-                  📞 Appeler
+                  📞 Appelez-moi
                 </a>
               </Button>
               <Button 
@@ -57,7 +63,7 @@ export const Hero = () => {
               >
                 <a href={`sms:${PHONE_NUMBER}`}>
                   <MessageCircle className="w-5 h-5 mr-2" />
-                  💬 Envoyer un SMS
+                  💬 Envoyez un SMS
                 </a>
               </Button>
             </div>
@@ -70,6 +76,46 @@ export const Hero = () => {
             >
               Voir mes photos ↓
             </Button>
+          </div>
+
+          {/* Section Clubs & Écoles - Priorité 2 */}
+          <div className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 border border-purple-200 rounded-2xl p-6 md:p-8 max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-1 text-left">
+                <div className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-3">
+                  🏫 Clubs & Écoles de surf
+                </div>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                  Offrez des souvenirs à vos élèves
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Partenariat simple et flexible : je photographie vos cours et stages, vos élèves repartent avec des images pro de leur progression. Tarifs adaptés aux volumes.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button 
+                    size="default" 
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-semibold"
+                    asChild
+                  >
+                    <a href={`tel:${PHONE_NUMBER}`}>
+                      <Phone className="w-4 h-4 mr-2" />
+                      📞 Discutons-en
+                    </a>
+                  </Button>
+                  <Button 
+                    variant="outline"
+                    size="default" 
+                    className="border-blue-500 text-blue-600 hover:bg-blue-50 font-semibold"
+                    asChild
+                  >
+                    <a href={`sms:${PHONE_NUMBER}`}>
+                      <MessageCircle className="w-4 h-4 mr-2" />
+                      💬 SMS
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* SEO Text Block */}

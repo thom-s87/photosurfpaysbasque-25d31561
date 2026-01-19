@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Camera, ExternalLink, Phone, MessageCircle } from "lucide-react";
 
 // Import gallery images
-import surfVirage from "@/assets/gallery/surf-virage-anglet.jpg";
+
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import surfNight from "@/assets/gallery/surf-night-session.jpg";
@@ -17,7 +17,6 @@ import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg
 const PHONE_NUMBER = "0695349187";
 
 const galleryImages = [
-  { src: surfVirage, alt: 'Virage puissant surf Anglet - photographe surf Pays Basque', label: 'Surf Anglet', position: 'center' },
   { src: surfeuseBiarritz, alt: 'Surfeuse shortboard Biarritz - photo sport nautique côte basque', label: 'Surf Biarritz', position: 'center' },
   { src: surfNight, alt: 'Session surf nocturne flash - photographe surf Pays Basque nuit', label: 'Night Session', position: 'center' },
   { src: bodyboard, alt: 'Bodyboard Pays Basque - vidéaste sport nautique Anglet', label: 'Bodyboard', position: 'center' },

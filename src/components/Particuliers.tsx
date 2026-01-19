@@ -48,7 +48,7 @@ export const Particuliers = () => {
                 </div>
                 <div className="flex items-center justify-center gap-2 bg-purple-50 p-4 rounded-xl">
                   <Camera className="w-5 h-5 text-purple-500" />
-                  <span className="font-medium">Photos HD</span>
+                  <span className="font-medium">Photo / Vidéo (ou les deux)</span>
                 </div>
                 <div className="flex items-center justify-center gap-2 bg-purple-50 p-4 rounded-xl">
                   <Users className="w-5 h-5 text-purple-500" />

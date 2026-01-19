@@ -2,7 +2,7 @@ import { Camera } from "lucide-react";
 
 export const About = () => {
   return (
-    <section id="apropos" className="py-12 px-4 bg-gray-50">
+    <section id="apropos" className="py-12 px-4">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">

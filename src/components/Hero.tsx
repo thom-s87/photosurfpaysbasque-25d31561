@@ -1,36 +1,81 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, Wind } from "lucide-react";
+import { Camera, Phone, MessageCircle, Wind } from "lucide-react";
 
 const PHONE_NUMBER = "0695349187";
 
 export const Hero = () => {
   return (
-    <section id="accueil" className="pt-24 pb-16 px-4">
+    <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image with purple/pink overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1920&q=80')`,
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/80 via-purple-700/70 to-pink-600/60" />
       
-      <div className="container mx-auto text-center">
-        <div className="max-w-5xl mx-auto">
-          <div className="mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 font-poppins text-gray-900">
-              Photographe & Vidéaste Surf au Pays Basque
-            </h1>
-            <div className="text-6xl md:text-8xl font-bold mb-4 font-poppins">
-              <span className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                photo
-              </span>
-              <span className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent font-black">
+      <div className="container mx-auto text-center relative z-10 px-4 pt-20 pb-16">
+        <div className="max-w-4xl mx-auto">
+          {/* Logo principal */}
+          <div className="mb-6">
+            <div className="text-6xl md:text-8xl font-bold font-poppins leading-none">
+              <span className="text-pink-400 italic font-medium">photo</span>
+            </div>
+            <div className="text-7xl md:text-9xl font-black font-poppins tracking-tight">
+              <span className="bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-500 bg-clip-text text-transparent">
                 SURF
               </span>
             </div>
-            <div className="relative inline-block">
-              <p className="text-3xl md:text-4xl text-purple-600 mb-6 font-script font-medium">
-                pays basque
-              </p>
-              <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-transparent"></div>
-            </div>
+            <p className="text-3xl md:text-4xl text-purple-300/90 font-script mt-2">
+              pays basque
+            </p>
           </div>
           
-          {/* Section Particuliers - Priorité 1 */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl max-w-4xl mx-auto">
+          {/* Tagline */}
+          <p className="text-2xl md:text-3xl text-yellow-400 font-medium mb-10 italic">
+            Capturez tes plus belles vagues
+          </p>
+          
+          {/* CTA Principal */}
+          <Button 
+            size="lg" 
+            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+            asChild
+          >
+            <a href={`tel:${PHONE_NUMBER}`}>
+              <Camera className="w-6 h-6 mr-3" />
+              📸 Réserver ma session
+            </a>
+          </Button>
+          
+          {/* Scroll indicator */}
+          <div className="mt-16 animate-bounce">
+            <button 
+              onClick={() => document.getElementById('galerie')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-white/70 hover:text-white transition-colors"
+            >
+              <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Section séparée pour le contenu détaillé
+export const HeroContent = () => {
+  const PHONE_NUMBER = "0695349187";
+  
+  return (
+    <section className="py-16 px-4 bg-gradient-to-b from-purple-50 to-white">
+      <div className="container mx-auto">
+        <div className="max-w-4xl mx-auto">
+          {/* Section Particuliers */}
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl mb-8">
             <div className="inline-block bg-gradient-to-r from-yellow-400 to-purple-500 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
               🏄 Pour les surfeurs
             </div>
@@ -44,8 +89,7 @@ export const Hero = () => {
               Solo, en couple ou entre amis – photos HD et vidéos livrées rapidement. Un appel ou SMS suffit !
             </p>
             
-            {/* CTA Appel / SMS - Particuliers */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-yellow-500 via-purple-500 to-blue-500 hover:from-yellow-600 hover:via-purple-600 hover:to-blue-600 text-white px-8 py-4 text-lg font-semibold shadow-lg"
@@ -68,19 +112,10 @@ export const Hero = () => {
                 </a>
               </Button>
             </div>
-            
-            <Button 
-              variant="ghost" 
-              size="lg" 
-              className="text-purple-600 hover:bg-purple-50"
-              onClick={() => document.getElementById('galerie')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Voir mes photos ↓
-            </Button>
           </div>
 
-          {/* Section Clubs & Écoles - Priorité 2 */}
-          <div className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 border border-purple-200 rounded-2xl p-6 md:p-8 max-w-4xl mx-auto">
+          {/* Section Clubs & Écoles */}
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-purple-200 rounded-2xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <div className="flex-1 text-left">
                 <div className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-1 rounded-full mb-3">
@@ -120,7 +155,7 @@ export const Hero = () => {
           </div>
 
           {/* SEO Text Block */}
-          <article className="max-w-4xl mx-auto mt-12 text-left bg-white/50 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+          <article className="mt-12 text-left bg-white rounded-2xl p-8 shadow-lg">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Votre photographe surf et vidéaste professionnel au Pays Basque
             </h2>
@@ -155,24 +190,26 @@ export const Hero = () => {
           </article>
 
           {/* Weather Conditions Notice */}
-          <div className="max-w-4xl mx-auto mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Wind className="w-6 h-6 text-blue-600" />
               <h3 className="text-lg font-semibold text-blue-800">Conditions météo</h3>
             </div>
-            <p className="text-blue-700 mb-4">
+            <p className="text-blue-700 mb-4 text-center">
               Les séances photo et vidéo dépendent des conditions météo réelles (houle, vent et lumière). 
               Le créneau est validé après échange par appel ou SMS.
             </p>
-            <a 
-              href="https://www.windy.com/?43.483,-1.522,5"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors"
-            >
-              <Wind className="w-4 h-4" />
-              Voir les conditions sur Windy →
-            </a>
+            <div className="text-center">
+              <a 
+                href="https://www.windy.com/?43.483,-1.522,5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-medium transition-colors"
+              >
+                <Wind className="w-4 h-4" />
+                Voir les conditions sur Windy →
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import { Spots } from "@/components/Spots";
 import { Conditions } from "@/components/Conditions";
 import { ContactCTA } from "@/components/ContactCTA";
 import { About } from "@/components/About";
+import { SeoAccordion } from "@/components/SeoAccordion";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -37,6 +38,9 @@ const Index = () => {
         
         {/* 8. Présentation personnelle courte */}
         <About />
+        
+        {/* 9. Section SEO - Accordéon discret */}
+        <SeoAccordion />
       </main>
       <Footer />
     </div>

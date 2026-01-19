@@ -43,12 +43,12 @@ export const Hero = () => {
             Photographe & vidéaste surf
           </p>
           <p className="text-lg md:text-xl text-purple-200/80 mb-10">
-            Anglet • Biarritz • Hossegor
+            Pays basque & sud des Landes
           </p>
           
           {/* Tagline */}
           <p className="text-2xl md:text-3xl text-yellow-400 font-medium mb-10 italic">
-            Capture tes plus belles vagues
+            Je capture tes plus belles vagues
           </p>
           
           {/* CTA Principal WhatsApp */}

@@ -5,11 +5,20 @@ const PHONE_NUMBER = "0600000000";
 
 export const Hero = () => {
   return (
-    <section id="accueil" className="pt-24 pb-16 px-4">
-      <div className="container mx-auto text-center">
+    <section id="accueil" className="relative min-h-screen pt-24 pb-16 px-4 overflow-hidden">
+      {/* Background image with purple overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1920&q=80')`,
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-purple-900/70 via-purple-800/60 to-pink-700/50" />
+      
+      <div className="container mx-auto text-center relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-poppins text-gray-900">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 font-poppins text-white drop-shadow-lg">
               Photographe & Vidéaste Surf au Pays Basque
             </h1>
             <div className="text-6xl md:text-8xl font-bold mb-4 font-poppins">
@@ -21,11 +30,13 @@ export const Hero = () => {
               </span>
             </div>
             <div className="relative inline-block">
-              <p className="text-3xl md:text-4xl text-purple-600 mb-6 font-script font-medium">
+              <p className="text-3xl md:text-4xl text-yellow-400 mb-6 font-script font-medium drop-shadow-lg">
                 pays basque
               </p>
-              <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-transparent"></div>
             </div>
+            <p className="text-xl md:text-2xl text-yellow-300 font-medium mb-6 drop-shadow-lg italic">
+              Capturez tes plus belles vagues
+            </p>
           </div>
           
           {/* Section Particuliers - Priorité 1 */}

@@ -12,7 +12,7 @@ import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-pink-50 to-blue-50 font-poppins">
+    <div className="min-h-screen bg-gradient-to-b from-orange-500 via-pink-600 to-purple-800 font-poppins">
       <Header />
       <main>
         {/* 1. Hero - Ce que je propose */}

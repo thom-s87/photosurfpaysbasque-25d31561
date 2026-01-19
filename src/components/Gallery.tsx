@@ -29,7 +29,7 @@ const galleryImages = [
 
 export const Gallery = () => {
   return (
-    <section id="galerie" className="py-16 px-4 bg-white/30">
+    <section id="galerie" className="py-16 px-4">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins">
           Galerie Photo & Vidéo

@@ -12,8 +12,9 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 export const Particuliers = () => {
+  // Fond transparent pour conserver le background global
   return (
-    <section id="particuliers" className="py-16 px-4 bg-gradient-to-b from-purple-50 to-white">
+    <section id="particuliers" className="py-16 px-4">
       <div className="container mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-400 to-purple-600 bg-clip-text text-transparent font-poppins">
           Sessions Photo Surf

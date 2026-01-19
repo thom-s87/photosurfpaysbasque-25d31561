@@ -28,7 +28,7 @@ export const Header = () => {
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#accueil" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Accueil</a>
             <a href="#galerie" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Galerie</a>
-            <a href="https://www.windy.com/?43.483,-1.522,5" target="_blank" rel="noopener noreferrer" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Météo</a>
+            <a className="text-white/90 hover:text-yellow-400 transition-colors font-medium" href="https://www.windy.com/?43.483,-1.522,5">Météo</a>
             <a href="#tarifs" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Tarifs</a>
             
             {/* CTA Buttons */}

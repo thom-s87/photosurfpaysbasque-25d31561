@@ -1,7 +1,9 @@
 import { Camera, Instagram, ExternalLink, Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const PHONE_NUMBER = "0600000000";
+const PHONE_NUMBER = "0695349187";
+const INSTAGRAM_URL = "https://www.instagram.com/photosurfpaysbasque?igsh=MTBybTU2ejM2bDB5dQ%3D%3D&utm_source=qr";
+const GOOGLE_URL = "https://share.google/igaZ47JraNbU92gJ4";
 
 export const Footer = () => {
   return (
@@ -50,22 +52,22 @@ export const Footer = () => {
 
           <div className="flex items-center space-x-8">
             <a 
-              href="https://www.instagram.com/euska_lab" 
+              href={INSTAGRAM_URL}
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-yellow-300 transition-colors"
             >
               <Instagram className="w-5 h-5" />
-              <span>@euska_lab</span>
+              <span>Instagram</span>
             </a>
             <a 
-              href="https://www.app.sportpxl.com/dashboard" 
+              href={GOOGLE_URL}
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:text-yellow-300 transition-colors"
             >
               <ExternalLink className="w-5 h-5" />
-              <span>Mes photos</span>
+              <span>Avis Google</span>
             </a>
           </div>
         </div>

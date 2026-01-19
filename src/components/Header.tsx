@@ -1,7 +1,8 @@
-import { Camera, Phone, MessageCircle } from "lucide-react";
+import { Camera, Phone, MessageCircle, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const PHONE_NUMBER = "0600000000";
+const PHONE_NUMBER = "0695349187";
+const INSTAGRAM_URL = "https://www.instagram.com/photosurfpaysbasque?igsh=MTBybTU2ejM2bDB5dQ%3D%3D&utm_source=qr";
 
 export const Header = () => {
   return (
@@ -38,6 +39,14 @@ export const Header = () => {
             
             {/* CTA Buttons */}
             <div className="flex items-center gap-2">
+              <a 
+                href={INSTAGRAM_URL}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-pink-500 hover:text-pink-600 transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
               <Button size="sm" className="bg-purple-600 hover:bg-purple-700" asChild>
                 <a href={`tel:${PHONE_NUMBER}`}>
                   <Phone className="w-4 h-4 mr-1" />
@@ -55,6 +64,14 @@ export const Header = () => {
 
           {/* Mobile CTA */}
           <div className="flex md:hidden items-center gap-2">
+            <a 
+              href={INSTAGRAM_URL}
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-600 transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
             <Button size="sm" className="bg-purple-600 hover:bg-purple-700" asChild>
               <a href={`tel:${PHONE_NUMBER}`}>
                 <Phone className="w-4 h-4" />

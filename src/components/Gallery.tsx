@@ -8,7 +8,7 @@ import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import surfNight from "@/assets/gallery/surf-night-session.jpg";
 import surfeurPro from "@/assets/gallery/surfeur-pro-competition.jpg";
-import surfNightAerial from "@/assets/gallery/surf-night-aerial.jpg";
+import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
 import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
@@ -17,16 +17,16 @@ import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg
 const PHONE_NUMBER = "0600000000";
 
 const galleryImages = [
-  { src: surfVirage, alt: 'Virage puissant surf Anglet - photographe surf Pays Basque', label: 'Surf Anglet' },
-  { src: surfeuseBiarritz, alt: 'Surfeuse shortboard Biarritz - photo sport nautique côte basque', label: 'Surf Biarritz' },
-  { src: surfNight, alt: 'Session surf nocturne flash - photographe surf Pays Basque nuit', label: 'Night Session' },
-  { src: bodyboard, alt: 'Bodyboard Pays Basque - vidéaste sport nautique Anglet', label: 'Bodyboard' },
-  { src: surfeurPro, alt: 'Surfeur professionnel compétition - photo surf Hossegor', label: 'Compétition' },
-  { src: surfGlassy, alt: 'Session surf glassy côte basque - photographe surf Bidart Guéthary', label: 'Surf Glassy' },
-  { src: surfeuseHossegor, alt: 'Surfeuse vague Hossegor - shooting surf féminin Pays Basque', label: 'Surf Hossegor' },
-  { src: surfNightAerial, alt: 'Aerial surf nocturne - vidéaste surf Pays Basque session flash', label: 'Night Aerial' },
-  { src: photoAquatique, alt: 'Shooting aquatique artistique noir et blanc - photographe underwater Pays Basque', label: 'Photo Aquatique' },
-  { src: shootingMaternite, alt: 'Shooting maternité aquatique - photographe grossesse underwater côte basque', label: 'Maternité Aquatique' },
+  { src: surfVirage, alt: 'Virage puissant surf Anglet - photographe surf Pays Basque', label: 'Surf Anglet', position: 'center' },
+  { src: surfeuseBiarritz, alt: 'Surfeuse shortboard Biarritz - photo sport nautique côte basque', label: 'Surf Biarritz', position: 'center' },
+  { src: surfNight, alt: 'Session surf nocturne flash - photographe surf Pays Basque nuit', label: 'Night Session', position: 'center' },
+  { src: bodyboard, alt: 'Bodyboard Pays Basque - vidéaste sport nautique Anglet', label: 'Bodyboard', position: 'center' },
+  { src: surfeurPro, alt: 'Surfeur professionnel compétition - photo surf Hossegor', label: 'Compétition', position: 'center' },
+  { src: surfGlassy, alt: 'Session surf glassy côte basque - photographe surf Bidart Guéthary', label: 'Surf Glassy', position: 'center right' },
+  { src: surfeuseHossegor, alt: 'Surfeuse vague Hossegor - shooting surf féminin Pays Basque', label: 'Surf Hossegor', position: 'center' },
+  { src: bodyboardDay, alt: 'Bodyboard session jour Anglet - photographe sport nautique Pays Basque', label: 'Bodyboard Day', position: 'center' },
+  { src: photoAquatique, alt: 'Shooting aquatique artistique noir et blanc - photographe underwater Pays Basque', label: 'Photo Aquatique', position: 'top center' },
+  { src: shootingMaternite, alt: 'Shooting maternité aquatique - photographe grossesse underwater côte basque', label: 'Maternité Aquatique', position: 'center' },
 ];
 
 export const Gallery = () => {
@@ -48,6 +48,7 @@ export const Gallery = () => {
                 alt={photo.alt}
                 loading="lazy"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                style={{ objectPosition: photo.position }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">

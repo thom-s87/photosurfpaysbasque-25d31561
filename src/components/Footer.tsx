@@ -35,7 +35,7 @@ export const Footer = () => {
           {/* CTA Button WhatsApp */}
           <Button 
             size="lg"
-            className="bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full"
+            className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-full"
             asChild
           >
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

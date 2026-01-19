@@ -36,7 +36,7 @@ export const Header = () => {
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full px-5" asChild>
+              <Button size="sm" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-full px-5" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="w-4 h-4 mr-2" />
                   Contacte-moi
@@ -50,7 +50,7 @@ export const Header = () => {
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-pink-400 hover:text-pink-300 transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full" asChild>
+            <Button size="sm" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold rounded-full" asChild>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="w-4 h-4" />
               </a>

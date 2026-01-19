@@ -61,7 +61,7 @@ export const Clubs = () => {
               
               <Button 
                 size="lg"
-                className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-6 text-lg rounded-full"
+                className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-6 text-lg rounded-full"
                 asChild
               >
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

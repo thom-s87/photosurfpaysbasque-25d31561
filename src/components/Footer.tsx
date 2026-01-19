@@ -1,11 +1,14 @@
-import { Camera, Instagram, ExternalLink } from "lucide-react";
+import { Camera, Instagram, ExternalLink, Phone, MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const PHONE_NUMBER = "0600000000";
 
 export const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center space-x-3 mb-4 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex items-center space-x-3">
             <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
               <Camera className="w-5 h-5 text-white" />
             </div>
@@ -19,6 +22,32 @@ export const Footer = () => {
               </div>
             </div>
           </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button 
+              size="lg"
+              className="bg-white text-purple-600 hover:bg-yellow-100 font-semibold"
+              asChild
+            >
+              <a href={`tel:${PHONE_NUMBER}`}>
+                <Phone className="w-5 h-5 mr-2" />
+                📞 Appeler
+              </a>
+            </Button>
+            <Button 
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white/20 font-semibold"
+              asChild
+            >
+              <a href={`sms:${PHONE_NUMBER}`}>
+                <MessageCircle className="w-5 h-5 mr-2" />
+                💬 Envoyer un SMS
+              </a>
+            </Button>
+          </div>
+
           <div className="flex items-center space-x-8">
             <a 
               href="https://www.instagram.com/euska_lab" 
@@ -41,7 +70,8 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/90">
-          <p>&copy; 2024 photoSURF pays basque - Thom, photographe passionné</p>
+          <p className="mb-2">&copy; 2024 photoSURF pays basque - Thom, photographe & vidéaste surf professionnel</p>
+          <p className="text-sm text-white/70">Photographe surf Pays Basque | Photo vidéo sport nautique Anglet, Biarritz, Hossegor</p>
         </div>
       </div>
     </footer>

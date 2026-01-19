@@ -71,7 +71,7 @@ export const Gallery = () => {
             <CardContent>
               <Button 
                 className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold"
-                onClick={() => window.open('https://www.app.sportpxl.com/dashboard', '_blank')}
+                onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 SportPXL Dashboard

@@ -2,15 +2,31 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Camera, ExternalLink, Phone, MessageCircle } from "lucide-react";
 
+// Import gallery images
+import surfVirage from "@/assets/gallery/surf-virage-anglet.jpg";
+import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
+import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
+import surfNight from "@/assets/gallery/surf-night-session.jpg";
+import surfeurPro from "@/assets/gallery/surfeur-pro-competition.jpg";
+import surfNightAerial from "@/assets/gallery/surf-night-aerial.jpg";
+import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
+import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
+import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
+import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
+
 const PHONE_NUMBER = "0600000000";
 
 const galleryImages = [
-  { id: 'photo-1500375592092-40eb2168fd21', alt: 'Session surf Biarritz - photographe surf pays basque' },
-  { id: 'photo-1518877593221-1f28583780b4', alt: 'Shooting surf Anglet - photo sport nautique' },
-  { id: 'photo-1482938289607-e9573fc25ebb', alt: 'Vidéo surf Hossegor - vidéaste surf professionnel' },
-  { id: 'photo-1500375592092-40eb2168fd21', alt: 'Photo surf Bidart - photographe sport nautique' },
-  { id: 'photo-1518877593221-1f28583780b4', alt: 'Session photo surf Guéthary - côte basque' },
-  { id: 'photo-1482938289607-e9573fc25ebb', alt: 'Shooting surf Hendaye - photo vidéo surf' }
+  { src: surfVirage, alt: 'Virage puissant surf Anglet - photographe surf Pays Basque', label: 'Surf Anglet' },
+  { src: surfeuseBiarritz, alt: 'Surfeuse shortboard Biarritz - photo sport nautique côte basque', label: 'Surf Biarritz' },
+  { src: surfNight, alt: 'Session surf nocturne flash - photographe surf Pays Basque nuit', label: 'Night Session' },
+  { src: bodyboard, alt: 'Bodyboard Pays Basque - vidéaste sport nautique Anglet', label: 'Bodyboard' },
+  { src: surfeurPro, alt: 'Surfeur professionnel compétition - photo surf Hossegor', label: 'Compétition' },
+  { src: surfGlassy, alt: 'Session surf glassy côte basque - photographe surf Bidart Guéthary', label: 'Surf Glassy' },
+  { src: surfeuseHossegor, alt: 'Surfeuse vague Hossegor - shooting surf féminin Pays Basque', label: 'Surf Hossegor' },
+  { src: surfNightAerial, alt: 'Aerial surf nocturne - vidéaste surf Pays Basque session flash', label: 'Night Aerial' },
+  { src: photoAquatique, alt: 'Shooting aquatique artistique noir et blanc - photographe underwater Pays Basque', label: 'Photo Aquatique' },
+  { src: shootingMaternite, alt: 'Shooting maternité aquatique - photographe grossesse underwater côte basque', label: 'Maternité Aquatique' },
 ];
 
 export const Gallery = () => {
@@ -28,14 +44,14 @@ export const Gallery = () => {
           {galleryImages.map((photo, i) => (
             <div key={i} className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
               <img 
-                src={`https://images.unsplash.com/${photo.id}?w=400&h=300&fit=crop`}
+                src={photo.src}
                 alt={photo.alt}
                 loading="lazy"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="font-semibold">Session surf</p>
+                <p className="font-semibold">{photo.label}</p>
                 <p className="text-sm">Côte basque</p>
               </div>
             </div>

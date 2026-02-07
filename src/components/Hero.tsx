@@ -38,17 +38,17 @@ export const Hero = () => {
             </p>
           </div>
           
-          {/* Sous-titre descriptif */}
-          <p className="text-xl md:text-2xl text-white/90 font-medium mb-2">
-            Photographe & vidéaste surf
-          </p>
+          {/* H1 SEO optimisé Anglet */}
+          <h1 className="text-xl md:text-2xl text-white/90 font-medium mb-2">
+            Photographe surf à Anglet – Photo & Vidéo de surf au Pays Basque
+          </h1>
           <p className="text-lg md:text-xl text-purple-200/80 mb-10">
-            Pays basque & sud des Landes
+            Anglet · Biarritz · Chambre d'Amour · Cavaliers · Marinella
           </p>
           
           {/* Tagline */}
           <p className="text-2xl md:text-3xl text-yellow-400 font-medium mb-10 italic">
-            Je capture tes plus belles vagues
+            Je capture tes plus belles vagues à Anglet et sur toute la côte basque
           </p>
           
           {/* CTA Principal WhatsApp */}
@@ -59,7 +59,7 @@ export const Hero = () => {
           >
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <WhatsAppIcon className="w-6 h-6 mr-3" />
-              Contacte-moi
+              Réserver une session photo surf à Anglet
             </a>
           </Button>
           

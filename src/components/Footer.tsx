@@ -66,8 +66,13 @@ export const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/90">
-          <p className="mb-2">&copy; 2024 photoSURF pays basque - Thom, photographe & vidéaste surf professionnel</p>
-          <p className="text-sm text-white/70">Photographe surf Pays Basque | Photo vidéo sport nautique Anglet, Biarritz, Hossegor</p>
+          <p className="mb-2">&copy; 2025 PhotoSurfPaysBasque – Thom, photographe surf à Anglet, Biarritz</p>
+          <p className="text-sm text-white/70">Photographe surf Anglet | Photo & vidéo surf Pays Basque | Cavaliers · Marinella · Chambre d'Amour</p>
+          <nav className="mt-3 flex justify-center gap-4 text-sm text-white/60">
+            <a href="/photographe-surf-anglet" className="hover:text-white transition-colors">Photographe surf Anglet</a>
+            <span>·</span>
+            <a href="/spot-report-anglet" className="hover:text-white transition-colors">Spot report Anglet</a>
+          </nav>
         </div>
       </div>
     </footer>

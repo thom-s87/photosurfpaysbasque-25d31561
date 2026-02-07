@@ -26,10 +26,11 @@ export const Header = () => {
           
           {/* Navigation Desktop */}
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#accueil" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Accueil</a>
+            <a href="/" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Accueil</a>
             <a href="#galerie" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Galerie</a>
-            <a className="text-white/90 hover:text-yellow-400 transition-colors font-medium" href="https://www.windy.com/?43.483,-1.522,5">Météo</a>
-            <a href="#tarifs" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Tarifs</a>
+            <a href="/photographe-surf-anglet" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Anglet</a>
+            <a href="/spot-report-anglet" className="text-white/90 hover:text-yellow-400 transition-colors font-medium">Spot Report</a>
+            <a className="text-white/90 hover:text-yellow-400 transition-colors font-medium" href="https://www.windy.com/?43.505,-1.541,12">Météo</a>
             
             {/* CTA Buttons */}
             <div className="flex items-center gap-3">

@@ -2,12 +2,13 @@ import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/ca
 import { MapPin } from "lucide-react";
 
 const spots = [
-  { name: "Anglet", description: "Plages variées idéales pour tous niveaux – shooting surf Anglet" },
+  { name: "Anglet – Cavaliers", description: "Spot principal pour la photo surf à Anglet : vagues régulières, bon angle lumière matin et soir" },
+  { name: "Anglet – Marinella", description: "Beach break puissant, idéal pour des images dynamiques de surf à Anglet" },
+  { name: "Anglet – Chambre d'Amour", description: "Cadre spectaculaire avec falaises, parfait pour des photos de surf uniques à Anglet" },
+  { name: "Anglet – Sables d'Or", description: "Plage accessible et polyvalente, shooting surf tous niveaux à Anglet" },
   { name: "Biarritz", description: "Spots iconiques de la côte basque – Grande Plage, Côte des Basques" },
   { name: "Hossegor", description: "Vagues puissantes et conditions world-class pour photos spectaculaires" },
-  { name: "Bidart", description: "Plage familiale avec de belles vagues accessibles" },
-  { name: "Guéthary", description: "Spot authentique au charme basque typique" },
-  { name: "Hendaye", description: "Longue plage avec diverses conditions de surf" }
+  { name: "Bidart & Guéthary", description: "Spots authentiques au charme basque, plages idéales pour des photos naturelles" },
 ];
 
 export const Spots = () => {

@@ -128,10 +128,11 @@ const PhotographeSurfAnglet = () => {
               Photographe surf professionnel · Anglet, Pays Basque
             </p>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-700 via-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins leading-tight">
-              Photographe surf à Anglet – Photo & vidéo entre la Petite Chambre d'Amour et Les Cavaliers
+              Photographe surf à Anglet
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed max-w-3xl mx-auto">
-              Je m'appelle Thom, je suis photographe surf à Anglet. Je capture vos sessions en conditions réelles, directement depuis les digues et les plages de la côte basque.
+              Je capture vos sessions selon les conditions du jour,<br />
+              entre la Petite Chambre d'Amour et Les Cavaliers.
             </p>
             <p className="text-lg text-gray-500 mb-10">
               Anglet · Biarritz · Petite Chambre d'Amour · Les Cavaliers · La Barre

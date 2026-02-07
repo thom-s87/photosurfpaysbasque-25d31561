@@ -156,17 +156,20 @@ const PhotographeSurfAnglet = () => {
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
-              Photographe local, expert des spots d'Anglet
+              Photographe spécialisé dans les activités océaniques au Pays Basque
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
               <p>
-                Être photographe surf à Anglet, c'est connaître chaque plage comme sa propre maison. Je sais exactement où la lumière tombe en premier le matin aux Cavaliers, comment les bancs de sable évoluent entre La Barre et la Petite Chambre d'Amour, et à quelle marée les sections deviennent les plus photogéniques.
+                Photographe spécialisé dans les activités océaniques au Pays Basque, je réalise des photos et vidéos pour le <strong>surf</strong>, le <strong>bodyboard</strong>, le <strong>longboard</strong>, le <strong>paddle</strong>, le <strong>foil</strong>, le <strong>kitesurf</strong>, la <strong>natation en eau libre</strong> et toutes les pratiques liées à l'océan.
               </p>
               <p>
-                Cette connaissance du terrain fait la différence. Un <strong>photographe surf à Anglet</strong> qui connaît les courants, les cycles de houle et les variations saisonnières peut anticiper l'action avant qu'elle ne se produise. C'est ce qui permet de livrer des images qui ne sont pas simplement "belles", mais qui racontent la réalité d'une session.
+                Être photographe à Anglet, c'est connaître chaque plage comme sa propre maison. Je sais exactement où la lumière tombe en premier le matin aux Cavaliers, comment les bancs de sable évoluent entre La Barre et la Petite Chambre d'Amour, et à quelle marée les sections deviennent les plus photogéniques.
               </p>
               <p>
-                Basé à quelques minutes des plages, je suis disponible rapidement quand les conditions s'alignent. Pas besoin de réserver des semaines à l'avance : un message WhatsApp suffit pour vérifier si les conditions du jour à Anglet permettent une session photo surf de qualité.
+                Cette connaissance du terrain fait la différence. Un <strong>photographe surf à Anglet</strong> qui connaît les courants, les cycles de houle et les variations saisonnières peut anticiper l'action avant qu'elle ne se produise. C'est ce qui permet de livrer des images qui racontent la réalité d'une session.
+              </p>
+              <p>
+                Basé à quelques minutes des plages, je suis disponible rapidement quand les conditions s'alignent. Un message WhatsApp suffit pour vérifier si les conditions du jour à Anglet permettent une session photo de qualité.
               </p>
             </div>
           </div>

@@ -171,6 +171,9 @@ const PhotographeSurfAnglet = () => {
               <p>
                 Basé à quelques minutes des plages, je suis disponible rapidement quand les conditions s'alignent. Un message WhatsApp suffit pour vérifier si les conditions du jour à Anglet permettent une session photo de qualité.
               </p>
+              <p>
+                Anglet est l'un des rares spots du Pays Basque à offrir une diversité de pratiques océaniques aussi importante, entre digues, bancs de sable et plages exposées à différentes houles.
+              </p>
             </div>
           </div>
         </section>

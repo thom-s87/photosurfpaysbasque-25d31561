@@ -242,7 +242,7 @@ const PhotographeSurfAnglet = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
               <p>
-                Les <strong>digues de la Petite Chambre d'Amour</strong> offrent un avantage que peu de spots peuvent égaler. Elles permettent de s'avancer au plus près de la zone d'impact, d'observer les lignes de houle dès leur formation, et de travailler des angles de prise de vue impossibles à obtenir depuis la plage.
+                Les digues d'Anglet permettent une <strong>immersion totale dans l'action</strong>. Elles offrent des axes de prise de vue uniques entre Les Cavaliers, La Barre et la Petite Chambre d'Amour, avec une proximité rare avec les surfeurs et les pratiquants.
               </p>
               <p>
                 En me positionnant sur les digues, je capture des images en <strong>contre-plongée</strong> ou <strong>à hauteur d'eau</strong>, ce qui renforce l'impression de puissance et de vitesse. C'est cette immersion qui donne aux photos de surf à Anglet une dimension particulière — le spectateur est au cœur de l'action.

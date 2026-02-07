@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { MapPin, Camera, Sun, Star } from "lucide-react";
+import { MapPin, Camera, Waves, Wind, Sun, Clock, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
@@ -10,7 +10,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+
 const WHATSAPP_URL = "https://wa.me/33695349187";
+const WINDY_URL = "https://www.windy.com/?43.505,-1.541,12";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -18,204 +20,334 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const spots = [
+const surfReportConditions = [
+  { icon: Waves, label: "Houle", value: "1,5 m à 3 m – ouest à nord-ouest", color: "text-blue-500" },
+  { icon: Clock, label: "Période", value: "> 10 secondes", color: "text-indigo-500" },
+  { icon: Wind, label: "Vent", value: "Faible offshore ou side-off", color: "text-green-500" },
+  { icon: Sun, label: "Marée", value: "Mi-marée montante recommandée", color: "text-yellow-500" },
+];
+
+const faqItems = [
   {
-    name: "Cavaliers",
-    description: "Le spot phare d'Anglet pour la photo surf. Vagues régulières, bon angle de lumière matin et soir. Idéal pour des photos dynamiques avec un arrière-plan dégagé.",
-    best: "Marée mi-basse, houle ouest 1m–1.5m",
+    question: "Où trouver un photographe de surf à Anglet ?",
+    answer: "Je suis basé à Anglet, à quelques minutes des plages de la Petite Chambre d'Amour, des Cavaliers et de La Barre. Je shoote exclusivement sur la côte basque, entre Anglet et Biarritz. Un message WhatsApp suffit pour organiser une session sur le spot le plus adapté aux conditions du jour.",
   },
   {
-    name: "Marinella",
-    description: "Beach break puissant avec des vagues creuses qui offrent des images spectaculaires. Spot privilégié pour les surfeurs confirmés et les photos d'action.",
-    best: "Marée basse, houle nord-ouest",
+    question: "Comment se déroule une session photo surf à Anglet ?",
+    answer: "On échange d'abord sur les conditions du jour : houle, vent, marée. Je choisis le spot le plus adapté entre la Petite Chambre d'Amour, Les Cavaliers ou La Barre. Je me positionne depuis les digues ou la plage selon l'angle idéal, et je shoote ta session en conditions réelles. Les photos sont livrées rapidement via un lien sécurisé.",
   },
   {
-    name: "Sables d'Or",
-    description: "Plage polyvalente avec des vagues accessibles à tous niveaux. Parfait pour les sessions photo débutants et les familles.",
-    best: "Toutes marées, conditions modérées",
+    question: "Quel est le meilleur spot photo surf à Anglet ?",
+    answer: "La Petite Chambre d'Amour (anciennement VVF) est mon spot principal. Les digues offrent des angles uniques en contre-plongée et à hauteur d'eau. Les Cavaliers et La Barre sont aussi excellents, selon la direction de la houle et les bancs de sable du moment.",
   },
   {
-    name: "Chambre d'Amour",
-    description: "Cadre unique avec les falaises en arrière-plan. Les photos de surf y sont particulièrement esthétiques grâce au décor naturel exceptionnel.",
-    best: "Marée montante, lumière dorée fin de journée",
+    question: "Peut-on réserver une session photo surf aujourd'hui à Anglet ?",
+    answer: "Oui, sous réserve de conditions favorables. Je vérifie en temps réel la houle, le vent et la marée sur les spots d'Anglet. Envoie-moi un message WhatsApp et je te confirme la faisabilité dans l'heure. Ma proximité avec les plages me permet d'être opérationnel très rapidement.",
+  },
+  {
+    question: "Photographe surf Anglet ou Biarritz : quelle différence ?",
+    answer: "Anglet offre des beach breaks variés avec moins de monde à l'eau, ce qui facilite le cadrage. Les digues de la Petite Chambre d'Amour donnent des angles de prise de vue impossibles à reproduire ailleurs. Biarritz a la Côte des Basques et la Grande Plage, des spots iconiques mais plus fréquentés. Je couvre les deux zones.",
+  },
+  {
+    question: "Combien coûte une session photo de surf à Anglet ?",
+    answer: "Les tarifs varient selon la durée et le type de prestation (photo seule, vidéo, ou les deux). Contacte-moi directement sur WhatsApp pour un devis personnalisé. Chaque session est unique et adaptée aux conditions du jour.",
   },
 ];
 
 const PhotographeSurfAnglet = () => {
+  const today = new Date();
+  const dateStr = today.toLocaleDateString("fr-FR", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "photoSURF pays basque – Thom, photographe surf",
+    description: "Photographe surf professionnel à Anglet. Sessions photo et vidéo sur les spots de la Petite Chambre d'Amour, Les Cavaliers et La Barre au Pays Basque.",
+    url: "https://photosurfpaysbasque.fr/photographe-surf-anglet",
+    telephone: "+33695349187",
+    image: "https://photosurfpaysbasque.fr/og-image.jpg",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Plage de la Petite Chambre d'Amour",
+      addressLocality: "Anglet",
+      postalCode: "64600",
+      addressRegion: "Pays Basque",
+      addressCountry: "FR",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 43.505,
+      longitude: -1.541,
+    },
+    areaServed: [
+      { "@type": "City", name: "Anglet" },
+      { "@type": "City", name: "Biarritz" },
+      { "@type": "City", name: "Bayonne" },
+    ],
+    priceRange: "€€",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "07:00",
+      closes: "21:00",
+    },
+  };
+
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-pink-50 to-blue-50 font-poppins">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+
       <Header />
       <main className="pt-24">
-        {/* Hero section */}
-        <section className="py-16 px-4">
+
+        {/* ============================================= */}
+        {/* 1. HERO – Nom, métier, localisation */}
+        {/* ============================================= */}
+        <section className="py-16 md:py-24 px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins">
-              Photographe surf à Anglet – Sessions photo professionnelles
+            <p className="text-sm uppercase tracking-widest text-purple-500 font-medium mb-4">
+              Photographe surf professionnel · Anglet, Pays Basque
+            </p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-700 via-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins leading-tight">
+              Photographe surf à Anglet – Photo & vidéo entre la Petite Chambre d'Amour et Les Cavaliers
             </h1>
-            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Thom, photographe local spécialisé en surf à Anglet. Je connais chaque plage, chaque marée, chaque angle de lumière pour capturer tes meilleures vagues sur les spots de Cavaliers, Marinella, Sables d'Or et Chambre d'Amour.
+            <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed max-w-3xl mx-auto">
+              Je m'appelle Thom, je suis photographe surf à Anglet. Je capture vos sessions en conditions réelles, directement depuis les digues et les plages de la côte basque.
+            </p>
+            <p className="text-lg text-gray-500 mb-10">
+              Anglet · Biarritz · Petite Chambre d'Amour · Les Cavaliers · La Barre
             </p>
             <Button
               size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-10 py-6 text-xl font-bold rounded-full shadow-2xl"
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="w-6 h-6 mr-3" />
-                Contacte un photographe surf local à Anglet
+                Me contacter pour une session
               </a>
             </Button>
           </div>
         </section>
 
-        {/* Pourquoi Anglet */}
+        {/* ============================================= */}
+        {/* 2. EXPERTISE LOCALE */}
+        {/* ============================================= */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
-              Pourquoi Anglet est le meilleur spot photo surf du Pays Basque
+              Photographe local, expert des spots d'Anglet
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
               <p>
-                Anglet offre <strong>11 plages</strong> orientées plein ouest, chacune avec son caractère unique. Cette diversité permet de toujours trouver le spot idéal en fonction des conditions de houle, de vent et de marée. C'est un avantage majeur pour la photographie de surf : on choisit la plage qui offre les meilleures conditions visuelles du moment.
+                Être photographe surf à Anglet, c'est connaître chaque plage comme sa propre maison. Je sais exactement où la lumière tombe en premier le matin aux Cavaliers, comment les bancs de sable évoluent entre La Barre et la Petite Chambre d'Amour, et à quelle marée les sections deviennent les plus photogéniques.
               </p>
               <p>
-                Contrairement à Biarritz où les spots sont plus exposés au vent de sud et souvent bondés, Anglet offre des plages spacieuses avec moins de monde à l'eau, ce qui facilite le cadrage et permet de se concentrer sur le surfeur. La lumière y est exceptionnelle, surtout en fin de journée face aux falaises de la Chambre d'Amour.
+                Cette connaissance du terrain fait la différence. Un <strong>photographe surf à Anglet</strong> qui connaît les courants, les cycles de houle et les variations saisonnières peut anticiper l'action avant qu'elle ne se produise. C'est ce qui permet de livrer des images qui ne sont pas simplement "belles", mais qui racontent la réalité d'une session.
               </p>
               <p>
-                En tant que <strong>photographe surf basé à Anglet</strong>, je suis sur place en quelques minutes, prêt à shooter dès que les conditions sont optimales. Cette réactivité fait toute la différence pour ne rater aucune session.
+                Basé à quelques minutes des plages, je suis disponible rapidement quand les conditions s'alignent. Pas besoin de réserver des semaines à l'avance : un message WhatsApp suffit pour vérifier si les conditions du jour à Anglet permettent une session photo surf de qualité.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Spots d'Anglet */}
+        {/* ============================================= */}
+        {/* 3. SURF REPORT – Petite Chambre d'Amour */}
+        {/* ============================================= */}
+        <section className="py-16 px-4" id="surf-report">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-bold text-purple-700 font-poppins mb-2">
+                Surf report Anglet – Petite Chambre d'Amour
+              </h2>
+              <p className="text-gray-500 flex items-center justify-center">
+                <Clock className="w-4 h-4 mr-2" />
+                {dateStr}
+              </p>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-8">
+              <h3 className="text-xl font-bold text-gray-800 mb-4 font-poppins">
+                Conditions idéales pour la photo surf à Anglet
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {surfReportConditions.map((c) => (
+                  <Card key={c.label} className="bg-white/90 text-center hover:shadow-lg transition-all border-0">
+                    <CardHeader className="pb-2">
+                      <c.icon className={`w-8 h-8 ${c.color} mx-auto`} />
+                      <CardTitle className="text-base">{c.label}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-700 font-medium text-sm">{c.value}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+              <p>
+                La <strong>Petite Chambre d'Amour</strong>, anciennement connue sous le nom de <strong>VVF</strong>, est mon spot principal pour la photographie surf à Anglet. Ce changement de nom reflète l'ancrage historique et géographique du spot, à proximité immédiate de la Chambre d'Amour.
+              </p>
+              <p>
+                Le spot fonctionne principalement avec des <strong>houles d'ouest à nord-ouest</strong>. Entre <strong>Les Cavaliers et La Barre</strong>, les bancs de sable évoluent fréquemment, créant des sections rapides idéales pour la photographie surf.
+              </p>
+            </div>
+
+            <div className="text-center mt-8">
+              <Button variant="outline" className="rounded-full" asChild>
+                <a href={WINDY_URL} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Conditions en direct sur Windy – Anglet
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* ============================================= */}
+        {/* 4. AXES DE PRISE DE VUE – Immersion digues */}
+        {/* ============================================= */}
+        <section className="py-16 px-4 bg-white/40">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
+              Angles de prise de vue uniques depuis les digues d'Anglet
+            </h2>
+            <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
+              <p>
+                Les <strong>digues de la Petite Chambre d'Amour</strong> offrent un avantage que peu de spots peuvent égaler. Elles permettent de s'avancer au plus près de la zone d'impact, d'observer les lignes de houle dès leur formation, et de travailler des angles de prise de vue impossibles à obtenir depuis la plage.
+              </p>
+              <p>
+                En me positionnant sur les digues, je capture des images en <strong>contre-plongée</strong> ou <strong>à hauteur d'eau</strong>, ce qui renforce l'impression de puissance et de vitesse. C'est cette immersion qui donne aux photos de surf à Anglet une dimension particulière — le spectateur est au cœur de l'action.
+              </p>
+              <p>
+                La lecture des vagues depuis les digues facilite aussi le timing : je vois les séries arriver, j'anticipe le take-off, et je déclenche au moment exact où le surfeur engage. C'est la combinaison de la connaissance du spot et du positionnement qui fait la différence.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ============================================= */}
+        {/* 5. SESSIONS PHOTO SELON CONDITIONS */}
+        {/* ============================================= */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-700 font-poppins">
-              Les spots de surf à Anglet pour la photo
+              Sessions photo surf adaptées aux conditions du jour
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {spots.map((spot) => (
-                <Card key={spot.name} className="bg-white/80 backdrop-blur-sm border-l-4 border-l-purple-500 hover:shadow-xl transition-all">
-                  <CardHeader>
-                    <CardTitle className="flex items-center text-purple-600 text-xl">
-                      <MapPin className="w-5 h-5 mr-2" />
-                      {spot.name}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 mb-3">{spot.description}</p>
-                    <p className="text-sm text-purple-600 font-medium flex items-center">
-                      <Sun className="w-4 h-4 mr-1" />
-                      Meilleur créneau : {spot.best}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all border-0">
+                <CardHeader>
+                  <Camera className="w-10 h-10 text-purple-500 mb-2" />
+                  <CardTitle className="text-lg">Photo depuis la plage</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Objectif longue focale, suivi du surfeur sur plusieurs vagues. Idéal aux Cavaliers et à Marinella quand la houle est régulière et le vent faible.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all border-0">
+                <CardHeader>
+                  <MapPin className="w-10 h-10 text-blue-500 mb-2" />
+                  <CardTitle className="text-lg">Photo depuis les digues</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Position immersive à la Petite Chambre d'Amour. Angles en contre-plongée, proximité avec la zone d'impact. Les images les plus puissantes viennent d'ici.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all border-0">
+                <CardHeader>
+                  <Waves className="w-10 h-10 text-pink-500 mb-2" />
+                  <CardTitle className="text-lg">Vidéo surf</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Captation vidéo en conditions réelles. Ralentis, angles serrés, ambiance de session. Livraison rapide pour partager ou analyser ta session.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mt-10 bg-white/80 rounded-2xl p-8 shadow-lg text-center">
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Chaque session est programmée uniquement quand les conditions sont réunies. Je ne shoote pas par défaut — je choisis le moment, le spot et l'angle qui garantissent des images de qualité. C'est ce qui fait la différence entre un photographe surf à Anglet et un simple prestataire.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* Conditions idéales */}
+        {/* ============================================= */}
+        {/* 6. FAQ SEO LOCALE */}
+        {/* ============================================= */}
         <section className="py-16 px-4 bg-white/40">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
-              Conditions idéales pour une session photo surf à Anglet
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center p-6">
-                <Sun className="w-10 h-10 text-yellow-500 mx-auto mb-3" />
-                <h3 className="font-bold text-lg mb-2">Lumière</h3>
-                <p className="text-gray-600">Lever et coucher de soleil offrent la lumière dorée idéale. Les sessions du matin à Cavaliers sont magiques.</p>
-              </div>
-              <div className="text-center p-6">
-                <Camera className="w-10 h-10 text-purple-500 mx-auto mb-3" />
-                <h3 className="font-bold text-lg mb-2">Houle</h3>
-                <p className="text-gray-600">Houle ouest à nord-ouest entre 1m et 1.5m : des vagues propres et photogéniques sur les plages d'Anglet.</p>
-              </div>
-              <div className="text-center p-6">
-                <Star className="w-10 h-10 text-pink-500 mx-auto mb-3" />
-                <h3 className="font-bold text-lg mb-2">Vent</h3>
-                <p className="text-gray-600">Vent offshore (est/sud-est) ou conditions glassy. Les matins sont souvent sans vent à Anglet.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ SEO */}
-        <section className="py-16 px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-700 font-poppins">
-              Questions fréquentes – Photo surf à Anglet
+              Questions fréquentes – Photographe surf à Anglet
             </h2>
-            <Accordion type="single" collapsible className="space-y-2">
-              <AccordionItem value="q1" className="bg-white/80 rounded-xl px-4">
-                <AccordionTrigger className="text-left font-medium text-gray-800">
-                  Quel est le meilleur spot pour une photo de surf à Anglet ?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600">
-                  Cavaliers est le spot le plus polyvalent pour la photo surf à Anglet. Sa configuration offre un excellent angle de vue et une lumière idéale le matin comme en fin de journée. Pour des photos avec un décor plus spectaculaire, la Chambre d'Amour et ses falaises sont imbattables.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="q2" className="bg-white/80 rounded-xl px-4">
-                <AccordionTrigger className="text-left font-medium text-gray-800">
-                  Peut-on réserver une session photo surf à Anglet aujourd'hui ?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600">
-                  Oui, sous réserve de conditions favorables. Envoie-moi un message WhatsApp et je te confirme la faisabilité dans l'heure selon la houle, le vent et la marée à Anglet. Ma réactivité locale est un vrai plus.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="q3" className="bg-white/80 rounded-xl px-4">
-                <AccordionTrigger className="text-left font-medium text-gray-800">
-                  Photographe surf Anglet ou Biarritz : quelle différence ?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600">
-                  Anglet offre plus de plages et moins de monde, ce qui facilite le cadrage et le suivi du surfeur. Biarritz a des spots iconiques comme la Côte des Basques, mais plus fréquentés. Je couvre les deux zones, mais Anglet est mon terrain principal avec une connaissance fine de chaque plage.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="q4" className="bg-white/80 rounded-xl px-4">
-                <AccordionTrigger className="text-left font-medium text-gray-800">
-                  Combien coûte une session photo surf à Anglet ?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600">
-                  Les tarifs dépendent de la durée et du type de session (photo, vidéo ou les deux). Contacte-moi directement sur WhatsApp pour un devis personnalisé adapté à tes besoins.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="q5" className="bg-white/80 rounded-xl px-4">
-                <AccordionTrigger className="text-left font-medium text-gray-800">
-                  Comment trouver un photographe de surf près de chez moi à Anglet ?
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600">
-                  Tu es au bon endroit ! Je suis basé à Anglet et je couvre toute la côte basque. Un simple message WhatsApp suffit pour organiser une session sur le spot le plus adapté aux conditions du jour.
-                </AccordionContent>
-              </AccordionItem>
+            <Accordion type="single" collapsible className="space-y-3">
+              {faqItems.map((item, i) => (
+                <AccordionItem key={i} value={`q${i}`} className="bg-white/80 rounded-xl px-5 border-0">
+                  <AccordionTrigger className="text-left font-medium text-gray-800 hover:no-underline">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600 leading-relaxed">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </section>
 
-        {/* CTA final */}
+        {/* ============================================= */}
+        {/* 7. CONTACT RAPIDE – CTA */}
+        {/* ============================================= */}
         <section className="py-20 px-4 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500">
-          <div className="container mx-auto text-center">
+          <div className="container mx-auto text-center max-w-3xl">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-poppins">
-              Réserve ta session photo surf à Anglet
+              Une session photo surf à Anglet aujourd'hui ?
             </h2>
-            <p className="text-white/90 text-xl mb-10 max-w-2xl mx-auto">
-              Photographe local, réactif, expert des spots d'Anglet et de la côte basque
+            <p className="text-white/90 text-xl mb-10 leading-relaxed">
+              Photographe local, réactif, disponible sur WhatsApp. Je vérifie les conditions et on s'organise dans l'heure.
             </p>
             <Button
               size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-12 py-8 text-2xl font-bold rounded-full shadow-2xl"
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="w-8 h-8 mr-3" />
-                Contacte un photographe surf local à Anglet
+                Me contacter sur WhatsApp
               </a>
             </Button>
+            <p className="text-white/70 text-sm mt-6">
+              Anglet · Biarritz · Petite Chambre d'Amour · Les Cavaliers · La Barre · Côte Basque
+            </p>
           </div>
         </section>
       </main>

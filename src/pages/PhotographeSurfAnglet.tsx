@@ -10,7 +10,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-
 const WHATSAPP_URL = "https://wa.me/33695349187";
 const WINDY_URL = "https://www.windy.com/?43.505,-1.541,12";
 
@@ -119,9 +118,7 @@ const PhotographeSurfAnglet = () => {
       <Header />
       <main className="pt-24">
 
-        {/* ============================================= */}
-        {/* 1. HERO – Nom, métier, localisation */}
-        {/* ============================================= */}
+        {/* ===== 1. HERO ===== */}
         <section className="py-16 md:py-24 px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <p className="text-sm uppercase tracking-widest text-purple-500 font-medium mb-4">
@@ -150,9 +147,7 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
-        {/* ============================================= */}
-        {/* 2. EXPERTISE LOCALE */}
-        {/* ============================================= */}
+        {/* ===== 2. EXPERTISE LOCALE ===== */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
@@ -160,27 +155,29 @@ const PhotographeSurfAnglet = () => {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
               <p>
-                Photographe spécialisé dans les activités océaniques au Pays Basque, je réalise des photos et vidéos pour le <strong>surf</strong>, le <strong>bodyboard</strong>, le <strong>longboard</strong>, le <strong>paddle</strong>, le <strong>foil</strong>, le <strong>kitesurf</strong>, la <strong>natation en eau libre</strong> et toutes les pratiques liées à l'océan.
+                Photographe spécialisé dans les activités océaniques au Pays Basque, je réalise des photos et vidéos pour le surf, le bodyboard, le longboard, le paddle, le foil, le kitesurf, la natation en eau libre et toutes les pratiques liées à l'océan.
               </p>
+              <p>
+                Anglet est l'un des rares spots du Pays Basque à offrir une diversité de pratiques océaniques aussi importante, entre digues, bancs de sable et plages exposées à différentes houles.
+              </p>
+
+              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+                Connaissance terrain et réactivité locale
+              </h3>
               <p>
                 Être photographe à Anglet, c'est connaître chaque plage comme sa propre maison. Je sais exactement où la lumière tombe en premier le matin aux Cavaliers, comment les bancs de sable évoluent entre La Barre et la Petite Chambre d'Amour, et à quelle marée les sections deviennent les plus photogéniques.
               </p>
               <p>
-                Cette connaissance du terrain fait la différence. Un <strong>photographe surf à Anglet</strong> qui connaît les courants, les cycles de houle et les variations saisonnières peut anticiper l'action avant qu'elle ne se produise. C'est ce qui permet de livrer des images qui racontent la réalité d'une session.
+                Cette connaissance du terrain fait la différence. Un photographe surf à Anglet qui connaît les courants, les cycles de houle et les variations saisonnières peut anticiper l'action avant qu'elle ne se produise. C'est ce qui permet de livrer des images qui racontent la réalité d'une session.
               </p>
               <p>
                 Basé à quelques minutes des plages, je suis disponible rapidement quand les conditions s'alignent. Un message WhatsApp suffit pour vérifier si les conditions du jour à Anglet permettent une session photo de qualité.
-              </p>
-              <p>
-                Anglet est l'un des rares spots du Pays Basque à offrir une diversité de pratiques océaniques aussi importante, entre digues, bancs de sable et plages exposées à différentes houles.
               </p>
             </div>
           </div>
         </section>
 
-        {/* ============================================= */}
-        {/* 3. SURF REPORT – Petite Chambre d'Amour */}
-        {/* ============================================= */}
+        {/* ===== 3. SURF REPORT ===== */}
         <section className="py-16 px-4" id="surf-report">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-10">
@@ -194,30 +191,26 @@ const PhotographeSurfAnglet = () => {
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-4 font-poppins">
+              <h3 className="text-xl font-bold text-gray-800 mb-6 font-poppins">
                 Conditions idéales pour la photo surf à Anglet
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 {surfReportConditions.map((c) => (
-                  <Card key={c.label} className="bg-white/90 text-center hover:shadow-lg transition-all border-0">
-                    <CardHeader className="pb-2">
-                      <c.icon className={`w-8 h-8 ${c.color} mx-auto`} />
-                      <CardTitle className="text-base">{c.label}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-700 font-medium text-sm">{c.value}</p>
-                    </CardContent>
-                  </Card>
+                  <div key={c.label} className="text-center p-4 rounded-xl bg-white/70">
+                    <c.icon className={`w-7 h-7 ${c.color} mx-auto mb-2`} />
+                    <p className="text-sm font-semibold text-gray-800 mb-1">{c.label}</p>
+                    <p className="text-gray-600 text-sm">{c.value}</p>
+                  </div>
                 ))}
               </div>
             </div>
 
             <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
               <p>
-                La <strong>Petite Chambre d'Amour</strong>, anciennement connue sous le nom de <strong>VVF</strong>, est mon spot principal pour la photographie surf à Anglet. Ce changement de nom reflète l'ancrage historique et géographique du spot, à proximité immédiate de la Chambre d'Amour.
+                La Petite Chambre d'Amour, anciennement connue sous le nom de VVF, est mon spot principal pour la photographie surf à Anglet. Ce changement de nom reflète l'ancrage historique et géographique du spot, à proximité immédiate de la Chambre d'Amour.
               </p>
               <p>
-                Le spot fonctionne principalement avec des <strong>houles d'ouest à nord-ouest</strong>. Entre <strong>Les Cavaliers et La Barre</strong>, les bancs de sable évoluent fréquemment, créant des sections rapides idéales pour la photographie surf.
+                Le spot fonctionne principalement avec des houles d'ouest à nord-ouest. Entre Les Cavaliers et La Barre, les bancs de sable évoluent fréquemment, créant des sections rapides idéales pour la photographie surf.
               </p>
             </div>
 
@@ -232,21 +225,27 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
-        {/* ============================================= */}
-        {/* 4. AXES DE PRISE DE VUE – Immersion digues */}
-        {/* ============================================= */}
+        {/* ===== 4. AXES DE PRISE DE VUE ===== */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
-              Angles de prise de vue uniques depuis les digues d'Anglet
+              Immersion depuis les digues d'Anglet
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
               <p>
-                Les digues d'Anglet permettent une <strong>immersion totale dans l'action</strong>. Elles offrent des axes de prise de vue uniques entre Les Cavaliers, La Barre et la Petite Chambre d'Amour, avec une proximité rare avec les surfeurs et les pratiquants.
+                Les digues d'Anglet permettent une immersion totale dans l'action. Elles offrent des axes de prise de vue uniques entre Les Cavaliers, La Barre et la Petite Chambre d'Amour, avec une proximité rare avec les surfeurs et les pratiquants.
               </p>
+
+              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+                Contre-plongée et hauteur d'eau
+              </h3>
               <p>
-                En me positionnant sur les digues, je capture des images en <strong>contre-plongée</strong> ou <strong>à hauteur d'eau</strong>, ce qui renforce l'impression de puissance et de vitesse. C'est cette immersion qui donne aux photos de surf à Anglet une dimension particulière — le spectateur est au cœur de l'action.
+                En me positionnant sur les digues, je capture des images en contre-plongée ou à hauteur d'eau, ce qui renforce l'impression de puissance et de vitesse. C'est cette immersion qui donne aux photos de surf à Anglet une dimension particulière — le spectateur est au cœur de l'action.
               </p>
+
+              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+                Lecture des vagues et timing
+              </h3>
               <p>
                 La lecture des vagues depuis les digues facilite aussi le timing : je vois les séries arriver, j'anticipe le take-off, et je déclenche au moment exact où le surfeur engage. C'est la combinaison de la connaissance du spot et du positionnement qui fait la différence.
               </p>
@@ -254,50 +253,36 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
-        {/* ============================================= */}
-        {/* 5. SESSIONS PHOTO SELON CONDITIONS */}
-        {/* ============================================= */}
+        {/* ===== 5. SESSIONS PHOTO SELON CONDITIONS ===== */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-700 font-poppins">
               Sessions photo surf adaptées aux conditions du jour
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all border-0">
-                <CardHeader>
-                  <Camera className="w-10 h-10 text-purple-500 mb-2" />
-                  <CardTitle className="text-lg">Photo depuis la plage</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Objectif longue focale, suivi du surfeur sur plusieurs vagues. Idéal aux Cavaliers et à Marinella quand la houle est régulière et le vent faible.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
+                <Camera className="w-10 h-10 text-purple-500 mb-4" />
+                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Photo depuis la plage</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Objectif longue focale, suivi du surfeur sur plusieurs vagues. Idéal aux Cavaliers et à Marinella quand la houle est régulière et le vent faible.
+                </p>
+              </div>
 
-              <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all border-0">
-                <CardHeader>
-                  <MapPin className="w-10 h-10 text-blue-500 mb-2" />
-                  <CardTitle className="text-lg">Photo depuis les digues</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Position immersive à la Petite Chambre d'Amour. Angles en contre-plongée, proximité avec la zone d'impact. Les images les plus puissantes viennent d'ici.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
+                <MapPin className="w-10 h-10 text-blue-500 mb-4" />
+                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Photo depuis les digues</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Position immersive à la Petite Chambre d'Amour. Angles en contre-plongée, proximité avec la zone d'impact. Les images les plus puissantes viennent d'ici.
+                </p>
+              </div>
 
-              <Card className="bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all border-0">
-                <CardHeader>
-                  <Waves className="w-10 h-10 text-pink-500 mb-2" />
-                  <CardTitle className="text-lg">Vidéo surf</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Captation vidéo en conditions réelles. Ralentis, angles serrés, ambiance de session. Livraison rapide pour partager ou analyser ta session.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
+                <Waves className="w-10 h-10 text-pink-500 mb-4" />
+                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Vidéo surf</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Captation vidéo en conditions réelles. Ralentis, angles serrés, ambiance de session. Livraison rapide pour partager ou analyser ta session.
+                </p>
+              </div>
             </div>
 
             <div className="mt-10 bg-white/80 rounded-2xl p-8 shadow-lg text-center">
@@ -308,9 +293,7 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
-        {/* ============================================= */}
-        {/* 6. FAQ SEO LOCALE */}
-        {/* ============================================= */}
+        {/* ===== 6. FAQ SEO LOCALE ===== */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-700 font-poppins">
@@ -331,9 +314,7 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
-        {/* ============================================= */}
-        {/* 7. CONTACT RAPIDE – CTA */}
-        {/* ============================================= */}
+        {/* ===== 7. CONTACT RAPIDE ===== */}
         <section className="py-20 px-4 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500">
           <div className="container mx-auto text-center max-w-3xl">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-poppins">

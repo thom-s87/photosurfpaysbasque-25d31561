@@ -362,7 +362,7 @@ export const SessionForm = () => {
           </Button>
 
           <p className="text-center text-muted-foreground text-sm">
-            ⚡ Réponse rapide — généralement en moins de 1 heure.
+            ⚡ Réponse rapide sur WhatsApp — généralement en moins de 1 heure.
           </p>
         </form>
       </div>

@@ -15,7 +15,7 @@ export const ContactCTA = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="contact" className="py-24 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
+    <section id="contact" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
       {/* Wave decoration top */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" className="w-full h-[40px] rotate-180">
@@ -27,7 +27,7 @@ export const ContactCTA = () => {
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-sunset-orange/5 blur-3xl" />
       
       <div ref={ref} className="container mx-auto max-w-2xl text-center relative z-10 fade-in-section">
-        <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-6 tracking-wide">
+        <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-6 tracking-wide">
           RÉSERVER VOTRE SÉANCE
         </h2>
         <p className="text-primary-foreground/60 text-lg mb-10 max-w-lg mx-auto">

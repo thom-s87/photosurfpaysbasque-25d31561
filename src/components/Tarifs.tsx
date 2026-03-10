@@ -20,14 +20,14 @@ export const Tarifs = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="tarifs" className="py-24 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
+    <section id="tarifs" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
       {/* Subtle glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-hot-pink/5 blur-3xl" />
 
       <div ref={ref} className="container mx-auto max-w-2xl text-center relative z-10 fade-in-section">
         <p className="text-gradient-sunset font-medium tracking-[0.3em] uppercase text-xs mb-6 inline-block">⭐ Offre lancement 2026</p>
         
-        <h2 className="font-display text-7xl md:text-8xl text-primary-foreground mb-2 tracking-wider">
+        <h2 className="font-display text-6xl min-[375px]:text-7xl md:text-8xl text-primary-foreground mb-2 tracking-wider">
           45€
         </h2>
         <p className="text-2xl text-primary-foreground/50 font-light mb-12 tracking-widest uppercase">/ heure</p>

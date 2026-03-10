@@ -65,11 +65,11 @@ export const Gallery = () => {
   };
 
   return (
-    <section id="galerie" className="py-24 md:py-32 bg-background">
+    <section id="galerie" className="py-16 min-[375px]:py-20 md:py-32 bg-background">
       <div ref={ref} className="fade-in-section">
         <div className="px-4 container mx-auto">
           <p className="text-center text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">Portfolio</p>
-          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground text-center mb-16 tracking-wide">
+          <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl lg:text-7xl text-foreground text-center mb-10 min-[375px]:mb-16 tracking-wide">
             GALERIE
           </h2>
         </div>

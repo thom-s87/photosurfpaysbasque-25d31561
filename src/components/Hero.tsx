@@ -39,27 +39,27 @@ export const Hero = () => {
       {/* VHS scanlines */}
       <div className="absolute inset-0 vhs-lines" />
       
-      <div className="container mx-auto relative z-10 px-4 pb-24 pt-40 md:pb-32">
+      <div className="container mx-auto relative z-10 px-4 pb-16 pt-28 min-[375px]:pb-20 min-[375px]:pt-32 md:pb-32 md:pt-40">
         <div className="max-w-4xl" style={{ opacity: Math.max(0, 1 - scrollY / 600), transform: `translateY(${scrollY * 0.1}px)` }}>
           
           {/* Retro top accent — thin sunset stripe */}
-          <div className="w-20 h-[3px] bg-gradient-sunset mb-8" />
+          <div className="w-16 min-[375px]:w-20 h-[3px] bg-gradient-sunset mb-6 min-[375px]:mb-8" />
           
-          <h1 className="font-display text-7xl md:text-9xl lg:text-[10rem] leading-[0.85] mb-6 tracking-wider">
+          <h1 className="font-display text-[3.2rem] min-[375px]:text-6xl md:text-9xl lg:text-[10rem] leading-[0.85] mb-4 min-[375px]:mb-6 tracking-wider">
             <span className="text-primary-foreground block">PHOTO</span>
             <span className="text-primary-foreground block">SURF</span>
             <span className="text-gradient-sunset block">PAYS BASQUE</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-primary-foreground/90 font-light mb-3 max-w-xl">
+          <p className="text-base min-[375px]:text-xl md:text-2xl text-primary-foreground/90 font-light mb-2 min-[375px]:mb-3 max-w-xl">
             Vos moments dans l'océan méritent plus qu'un souvenir.
           </p>
           
-          <p className="text-sm md:text-base text-primary-foreground/50 mb-4 uppercase tracking-widest">
+          <p className="text-xs min-[375px]:text-sm md:text-base text-primary-foreground/50 mb-3 min-[375px]:mb-4 uppercase tracking-widest">
             Photographe de l'océan au Pays Basque
           </p>
 
-          <div className="flex flex-wrap gap-3 text-sm text-primary-foreground/40 mb-10 tracking-widest uppercase font-light">
+          <div className="flex flex-wrap gap-2 min-[375px]:gap-3 text-xs min-[375px]:text-sm text-primary-foreground/40 mb-6 min-[375px]:mb-10 tracking-widest uppercase font-light">
             <span>Surf</span><span className="text-hot-pink">·</span>
             <span>Famille</span><span className="text-sunset-orange">·</span>
             <span>Grossesse</span><span className="text-golden">·</span>
@@ -67,21 +67,21 @@ export const Hero = () => {
             <span>Lifestyle plage</span>
           </div>
           
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col min-[375px]:flex-row flex-wrap gap-3 min-[375px]:gap-4">
             <Button 
               size="lg" 
-              className="bg-gradient-sunset text-foreground px-10 py-7 text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity"
+              className="bg-gradient-sunset text-foreground px-8 min-[375px]:px-10 py-6 min-[375px]:py-7 text-base min-[375px]:text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full min-[375px]:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon className="w-6 h-6 mr-3" />
+                <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3" />
                 Réserver sur WhatsApp
               </a>
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground px-8 py-7 text-lg rounded-full hover:bg-primary-foreground/10 hover:text-primary-foreground bg-transparent"
+              className="border-primary-foreground/30 text-primary-foreground px-6 min-[375px]:px-8 py-6 min-[375px]:py-7 text-base min-[375px]:text-lg rounded-full hover:bg-primary-foreground/10 hover:text-primary-foreground bg-transparent w-full min-[375px]:w-auto"
               asChild
             >
               <a href="#galerie">

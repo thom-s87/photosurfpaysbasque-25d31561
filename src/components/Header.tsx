@@ -16,10 +16,8 @@ export const Header = () => {
     <header className="fixed top-0 w-full bg-night/90 backdrop-blur-md z-50 border-b border-primary-foreground/5">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <a href="/" className="flex flex-col">
-            <span className="text-lg font-display tracking-[0.15em] text-primary-foreground">
-              PHOTOSURF<span className="text-gradient-sunset">PAYSBASQUE</span>
-            </span>
+          <a href="/" className="flex items-center">
+            <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-10 w-auto" />
           </a>
           
           <nav className="hidden md:flex items-center space-x-8">

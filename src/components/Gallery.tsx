@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Camera, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
-// Import gallery images
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import surfNight from "@/assets/gallery/surf-night-session.jpg";
@@ -15,73 +13,58 @@ import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
+import surfVirageAnglet from "@/assets/gallery/surf-virage-anglet.jpg";
+import surfeurProCompetition from "@/assets/gallery/surfeur-pro-competition.jpg";
 
 const galleryImages = [
-  { src: surfeurProNight, alt: 'Surfeur professionnel session nocturne - photographe surf Pays Basque nuit', label: 'Night Pro', position: 'center' },
-  { src: surfeuseBiarritz, alt: 'Surfeuse shortboard Biarritz - photo sport nautique côte basque', label: 'Surf Biarritz', position: 'center' },
-  { src: surfeusePinkBoard, alt: 'Surfeuse planche rose - shooting surf féminin Pays Basque', label: 'Surf Style', position: 'center' },
-  { src: surfNight, alt: 'Session surf nocturne flash - photographe surf Pays Basque nuit', label: 'Night Session', position: 'center' },
-  { src: bodyboard, alt: 'Bodyboard Pays Basque - vidéaste sport nautique Anglet', label: 'Bodyboard', position: 'center' },
-  { src: surfGlassy, alt: 'Session surf glassy côte basque - photographe surf Bidart Guéthary', label: 'Surf Glassy', position: 'center right' },
-  { src: surfeuseHossegor, alt: 'Surfeuse vague Hossegor - shooting surf féminin Pays Basque', label: 'Surf Hossegor', position: 'center' },
-  { src: bodyboardDay, alt: 'Bodyboard session jour Anglet - photographe sport nautique Pays Basque', label: 'Bodyboard Day', position: 'center' },
-  { src: photoAquatique, alt: 'Shooting aquatique artistique noir et blanc - photographe underwater Pays Basque', label: 'Photo Aquatique', position: 'top center' },
-  { src: shootingMaternite, alt: 'Shooting maternité aquatique - photographe grossesse underwater côte basque', label: 'Maternité Aquatique', position: 'center' },
-  { src: surfClub, alt: 'Cours de surf école sur la plage - photographe surf club Pays Basque', label: 'Surf Club', position: 'center' },
-  { src: duoFriends, alt: 'Duo surfeurs amis sur la plage - photographe surf lifestyle côte basque', label: 'Duo Friends', position: 'center' },
+  { src: surfeurProNight, alt: "Surfeur professionnel session nocturne - photographe surf Pays Basque", position: "center" },
+  { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque", position: "center" },
+  { src: surfVirageAnglet, alt: "Surf virage Anglet - photographe surf Anglet", position: "center" },
+  { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque", position: "center" },
+  { src: surfNight, alt: "Session surf nocturne - photographe surf Pays Basque nuit", position: "center" },
+  { src: bodyboard, alt: "Bodyboard Pays Basque - vidéaste sport nautique Anglet", position: "center" },
+  { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque", position: "top center" },
+  { src: shootingMaternite, alt: "Shooting maternité aquatique - photographe grossesse côte basque", position: "center" },
+  { src: surfGlassy, alt: "Session surf glassy côte basque - photographe surf Bidart", position: "center right" },
+  { src: surfeuseHossegor, alt: "Surfeuse Hossegor - shooting surf féminin Pays Basque", position: "center" },
+  { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique", position: "center" },
+  { src: surfeurProCompetition, alt: "Surfeur professionnel compétition Pays Basque", position: "center" },
+  { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque", position: "center" },
+  { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf lifestyle côte basque", position: "center" },
 ];
 
 export const Gallery = () => {
   return (
-    <section id="galerie" className="py-16 px-4">
+    <section id="galerie" className="py-24 md:py-32 px-4 bg-background">
       <div className="container mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-400 via-pink-500 via-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins">
-          Galerie Photo & Vidéo
+        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground text-center mb-16">
+          Galerie
         </h2>
-        <p className="text-center text-gray-600 mb-12 text-lg">
-          Quelques moments capturés sur la côte basque
-        </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+
+        {/* Masonry-style grid */}
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 mb-16">
           {galleryImages.map((photo, i) => (
-            <div key={i} className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
-              <img 
+            <div key={i} className="break-inside-avoid gallery-item overflow-hidden rounded-lg">
+              <img
                 src={photo.src}
                 alt={photo.alt}
                 loading="lazy"
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full object-cover"
                 style={{ objectPosition: photo.position }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="font-semibold">{photo.label}</p>
-                <p className="text-sm">Côte basque</p>
-              </div>
             </div>
           ))}
         </div>
-        
+
         <div className="text-center">
-          <Card className="max-w-md mx-auto bg-gradient-to-br from-yellow-50 via-purple-50 to-blue-50 border-purple-200 shadow-lg">
-            <CardHeader>
-              <CardTitle className="text-purple-600 flex items-center justify-center gap-2">
-                <Camera className="w-5 h-5" />
-                Récupère tes photos
-              </CardTitle>
-              <CardDescription className="text-gray-700">
-                Accède directement à tes clichés HD sur notre plateforme
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button 
-                className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold"
-                onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
-              >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                SportPXL Dashboard
-              </Button>
-            </CardContent>
-          </Card>
+          <Button
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full px-8 py-6 text-base"
+            onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
+          >
+            <ExternalLink className="w-4 h-4 mr-2" />
+            Accéder à vos photos — SportPXL
+          </Button>
         </div>
       </div>
     </section>

@@ -1,46 +1,55 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Particuliers } from "@/components/Particuliers";
-import { Clubs } from "@/components/Clubs";
+import { Univers } from "@/components/Univers";
+import { Tarifs } from "@/components/Tarifs";
 import { Gallery } from "@/components/Gallery";
-import { Spots } from "@/components/Spots";
-import { Conditions } from "@/components/Conditions";
+import { Tirages } from "@/components/Tirages";
+import { Process } from "@/components/Process";
 import { ContactCTA } from "@/components/ContactCTA";
-import { About } from "@/components/About";
 import { SeoAccordion } from "@/components/SeoAccordion";
 import { Footer } from "@/components/Footer";
+
 const Index = () => {
-  return <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-pink-50 to-blue-50 font-poppins">
+  return (
+    <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* 1. Hero - Ce que je propose */}
         <Hero />
-        
-        {/* 2. Particuliers - Sessions surf */}
-        <Particuliers />
-        
-        {/* 3. Clubs & Écoles */}
-        <Clubs />
-        
-        {/* 4. Galerie - Preuve */}
+        <Univers />
+        <Tarifs />
         <Gallery />
-        
-        {/* 5. Zones de shooting */}
-        <Spots />
-        
-        {/* 6. Conditions météo & fonctionnement */}
-        <Conditions />
-        
-        {/* 7. Rappel contact CTA */}
+        <Tirages />
+        <Process />
         <ContactCTA />
-        
-        {/* 8. Présentation personnelle courte */}
-        
-        
-        {/* 9. Section SEO - Accordéon discret */}
         <SeoAccordion />
       </main>
       <Footer />
-    </div>;
+
+      {/* JSON-LD LocalBusiness */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "PhotoSurfPaysBasque",
+            description: "Photographe de l'océan au Pays Basque — surf, famille, grossesse, sports aquatiques, lifestyle plage",
+            url: "https://photosurfpaysbasque.lovable.app",
+            telephone: "+33695349187",
+            areaServed: ["Anglet", "Biarritz", "Pays Basque", "Hossegor"],
+            priceRange: "€",
+            image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&q=80",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Anglet",
+              addressRegion: "Pyrénées-Atlantiques",
+              addressCountry: "FR",
+            },
+          }),
+        }}
+      />
+    </div>
+  );
 };
+
 export default Index;

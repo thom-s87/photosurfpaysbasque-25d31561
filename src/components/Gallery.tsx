@@ -11,12 +11,12 @@ import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
 import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
-import surfVirageAnglet from "@/assets/gallery/surf-virage-anglet.jpg";
+import bodySurferYellow from "@/assets/gallery/body-surfer-yellow.jpg";
 import surfeurProCompetition from "@/assets/gallery/surfeur-pro-competition.jpg";
 
 const galleryImages = [
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque", position: "center" },
-  { src: surfVirageAnglet, alt: "Surf virage Anglet - photographe surf Anglet", position: "center" },
+  { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque", position: "center" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque", position: "center" },
   { src: surfNight, alt: "Session surf nocturne - photographe surf Pays Basque nuit", position: "center" },
   { src: bodyboard, alt: "Bodyboard Pays Basque - vidéaste sport nautique Anglet", position: "center" },

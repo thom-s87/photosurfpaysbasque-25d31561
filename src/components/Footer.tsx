@@ -1,4 +1,5 @@
 import { Instagram, ExternalLink } from "lucide-react";
+import logoImg from "@/assets/logo-photosurf.png";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 const INSTAGRAM_URL = "https://www.instagram.com/photosurfpaysbasque?igsh=MTBybTU2ejM2bDB5dQ%3D%3D&utm_source=qr";

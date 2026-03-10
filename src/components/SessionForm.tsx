@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -28,6 +28,30 @@ export const SessionForm = () => {
   const [nom, setNom] = useState("");
   const [telephone, setTelephone] = useState("");
   const [typeSeance, setTypeSeance] = useState<SessionType>("");
+
+  // Listen for hash changes to pre-select session type
+  useEffect(() => {
+    const handleHash = () => {
+      const hash = window.location.hash;
+      const typeMap: Record<string, SessionType> = {
+        "#seance-surf": "surf",
+        "#seance-famille": "famille",
+        "#seance-prenatal": "prenatal",
+        "#seance-aquatique": "aquatique",
+      };
+      const matched = typeMap[hash];
+      if (matched) {
+        setTypeSeance(matched);
+        // Clean hash to #seance for proper scroll
+        setTimeout(() => {
+          document.getElementById("seance")?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    };
+    handleHash();
+    window.addEventListener("hashchange", handleHash);
+    return () => window.removeEventListener("hashchange", handleHash);
+  }, []);
   const [lieu, setLieu] = useState("");
   const [date, setDate] = useState("");
   const [moment, setMoment] = useState("");

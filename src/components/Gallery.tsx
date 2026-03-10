@@ -11,7 +11,7 @@ import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
 import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
-import surfVirageAnglet from "@/assets/gallery/surf-virage-anglet.jpg";
+import bodySurferYellow from "@/assets/gallery/body-surfer-yellow.jpg";
 import surfeurProCompetition from "@/assets/gallery/surfeur-pro-competition.jpg";
 
 const galleryImages = [

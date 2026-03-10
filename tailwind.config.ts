@@ -20,8 +20,8 @@ export default {
     	},
     	extend: {
     		fontFamily: {
-    			sans: ['DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-    			serif: ['Playfair Display', 'ui-serif', 'Georgia', 'serif'],
+    			sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+    			display: ['Bebas Neue', 'Impact', 'sans-serif'],
     			mono: ['DM Mono', 'ui-monospace', 'monospace'],
     		},
     		colors: {

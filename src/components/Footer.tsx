@@ -1,4 +1,5 @@
 import { Instagram, ExternalLink } from "lucide-react";
+import logoImg from "@/assets/logo-photosurf.png";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 const INSTAGRAM_URL = "https://www.instagram.com/photosurfpaysbasque?igsh=MTBybTU2ejM2bDB5dQ%3D%3D&utm_source=qr";
@@ -16,9 +17,7 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div>
-            <p className="font-display text-2xl tracking-[0.15em]">
-              PHOTOSURF<span className="text-gradient-sunset">PAYSBASQUE</span>
-            </p>
+            <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-12 w-auto" />
             <p className="text-primary-foreground/40 text-sm mt-1 uppercase tracking-widest">Photographe de l'océan au Pays Basque</p>
           </div>
 

@@ -27,7 +27,7 @@ export const Tarifs = () => {
       <div ref={ref} className="container mx-auto max-w-2xl text-center relative z-10 fade-in-section">
         <p className="text-gradient-sunset font-medium tracking-[0.3em] uppercase text-xs mb-6 inline-block">⭐ Offre lancement 2026</p>
         
-        <h2 className="font-display text-7xl md:text-8xl text-primary-foreground mb-2 tracking-wider">
+        <h2 className="font-display text-6xl min-[375px]:text-7xl md:text-8xl text-primary-foreground mb-2 tracking-wider">
           45€
         </h2>
         <p className="text-2xl text-primary-foreground/50 font-light mb-12 tracking-widest uppercase">/ heure</p>

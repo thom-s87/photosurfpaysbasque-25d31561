@@ -17,7 +17,7 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-2 md:py-3">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center">
-            <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-[72px] md:h-[88px] w-auto" />
+            <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-12 min-[375px]:h-[72px] md:h-[88px] w-auto" />
           </a>
           
           <nav className="hidden md:flex items-center space-x-8">

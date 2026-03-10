@@ -29,7 +29,7 @@ export const Story = () => {
           {/* Text */}
           <div className="lg:pl-4">
             <p className="text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-6">Notre histoire</p>
-            <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mb-8 leading-[0.9] tracking-wide">
+            <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl lg:text-7xl text-foreground mb-6 min-[375px]:mb-8 leading-[0.9] tracking-wide">
               L'OCÉAN CRÉE DES SOUVENIRS UNIQUES
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">

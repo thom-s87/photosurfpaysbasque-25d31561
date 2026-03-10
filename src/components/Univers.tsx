@@ -58,7 +58,7 @@ export const Univers = () => {
               href={block.hash}
               className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
             >
-              <img
+              <WatermarkedImage
                 src={block.image}
                 alt={block.alt}
                 loading="lazy"

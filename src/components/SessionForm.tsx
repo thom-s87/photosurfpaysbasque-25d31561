@@ -140,8 +140,11 @@ export const SessionForm = () => {
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mb-4 tracking-wide">
             PRÉPARER VOTRE SÉANCE PHOTO
           </h2>
+          <p className="text-foreground font-semibold text-xl mb-2">
+            Préparez votre séance en 30 secondes
+          </p>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto">
-            Choisissez le type de séance et indiquez quelques informations pour organiser au mieux votre moment dans l'océan.
+            Photographe surf à Anglet et au Pays Basque — choisissez votre type de séance et organisez votre moment dans l'océan.
           </p>
         </div>
 

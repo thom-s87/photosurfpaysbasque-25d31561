@@ -1,6 +1,5 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
-import { WatermarkedImage } from "@/components/WatermarkedImage";
 import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";

@@ -25,12 +25,12 @@ interface GalleryImage {
 }
 
 const galleryImages: GalleryImage[] = [
+  { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque", position: "top center", aspect: "portrait" },
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque", position: "center", aspect: "portrait" },
   { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque", position: "center", aspect: "landscape" },
   { src: maternite, alt: "Shooting maternité aquatique plage - photographe grossesse Pays Basque", position: "center", aspect: "landscape" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque", position: "center", aspect: "portrait" },
   { src: bodySurferBlue, alt: "Bodyboarder planche bleue - photographe sport nautique Anglet", position: "center", aspect: "landscape" },
-  { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque", position: "top center", aspect: "portrait" },
   { src: surfeurTube, alt: "Surfeur tube vague creuse - photographe surf Pays Basque", position: "center", aspect: "landscape" },
   { src: surfVirage, alt: "Surfeur virage aérien - photographe surf Anglet", position: "center", aspect: "landscape" },
   { src: surfeuseNight, alt: "Surfeuse session nocturne - photographe surf night session Pays Basque", position: "center", aspect: "landscape" },

@@ -1,6 +1,6 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
-import boySurfer from "@/assets/gallery/boy-surfer.jpg";
+import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";

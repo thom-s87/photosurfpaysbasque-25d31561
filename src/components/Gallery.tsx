@@ -12,7 +12,7 @@ import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
 import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
-import surfeurProCompetition from "@/assets/gallery/surfeur-pro-competition.jpg";
+
 import surfClub from "@/assets/gallery/surf-club.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
 
@@ -25,7 +25,7 @@ const galleryImages = [
   { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque" },
   { src: surfeuseHossegor, alt: "Surfeuse Hossegor - shooting surf féminin Pays Basque" },
   { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique" },
-  { src: surfeurProCompetition, alt: "Surfeur professionnel compétition Pays Basque" },
+  
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque" },
   { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf Pays Basque" },
 ];

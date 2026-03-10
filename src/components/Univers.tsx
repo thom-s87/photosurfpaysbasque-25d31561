@@ -2,7 +2,7 @@ import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
 import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
-import duoFriends from "@/assets/gallery/duo-friends.jpg";
+import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
 
 const blocks = [
@@ -16,7 +16,7 @@ const blocks = [
   {
     title: "FAMILLE & MOMENTS PLAGE",
     desc: "Parents, enfants, souvenirs naturels au bord de l'océan.",
-    image: duoFriends,
+    image: dadAndBaby,
     alt: "Séance photo famille plage Pays Basque",
     hash: "#seance-famille",
   },

@@ -1,6 +1,6 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
-import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
+import boySurfer from "@/assets/gallery/boy-surfer.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
@@ -9,7 +9,7 @@ const blocks = [
   {
     title: "SURF",
     desc: "Sessions surf, vagues, action, portraits dans l'eau.",
-    image: surfeurProNight,
+    image: boySurfer,
     alt: "Surfeur action photographe surf Anglet Pays Basque",
     hash: "#seance-surf",
   },

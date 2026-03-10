@@ -16,7 +16,7 @@ const blocks = [
   {
     title: "FAMILLE & MOMENTS PLAGE",
     desc: "Parents, enfants, souvenirs naturels au bord de l'océan.",
-    image: duoFriends,
+    image: dadAndBaby,
     alt: "Séance photo famille plage Pays Basque",
     hash: "#seance-famille",
   },

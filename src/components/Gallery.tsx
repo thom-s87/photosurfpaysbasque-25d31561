@@ -19,6 +19,7 @@ import duoFriends from "@/assets/gallery/duo-friends.jpg";
 
 const galleryImages = [
   { src: surferIlbaritz, alt: "Surfeur virage Ilbaritz - photographe surf Pays Basque action" },
+  { src: pregnantAqua, alt: "Shooting aquatique maternité - photographe grossesse underwater Pays Basque" },
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque" },
   { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque" },

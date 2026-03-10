@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
+import { WatermarkedImage } from "@/components/WatermarkedImage";
 
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";

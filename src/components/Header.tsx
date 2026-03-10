@@ -14,7 +14,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 export const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-night/90 backdrop-blur-md z-50 border-b border-primary-foreground/5">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2 md:py-3">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center">
             <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-[72px] md:h-[88px] w-auto" />

@@ -11,6 +11,7 @@ export const Story = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image with retro grain */}
           <div className="relative retro-grain">
+            <p className="text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">L'art de capturer l'action</p>
             <div className="rounded-lg overflow-hidden shadow-2xl">
               <WatermarkedImage
                 src={surfeurProNight}

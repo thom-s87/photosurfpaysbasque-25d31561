@@ -23,6 +23,7 @@ const Index = () => {
         <Gallery />
         <Tirages />
         <Process />
+        <SessionForm />
         <ContactCTA />
         <SeoAccordion />
       </main>

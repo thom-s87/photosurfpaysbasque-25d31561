@@ -16,16 +16,16 @@ export const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <a href="/" className="flex flex-col">
-            <span className="text-lg font-serif tracking-wide text-primary-foreground">
-              PhotoSurf<span className="text-gradient-sunset">PaysBasque</span>
+            <span className="text-lg font-display tracking-[0.15em] text-primary-foreground">
+              PHOTOSURF<span className="text-gradient-sunset">PAYSBASQUE</span>
             </span>
           </a>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#univers" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Univers</a>
-            <a href="#galerie" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Galerie</a>
-            <a href="#tarifs" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Tarifs</a>
-            <a href="/photographe-surf-anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Anglet</a>
+            <a href="#univers" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Univers</a>
+            <a href="#galerie" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Galerie</a>
+            <a href="#tarifs" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Tarifs</a>
+            <a href="/photographe-surf-anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Anglet</a>
             
             <div className="flex items-center gap-3 ml-4">
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">

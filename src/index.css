@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=DM+Mono:wght@400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 270 30% 97%;
+    --background: 30 50% 97%;
     --foreground: 270 40% 8%;
 
     --card: 30 40% 98%;
@@ -62,8 +62,8 @@
     --chart-4: 22 100% 62%;
     --chart-5: 42 100% 61%;
 
-    --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
-    --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Bebas Neue', 'Impact', sans-serif;
     --font-mono: 'DM Mono', ui-monospace, monospace;
 
     --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.03);
@@ -129,7 +129,8 @@
   }
 
   h1, h2, h3, h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -183,4 +184,45 @@ html {
 .fade-in-section.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Retro film grain overlay */
+.retro-grain {
+  position: relative;
+}
+.retro-grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: overlay;
+}
+
+/* Retro sunset stripe decoration */
+.retro-stripe {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    hsl(330 90% 63% / 0.08) 3px,
+    hsl(330 90% 63% / 0.08) 4px
+  );
+}
+
+/* VHS scanline effect (very subtle) */
+.vhs-lines::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    hsl(0 0% 0% / 0.015) 2px,
+    hsl(0 0% 0% / 0.015) 4px
+  );
+  pointer-events: none;
+  z-index: 2;
 }

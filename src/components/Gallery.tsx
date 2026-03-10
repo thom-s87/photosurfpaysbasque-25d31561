@@ -40,15 +40,15 @@ export const Gallery = () => {
   return (
     <section id="galerie" className="py-24 md:py-32 px-4 bg-background">
       <div ref={ref} className="container mx-auto fade-in-section">
-        <p className="text-center text-hot-pink font-medium tracking-widest uppercase text-sm mb-4">Portfolio</p>
-        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground text-center mb-16">
-          Galerie
+        <p className="text-center text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">Portfolio</p>
+        <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground text-center mb-16 tracking-wide">
+          GALERIE
         </h2>
 
         {/* Magazine-style masonry grid */}
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 mb-16">
           {galleryImages.map((photo, i) => (
-            <div key={i} className="break-inside-avoid gallery-item overflow-hidden rounded-xl group relative">
+            <div key={i} className="break-inside-avoid gallery-item overflow-hidden rounded-lg group relative retro-grain">
               <img
                 src={photo.src}
                 alt={photo.alt}
@@ -65,7 +65,7 @@ export const Gallery = () => {
         <div className="text-center">
           <Button
             variant="outline"
-            className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-8 py-6 text-base"
+            className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-8 py-6 text-base tracking-wider uppercase"
             onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
           >
             <ExternalLink className="w-4 h-4 mr-2" />

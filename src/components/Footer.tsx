@@ -16,10 +16,10 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div>
-            <p className="font-serif text-2xl">
-              PhotoSurf<span className="text-gradient-sunset">PaysBasque</span>
+            <p className="font-display text-2xl tracking-[0.15em]">
+              PHOTOSURF<span className="text-gradient-sunset">PAYSBASQUE</span>
             </p>
-            <p className="text-primary-foreground/40 text-sm mt-1">Photographe de l'océan au Pays Basque</p>
+            <p className="text-primary-foreground/40 text-sm mt-1 uppercase tracking-widest">Photographe de l'océan au Pays Basque</p>
           </div>
 
           <div className="flex items-center gap-6">
@@ -35,7 +35,15 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-electric-violet/10 pt-8 text-center text-primary-foreground/30 text-sm space-y-2">
+        {/* Retro sunset stripe */}
+        <div className="flex gap-0 mb-8">
+          <div className="flex-1 h-[2px] bg-golden/30" />
+          <div className="flex-1 h-[2px] bg-sunset-orange/30" />
+          <div className="flex-1 h-[2px] bg-hot-pink/30" />
+          <div className="flex-1 h-[2px] bg-electric-violet/30" />
+        </div>
+
+        <div className="text-center text-primary-foreground/30 text-sm space-y-2">
           <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe surf à Anglet, Biarritz</p>
           <p>Photographe surf Anglet · Photo & vidéo surf Pays Basque · Cavaliers · Marinella · Chambre d'Amour</p>
           <nav className="flex justify-center gap-4 pt-2">

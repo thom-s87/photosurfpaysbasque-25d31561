@@ -23,7 +23,7 @@ export const Hero = () => {
   const parallaxOffset = scrollY * 0.3;
 
   return (
-    <section id="accueil" className="relative min-h-screen flex items-end overflow-hidden">
+    <section id="accueil" className="relative min-h-screen flex items-end overflow-hidden retro-grain">
       {/* Background image with parallax */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110"
@@ -36,29 +36,34 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-night via-deep-purple/70 to-night/40" />
       {/* Sunset glow overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-hot-pink/10 to-sunset-orange/15" />
+      {/* VHS scanlines */}
+      <div className="absolute inset-0 vhs-lines" />
       
       <div className="container mx-auto relative z-10 px-4 pb-24 pt-40 md:pb-32">
-        <div className="max-w-3xl" style={{ opacity: Math.max(0, 1 - scrollY / 600), transform: `translateY(${scrollY * 0.1}px)` }}>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-6">
-            <span className="text-primary-foreground">Photo</span>
-            <span className="italic text-primary-foreground">Surf</span>
-            <br/>
-            <span className="text-gradient-sunset">PaysBasque</span>
+        <div className="max-w-4xl" style={{ opacity: Math.max(0, 1 - scrollY / 600), transform: `translateY(${scrollY * 0.1}px)` }}>
+          
+          {/* Retro top accent — thin sunset stripe */}
+          <div className="w-20 h-[3px] bg-gradient-sunset mb-8" />
+          
+          <h1 className="font-display text-7xl md:text-9xl lg:text-[10rem] leading-[0.85] mb-6 tracking-wider">
+            <span className="text-primary-foreground block">PHOTO</span>
+            <span className="text-primary-foreground block">SURF</span>
+            <span className="text-gradient-sunset block">PAYS BASQUE</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-light mb-3 max-w-xl">
             Vos moments dans l'océan méritent plus qu'un souvenir.
           </p>
           
-          <p className="text-base md:text-lg text-primary-foreground/50 mb-4">
+          <p className="text-sm md:text-base text-primary-foreground/50 mb-4 uppercase tracking-widest">
             Photographe de l'océan au Pays Basque
           </p>
 
-          <div className="flex flex-wrap gap-3 text-sm text-primary-foreground/40 mb-10 tracking-wide">
-            <span>Surf</span><span>·</span>
-            <span>Famille</span><span>·</span>
-            <span>Grossesse</span><span>·</span>
-            <span>Sports aquatiques</span><span>·</span>
+          <div className="flex flex-wrap gap-3 text-sm text-primary-foreground/40 mb-10 tracking-widest uppercase font-light">
+            <span>Surf</span><span className="text-hot-pink">·</span>
+            <span>Famille</span><span className="text-sunset-orange">·</span>
+            <span>Grossesse</span><span className="text-golden">·</span>
+            <span>Sports aquatiques</span><span className="text-hot-pink">·</span>
             <span>Lifestyle plage</span>
           </div>
           
@@ -90,7 +95,7 @@ export const Hero = () => {
       {/* Wave transition SVG */}
       <div className="wave-transition z-10">
         <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="w-full h-[60px] md:h-[100px]">
-          <path d="M0,80 C360,120 720,20 1080,80 C1260,110 1380,90 1440,80 L1440,120 L0,120 Z" fill="hsl(270 30% 97%)" />
+          <path d="M0,80 C360,120 720,20 1080,80 C1260,110 1380,90 1440,80 L1440,120 L0,120 Z" fill="hsl(30 50% 97%)" />
         </svg>
       </div>
     </section>

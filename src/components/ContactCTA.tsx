@@ -15,11 +15,11 @@ export const ContactCTA = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="contact" className="py-24 md:py-32 px-4 bg-gradient-night relative overflow-hidden">
+    <section id="contact" className="py-24 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
       {/* Wave decoration top */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" className="w-full h-[40px] rotate-180">
-          <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,35 1440,30 L1440,60 L0,60 Z" fill="hsl(270 30% 97%)" />
+          <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,35 1440,30 L1440,60 L0,60 Z" fill="hsl(30 50% 97%)" />
         </svg>
       </div>
       
@@ -27,8 +27,8 @@ export const ContactCTA = () => {
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-sunset-orange/5 blur-3xl" />
       
       <div ref={ref} className="container mx-auto max-w-2xl text-center relative z-10 fade-in-section">
-        <h2 className="font-serif text-4xl md:text-5xl text-primary-foreground mb-6">
-          Réserver votre séance
+        <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-6 tracking-wide">
+          RÉSERVER VOTRE SÉANCE
         </h2>
         <p className="text-primary-foreground/60 text-lg mb-10 max-w-lg mx-auto">
           Surf, moment en famille, grossesse, session aquatique ou instant spontané sur la plage : chaque séance est pensée pour capturer quelque chose de vrai.

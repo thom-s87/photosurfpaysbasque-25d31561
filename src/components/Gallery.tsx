@@ -12,36 +12,18 @@ import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
 import surfVirage from "@/assets/gallery/surf-virage-anglet.jpg";
 import surfeuseNight from "@/assets/gallery/surfeuse-night.jpg";
-import maternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 
-// Aspect ratio categories for uniform masonry layout
-type AspectRatio = "portrait" | "landscape" | "square";
-
-interface GalleryImage {
-  src: string;
-  alt: string;
-  position: string;
-  aspect: AspectRatio;
-}
-
-const galleryImages: GalleryImage[] = [
-  { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque", position: "top center", aspect: "portrait" },
-  { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque", position: "center", aspect: "portrait" },
-  { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque", position: "center", aspect: "landscape" },
-  { src: maternite, alt: "Shooting maternité aquatique plage - photographe grossesse Pays Basque", position: "center", aspect: "landscape" },
-  { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque", position: "center", aspect: "portrait" },
-  { src: bodySurferBlue, alt: "Bodyboarder planche bleue - photographe sport nautique Anglet", position: "center", aspect: "landscape" },
-  { src: surfeurTube, alt: "Surfeur tube vague creuse - photographe surf Pays Basque", position: "center", aspect: "landscape" },
-  { src: surfVirage, alt: "Surfeur virage aérien - photographe surf Anglet", position: "center", aspect: "landscape" },
-  { src: surfeuseNight, alt: "Surfeuse session nocturne - photographe surf night session Pays Basque", position: "center", aspect: "landscape" },
-  { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque", position: "center", aspect: "landscape" },
+const galleryImages = [
+  { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque", position: "center" },
+  { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque", position: "center" },
+  { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque", position: "center" },
+  { src: bodySurferBlue, alt: "Bodyboarder planche bleue - photographe sport nautique Anglet", position: "center" },
+  { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque", position: "top center" },
+  { src: surfeurTube, alt: "Surfeur tube vague creuse - photographe surf Pays Basque", position: "center" },
+  { src: surfVirage, alt: "Surfeur virage aérien - photographe surf Anglet", position: "center" },
+  { src: surfeuseNight, alt: "Surfeuse session nocturne - photographe surf night session Pays Basque", position: "center" },
+  { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque", position: "center" },
 ];
-
-const aspectClasses: Record<AspectRatio, string> = {
-  portrait: "aspect-[3/4]",
-  landscape: "aspect-[4/3]",
-  square: "aspect-square",
-};
 
 export const Gallery = () => {
   const ref = useScrollFadeIn();
@@ -54,17 +36,14 @@ export const Gallery = () => {
           GALERIE
         </h2>
 
-        {/* Uniform masonry grid with consistent aspect ratios */}
+        {/* Magazine-style masonry grid */}
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 mb-16">
           {galleryImages.map((photo, i) => (
-            <div
-              key={i}
-              className={`break-inside-avoid gallery-item overflow-hidden rounded-lg group relative retro-grain ${aspectClasses[photo.aspect]}`}
-            >
+            <div key={i} className="break-inside-avoid gallery-item overflow-hidden rounded-lg group relative retro-grain">
               <WatermarkedImage
                 src={photo.src}
                 alt={photo.alt}
-                className="w-full h-full object-cover"
+                className="w-full object-cover"
                 style={{ objectPosition: photo.position }}
               >
                 {/* Hover overlay */}

@@ -40,7 +40,7 @@ export const Univers = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="univers" className="py-24 md:py-32 px-4 bg-background">
+    <section id="univers" className="pt-12 md:pt-16 pb-24 md:pb-32 px-4 bg-background">
       <div ref={ref} className="container mx-auto fade-in-section">
         <p className="text-center text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">Nos univers</p>
         <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground text-center mb-4 tracking-wide">

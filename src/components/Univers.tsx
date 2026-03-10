@@ -9,7 +9,7 @@ const blocks = [
   {
     title: "SURF",
     desc: "Sessions surf, vagues, action, portraits dans l'eau.",
-    image: surfeurProNight,
+    image: boySurfer,
     alt: "Surfeur action photographe surf Anglet Pays Basque",
     hash: "#seance-surf",
   },

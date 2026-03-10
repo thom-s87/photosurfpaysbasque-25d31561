@@ -14,6 +14,7 @@ import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import surfeurProCompetition from "@/assets/gallery/surfeur-pro-competition.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
+import duoFriends from "@/assets/gallery/duo-friends.jpg";
 
 const galleryImages = [
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque" },

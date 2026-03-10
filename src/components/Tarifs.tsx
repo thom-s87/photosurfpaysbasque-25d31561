@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
@@ -16,31 +17,36 @@ const inclus = [
 ];
 
 export const Tarifs = () => {
+  const ref = useScrollFadeIn();
+
   return (
-    <section id="tarifs" className="py-24 md:py-32 px-4 bg-sand-light">
-      <div className="container mx-auto max-w-2xl text-center">
-        <p className="text-warm font-medium tracking-widest uppercase text-sm mb-4">⭐ Offre lancement 2026</p>
-        <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-12">
-          45€ <span className="text-2xl text-muted-foreground font-sans font-light">la séance photo</span>
+    <section id="tarifs" className="py-24 md:py-32 px-4 bg-gradient-night relative overflow-hidden">
+      {/* Subtle glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-hot-pink/5 blur-3xl" />
+
+      <div ref={ref} className="container mx-auto max-w-2xl text-center relative z-10 fade-in-section">
+        <p className="text-gradient-sunset font-medium tracking-widest uppercase text-sm mb-4 inline-block">⭐ Offre lancement 2026</p>
+        <h2 className="font-serif text-4xl md:text-5xl text-primary-foreground mb-12">
+          45€ <span className="text-2xl text-primary-foreground/50 font-sans font-light">/ heure</span>
         </h2>
 
-        <div className="bg-card rounded-xl p-8 md:p-12 shadow-lg border border-border mb-8">
+        <div className="bg-night/60 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-electric-violet/20 mb-8">
           <ul className="space-y-4 text-left max-w-xs mx-auto mb-10">
             {inclus.map((item, i) => (
-              <li key={i} className="flex items-center gap-3 text-foreground">
-                <Check className="w-5 h-5 text-ocean-light flex-shrink-0" />
+              <li key={i} className="flex items-center gap-3 text-primary-foreground">
+                <Check className="w-5 h-5 text-golden flex-shrink-0" />
                 <span className="text-lg">{item}</span>
               </li>
             ))}
           </ul>
 
-          <p className="text-muted-foreground mb-10">
-            Accessible aux surfeurs, familles et amoureux de l'océan.
+          <p className="text-primary-foreground/50 mb-10">
+            Un tarif accessible pour les surfeurs, les familles, les jeunes et tous les amoureux de l'océan.
           </p>
 
           <Button 
             size="lg" 
-            className="bg-warm hover:bg-warm/90 text-primary-foreground px-10 py-7 text-lg font-medium rounded-full shadow-lg w-full sm:w-auto"
+            className="bg-gradient-sunset text-foreground px-10 py-7 text-lg font-semibold rounded-full shadow-2xl w-full sm:w-auto hover:opacity-90 transition-opacity"
             asChild
           >
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

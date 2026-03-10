@@ -6,7 +6,7 @@ export const Story = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section className="pt-24 md:pt-36 pb-12 md:pb-16 px-4 bg-background overflow-hidden">
+    <section className="pt-16 min-[375px]:pt-20 md:pt-36 pb-10 min-[375px]:pb-12 md:pb-16 px-4 bg-background overflow-hidden">
       <div ref={ref} className="container mx-auto fade-in-section">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image with retro grain */}

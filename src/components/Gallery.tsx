@@ -27,6 +27,7 @@ const galleryImages = [
   { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique" },
   { src: surfeurProCompetition, alt: "Surfeur professionnel compétition Pays Basque" },
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque" },
+  { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf Pays Basque" },
 ];
 
 export const Gallery = () => {

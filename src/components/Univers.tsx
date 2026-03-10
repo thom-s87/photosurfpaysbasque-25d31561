@@ -1,6 +1,5 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
-import { WatermarkedImage } from "@/components/WatermarkedImage";
 import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
@@ -58,7 +57,7 @@ export const Univers = () => {
               href={block.hash}
               className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
             >
-              <WatermarkedImage
+              <img
                 src={block.image}
                 alt={block.alt}
                 loading="lazy"

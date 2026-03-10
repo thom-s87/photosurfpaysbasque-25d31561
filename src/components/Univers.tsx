@@ -1,4 +1,5 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
+import { Camera } from "lucide-react";
 import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
@@ -10,24 +11,28 @@ const blocks = [
     desc: "Sessions surf, vagues, action, portraits dans l'eau.",
     image: surfeurProNight,
     alt: "Surfeur action photographe surf Anglet Pays Basque",
+    hash: "#seance-surf",
   },
   {
     title: "FAMILLE & MOMENTS PLAGE",
     desc: "Parents, enfants, souvenirs naturels au bord de l'océan.",
     image: duoFriends,
     alt: "Séance photo famille plage Pays Basque",
+    hash: "#seance-famille",
   },
   {
     title: "SHOOTING PRÉNATAL",
     desc: "Séances grossesse à la plage, lumière douce, émotion et élégance.",
     image: shootingMaternite,
     alt: "Shooting grossesse aquatique Pays Basque",
+    hash: "#seance-prenatal",
   },
   {
     title: "SPORTS AQUATIQUES",
     desc: "Surf, bodyboard, paddle, natation, longe-côte et disciplines nautiques.",
     image: surfGlassy,
     alt: "Photo sport aquatique côte basque",
+    hash: "#seance-aquatique",
   },
 ];
 
@@ -49,7 +54,7 @@ export const Univers = () => {
           {blocks.map((block, i) => (
             <a
               key={i}
-              href="#galerie"
+              href={block.hash}
               className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
             >
               <img
@@ -61,7 +66,11 @@ export const Univers = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="font-display text-3xl text-primary-foreground mb-2 tracking-wider">{block.title}</h3>
-                <p className="text-primary-foreground/60 text-sm leading-relaxed">{block.desc}</p>
+                <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">{block.desc}</p>
+                <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-golden opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                  <Camera className="w-4 h-4" />
+                  Réserver cette séance
+                </span>
               </div>
               {/* Retro top accent stripe */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

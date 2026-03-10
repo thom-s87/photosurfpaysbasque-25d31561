@@ -26,10 +26,10 @@ export const Process = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="process" className="py-24 md:py-32 px-4 bg-background">
+    <section id="process" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-background">
       <div ref={ref} className="container mx-auto max-w-4xl fade-in-section">
         <p className="text-center text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">Étapes</p>
-        <h2 className="font-display text-5xl md:text-6xl text-foreground text-center mb-16 tracking-wide">
+        <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl text-foreground text-center mb-10 min-[375px]:mb-16 tracking-wide">
           COMMENT ÇA SE PASSE
         </h2>
 

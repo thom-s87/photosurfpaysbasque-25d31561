@@ -27,7 +27,7 @@ export const ContactCTA = () => {
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-sunset-orange/5 blur-3xl" />
       
       <div ref={ref} className="container mx-auto max-w-2xl text-center relative z-10 fade-in-section">
-        <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-6 tracking-wide">
+        <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-6 tracking-wide">
           RÉSERVER VOTRE SÉANCE
         </h2>
         <p className="text-primary-foreground/60 text-lg mb-10 max-w-lg mx-auto">

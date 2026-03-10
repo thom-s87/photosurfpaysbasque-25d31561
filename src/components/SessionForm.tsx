@@ -127,17 +127,17 @@ export const SessionForm = () => {
   const fieldClasses = "bg-background/80 border-border/60 text-foreground placeholder:text-muted-foreground focus:border-ring";
 
   return (
-    <section id="seance" className="py-24 md:py-32 px-4 bg-background relative overflow-hidden">
+    <section id="seance" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-background relative overflow-hidden">
       {/* Subtle decorations */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-sunset-orange/5 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-electric-violet/5 blur-3xl" />
 
       <div ref={ref} className="container mx-auto max-w-2xl relative z-10 fade-in-section">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 min-[375px]:mb-12">
           <p className="text-gradient-sunset font-medium tracking-[0.3em] uppercase text-xs mb-4 inline-block">
             📋 Formulaire
           </p>
-          <h2 className="font-display text-5xl md:text-6xl lg:text-7xl text-foreground mb-4 tracking-wide">
+          <h2 className="font-display text-3xl min-[375px]:text-4xl md:text-6xl lg:text-7xl text-foreground mb-4 tracking-wide">
             PRÉPARER VOTRE SÉANCE PHOTO
           </h2>
           <p className="text-muted-foreground text-lg max-w-lg mx-auto">

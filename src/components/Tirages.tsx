@@ -4,10 +4,10 @@ export const Tirages = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="tirages" className="py-24 md:py-32 px-4 bg-sand-light">
+    <section id="tirages" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-sand-light">
       <div ref={ref} className="container mx-auto max-w-3xl text-center fade-in-section">
         <p className="text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">Édition limitée</p>
-        <h2 className="font-display text-5xl md:text-6xl text-foreground mb-6 tracking-wide">
+        <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl text-foreground mb-6 tracking-wide">
           RAMENEZ L'OCÉAN CHEZ VOUS
         </h2>
         <p className="text-muted-foreground text-lg mb-12 max-w-xl mx-auto">

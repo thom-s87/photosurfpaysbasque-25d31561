@@ -11,18 +11,14 @@ import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
 import surfVirage from "@/assets/gallery/surf-virage-anglet.jpg";
-import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
-import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
 
 const galleryImages = [
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque", position: "center" },
   { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque", position: "center" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque", position: "center" },
-  { src: surfeurProNight, alt: "Surfeur professionnel session nocturne Pays Basque", position: "center" },
   { src: bodySurferBlue, alt: "Bodyboarder planche bleue - photographe sport nautique Anglet", position: "center" },
   { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque", position: "top center" },
   { src: surfeurTube, alt: "Surfeur tube vague creuse - photographe surf Pays Basque", position: "center" },
-  { src: surfGlassy, alt: "Surfeur session glassy - photographe surf longboard Pays Basque", position: "center" },
   { src: surfVirage, alt: "Surfeur virage aérien - photographe surf Anglet", position: "center" },
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque", position: "center" },
 ];

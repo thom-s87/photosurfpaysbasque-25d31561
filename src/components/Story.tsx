@@ -33,7 +33,7 @@ export const Story = () => {
               L'OCÉAN CRÉE DES SOUVENIRS UNIQUES
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Entre surf, lumière, instants partagés et émotions brutes, chaque séance capture un moment vrai face à l'océan.
+              Photographe plage à Anglet et sur toute la côte basque, je capture l'intensité du surf, la douceur des moments en famille et l'émotion de chaque instant face à l'océan. Surf photography in the Basque Country at its finest.
             </p>
             {/* Retro sunset stripe */}
             <div className="flex gap-1">

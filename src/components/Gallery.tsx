@@ -5,6 +5,7 @@ import { WatermarkedImage } from "@/components/WatermarkedImage";
 import { useRef, useState, useEffect, useCallback } from "react";
 
 import surferIlbaritz from "@/assets/gallery/surfer-ilbaritz.jpg";
+import pregnantAqua from "@/assets/gallery/pregnant-aqua.jpg";
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import bodySurferYellow from "@/assets/gallery/body-surfer-yellow.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
@@ -18,6 +19,7 @@ import duoFriends from "@/assets/gallery/duo-friends.jpg";
 
 const galleryImages = [
   { src: surferIlbaritz, alt: "Surfeur virage Ilbaritz - photographe surf Pays Basque action" },
+  { src: pregnantAqua, alt: "Shooting aquatique maternité - photographe grossesse underwater Pays Basque" },
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque" },
   { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque" },

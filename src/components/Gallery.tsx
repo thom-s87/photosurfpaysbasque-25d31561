@@ -21,6 +21,7 @@ const galleryImages = [
   { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque", position: "top center" },
   { src: surfeurTube, alt: "Surfeur tube vague creuse - photographe surf Pays Basque", position: "center" },
   { src: surfVirage, alt: "Surfeur virage aérien - photographe surf Anglet", position: "center" },
+  { src: surfeuseNight, alt: "Surfeuse session nocturne - photographe surf night session Pays Basque", position: "center" },
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque", position: "center" },
 ];
 

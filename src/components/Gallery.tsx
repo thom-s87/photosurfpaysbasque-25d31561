@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
@@ -34,17 +35,20 @@ const galleryImages = [
 ];
 
 export const Gallery = () => {
+  const ref = useScrollFadeIn();
+
   return (
     <section id="galerie" className="py-24 md:py-32 px-4 bg-background">
-      <div className="container mx-auto">
+      <div ref={ref} className="container mx-auto fade-in-section">
+        <p className="text-center text-hot-pink font-medium tracking-widest uppercase text-sm mb-4">Portfolio</p>
         <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground text-center mb-16">
           Galerie
         </h2>
 
-        {/* Masonry-style grid */}
+        {/* Magazine-style masonry grid */}
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 mb-16">
           {galleryImages.map((photo, i) => (
-            <div key={i} className="break-inside-avoid gallery-item overflow-hidden rounded-lg">
+            <div key={i} className="break-inside-avoid gallery-item overflow-hidden rounded-xl group relative">
               <img
                 src={photo.src}
                 alt={photo.alt}
@@ -52,6 +56,8 @@ export const Gallery = () => {
                 className="w-full object-cover"
                 style={{ objectPosition: photo.position }}
               />
+              {/* Hover overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-night/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           ))}
         </div>
@@ -59,7 +65,7 @@ export const Gallery = () => {
         <div className="text-center">
           <Button
             variant="outline"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full px-8 py-6 text-base"
+            className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-8 py-6 text-base"
             onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
           >
             <ExternalLink className="w-4 h-4 mr-2" />

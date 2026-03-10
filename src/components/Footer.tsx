@@ -12,30 +12,30 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-16 border-t border-primary-foreground/10">
+    <footer className="bg-night text-primary-foreground py-16 border-t border-electric-violet/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div>
             <p className="font-serif text-2xl">
-              PhotoSurf<span className="text-warm">PaysBasque</span>
+              PhotoSurf<span className="text-gradient-sunset">PaysBasque</span>
             </p>
-            <p className="text-primary-foreground/50 text-sm mt-1">Photographe de l'océan au Pays Basque</p>
+            <p className="text-primary-foreground/40 text-sm mt-1">Photographe de l'océan au Pays Basque</p>
           </div>
 
           <div className="flex items-center gap-6">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">
               <WhatsAppIcon className="w-5 h-5" />
             </a>
-            <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
+            <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">
               <ExternalLink className="w-5 h-5" />
             </a>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-8 text-center text-primary-foreground/40 text-sm space-y-2">
+        <div className="border-t border-electric-violet/10 pt-8 text-center text-primary-foreground/30 text-sm space-y-2">
           <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe surf à Anglet, Biarritz</p>
           <p>Photographe surf Anglet · Photo & vidéo surf Pays Basque · Cavaliers · Marinella · Chambre d'Amour</p>
           <nav className="flex justify-center gap-4 pt-2">

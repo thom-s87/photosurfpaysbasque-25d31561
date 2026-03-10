@@ -12,26 +12,26 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 export const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-primary/95 backdrop-blur-md z-50">
+    <header className="fixed top-0 w-full bg-night/90 backdrop-blur-md z-50 border-b border-primary-foreground/5">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <a href="/" className="flex flex-col">
             <span className="text-lg font-serif tracking-wide text-primary-foreground">
-              PhotoSurf<span className="text-warm">PaysBasque</span>
+              PhotoSurf<span className="text-gradient-sunset">PaysBasque</span>
             </span>
           </a>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#univers" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Univers</a>
-            <a href="#galerie" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Galerie</a>
-            <a href="#tarifs" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Tarifs</a>
-            <a href="/photographe-surf-anglet" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Anglet</a>
+            <a href="#univers" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Univers</a>
+            <a href="#galerie" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Galerie</a>
+            <a href="#tarifs" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Tarifs</a>
+            <a href="/photographe-surf-anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm tracking-wide uppercase">Anglet</a>
             
             <div className="flex items-center gap-3 ml-4">
-              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <Button size="sm" className="bg-warm hover:bg-warm/90 text-primary-foreground font-medium rounded-full px-6" asChild>
+              <Button size="sm" className="bg-gradient-sunset text-foreground font-semibold rounded-full px-6 hover:opacity-90 transition-opacity" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="w-4 h-4 mr-2" />
                   Réserver
@@ -41,10 +41,10 @@ export const Header = () => {
           </nav>
 
           <div className="flex md:hidden items-center gap-3">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <Button size="sm" className="bg-warm hover:bg-warm/90 text-primary-foreground rounded-full" asChild>
+            <Button size="sm" className="bg-gradient-sunset text-foreground rounded-full hover:opacity-90" asChild>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="w-4 h-4" />
               </a>

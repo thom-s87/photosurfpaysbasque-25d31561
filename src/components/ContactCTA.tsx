@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Instagram } from "lucide-react";
+import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 const INSTAGRAM_URL = "https://www.instagram.com/photosurfpaysbasque?igsh=MTBybTU2ejM2bDB5dQ%3D%3D&utm_source=qr";
@@ -11,19 +12,31 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 export const ContactCTA = () => {
+  const ref = useScrollFadeIn();
+
   return (
-    <section id="contact" className="py-24 md:py-32 px-4 bg-primary text-primary-foreground">
-      <div className="container mx-auto max-w-2xl text-center">
-        <h2 className="font-serif text-4xl md:text-5xl mb-6">
+    <section id="contact" className="py-24 md:py-32 px-4 bg-gradient-night relative overflow-hidden">
+      {/* Wave decoration top */}
+      <div className="absolute top-0 left-0 right-0 overflow-hidden leading-[0]">
+        <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" className="w-full h-[40px] rotate-180">
+          <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,35 1440,30 L1440,60 L0,60 Z" fill="hsl(270 30% 97%)" />
+        </svg>
+      </div>
+      
+      {/* Sunset glow */}
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-sunset-orange/5 blur-3xl" />
+      
+      <div ref={ref} className="container mx-auto max-w-2xl text-center relative z-10 fade-in-section">
+        <h2 className="font-serif text-4xl md:text-5xl text-primary-foreground mb-6">
           Réserver votre séance
         </h2>
-        <p className="text-primary-foreground/70 text-lg mb-10 max-w-lg mx-auto">
-          Session surf, séance famille, grossesse ou moment magique dans l'océan.
+        <p className="text-primary-foreground/60 text-lg mb-10 max-w-lg mx-auto">
+          Surf, moment en famille, grossesse, session aquatique ou instant spontané sur la plage : chaque séance est pensée pour capturer quelque chose de vrai.
         </p>
 
         <Button 
           size="lg" 
-          className="bg-warm hover:bg-warm/90 text-primary-foreground px-10 py-7 text-lg font-medium rounded-full shadow-2xl mb-8"
+          className="bg-gradient-sunset text-foreground px-10 py-7 text-lg font-semibold rounded-full shadow-2xl mb-8 hover:opacity-90 transition-opacity"
           asChild
         >
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -37,7 +50,7 @@ export const ContactCTA = () => {
             href={INSTAGRAM_URL}
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+            className="inline-flex items-center gap-2 text-primary-foreground/40 hover:text-primary-foreground/80 transition-colors"
           >
             <Instagram className="w-5 h-5" />
             <span>@photosurfpaysbasque</span>

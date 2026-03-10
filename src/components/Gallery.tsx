@@ -5,6 +5,7 @@ import { WatermarkedImage } from "@/components/WatermarkedImage";
 import { useRef, useState, useEffect, useCallback } from "react";
 
 import surferIlbaritz from "@/assets/gallery/surfer-ilbaritz.jpg";
+import pregnantAqua from "@/assets/gallery/pregnant-aqua.jpg";
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import bodySurferYellow from "@/assets/gallery/body-surfer-yellow.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";

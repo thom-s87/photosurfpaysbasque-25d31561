@@ -14,6 +14,7 @@ import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import surfeurProCompetition from "@/assets/gallery/surfeur-pro-competition.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
+import duoFriends from "@/assets/gallery/duo-friends.jpg";
 
 const galleryImages = [
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque" },
@@ -26,6 +27,7 @@ const galleryImages = [
   { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique" },
   { src: surfeurProCompetition, alt: "Surfeur professionnel compétition Pays Basque" },
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque" },
+  { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf Pays Basque" },
 ];
 
 export const Gallery = () => {

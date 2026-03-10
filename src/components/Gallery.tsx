@@ -17,6 +17,7 @@ import surfClub from "@/assets/gallery/surf-club.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
 
 const galleryImages = [
+  { src: surferIlbaritz, alt: "Surfeur virage Ilbaritz - photographe surf Pays Basque action" },
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque" },
   { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque" },
@@ -25,7 +26,6 @@ const galleryImages = [
   { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque" },
   { src: surfeuseHossegor, alt: "Surfeuse Hossegor - shooting surf féminin Pays Basque" },
   { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique" },
-  
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque" },
   { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf Pays Basque" },
 ];

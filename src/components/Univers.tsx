@@ -58,10 +58,9 @@ export const Univers = () => {
               href={block.hash}
               className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
             >
-              <img
+              <WatermarkedImage
                 src={block.image}
                 alt={block.alt}
-                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />

@@ -50,15 +50,15 @@ export const Gallery = () => {
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 mb-16">
           {galleryImages.map((photo, i) => (
             <div key={i} className="break-inside-avoid gallery-item overflow-hidden rounded-lg group relative retro-grain">
-              <img
+              <WatermarkedImage
                 src={photo.src}
                 alt={photo.alt}
-                loading="lazy"
                 className="w-full object-cover"
                 style={{ objectPosition: photo.position }}
-              />
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-night/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              >
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-night/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </WatermarkedImage>
             </div>
           ))}
         </div>

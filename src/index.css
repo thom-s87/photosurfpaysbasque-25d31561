@@ -226,3 +226,30 @@ html {
   pointer-events: none;
   z-index: 2;
 }
+
+/* Watermark overlay */
+.watermark-container {
+  position: relative;
+  overflow: hidden;
+}
+.watermark-overlay {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: hsl(0 0% 100% / 0.25);
+  text-shadow: 0 1px 3px hsl(0 0% 0% / 0.4);
+  pointer-events: none;
+  user-select: none;
+  z-index: 5;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .watermark-overlay {
+    font-size: 0.8rem;
+    bottom: 12px;
+    right: 14px;
+  }
+}

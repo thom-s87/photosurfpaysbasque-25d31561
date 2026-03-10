@@ -1,4 +1,5 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
+import { WatermarkedImage } from "@/components/WatermarkedImage";
 import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
 
 export const Story = () => {
@@ -11,10 +12,11 @@ export const Story = () => {
           {/* Image with retro grain */}
           <div className="relative retro-grain">
             <div className="rounded-lg overflow-hidden shadow-2xl">
-              <img
+              <WatermarkedImage
                 src={surfeurProNight}
                 alt="Surfeur professionnel session photographe Pays Basque"
                 className="w-full h-[500px] lg:h-[600px] object-cover"
+                loading="eager"
               />
             </div>
             {/* Retro sunset accent bar */}

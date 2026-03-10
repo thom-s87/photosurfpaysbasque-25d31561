@@ -47,7 +47,11 @@ export const Univers = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {blocks.map((block, i) => (
-            <div key={i} className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain">
+            <a
+              key={i}
+              href="#galerie"
+              className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
+            >
               <img
                 src={block.image}
                 alt={block.alt}
@@ -61,7 +65,7 @@ export const Univers = () => {
               </div>
               {/* Retro top accent stripe */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
+            </a>
           ))}
         </div>
       </div>

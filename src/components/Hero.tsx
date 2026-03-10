@@ -56,7 +56,7 @@ export const Hero = () => {
           </p>
           
           <p className="text-sm md:text-base text-primary-foreground/50 mb-4 uppercase tracking-widest">
-            Photographe de l'océan au Pays Basque
+            Photographe surf Anglet — Surf Photography Basque Country
           </p>
 
           <div className="flex flex-wrap gap-3 text-sm text-primary-foreground/40 mb-10 tracking-widest uppercase font-light">

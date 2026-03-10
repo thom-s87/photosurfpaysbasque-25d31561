@@ -14,7 +14,7 @@ import surfVirage from "@/assets/gallery/surf-virage-anglet.jpg";
 import surfeuseNight from "@/assets/gallery/surfeuse-night.jpg";
 
 const galleryImages = [
-  { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque", position: "center" },
+  { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque noir et blanc", position: "center" },
   { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque", position: "center" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque", position: "center" },
   { src: bodySurferBlue, alt: "Bodyboarder planche bleue - photographe sport nautique Anglet", position: "center" },

@@ -352,10 +352,10 @@ export const SessionForm = () => {
           <Button
             type="submit"
             size="lg"
-            className="bg-gradient-sunset text-foreground px-4 min-[375px]:px-10 py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl w-full max-w-full hover:opacity-90 transition-opacity whitespace-normal text-center"
+            className="bg-gradient-sunset text-foreground px-4 min-[375px]:px-10 py-6 min-[375px]:py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl w-full max-w-full hover:opacity-90 transition-opacity whitespace-normal text-center leading-tight"
           >
             <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3 flex-shrink-0" />
-            Envoyer ma demande sur WhatsApp
+            Envoyer sur WhatsApp
           </Button>
 
           <p className="text-center text-muted-foreground text-sm">

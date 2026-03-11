@@ -70,18 +70,18 @@ export const Hero = () => {
           <div className="flex flex-col min-[375px]:flex-row flex-wrap gap-3 min-[375px]:gap-4">
             <Button 
               size="lg" 
-              className="bg-gradient-sunset text-foreground px-8 min-[375px]:px-10 py-6 min-[375px]:py-7 text-base min-[375px]:text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full min-[375px]:w-auto"
+              className="bg-gradient-sunset text-foreground px-6 min-[375px]:px-10 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full min-[375px]:w-auto whitespace-normal text-center leading-tight"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3" />
+                <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3 flex-shrink-0" />
                 Réserver sur WhatsApp
               </a>
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground px-6 min-[375px]:px-8 py-6 min-[375px]:py-7 text-base min-[375px]:text-lg rounded-full hover:bg-primary-foreground/10 hover:text-primary-foreground bg-transparent w-full min-[375px]:w-auto"
+              className="border-primary-foreground/30 text-primary-foreground px-5 min-[375px]:px-8 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg rounded-full hover:bg-primary-foreground/10 hover:text-primary-foreground bg-transparent w-full min-[375px]:w-auto whitespace-normal text-center leading-tight"
               asChild
             >
               <a href="#galerie">

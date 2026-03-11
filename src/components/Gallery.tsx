@@ -118,10 +118,10 @@ export const Gallery = () => {
         <div className="text-center mt-16 px-4">
           <Button
             variant="outline"
-            className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-8 py-6 text-base tracking-wider uppercase"
+            className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-4 min-[375px]:px-8 py-6 text-xs min-[375px]:text-base tracking-wider uppercase max-w-full whitespace-normal"
             onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
           >
-            <ExternalLink className="w-4 h-4 mr-2" />
+            <ExternalLink className="w-4 h-4 mr-2 flex-shrink-0" />
             Accéder à vos photos — SportPXL
           </Button>
         </div>

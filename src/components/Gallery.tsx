@@ -103,7 +103,7 @@ export const Gallery = () => {
             {galleryImages.map((photo, i) => (
               <div
                 key={i}
-                className="carousel-card flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[32vw] lg:w-[28vw] snap-start overflow-hidden rounded-xl retro-grain"
+                className="carousel-card flex-shrink-0 w-[72vw] min-[375px]:w-[75vw] sm:w-[45vw] md:w-[32vw] lg:w-[28vw] snap-start overflow-hidden rounded-xl retro-grain"
               >
                 <WatermarkedImage
                   src={photo.src}
@@ -118,10 +118,10 @@ export const Gallery = () => {
         <div className="text-center mt-16 px-4">
           <Button
             variant="outline"
-            className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-8 py-6 text-base tracking-wider uppercase"
+            className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-4 min-[375px]:px-8 py-6 text-xs min-[375px]:text-base tracking-wider uppercase max-w-full whitespace-normal"
             onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
           >
-            <ExternalLink className="w-4 h-4 mr-2" />
+            <ExternalLink className="w-4 h-4 mr-2 flex-shrink-0" />
             Accéder à vos photos — SportPXL
           </Button>
         </div>

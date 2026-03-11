@@ -103,7 +103,7 @@ export const Gallery = () => {
             {galleryImages.map((photo, i) => (
               <div
                 key={i}
-                className="carousel-card flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[32vw] lg:w-[28vw] snap-start overflow-hidden rounded-xl retro-grain"
+                className="carousel-card flex-shrink-0 w-[72vw] min-[375px]:w-[75vw] sm:w-[45vw] md:w-[32vw] lg:w-[28vw] snap-start overflow-hidden rounded-xl retro-grain"
               >
                 <WatermarkedImage
                   src={photo.src}

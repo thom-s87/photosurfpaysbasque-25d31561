@@ -48,11 +48,11 @@ export const Tarifs = () => {
 
           <Button 
             size="lg" 
-            className="bg-gradient-sunset text-foreground px-10 py-7 text-lg font-semibold rounded-full shadow-2xl w-full sm:w-auto hover:opacity-90 transition-opacity"
+            className="bg-gradient-sunset text-foreground px-6 min-[375px]:px-10 py-6 min-[375px]:py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl w-full sm:w-auto hover:opacity-90 transition-opacity whitespace-normal text-center leading-tight"
             asChild
           >
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-              <WhatsAppIcon className="w-6 h-6 mr-3" />
+              <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3 flex-shrink-0" />
               Réserver sur WhatsApp
             </a>
           </Button>

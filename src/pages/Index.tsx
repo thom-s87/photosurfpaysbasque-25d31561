@@ -6,6 +6,7 @@ import { Tarifs } from "@/components/Tarifs";
 import { Gallery } from "@/components/Gallery";
 import { Tirages } from "@/components/Tirages";
 import { Process } from "@/components/Process";
+import { GoogleReviews } from "@/components/GoogleReviews";
 import { SessionForm } from "@/components/SessionForm";
 import { ContactCTA } from "@/components/ContactCTA";
 import { SeoAccordion } from "@/components/SeoAccordion";
@@ -23,6 +24,7 @@ const Index = () => {
         <Gallery />
         <Tirages />
         <Process />
+        <GoogleReviews />
         <SessionForm />
         <ContactCTA />
         <SeoAccordion />

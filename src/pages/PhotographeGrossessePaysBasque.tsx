@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Heart, Sun, Users, Camera } from "lucide-react";
 import { UniversContactForm } from "@/components/UniversContactForm";
+import { GrossesseContactForm } from "@/components/GrossesseContactForm";
 import {
   Accordion,
   AccordionContent,
@@ -229,7 +230,7 @@ const PhotographeGrossessePaysBasque = () => {
           </div>
         </section>
 
-        <UniversContactForm />
+        <GrossesseContactForm />
 
         {/* ===== CTA FINAL ===== */}
         <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

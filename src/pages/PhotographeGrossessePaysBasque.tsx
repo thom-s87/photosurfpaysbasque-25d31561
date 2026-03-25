@@ -115,30 +115,33 @@ const PhotographeGrossessePaysBasque = () => {
 
         {/* ===== HERO ===== */}
         <section className="py-16 md:py-24 px-4">
-          <div className="container mx-auto max-w-4xl text-center">
-            <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
-              Photographe grossesse · Pays Basque
-            </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-              Shooting Grossesse au Pays Basque 🤍
-            </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-10">
-              Immortalisez ce moment unique avec un shooting grossesse naturel, en extérieur, entre océan et lumière du Pays Basque. Chaque séance est pensée pour capturer la douceur, la connexion et l'émotion de cette période si particulière.
-            </p>
-            <Button
-              size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
-              asChild
-            >
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon className="w-6 h-6 mr-3" />
-                Réserver via WhatsApp
-              </a>
-            </Button>
+          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">
+            <div className="text-center md:text-left">
+              <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
+                Photographe grossesse · Pays Basque
+              </p>
+              <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
+                Shooting Grossesse au Pays Basque 🤍
+              </h1>
+              <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-10">
+                Immortalisez ce moment unique avec un shooting grossesse naturel, en extérieur, entre océan et lumière du Pays Basque. Chaque séance est pensée pour capturer la douceur, la connexion et l'émotion de cette période si particulière.
+              </p>
+              <Button
+                size="lg"
+                className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                asChild
+              >
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                  <WhatsAppIcon className="w-6 h-6 mr-3" />
+                  Réserver via WhatsApp
+                </a>
+              </Button>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img src={heroImg} alt="Shooting grossesse en extérieur au Pays Basque" width={860} height={1280} className="w-full h-auto object-cover" />
+            </div>
           </div>
         </section>
-
-        {/* ===== SECTION 1 ===== */}
         <section className="py-16 px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
             <Heart className="w-10 h-10 text-hot-pink mx-auto mb-6" />

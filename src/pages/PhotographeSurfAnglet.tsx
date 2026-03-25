@@ -244,7 +244,7 @@ const PhotographeSurfAnglet = () => {
         {/* ===== 4. AXES DE PRISE DE VUE ===== */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary font-poppins">
               Immersion depuis les digues d'Anglet
             </h2>
             <div className="prose prose-lg max-w-none text-gray-700 space-y-5">

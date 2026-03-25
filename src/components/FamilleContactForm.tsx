@@ -166,7 +166,7 @@ export const FamilleContactForm = () => {
 
           <div className="space-y-1.5">
             <Label htmlFor="f-message" className="text-foreground text-sm">Message</Label>
-            <Textarea id="f-message" placeholder="Exemple : séance bébé nageur, souvenir en famille, plage à Anglet ou piscine privée" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={1000} rows={3} className="bg-background/60 border-border/50 focus:border-hot-pink/40" />
+            <Textarea id="f-message" placeholder="Exemple : séance bébé nageur en piscine ou moment en famille à la plage à Anglet" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={1000} rows={3} className="bg-background/60 border-border/50 focus:border-hot-pink/40" />
           </div>
 
           <Button type="submit" size="lg" className="w-full bg-hot-pink hover:bg-hot-pink/90 text-primary-foreground font-bold rounded-full shadow-lg transform hover:scale-[1.02] transition-all duration-300 mt-2">

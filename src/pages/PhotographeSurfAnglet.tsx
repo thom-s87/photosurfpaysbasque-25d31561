@@ -301,8 +301,8 @@ const PhotographeSurfAnglet = () => {
               </div>
             </div>
 
-            <div className="mt-10 bg-white/80 rounded-2xl p-8 shadow-lg text-center">
-              <p className="text-gray-700 text-lg leading-relaxed">
+            <div className="mt-10 bg-card rounded-2xl p-8 shadow-lg text-center">
+              <p className="text-foreground/70 text-lg leading-relaxed">
                 Chaque session est programmée uniquement quand les conditions sont réunies. Je ne shoote pas par défaut — je choisis le moment, le spot et l'angle qui garantissent des images de qualité. C'est ce qui fait la différence entre un photographe surf à Anglet et un simple prestataire.
               </p>
             </div>

@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { MapPin, Waves } from "lucide-react";
-import { UniversContactForm } from "@/components/UniversContactForm";
+import { SurfContactForm } from "@/components/SurfContactForm";
 import {
   Accordion,
   AccordionContent,
@@ -254,7 +254,7 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
-        <UniversContactForm />
+        <SurfContactForm />
 
         {/* ===== CTA FINAL ===== */}
         <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

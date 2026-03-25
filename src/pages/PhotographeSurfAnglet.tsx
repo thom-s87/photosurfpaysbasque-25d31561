@@ -214,8 +214,8 @@ const PhotographeSurfAnglet = () => {
                 {surfReportConditions.map((c) => (
                   <div key={c.label} className="text-center p-4 rounded-xl bg-white/70">
                     <c.icon className={`w-7 h-7 ${c.color} mx-auto mb-2`} />
-                    <p className="text-sm font-semibold text-gray-800 mb-1">{c.label}</p>
-                    <p className="text-gray-600 text-sm">{c.value}</p>
+                     <p className="text-sm font-semibold text-foreground mb-1">{c.label}</p>
+                    <p className="text-muted-foreground text-sm">{c.value}</p>
                   </div>
                 ))}
               </div>

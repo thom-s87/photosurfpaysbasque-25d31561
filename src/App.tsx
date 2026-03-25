@@ -9,6 +9,7 @@ import PhotographeSurfAnglet from "./pages/PhotographeSurfAnglet";
 import PhotographeGrossessePaysBasque from "./pages/PhotographeGrossessePaysBasque";
 import PhotographeNatationPaysBasque from "./pages/PhotographeNatationPaysBasque";
 import SpotReportAnglet from "./pages/SpotReportAnglet";
+import ShootingGrossessePaysBasque from "./pages/ShootingGrossessePaysBasque";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/photographe-grossesse-pays-basque" element={<PhotographeGrossessePaysBasque />} />
           <Route path="/photographe-natation-pays-basque" element={<PhotographeNatationPaysBasque />} />
           <Route path="/spot-report-anglet" element={<SpotReportAnglet />} />
+          <Route path="/shooting-grossesse-pays-basque" element={<ShootingGrossessePaysBasque />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

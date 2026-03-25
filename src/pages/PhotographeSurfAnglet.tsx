@@ -156,6 +156,19 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
+        {/* ===== IMAGE HERO ===== */}
+        <section className="px-4">
+          <div className="container mx-auto max-w-5xl">
+            <img
+              src={surfHero}
+              alt="Surfeur en action dans un tube - photographe surf immersif Anglet Pays Basque"
+              width={1920}
+              height={1080}
+              className="w-full h-[50vh] md:h-[60vh] object-cover rounded-2xl shadow-xl"
+            />
+          </div>
+        </section>
+
         {/* ===== SECTION 1 : POURQUOI ===== */}
         <section className="py-16 px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl">

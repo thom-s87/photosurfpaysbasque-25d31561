@@ -169,6 +169,24 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
+        {/* ===== BODY SURF CTA ===== */}
+        <section className="py-10 px-4">
+          <div className="container mx-auto max-w-3xl text-center">
+            <p className="text-lg text-foreground/70 mb-5">
+              Je propose également des shootings en body surf pour une approche encore plus immersive de l'océan.
+            </p>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-5 text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
+              asChild
+            >
+              <a href="/photographe-body-surf-pays-basque">
+                Découvrir le Body Surf 🌊
+              </a>
+            </Button>
+          </div>
+        </section>
+
         {/* ===== SECTION 1 : POURQUOI ===== */}
         <section className="py-16 px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl">

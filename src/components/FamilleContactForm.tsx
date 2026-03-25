@@ -9,10 +9,10 @@ import { useToast } from "@/hooks/use-toast";
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
 const typeSeanceOptions = ["Famille", "Famille & bébé", "Bébé nageur", "Parents / enfant", "Fratrie", "Famille élargie"];
-const lieuOptions = ["Plage", "Piscine", "Plage ou piscine", "Je ne sais pas encore"];
+const lieuOptions = ["Plage", "Piscine", "Plage ou piscine", "À définir"];
 const participantsOptions = ["2", "3", "4", "5 et plus"];
-const ageOptions = ["Bébé", "1 à 3 ans", "4 à 7 ans", "8 ans et plus"];
-const ambianceOptions = ["Naturelle", "Émotionnelle", "Ludique", "Sportive", "Souvenir de vacances"];
+const ageOptions = ["Bébé (0–1 an)", "1 à 3 ans", "4 à 7 ans", "8 ans et plus"];
+const ambianceOptions = ["Naturelle", "Émotionnelle", "Ludique", "Souvenir de vacances"];
 
 const ChipGroup = ({
   label,

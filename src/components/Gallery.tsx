@@ -16,6 +16,9 @@ import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
+import surfImmersif from "@/assets/gallery/surf-immersif-eau.jpg";
+import surfeurAction from "@/assets/gallery/surfeur-action-vague.jpg";
+import surfCoucherSoleil from "@/assets/gallery/surf-coucher-soleil.jpg";
 
 const galleryImages = [
   { src: surferIlbaritz, alt: "Surfeur virage Ilbaritz - photographe surf Pays Basque action" },
@@ -30,6 +33,9 @@ const galleryImages = [
   { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique" },
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque" },
   { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf Pays Basque" },
+  { src: surfImmersif, alt: "Photo immersive surf dans l'eau - photographe aquatique Anglet Pays Basque" },
+  { src: surfeurAction, alt: "Surfeur en action sur une vague - photographe surf Biarritz Pays Basque" },
+  { src: surfCoucherSoleil, alt: "Surfeur coucher de soleil plage Anglet - photographe surf golden hour Pays Basque" },
 ];
 
 export const Gallery = () => {

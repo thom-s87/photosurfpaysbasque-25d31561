@@ -252,7 +252,7 @@ const PhotographeSurfAnglet = () => {
                 Les digues d'Anglet permettent une immersion totale dans l'action. Elles offrent des axes de prise de vue uniques entre Les Cavaliers, La Barre et la Petite Chambre d'Amour, avec une proximité rare avec les surfeurs et les pratiquants.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+               <h3 className="text-xl font-bold text-foreground font-poppins !mt-8">
                 Contre-plongée et hauteur d'eau
               </h3>
               <p>

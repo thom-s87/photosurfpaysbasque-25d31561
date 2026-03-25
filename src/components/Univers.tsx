@@ -53,9 +53,9 @@ export const Univers = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {blocks.map((block, i) => (
-            <a
+            <Link
               key={i}
-              href={block.hash}
+              to={block.to}
               className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
             >
               <img

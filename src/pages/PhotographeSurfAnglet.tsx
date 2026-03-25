@@ -242,6 +242,20 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
+        {/* ===== IMAGE LIFESTYLE ===== */}
+        <section className="px-4 py-8">
+          <div className="container mx-auto max-w-5xl">
+            <img
+              src={surfLifestyle}
+              alt="Moment surf lifestyle lumière dorée - photographe surf Anglet Pays Basque"
+              loading="lazy"
+              width={1920}
+              height={1080}
+              className="w-full h-[40vh] md:h-[50vh] object-cover rounded-2xl shadow-xl"
+            />
+          </div>
+        </section>
+
         {/* ===== SECTION 5 : RÉSERVER ===== */}
         <section className="py-16 px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">

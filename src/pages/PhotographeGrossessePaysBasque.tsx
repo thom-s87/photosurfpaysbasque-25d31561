@@ -154,16 +154,21 @@ const PhotographeGrossessePaysBasque = () => {
           </div>
         </section>
 
-        {/* ===== SECTION 2 ===== */}
+        {/* ===== SECTION 2 + IMAGE ===== */}
         <section className="py-16 px-4">
-          <div className="container mx-auto max-w-4xl text-center">
-            <Sun className="w-10 h-10 text-golden mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
-              Des lieux naturels entre océan et lumière
-            </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
-              Les shootings se déroulent principalement en extérieur, sur les plages d'Anglet, Biarritz ou les spots plus calmes du Pays Basque. La lumière, le mouvement de l'océan et l'environnement créent une ambiance douce et authentique.
-            </p>
+          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">
+            <div className="rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1">
+              <img src={middleImg} alt="Shooting grossesse aquatique au Pays Basque" loading="lazy" width={1280} height={864} className="w-full h-auto object-cover" />
+            </div>
+            <div className="order-1 md:order-2 text-center md:text-left">
+              <Sun className="w-10 h-10 text-golden mx-auto md:mx-0 mb-6" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+                Des lieux naturels entre océan et lumière
+              </h2>
+              <p className="text-lg text-foreground/70 leading-relaxed">
+                Les shootings se déroulent principalement en extérieur, sur les plages d'Anglet, Biarritz ou les spots plus calmes du Pays Basque. La lumière, le mouvement de l'océan et l'environnement créent une ambiance douce et authentique.
+              </p>
+            </div>
           </div>
         </section>
 

@@ -54,6 +54,22 @@ const faqItems = [
 ];
 
 const PhotographeSurfAnglet = () => {
+  useEffect(() => {
+    document.title = "Photographe Surf Anglet 🏄 | Photos & Vidéos dans l'eau – Pays Basque";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Photographe surf professionnel à Anglet. Photos et vidéos depuis les digues de la Petite Chambre d'Amour, Les Cavaliers et La Barre. Réservation rapide via WhatsApp.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Photographe surf professionnel à Anglet. Photos et vidéos depuis les digues de la Petite Chambre d'Amour, Les Cavaliers et La Barre. Réservation rapide via WhatsApp.";
+      document.head.appendChild(meta);
+    }
+    return () => {
+      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
+    };
+  }, []);
+
   const today = new Date();
   const dateStr = today.toLocaleDateString("fr-FR", {
     weekday: "long",

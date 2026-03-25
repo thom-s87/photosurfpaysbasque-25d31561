@@ -33,6 +33,9 @@ const galleryImages = [
   { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique" },
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque" },
   { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf Pays Basque" },
+  { src: surfImmersif, alt: "Photo immersive surf dans l'eau - photographe aquatique Anglet Pays Basque" },
+  { src: surfeurAction, alt: "Surfeur en action sur une vague - photographe surf Biarritz Pays Basque" },
+  { src: surfCoucherSoleil, alt: "Surfeur coucher de soleil plage Anglet - photographe surf golden hour Pays Basque" },
 ];
 
 export const Gallery = () => {

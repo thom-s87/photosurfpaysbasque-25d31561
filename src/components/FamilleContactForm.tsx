@@ -9,10 +9,10 @@ import { useToast } from "@/hooks/use-toast";
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
 const typeSeanceOptions = ["Famille", "Famille & bébé", "Bébé nageur", "Parents / enfant", "Fratrie", "Famille élargie"];
-const lieuOptions = ["Plage", "Piscine", "Plage ou piscine", "Je ne sais pas encore"];
+const lieuOptions = ["Plage", "Piscine", "Plage ou piscine", "À définir"];
 const participantsOptions = ["2", "3", "4", "5 et plus"];
-const ageOptions = ["Bébé", "1 à 3 ans", "4 à 7 ans", "8 ans et plus"];
-const ambianceOptions = ["Naturelle", "Émotionnelle", "Ludique", "Sportive", "Souvenir de vacances"];
+const ageOptions = ["Bébé (0–1 an)", "1 à 3 ans", "4 à 7 ans", "8 ans et plus"];
+const ambianceOptions = ["Naturelle", "Émotionnelle", "Ludique", "Souvenir de vacances"];
 
 const ChipGroup = ({
   label,
@@ -127,7 +127,7 @@ export const FamilleContactForm = () => {
       <div className="container mx-auto max-w-lg">
         <Heart className="w-8 h-8 text-hot-pink mx-auto mb-4" />
         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-primary">
-          Parlons de votre moment en famille 💜
+          Parlons de votre moment en famille 👶🌊
         </h2>
         <p className="text-center text-muted-foreground mb-10 text-sm">
           Décrivez-moi votre famille, je m'occupe du reste.
@@ -166,7 +166,7 @@ export const FamilleContactForm = () => {
 
           <div className="space-y-1.5">
             <Label htmlFor="f-message" className="text-foreground text-sm">Message</Label>
-            <Textarea id="f-message" placeholder="Exemple : séance bébé nageur, souvenir en famille, plage à Anglet ou piscine privée" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={1000} rows={3} className="bg-background/60 border-border/50 focus:border-hot-pink/40" />
+            <Textarea id="f-message" placeholder="Exemple : séance bébé nageur en piscine ou moment en famille à la plage à Anglet" value={message} onChange={(e) => setMessage(e.target.value)} maxLength={1000} rows={3} className="bg-background/60 border-border/50 focus:border-hot-pink/40" />
           </div>
 
           <Button type="submit" size="lg" className="w-full bg-hot-pink hover:bg-hot-pink/90 text-primary-foreground font-bold rounded-full shadow-lg transform hover:scale-[1.02] transition-all duration-300 mt-2">

@@ -177,7 +177,7 @@ const PhotographeSurfAnglet = () => {
                 Anglet est l'un des rares spots du Pays Basque à offrir une diversité de pratiques océaniques aussi importante, entre digues, bancs de sable et plages exposées à différentes houles.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+              <h3 className="text-xl font-bold text-foreground font-poppins !mt-8">
                 Connaissance terrain et réactivité locale
               </h3>
               <p>

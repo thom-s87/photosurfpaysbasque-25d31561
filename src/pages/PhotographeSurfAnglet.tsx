@@ -317,6 +317,18 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
+        {/* ===== SECTION COURS DE SURF ===== */}
+        <section className="py-16 px-4 bg-card/60">
+          <div className="container mx-auto max-w-3xl text-center">
+            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
+              Tu prends un cours de surf ? Profite-en pour capturer ta session en photo et garder un vrai souvenir de ton moment dans l'eau.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Disponible sur les plages d'Anglet aux côtés des écoles de surf locales.
+            </p>
+          </div>
+        </section>
+
         <SurfContactForm />
 
         {/* ===== CTA FINAL ===== */}

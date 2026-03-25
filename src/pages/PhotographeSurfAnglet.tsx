@@ -247,7 +247,7 @@ const PhotographeSurfAnglet = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary font-poppins">
               Immersion depuis les digues d'Anglet
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
+            <div className="prose prose-lg max-w-none text-foreground/70 space-y-5">
               <p>
                 Les digues d'Anglet permettent une immersion totale dans l'action. Elles offrent des axes de prise de vue uniques entre Les Cavaliers, La Barre et la Petite Chambre d'Amour, avec une proximité rare avec les surfeurs et les pratiquants.
               </p>

@@ -221,7 +221,7 @@ const PhotographeSurfAnglet = () => {
               </div>
             </div>
 
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/70 space-y-4">
               <p>
                 La Petite Chambre d'Amour, anciennement connue sous le nom de VVF, est mon spot principal pour la photographie surf à Anglet. Ce changement de nom reflète l'ancrage historique et géographique du spot, à proximité immédiate de la Chambre d'Amour.
               </p>

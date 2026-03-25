@@ -1,37 +1,37 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
 import { Link } from "react-router-dom";
-import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
-import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
-import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
-import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
+import surfImg from "@/assets/surf-anglet-hero.jpg";
+import grossesseImg from "@/assets/grossesse-hero.jpg";
+import familleImg from "@/assets/natation-preparation.jpg";
+import natationImg from "@/assets/natation-hero.jpg";
 
 const blocks = [
   {
     title: "SURF",
     desc: "Sessions surf, body surf et performances dans l'eau.",
-    image: boySurfer,
+    image: surfImg,
     alt: "Surfeur action photographe surf Anglet Pays Basque",
     to: "/photographe-surf-anglet",
   },
   {
     title: "FAMILLE & MOMENTS PLAGE OU PISCINE",
     desc: "Parents, enfants, bébés nageurs et souvenirs naturels entre plage et piscine.",
-    image: dadAndBaby,
+    image: familleImg,
     alt: "Séance photo famille plage Pays Basque",
     to: "/shooting-famille-bebe-eau-pays-basque",
   },
   {
     title: "SHOOTING PRÉNATAL",
     desc: "Séances grossesse à la plage, lumière douce, émotion et élégance.",
-    image: shootingMaternite,
+    image: grossesseImg,
     alt: "Shooting grossesse aquatique Pays Basque",
     to: "/shooting-grossesse-pays-basque",
   },
   {
     title: "SPORTS AQUATIQUES",
     desc: "Paddle, natation, longe-côte et disciplines nautiques.",
-    image: surfGlassy,
+    image: natationImg,
     alt: "Photo sport aquatique côte basque",
     to: "/photographe-natation-pays-basque",
   },

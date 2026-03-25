@@ -10,9 +10,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import heroImg from "@/assets/famille-bebe-eau-1.jpg";
-import detailImg from "@/assets/famille-bebe-eau-2.jpg";
-import silhouetteImg from "@/assets/famille-bebe-eau-3.jpg";
+import heroImg from "@/assets/grossesse-hero.jpg";
+import detailImg from "@/assets/natation-preparation.jpg";
+import silhouetteImg from "@/assets/natation-hero.jpg";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 

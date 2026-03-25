@@ -11,8 +11,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import heroImg from "@/assets/grossesse-plage-1.jpg";
-import coupleImg from "@/assets/grossesse-couple-2.jpg";
-import silhouetteImg from "@/assets/grossesse-silhouette-3.jpg";
+import coupleImg from "@/assets/grossesse-plage-1.jpg";
+import silhouetteImg from "@/assets/grossesse-plage-1.jpg";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 

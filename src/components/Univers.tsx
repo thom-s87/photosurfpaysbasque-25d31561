@@ -75,7 +75,7 @@ export const Univers = () => {
               </div>
               {/* Retro top accent stripe */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </a>
+            </Link>
           ))}
         </div>
       </div>

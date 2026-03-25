@@ -11,6 +11,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import surfHero from "@/assets/surf-anglet-hero.jpg";
+import surfSession from "@/assets/surf-anglet-session.jpg";
+import surfLifestyle from "@/assets/surf-anglet-lifestyle.jpg";
+
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (

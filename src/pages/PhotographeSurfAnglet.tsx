@@ -285,9 +285,9 @@ const PhotographeSurfAnglet = () => {
               </div>
 
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
-                <MapPin className="w-10 h-10 text-blue-500 mb-4" />
-                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Photo depuis les digues</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <MapPin className="w-10 h-10 text-accent-foreground mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3 font-poppins">Photo depuis les digues</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Position immersive à la Petite Chambre d'Amour. Angles en contre-plongée, proximité avec la zone d'impact. Les images les plus puissantes viennent d'ici.
                 </p>
               </div>

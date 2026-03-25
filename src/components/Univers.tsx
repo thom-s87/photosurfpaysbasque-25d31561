@@ -1,10 +1,10 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
 import { Link } from "react-router-dom";
-import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
-import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
-import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
-import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
+import surfImg from "@/assets/surf-anglet-hero.jpg";
+import grossesseImg from "@/assets/grossesse-hero.jpg";
+import familleImg from "@/assets/natation-preparation.jpg";
+import natationImg from "@/assets/natation-hero.jpg";
 
 const blocks = [
   {

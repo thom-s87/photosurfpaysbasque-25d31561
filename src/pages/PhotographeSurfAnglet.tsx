@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -54,6 +55,22 @@ const faqItems = [
 ];
 
 const PhotographeSurfAnglet = () => {
+  useEffect(() => {
+    document.title = "Photographe Surf Anglet 🏄 | Photos & Vidéos dans l'eau – Pays Basque";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Photographe surf professionnel à Anglet. Photos et vidéos depuis les digues de la Petite Chambre d'Amour, Les Cavaliers et La Barre. Réservation rapide via WhatsApp.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Photographe surf professionnel à Anglet. Photos et vidéos depuis les digues de la Petite Chambre d'Amour, Les Cavaliers et La Barre. Réservation rapide via WhatsApp.";
+      document.head.appendChild(meta);
+    }
+    return () => {
+      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
+    };
+  }, []);
+
   const today = new Date();
   const dateStr = today.toLocaleDateString("fr-FR", {
     weekday: "long",
@@ -111,7 +128,7 @@ const PhotographeSurfAnglet = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-pink-50 to-blue-50 font-poppins">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary font-poppins">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -121,22 +138,22 @@ const PhotographeSurfAnglet = () => {
         {/* ===== 1. HERO ===== */}
         <section className="py-16 md:py-24 px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <p className="text-sm uppercase tracking-widest text-purple-500 font-medium mb-4">
+            <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
               Photographe surf professionnel · Anglet, Pays Basque
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-700 via-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent font-poppins leading-tight">
               Photographe surf à Anglet
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-foreground/70 mb-4 leading-relaxed max-w-3xl mx-auto">
               Je capture vos sessions selon les conditions du jour,<br />
               entre la Petite Chambre d'Amour et Les Cavaliers.
             </p>
-            <p className="text-lg text-gray-500 mb-10">
+            <p className="text-lg text-muted-foreground mb-10">
               Anglet · Biarritz · Petite Chambre d'Amour · Les Cavaliers · La Barre
             </p>
             <Button
               size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -150,10 +167,10 @@ const PhotographeSurfAnglet = () => {
         {/* ===== 2. EXPERTISE LOCALE ===== */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary font-poppins">
               Photographe spécialisé dans les activités océaniques au Pays Basque
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
+            <div className="prose prose-lg max-w-none text-foreground/70 space-y-5">
               <p>
                 Photographe spécialisé dans les activités océaniques au Pays Basque, je réalise des photos et vidéos pour le surf, le bodyboard, le longboard, le paddle, le foil, le kitesurf, la natation en eau libre et toutes les pratiques liées à l'océan.
               </p>
@@ -161,7 +178,7 @@ const PhotographeSurfAnglet = () => {
                 Anglet est l'un des rares spots du Pays Basque à offrir une diversité de pratiques océaniques aussi importante, entre digues, bancs de sable et plages exposées à différentes houles.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+              <h3 className="text-xl font-bold text-foreground font-poppins !mt-8">
                 Connaissance terrain et réactivité locale
               </h3>
               <p>
@@ -181,31 +198,31 @@ const PhotographeSurfAnglet = () => {
         <section className="py-16 px-4" id="surf-report">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-purple-700 font-poppins mb-2">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary font-poppins mb-2">
                 Surf report Anglet – Petite Chambre d'Amour
               </h2>
-              <p className="text-gray-500 flex items-center justify-center">
+              <p className="text-muted-foreground flex items-center justify-center">
                 <Clock className="w-4 h-4 mr-2" />
                 {dateStr}
               </p>
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-8">
-              <h3 className="text-xl font-bold text-gray-800 mb-6 font-poppins">
+              <h3 className="text-xl font-bold text-foreground mb-6 font-poppins">
                 Conditions idéales pour la photo surf à Anglet
               </h3>
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 {surfReportConditions.map((c) => (
                   <div key={c.label} className="text-center p-4 rounded-xl bg-white/70">
                     <c.icon className={`w-7 h-7 ${c.color} mx-auto mb-2`} />
-                    <p className="text-sm font-semibold text-gray-800 mb-1">{c.label}</p>
-                    <p className="text-gray-600 text-sm">{c.value}</p>
+                     <p className="text-sm font-semibold text-foreground mb-1">{c.label}</p>
+                    <p className="text-muted-foreground text-sm">{c.value}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/70 space-y-4">
               <p>
                 La Petite Chambre d'Amour, anciennement connue sous le nom de VVF, est mon spot principal pour la photographie surf à Anglet. Ce changement de nom reflète l'ancrage historique et géographique du spot, à proximité immédiate de la Chambre d'Amour.
               </p>
@@ -228,22 +245,22 @@ const PhotographeSurfAnglet = () => {
         {/* ===== 4. AXES DE PRISE DE VUE ===== */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-purple-700 font-poppins">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary font-poppins">
               Immersion depuis les digues d'Anglet
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
+            <div className="prose prose-lg max-w-none text-foreground/70 space-y-5">
               <p>
                 Les digues d'Anglet permettent une immersion totale dans l'action. Elles offrent des axes de prise de vue uniques entre Les Cavaliers, La Barre et la Petite Chambre d'Amour, avec une proximité rare avec les surfeurs et les pratiquants.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+               <h3 className="text-xl font-bold text-foreground font-poppins !mt-8">
                 Contre-plongée et hauteur d'eau
               </h3>
               <p>
                 En me positionnant sur les digues, je capture des images en contre-plongée ou à hauteur d'eau, ce qui renforce l'impression de puissance et de vitesse. C'est cette immersion qui donne aux photos de surf à Anglet une dimension particulière — le spectateur est au cœur de l'action.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+              <h3 className="text-xl font-bold text-foreground font-poppins !mt-8">
                 Lecture des vagues et timing
               </h3>
               <p>
@@ -256,37 +273,37 @@ const PhotographeSurfAnglet = () => {
         {/* ===== 5. SESSIONS PHOTO SELON CONDITIONS ===== */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-700 font-poppins">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary font-poppins">
               Sessions photo surf adaptées aux conditions du jour
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
-                <Camera className="w-10 h-10 text-purple-500 mb-4" />
-                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Photo depuis la plage</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <Camera className="w-10 h-10 text-primary mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3 font-poppins">Photo depuis la plage</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Objectif longue focale, suivi du surfeur sur plusieurs vagues. Idéal aux Cavaliers et à Marinella quand la houle est régulière et le vent faible.
                 </p>
               </div>
 
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
-                <MapPin className="w-10 h-10 text-blue-500 mb-4" />
-                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Photo depuis les digues</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <MapPin className="w-10 h-10 text-accent-foreground mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3 font-poppins">Photo depuis les digues</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Position immersive à la Petite Chambre d'Amour. Angles en contre-plongée, proximité avec la zone d'impact. Les images les plus puissantes viennent d'ici.
                 </p>
               </div>
 
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
-                <Waves className="w-10 h-10 text-pink-500 mb-4" />
-                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Vidéo surf</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <Waves className="w-10 h-10 text-hot-pink mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3 font-poppins">Vidéo surf</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Captation vidéo en conditions réelles. Ralentis, angles serrés, ambiance de session. Livraison rapide pour partager ou analyser ta session.
                 </p>
               </div>
             </div>
 
-            <div className="mt-10 bg-white/80 rounded-2xl p-8 shadow-lg text-center">
-              <p className="text-gray-700 text-lg leading-relaxed">
+            <div className="mt-10 bg-card rounded-2xl p-8 shadow-lg text-center">
+              <p className="text-foreground/70 text-lg leading-relaxed">
                 Chaque session est programmée uniquement quand les conditions sont réunies. Je ne shoote pas par défaut — je choisis le moment, le spot et l'angle qui garantissent des images de qualité. C'est ce qui fait la différence entre un photographe surf à Anglet et un simple prestataire.
               </p>
             </div>
@@ -296,16 +313,16 @@ const PhotographeSurfAnglet = () => {
         {/* ===== 6. FAQ SEO LOCALE ===== */}
         <section className="py-16 px-4 bg-white/40">
           <div className="container mx-auto max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-700 font-poppins">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary font-poppins">
               Questions fréquentes – Photographe surf à Anglet
             </h2>
             <Accordion type="single" collapsible className="space-y-3">
               {faqItems.map((item, i) => (
                 <AccordionItem key={i} value={`q${i}`} className="bg-white/80 rounded-xl px-5 border-0">
-                  <AccordionTrigger className="text-left font-medium text-gray-800 hover:no-underline">
+                  <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600 leading-relaxed">
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -315,17 +332,17 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== 7. CONTACT RAPIDE ===== */}
-        <section className="py-20 px-4 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500">
+        <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-poppins">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4 font-poppins">
               Une session photo surf à Anglet aujourd'hui ?
             </h2>
-            <p className="text-white/90 text-xl mb-10 leading-relaxed">
+            <p className="text-primary-foreground/90 text-xl mb-10 leading-relaxed">
               Photographe local, réactif, disponible sur WhatsApp. Je vérifie les conditions et on s'organise dans l'heure.
             </p>
             <Button
               size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -333,7 +350,7 @@ const PhotographeSurfAnglet = () => {
                 Me contacter sur WhatsApp
               </a>
             </Button>
-            <p className="text-white/70 text-sm mt-6">
+            <p className="text-primary-foreground/70 text-sm mt-6">
               Anglet · Biarritz · Petite Chambre d'Amour · Les Cavaliers · La Barre · Côte Basque
             </p>
           </div>

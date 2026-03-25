@@ -36,9 +36,6 @@ const galleryImages = [
   { src: surfImmersif, alt: "Photo immersive surf dans l'eau - photographe aquatique Anglet Pays Basque" },
   { src: surfeurAction, alt: "Surfeur en action sur une vague - photographe surf Biarritz Pays Basque" },
   { src: surfCoucherSoleil, alt: "Surfeur coucher de soleil plage Anglet - photographe surf golden hour Pays Basque" },
-  { src: nageurAction, alt: "Nageur en action eau libre - photographe natation Pays Basque" },
-  { src: natationSplit, alt: "Vue split sous-marine nageur - photographe aquatique immersif Pays Basque" },
-  { src: natationEntrainement, alt: "Entraînement natation piscine - photographe sportif Pays Basque" },
 ];
 
 export const Gallery = () => {

@@ -1,5 +1,6 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
+import { Link } from "react-router-dom";
 import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
@@ -11,28 +12,28 @@ const blocks = [
     desc: "Sessions surf, vagues, action, portraits dans l'eau.",
     image: boySurfer,
     alt: "Surfeur action photographe surf Anglet Pays Basque",
-    hash: "#seance-surf",
+    to: "/photographe-surf-anglet",
   },
   {
     title: "FAMILLE & MOMENTS PLAGE",
     desc: "Parents, enfants, souvenirs naturels au bord de l'océan.",
     image: dadAndBaby,
     alt: "Séance photo famille plage Pays Basque",
-    hash: "#seance-famille",
+    to: "/shooting-famille-bebe-eau-pays-basque",
   },
   {
     title: "SHOOTING PRÉNATAL",
     desc: "Séances grossesse à la plage, lumière douce, émotion et élégance.",
     image: shootingMaternite,
     alt: "Shooting grossesse aquatique Pays Basque",
-    hash: "#seance-prenatal",
+    to: "/shooting-grossesse-pays-basque",
   },
   {
     title: "SPORTS AQUATIQUES",
     desc: "Surf, bodyboard, paddle, natation, longe-côte et disciplines nautiques.",
     image: surfGlassy,
     alt: "Photo sport aquatique côte basque",
-    hash: "#seance-aquatique",
+    to: "/photographe-natation-pays-basque",
   },
 ];
 
@@ -52,9 +53,9 @@ export const Univers = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {blocks.map((block, i) => (
-            <a
+            <Link
               key={i}
-              href={block.hash}
+              to={block.to}
               className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
             >
               <img
@@ -74,7 +75,7 @@ export const Univers = () => {
               </div>
               {/* Retro top accent stripe */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </a>
+            </Link>
           ))}
         </div>
       </div>

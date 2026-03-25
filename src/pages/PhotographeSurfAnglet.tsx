@@ -169,7 +169,7 @@ const PhotographeSurfAnglet = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary font-poppins">
               Photographe spécialisé dans les activités océaniques au Pays Basque
             </h2>
-            <div className="prose prose-lg max-w-none text-gray-700 space-y-5">
+            <div className="prose prose-lg max-w-none text-foreground/70 space-y-5">
               <p>
                 Photographe spécialisé dans les activités océaniques au Pays Basque, je réalise des photos et vidéos pour le surf, le bodyboard, le longboard, le paddle, le foil, le kitesurf, la natation en eau libre et toutes les pratiques liées à l'océan.
               </p>

@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Waves, Target, Droplets, Trophy, Users } from "lucide-react";
+import { UniversContactForm } from "@/components/UniversContactForm";
 import {
   Accordion,
   AccordionContent,
@@ -226,6 +227,8 @@ const PhotographeNatationPaysBasque = () => {
             </Accordion>
           </div>
         </section>
+
+        <UniversContactForm />
 
         {/* ===== CTA FINAL ===== */}
         <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

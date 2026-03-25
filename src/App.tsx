@@ -9,6 +9,7 @@ import PhotographeSurfAnglet from "./pages/PhotographeSurfAnglet";
 import PhotographeGrossessePaysBasque from "./pages/PhotographeGrossessePaysBasque";
 import PhotographeNatationPaysBasque from "./pages/PhotographeNatationPaysBasque";
 import SpotReportAnglet from "./pages/SpotReportAnglet";
+import ShootingGrossessePaysBasque from "./pages/ShootingGrossessePaysBasque";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

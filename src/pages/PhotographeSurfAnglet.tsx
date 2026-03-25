@@ -293,9 +293,9 @@ const PhotographeSurfAnglet = () => {
               </div>
 
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
-                <Waves className="w-10 h-10 text-pink-500 mb-4" />
-                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Vidéo surf</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <Waves className="w-10 h-10 text-hot-pink mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3 font-poppins">Vidéo surf</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Captation vidéo en conditions réelles. Ralentis, angles serrés, ambiance de session. Livraison rapide pour partager ou analyser ta session.
                 </p>
               </div>

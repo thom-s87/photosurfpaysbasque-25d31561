@@ -196,6 +196,43 @@ const ShootingFamilleBebeEauPaysBasque = () => {
           </div>
         </section>
 
+        {/* PACK FAMILLE */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl text-center">
+            <Heart className="w-10 h-10 text-primary mx-auto mb-6" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Pack Famille 💜</h2>
+            <p className="text-lg text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-4">
+              Capturez les moments qui comptent vraiment.
+            </p>
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-8">
+              De la grossesse aux premiers moments dans l'eau, jusqu'aux souvenirs en famille, je vous propose de suivre votre histoire à travers plusieurs séances.
+            </p>
+            <ul className="text-left max-w-md mx-auto space-y-3 mb-8">
+              <li className="flex items-center gap-3 text-foreground/80 text-lg">
+                <Sparkles className="w-5 h-5 text-hot-pink flex-shrink-0" />
+                Séance grossesse
+              </li>
+              <li className="flex items-center gap-3 text-foreground/80 text-lg">
+                <Sparkles className="w-5 h-5 text-hot-pink flex-shrink-0" />
+                Séance bébé ou bébé nageur
+              </li>
+              <li className="flex items-center gap-3 text-foreground/80 text-lg">
+                <Sparkles className="w-5 h-5 text-hot-pink flex-shrink-0" />
+                Séance famille plage ou piscine
+              </li>
+            </ul>
+            <p className="text-lg italic text-foreground/60 mb-10">
+              Parce que ces moments passent vite… autant les garder pour toujours.
+            </p>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" asChild>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <Heart className="w-5 h-5 mr-2" />
+                Découvrir le pack famille
+              </a>
+            </Button>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-3xl">

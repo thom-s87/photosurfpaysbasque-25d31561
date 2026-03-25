@@ -277,9 +277,9 @@ const PhotographeSurfAnglet = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 hover:shadow-xl transition-all">
-                <Camera className="w-10 h-10 text-purple-500 mb-4" />
-                <h3 className="text-lg font-bold text-gray-800 mb-3 font-poppins">Photo depuis la plage</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <Camera className="w-10 h-10 text-primary mb-4" />
+                <h3 className="text-lg font-bold text-foreground mb-3 font-poppins">Photo depuis la plage</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   Objectif longue focale, suivi du surfeur sur plusieurs vagues. Idéal aux Cavaliers et à Marinella quand la houle est régulière et le vent faible.
                 </p>
               </div>

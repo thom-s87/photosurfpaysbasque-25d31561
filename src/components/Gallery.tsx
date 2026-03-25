@@ -19,6 +19,9 @@ import duoFriends from "@/assets/gallery/duo-friends.jpg";
 import surfImmersif from "@/assets/gallery/surf-immersif-eau.jpg";
 import surfeurAction from "@/assets/gallery/surfeur-action-vague.jpg";
 import surfCoucherSoleil from "@/assets/gallery/surf-coucher-soleil.jpg";
+import nageurAction from "@/assets/gallery/nageur-action-eau.jpg";
+import natationSplit from "@/assets/gallery/natation-split-underwater.jpg";
+import natationEntrainement from "@/assets/gallery/natation-entrainement.jpg";
 
 const galleryImages = [
   { src: surferIlbaritz, alt: "Surfeur virage Ilbaritz - photographe surf Pays Basque action" },

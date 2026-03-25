@@ -3,7 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { MapPin, Waves } from "lucide-react";
-import { UniversContactForm } from "@/components/UniversContactForm";
+import { SurfContactForm } from "@/components/SurfContactForm";
 import {
   Accordion,
   AccordionContent,

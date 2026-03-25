@@ -16,9 +16,6 @@ import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
 import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
-import surfImmersif from "@/assets/gallery/surf-immersif-eau.jpg";
-import surfeurAction from "@/assets/gallery/surfeur-action-vague.jpg";
-import surfCoucherSoleil from "@/assets/gallery/surf-coucher-soleil.jpg";
 
 const galleryImages = [
   { src: surferIlbaritz, alt: "Surfeur virage Ilbaritz - photographe surf Pays Basque action" },

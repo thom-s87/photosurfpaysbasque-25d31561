@@ -10,6 +10,7 @@ import PhotographeGrossessePaysBasque from "./pages/PhotographeGrossessePaysBasq
 import PhotographeNatationPaysBasque from "./pages/PhotographeNatationPaysBasque";
 import SpotReportAnglet from "./pages/SpotReportAnglet";
 import ShootingGrossessePaysBasque from "./pages/ShootingGrossessePaysBasque";
+import ShootingFamilleBebeEauPaysBasque from "./pages/ShootingFamilleBebeEauPaysBasque";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

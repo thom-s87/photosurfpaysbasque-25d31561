@@ -259,7 +259,7 @@ const PhotographeSurfAnglet = () => {
                 En me positionnant sur les digues, je capture des images en contre-plongée ou à hauteur d'eau, ce qui renforce l'impression de puissance et de vitesse. C'est cette immersion qui donne aux photos de surf à Anglet une dimension particulière — le spectateur est au cœur de l'action.
               </p>
 
-              <h3 className="text-xl font-bold text-gray-800 font-poppins !mt-8">
+              <h3 className="text-xl font-bold text-foreground font-poppins !mt-8">
                 Lecture des vagues et timing
               </h3>
               <p>

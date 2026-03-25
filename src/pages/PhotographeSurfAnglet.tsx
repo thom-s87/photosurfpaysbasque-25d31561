@@ -331,17 +331,17 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== 7. CONTACT RAPIDE ===== */}
-        <section className="py-20 px-4 bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-500">
+        <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-poppins">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4 font-poppins">
               Une session photo surf à Anglet aujourd'hui ?
             </h2>
-            <p className="text-white/90 text-xl mb-10 leading-relaxed">
+            <p className="text-primary-foreground/90 text-xl mb-10 leading-relaxed">
               Photographe local, réactif, disponible sur WhatsApp. Je vérifie les conditions et on s'organise dans l'heure.
             </p>
             <Button
               size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -349,7 +349,7 @@ const PhotographeSurfAnglet = () => {
                 Me contacter sur WhatsApp
               </a>
             </Button>
-            <p className="text-white/70 text-sm mt-6">
+            <p className="text-primary-foreground/70 text-sm mt-6">
               Anglet · Biarritz · Petite Chambre d'Amour · Les Cavaliers · La Barre · Côte Basque
             </p>
           </div>

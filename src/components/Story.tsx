@@ -1,6 +1,6 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { WatermarkedImage } from "@/components/WatermarkedImage";
-import surfeurProNight from "@/assets/gallery/surfeur-pro-night.jpg";
+import surfeurProNight from "@/assets/gallery/surfeur-pro-competition.jpg";
 
 export const Story = () => {
   const ref = useScrollFadeIn();

@@ -5,43 +5,27 @@ import { WatermarkedImage } from "@/components/WatermarkedImage";
 import { useRef, useState, useEffect, useCallback } from "react";
 
 import surferIlbaritz from "@/assets/gallery/surfer-ilbaritz.jpg";
-import pregnantAqua from "@/assets/gallery/pregnant-aqua.jpg";
 import surfeuseBiarritz from "@/assets/gallery/surfeuse-biarritz.jpg";
 import bodySurferYellow from "@/assets/gallery/body-surfer-yellow.jpg";
 import surfeusePinkBoard from "@/assets/gallery/surfeuse-pink-board.jpg";
 import surfNight from "@/assets/gallery/surf-night-session.jpg";
-import bodyboard from "@/assets/gallery/bodyboard-pays-basque.jpg";
-import photoAquatique from "@/assets/gallery/photo-aquatique-artistique.jpg";
 import surfeuseHossegor from "@/assets/gallery/surfeuse-hossegor.jpg";
-import bodyboardDay from "@/assets/gallery/bodyboard-day-session.jpg";
 import surfClub from "@/assets/gallery/surf-club.jpg";
 import duoFriends from "@/assets/gallery/duo-friends.jpg";
-import surfImmersif from "@/assets/gallery/surf-immersif-eau.jpg";
-import surfeurAction from "@/assets/gallery/surfeur-action-vague.jpg";
-import surfCoucherSoleil from "@/assets/gallery/surf-coucher-soleil.jpg";
-import nageurAction from "@/assets/gallery/nageur-action-eau.jpg";
-import natationSplit from "@/assets/gallery/natation-split-underwater.jpg";
-import natationEntrainement from "@/assets/gallery/natation-entrainement.jpg";
+import surfeurPro from "@/assets/gallery/surfeur-pro-competition.jpg";
+import surfVirage from "@/assets/gallery/surf-virage-anglet.jpg";
 
 const galleryImages = [
   { src: surferIlbaritz, alt: "Surfeur virage Ilbaritz - photographe surf Pays Basque action" },
-  { src: pregnantAqua, alt: "Shooting aquatique maternité - photographe grossesse underwater Pays Basque" },
   { src: surfeuseBiarritz, alt: "Surfeuse shortboard Biarritz - photo sport nautique côte basque" },
   { src: bodySurferYellow, alt: "Bodysurf planche jaune - photographe sport nautique Pays Basque" },
   { src: surfeusePinkBoard, alt: "Surfeuse planche rose - shooting surf féminin Pays Basque" },
   { src: surfNight, alt: "Session surf nocturne - photographe surf Pays Basque nuit" },
-  { src: bodyboard, alt: "Bodyboard Pays Basque - vidéaste sport nautique Anglet" },
-  { src: photoAquatique, alt: "Shooting aquatique artistique - photographe underwater Pays Basque" },
   { src: surfeuseHossegor, alt: "Surfeuse Hossegor - shooting surf féminin Pays Basque" },
-  { src: bodyboardDay, alt: "Bodyboard session jour Anglet - photographe sport nautique" },
   { src: surfClub, alt: "Cours de surf école plage - photographe surf club Pays Basque" },
   { src: duoFriends, alt: "Duo surfeurs amis plage - photographe surf Pays Basque" },
-  { src: surfImmersif, alt: "Photo immersive surf dans l'eau - photographe aquatique Anglet Pays Basque" },
-  { src: surfeurAction, alt: "Surfeur en action sur une vague - photographe surf Biarritz Pays Basque" },
-  { src: surfCoucherSoleil, alt: "Surfeur coucher de soleil plage Anglet - photographe surf golden hour Pays Basque" },
-  { src: nageurAction, alt: "Nageur en action eau libre - photographe natation Pays Basque" },
-  { src: natationSplit, alt: "Vue split sous-marine nageur - photographe aquatique immersif Pays Basque" },
-  { src: natationEntrainement, alt: "Entraînement natation piscine - photographe sportif Pays Basque" },
+  { src: surfeurPro, alt: "Surfeur pro en compétition - photographe surf Pays Basque" },
+  { src: surfVirage, alt: "Surfeur virage Anglet - photographe surf action Pays Basque" },
 ];
 
 export const Gallery = () => {

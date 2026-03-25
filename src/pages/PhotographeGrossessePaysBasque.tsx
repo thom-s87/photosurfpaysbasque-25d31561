@@ -185,16 +185,21 @@ const PhotographeGrossessePaysBasque = () => {
           </div>
         </section>
 
-        {/* ===== SECTION 4 ===== */}
+        {/* ===== SECTION 4 + IMAGE ===== */}
         <section className="py-16 px-4">
-          <div className="container mx-auto max-w-4xl text-center">
-            <Users className="w-10 h-10 text-hot-pink mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
-              Seule, en couple ou en famille
-            </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
-              Le shooting peut se faire seule, en couple ou avec vos enfants. Chaque séance est adaptée à votre histoire.
-            </p>
+          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">
+            <div className="text-center md:text-left">
+              <Users className="w-10 h-10 text-hot-pink mx-auto md:mx-0 mb-6" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+                Seule, en couple ou en famille
+              </h2>
+              <p className="text-lg text-foreground/70 leading-relaxed">
+                Le shooting peut se faire seule, en couple ou avec vos enfants. Chaque séance est adaptée à votre histoire.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img src={bottomImg} alt="Shooting grossesse dans les vagues au coucher du soleil" loading="lazy" width={1280} height={960} className="w-full h-auto object-cover" />
+            </div>
           </div>
         </section>
 

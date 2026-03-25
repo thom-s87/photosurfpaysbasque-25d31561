@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Waves, Target, Droplets, Trophy, Users } from "lucide-react";
+import { UniversContactForm } from "@/components/UniversContactForm";
 import {
   Accordion,
   AccordionContent,

@@ -254,7 +254,7 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
-        <UniversContactForm />
+        <SurfContactForm />
 
         {/* ===== CTA FINAL ===== */}
         <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

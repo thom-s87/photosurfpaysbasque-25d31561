@@ -7,6 +7,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import PhotographeSurfAnglet from "./pages/PhotographeSurfAnglet";
 import PhotographeGrossessePaysBasque from "./pages/PhotographeGrossessePaysBasque";
+import PhotographeNatationPaysBasque from "./pages/PhotographeNatationPaysBasque";
 import SpotReportAnglet from "./pages/SpotReportAnglet";
 import NotFound from "./pages/NotFound";
 

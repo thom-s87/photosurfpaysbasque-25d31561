@@ -16,7 +16,7 @@ const blocks = [
   },
   {
     title: "FAMILLE & MOMENTS PLAGE OU PISCINE",
-    desc: "Parents, enfants et souvenirs naturels entre plage et piscine.",
+    desc: "Parents, enfants, bébés nageurs et souvenirs naturels entre plage et piscine.",
     image: dadAndBaby,
     alt: "Séance photo famille plage Pays Basque",
     to: "/shooting-famille-bebe-eau-pays-basque",

@@ -11,6 +11,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import natationHero from "@/assets/natation-hero.jpg";
+import natationPreparation from "@/assets/natation-preparation.jpg";
+import natationEffort from "@/assets/natation-effort.jpg";
+
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (

@@ -9,7 +9,7 @@ import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
 const blocks = [
   {
     title: "SURF",
-    desc: "Sessions surf, vagues, action, portraits dans l'eau.",
+    desc: "Sessions surf, body surf et performances dans l'eau.",
     image: boySurfer,
     alt: "Surfeur action photographe surf Anglet Pays Basque",
     to: "/photographe-surf-anglet",

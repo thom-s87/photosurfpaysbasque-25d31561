@@ -318,10 +318,10 @@ const PhotographeSurfAnglet = () => {
             <Accordion type="single" collapsible className="space-y-3">
               {faqItems.map((item, i) => (
                 <AccordionItem key={i} value={`q${i}`} className="bg-white/80 rounded-xl px-5 border-0">
-                  <AccordionTrigger className="text-left font-medium text-gray-800 hover:no-underline">
+                  <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline">
                     {item.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-600 leading-relaxed">
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
                     {item.answer}
                   </AccordionContent>
                 </AccordionItem>

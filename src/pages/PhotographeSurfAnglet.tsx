@@ -143,11 +143,11 @@ const PhotographeSurfAnglet = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent font-poppins leading-tight">
               Photographe surf à Anglet
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-foreground/70 mb-4 leading-relaxed max-w-3xl mx-auto">
               Je capture vos sessions selon les conditions du jour,<br />
               entre la Petite Chambre d'Amour et Les Cavaliers.
             </p>
-            <p className="text-lg text-gray-500 mb-10">
+            <p className="text-lg text-muted-foreground mb-10">
               Anglet · Biarritz · Petite Chambre d'Amour · Les Cavaliers · La Barre
             </p>
             <Button

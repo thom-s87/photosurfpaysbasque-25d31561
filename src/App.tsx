@@ -29,6 +29,7 @@ const App = () => (
           <Route path="/photographe-natation-pays-basque" element={<PhotographeNatationPaysBasque />} />
           <Route path="/spot-report-anglet" element={<SpotReportAnglet />} />
           <Route path="/shooting-grossesse-pays-basque" element={<ShootingGrossessePaysBasque />} />
+          <Route path="/shooting-famille-bebe-eau-pays-basque" element={<ShootingFamilleBebeEauPaysBasque />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

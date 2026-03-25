@@ -137,10 +137,10 @@ const PhotographeSurfAnglet = () => {
         {/* ===== 1. HERO ===== */}
         <section className="py-16 md:py-24 px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <p className="text-sm uppercase tracking-widest text-purple-500 font-medium mb-4">
+            <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
               Photographe surf professionnel · Anglet, Pays Basque
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-700 via-purple-600 to-blue-600 bg-clip-text text-transparent font-poppins leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent font-poppins leading-tight">
               Photographe surf à Anglet
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed max-w-3xl mx-auto">

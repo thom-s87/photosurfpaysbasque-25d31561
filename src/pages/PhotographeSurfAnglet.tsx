@@ -11,6 +11,10 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import surfHero from "@/assets/surf-anglet-hero.jpg";
+import surfSession from "@/assets/surf-anglet-session.jpg";
+import surfLifestyle from "@/assets/surf-anglet-lifestyle.jpg";
+
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -152,6 +156,19 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
+        {/* ===== IMAGE HERO ===== */}
+        <section className="px-4">
+          <div className="container mx-auto max-w-5xl">
+            <img
+              src={surfHero}
+              alt="Surfeur en action dans un tube - photographe surf immersif Anglet Pays Basque"
+              width={1920}
+              height={1080}
+              className="w-full h-[50vh] md:h-[60vh] object-cover rounded-2xl shadow-xl"
+            />
+          </div>
+        </section>
+
         {/* ===== SECTION 1 : POURQUOI ===== */}
         <section className="py-16 px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl">
@@ -173,6 +190,20 @@ const PhotographeSurfAnglet = () => {
             <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Je travaille directement dans l'océan pour vous offrir des images immersives, dynamiques et naturelles. L'objectif : capturer vos sensations, vos trajectoires et l'énergie de chaque vague.
             </p>
+          </div>
+        </section>
+
+        {/* ===== IMAGE SESSION ===== */}
+        <section className="px-4 py-8">
+          <div className="container mx-auto max-w-5xl">
+            <img
+              src={surfSession}
+              alt="Session surf côte basque - photographe surf Anglet plage et falaises"
+              loading="lazy"
+              width={1920}
+              height={1080}
+              className="w-full h-[40vh] md:h-[50vh] object-cover rounded-2xl shadow-xl"
+            />
           </div>
         </section>
 
@@ -208,6 +239,20 @@ const PhotographeSurfAnglet = () => {
             <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Que vous soyez débutant, confirmé ou en vacances au Pays Basque, je vous propose des séances adaptées à votre niveau. Surf, bodyboard, paddle ou simplement des moments dans l'eau.
             </p>
+          </div>
+        </section>
+
+        {/* ===== IMAGE LIFESTYLE ===== */}
+        <section className="px-4 py-8">
+          <div className="container mx-auto max-w-5xl">
+            <img
+              src={surfLifestyle}
+              alt="Moment surf lifestyle lumière dorée - photographe surf Anglet Pays Basque"
+              loading="lazy"
+              width={1920}
+              height={1080}
+              className="w-full h-[40vh] md:h-[50vh] object-cover rounded-2xl shadow-xl"
+            />
           </div>
         </section>
 

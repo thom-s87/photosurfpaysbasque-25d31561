@@ -193,6 +193,20 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
+        {/* ===== IMAGE SESSION ===== */}
+        <section className="px-4 py-8">
+          <div className="container mx-auto max-w-5xl">
+            <img
+              src={surfSession}
+              alt="Session surf côte basque - photographe surf Anglet plage et falaises"
+              loading="lazy"
+              width={1920}
+              height={1080}
+              className="w-full h-[40vh] md:h-[50vh] object-cover rounded-2xl shadow-xl"
+            />
+          </div>
+        </section>
+
         {/* ===== SECTION 3 : SPOTS ===== */}
         <section className="py-16 px-4 bg-card/60">
           <div className="container mx-auto max-w-5xl">

@@ -30,7 +30,7 @@ const blocks = [
   },
   {
     title: "SPORTS AQUATIQUES",
-    desc: "Surf, bodyboard, paddle, natation, longe-côte et disciplines nautiques.",
+    desc: "Paddle, natation, longe-côte et disciplines nautiques.",
     image: surfGlassy,
     alt: "Photo sport aquatique côte basque",
     to: "/photographe-natation-pays-basque",

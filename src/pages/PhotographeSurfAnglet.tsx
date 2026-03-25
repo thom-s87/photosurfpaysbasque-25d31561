@@ -200,7 +200,7 @@ const PhotographeSurfAnglet = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-primary font-poppins mb-2">
                 Surf report Anglet – Petite Chambre d'Amour
               </h2>
-              <p className="text-gray-500 flex items-center justify-center">
+              <p className="text-muted-foreground flex items-center justify-center">
                 <Clock className="w-4 h-4 mr-2" />
                 {dateStr}
               </p>

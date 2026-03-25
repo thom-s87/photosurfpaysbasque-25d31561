@@ -197,7 +197,7 @@ const PhotographeSurfAnglet = () => {
         <section className="py-16 px-4" id="surf-report">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold text-purple-700 font-poppins mb-2">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary font-poppins mb-2">
                 Surf report Anglet – Petite Chambre d'Amour
               </h2>
               <p className="text-gray-500 flex items-center justify-center">

@@ -30,7 +30,7 @@ const faqItems = [
   },
   {
     question: "Où se déroulent les séances famille à l'eau ?",
-    answer: "Principalement sur les plages d'Anglet et Biarritz, dans des zones calmes et sécurisées. Le lieu est choisi ensemble selon vos envies et les conditions du jour.",
+    answer: "Sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Le lieu est choisi ensemble selon vos envies et les conditions du jour.",
   },
   {
     question: "Combien de temps dure une séance ?",

@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { MapPin, Waves } from "lucide-react";
 import { SurfContactForm } from "@/components/SurfContactForm";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import {
   Accordion,
   AccordionContent,

@@ -236,7 +236,7 @@ const PhotographeSurfAnglet = () => {
             <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-primary">
               Les spots couverts à Anglet
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
               {spots.map((spot) => (
                 <div
                   key={spot.name}

@@ -115,7 +115,7 @@ const PhotographeBodySurfPaysBasque = () => {
               <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
                 Photographe body surf · Anglet, Pays Basque
               </p>
-              <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
+              <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
                 Photographe Body Surf au Pays Basque 🌊
               </h1>
               <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-10">

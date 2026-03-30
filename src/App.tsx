@@ -13,6 +13,7 @@ import ShootingGrossessePaysBasque from "./pages/ShootingGrossessePaysBasque";
 import ShootingFamilleBebeEauPaysBasque from "./pages/ShootingFamilleBebeEauPaysBasque";
 import PhotographeBodySurfPaysBasque from "./pages/PhotographeBodySurfPaysBasque";
 import PhotographeSurfCavaliersAnglet from "./pages/PhotographeSurfCavaliersAnglet";
+import SpotPhotoPetiteChambreAmourAnglet from "./pages/SpotPhotoPetiteChambreAmourAnglet";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

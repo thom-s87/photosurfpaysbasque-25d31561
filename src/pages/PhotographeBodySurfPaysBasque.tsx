@@ -258,7 +258,7 @@ const PhotographeBodySurfPaysBasque = () => {
             <p className="text-base md:text-lg text-foreground/70 mb-5">
               Tu pratiques aussi le surf classique ? Découvre mes shootings surf à Anglet pour une couverture complète de tes sessions.
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-5 text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300" asChild>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 md:px-8 md:py-5 text-base md:text-lg font-bold rounded-full shadow-lg hover:opacity-90 transition-opacity w-full sm:w-auto" asChild>
               <a href="/photographe-surf-anglet">
                 Découvrir le Shooting Surf 🏄
               </a>

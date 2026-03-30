@@ -259,7 +259,7 @@ const PhotographeSurfAnglet = () => {
             <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Pour qui ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Que vous soyez débutant, confirmé ou en vacances au Pays Basque, je vous propose des séances adaptées à votre niveau. Surf, bodyboard, paddle ou simplement des moments dans l'eau.
             </p>
           </div>

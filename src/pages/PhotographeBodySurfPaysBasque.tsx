@@ -253,9 +253,9 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION LIEN SURF */}
-        <section className="py-10 px-4">
+        <section className="py-8 md:py-10 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl text-center">
-            <p className="text-lg text-foreground/70 mb-5">
+            <p className="text-base md:text-lg text-foreground/70 mb-5">
               Tu pratiques aussi le surf classique ? Découvre mes shootings surf à Anglet pour une couverture complète de tes sessions.
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-5 text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300" asChild>

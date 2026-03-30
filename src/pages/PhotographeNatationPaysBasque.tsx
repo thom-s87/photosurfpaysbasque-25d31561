@@ -114,7 +114,7 @@ const PhotographeNatationPaysBasque = () => {
       <main className="pt-24">
 
         {/* ===== HERO ===== */}
-        <section className="py-16 md:py-24 px-4">
+        <section className="py-12 md:py-24 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
               Photographe natation · Pays Basque

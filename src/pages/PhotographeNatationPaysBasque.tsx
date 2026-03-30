@@ -152,13 +152,13 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== SECTION 1 ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <Target className="w-10 h-10 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Target className="w-8 h-8 md:w-10 md:h-10 text-primary mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Un regard précis sur votre performance
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               La natation est un sport exigeant où chaque détail compte. Grâce à des prises de vue adaptées, je capture votre technique, votre posture et vos mouvements pour sublimer votre progression et votre engagement.
             </p>
           </div>

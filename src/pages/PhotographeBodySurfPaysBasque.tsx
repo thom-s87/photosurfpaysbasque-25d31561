@@ -168,13 +168,13 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 2: PRATIQUE LIBRE */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <Waves className="w-10 h-10 text-accent-foreground mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Waves className="w-8 h-8 md:w-10 md:h-10 text-accent-foreground mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Une pratique libre et accessible
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               Le body surf séduit autant les passionnés d'océan que ceux qui recherchent une glisse plus instinctive et naturelle. Que vous soyez habitué des vagues ou simplement en quête de sensations, une séance photo body surf permet de garder une trace forte et authentique de ce moment. C'est la forme de glisse la plus pure : pas de planche, pas d'équipement complexe, juste le corps et la vague. Le résultat en images est brut, puissant et sincère.
             </p>
           </div>

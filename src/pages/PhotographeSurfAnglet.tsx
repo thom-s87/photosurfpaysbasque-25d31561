@@ -329,7 +329,7 @@ const PhotographeSurfAnglet = () => {
               Tu prends un cours de surf ? Profite-en pour capturer ta session en photo et garder un vrai souvenir de ton moment dans l'eau.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Disponible sur les plages d'Anglet aux côtés des écoles de surf locales.
+              Disponible sur toute la côte d'Anglet : Petite Chambre d'Amour (VVF), Sables d'Or, Marinella, Corsaires, Madrague, Dunes, Cavaliers, La Barre.
             </p>
           </div>
         </section>

@@ -194,8 +194,12 @@ const PhotographeBodySurfPaysBasque = () => {
               {[
                 { name: "La Barre", description: "Vagues longues et régulières, spot idéal pour le body surf" },
                 { name: "Les Cavaliers", description: "Beach break puissant, images dynamiques et intenses" },
-                { name: "Petite Chambre d'Amour", description: "Angles uniques depuis les digues, contre-plongées immersives" },
+               { name: "Petite Chambre d'Amour (VVF)", description: "Angles uniques depuis les digues, contre-plongées immersives" },
                 { name: "Les Sables d'Or", description: "Ambiance douce, lumières de fin de journée" },
+                { name: "Marinella", description: "Beach break régulier, spot polyvalent" },
+                { name: "Les Corsaires", description: "Vagues techniques pour les confirmés" },
+                { name: "La Madrague", description: "Cadre sauvage, lumière spectaculaire" },
+                { name: "Les Dunes", description: "Espace dégagé, houle constante" },
               ].map((spot) => (
                 <div key={spot.name} className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-border/50">
                   <div className="flex items-center gap-3 mb-3">

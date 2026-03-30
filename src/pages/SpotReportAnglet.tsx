@@ -44,7 +44,7 @@ const SpotReportAnglet = () => {
               {dateStr}
             </p>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Photographe surf à Anglet, spécialisé dans la capture de sessions en conditions réelles sur les plages emblématiques de la Côte Basque. Des digues de la Petite Chambre d'Amour aux bancs de sable entre Les Cavaliers et La Barre, je photographie les surfeurs là où les vagues s'expriment vraiment.
+              Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Je photographie les surfeurs là où les vagues s'expriment vraiment.
             </p>
             <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
               Chaque session est pensée comme une immersion : lecture des conditions, choix des axes de prise de vue, timing précis et connaissance du spot.

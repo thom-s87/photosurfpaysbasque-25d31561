@@ -147,7 +147,7 @@ const ShootingGrossessePaysBasque = () => {
               <Sun className="w-10 h-10 text-golden mx-auto md:mx-0 mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Des lieux naturels entre océan et lumière</h2>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Les shootings se déroulent principalement en extérieur, sur les plages d'Anglet, Biarritz ou les spots plus calmes du Pays Basque. La lumière, le mouvement de l'océan et l'environnement créent une ambiance douce et authentique.
+                Les shootings se déroulent sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. La lumière, le mouvement de l'océan et l'environnement créent une ambiance douce et authentique.
               </p>
             </div>
           </div>

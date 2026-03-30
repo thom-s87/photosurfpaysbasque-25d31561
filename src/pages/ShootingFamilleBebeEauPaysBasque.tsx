@@ -147,7 +147,7 @@ const ShootingFamilleBebeEauPaysBasque = () => {
               <Sun className="w-10 h-10 text-golden mx-auto md:mx-0 mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Un cadre idéal entre océan et lumière</h2>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Les séances se déroulent principalement sur les plages d'Anglet, Biarritz ou aux alentours. L'océan, la lumière et le mouvement créent une atmosphère douce, vivante et pleine d'émotion.
+                Les séances se déroulent sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. L'océan, la lumière et le mouvement créent une atmosphère douce, vivante et pleine d'émotion.
               </p>
             </div>
           </div>

@@ -139,7 +139,7 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== IMAGE HERO ===== */}
-        <section className="px-4">
+        <section className="px-5 md:px-4">
           <div className="container mx-auto max-w-5xl">
             <img
               src={natationHero}

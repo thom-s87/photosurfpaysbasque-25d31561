@@ -256,7 +256,7 @@ const PhotographeSurfAnglet = () => {
         {/* ===== SECTION 4 : POUR QUI ===== */}
         <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Pour qui ?
             </h2>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">

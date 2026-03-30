@@ -1,5 +1,6 @@
 import { Star, ExternalLink } from "lucide-react";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
+import { SectionCTA } from "@/components/SectionCTA";
 
 const GOOGLE_REVIEWS_URL = "https://share.google/zXtao4SCc4KVm0ePV";
 
@@ -7,19 +8,19 @@ const reviews = [
   {
     name: "Camille L.",
     rating: 5,
-    text: "Thom a capturé notre session surf à Anglet avec un œil incroyable. Les photos sont magnifiques, on revit chaque vague. Merci !",
+    text: "Super expérience, photos incroyables à Anglet ! Thom a un œil de fou, on revit chaque vague.",
     date: "Mars 2026",
   },
   {
     name: "Julien R.",
     rating: 5,
-    text: "Séance famille sur la plage des Cavaliers. Nos enfants ont adoré, les photos sont naturelles et pleines de vie. On recommande à 100%.",
+    text: "Top photographe, très pro et rapide. Séance famille sur la plage des Cavaliers, résultat magnifique.",
     date: "Février 2026",
   },
   {
     name: "Marine D.",
     rating: 5,
-    text: "Un shooting maternité dans l'eau absolument magique. Thom sait mettre à l'aise et trouver la bonne lumière. Résultat au-delà de nos attentes.",
+    text: "Un shooting maternité dans l'eau absolument magique. Résultat au-delà de nos attentes. On recommande à 100%.",
     date: "Janvier 2026",
   },
 ];
@@ -67,28 +68,19 @@ export const GoogleReviews = () => {
               key={i}
               className="bg-card rounded-xl p-6 md:p-8 border border-border/60 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              {/* Stars */}
               <div className="flex gap-0.5 mb-4">
                 {[...Array(review.rating)].map((_, j) => (
-                  <Star
-                    key={j}
-                    className="w-4 h-4 fill-golden text-golden"
-                  />
+                  <Star key={j} className="w-4 h-4 fill-golden text-golden" />
                 ))}
               </div>
-              
-              {/* Quote */}
               <p className="text-foreground/80 text-sm leading-relaxed mb-5 italic">
                 "{review.text}"
               </p>
-              
-              {/* Author */}
               <div className="flex items-center justify-between">
                 <div>
                   <p className="font-medium text-foreground text-sm">{review.name}</p>
                   <p className="text-muted-foreground text-xs">{review.date}</p>
                 </div>
-                {/* Google G icon */}
                 <svg className="w-5 h-5 text-muted-foreground/40" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
                   <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
@@ -100,7 +92,6 @@ export const GoogleReviews = () => {
           ))}
         </div>
 
-        {/* CTA to Google */}
         <div className="text-center">
           <a
             href={GOOGLE_REVIEWS_URL}
@@ -112,6 +103,8 @@ export const GoogleReviews = () => {
             Voir tous les avis sur Google
           </a>
         </div>
+
+        <SectionCTA />
       </div>
     </section>
   );

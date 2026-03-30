@@ -176,7 +176,7 @@ const SpotPhotoPetiteChambreAmour = () => {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-sunset text-foreground px-8 py-5 text-base font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-sunset text-foreground px-6 py-4 min-[375px]:px-8 min-[375px]:py-5 text-sm min-[375px]:text-base font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
                 asChild
               >
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

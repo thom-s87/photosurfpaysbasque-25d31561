@@ -47,7 +47,7 @@ export const Tarifs = () => {
         <p className="text-gradient-sunset font-medium tracking-[0.3em] uppercase text-xs mb-6 text-center inline-block w-full">📸 Nos formules</p>
 
         {/* Séance photo */}
-        <div className="bg-night/60 backdrop-blur-sm rounded-lg p-8 md:p-10 border border-electric-violet/20 mb-8 text-center">
+        <div className="bg-night/60 backdrop-blur-sm rounded-lg p-6 min-[375px]:p-8 md:p-10 border border-electric-violet/20 mb-8 text-center">
           <h2 className="font-display text-3xl md:text-4xl text-primary-foreground mb-2 tracking-wider">
             Séance photo
           </h2>

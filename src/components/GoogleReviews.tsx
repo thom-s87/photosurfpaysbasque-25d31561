@@ -62,7 +62,7 @@ export const GoogleReviews = () => {
         </div>
 
         {/* Reviews grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mb-10">
           {reviews.map((review, i) => (
             <div
               key={i}

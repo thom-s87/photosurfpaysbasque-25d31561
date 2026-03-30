@@ -134,14 +134,27 @@
   }
 }
 
-/* Smooth scrolling */
-html {
+/* Smooth scrolling & prevent horizontal overflow */
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-body {
-  overflow-x: hidden;
+/* Global mobile polish */
+@media (max-width: 767px) {
+  /* Prevent any element from exceeding viewport width */
+  .container {
+    max-width: 100% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Safe area for iPhone notch/bottom bar */
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
 }
 
 /* Premium image hover */

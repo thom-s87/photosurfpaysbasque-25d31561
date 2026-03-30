@@ -71,7 +71,7 @@ export const Tarifs = () => {
           {packs.map((pack, i) => (
             <div
               key={i}
-              className={`bg-night/60 backdrop-blur-sm rounded-lg p-6 md:p-8 border text-center relative ${
+              className={`bg-night/60 backdrop-blur-sm rounded-lg p-5 min-[375px]:p-6 md:p-8 border text-center relative ${
                 pack.highlight ? "border-golden/50 ring-1 ring-golden/20" : "border-electric-violet/20"
               }`}
             >

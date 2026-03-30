@@ -23,7 +23,7 @@ export const Story = () => {
             {/* Retro sunset accent bar */}
             <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-gradient-sunset opacity-30 -z-10 hidden md:block" />
             {/* Thin retro line */}
-            <div className="absolute -top-3 -left-3 w-16 h-[3px] bg-gradient-sunset" />
+            <div className="absolute -top-3 -left-3 w-16 h-[3px] bg-gradient-sunset hidden md:block" />
           </div>
 
           {/* Text */}

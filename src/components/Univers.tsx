@@ -51,7 +51,7 @@ export const Univers = () => {
           Chaque séance capture l'énergie de l'océan et la beauté du moment.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {blocks.map((block, i) => (
             <Link
               key={i}

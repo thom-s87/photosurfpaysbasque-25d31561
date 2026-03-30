@@ -43,7 +43,7 @@ export const Footer = () => {
         </div>
 
         {/* SEO links */}
-        <nav className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8 text-sm">
+        <nav className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 mb-8 text-xs md:text-sm">
           <a href="/photographe-surf-anglet" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe surf Anglet</a>
           <a href="/photographe-body-surf-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe body surf</a>
           <a href="/photographe-grossesse-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe grossesse</a>

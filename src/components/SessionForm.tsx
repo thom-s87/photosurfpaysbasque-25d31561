@@ -145,7 +145,7 @@ export const SessionForm = () => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6 bg-card/80 backdrop-blur-sm border border-border/40 rounded-2xl p-6 md:p-10 shadow-xl">
+        <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6 bg-card/80 backdrop-blur-sm border border-border/40 rounded-2xl p-5 min-[375px]:p-6 md:p-10 shadow-xl">
           {/* Nom & Téléphone */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">

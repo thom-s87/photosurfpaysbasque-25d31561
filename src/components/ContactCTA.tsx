@@ -36,7 +36,7 @@ export const ContactCTA = () => {
 
         <Button 
           size="lg" 
-          className="bg-gradient-sunset text-foreground px-10 py-7 text-lg font-semibold rounded-full shadow-2xl mb-8 hover:opacity-90 transition-opacity"
+          className="bg-gradient-sunset text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 md:py-7 text-base min-[375px]:text-lg font-semibold rounded-full shadow-2xl mb-8 hover:opacity-90 transition-opacity w-full sm:w-auto"
           asChild
         >
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

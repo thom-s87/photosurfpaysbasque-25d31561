@@ -42,7 +42,7 @@ export const Process = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-6">
           {steps.map((step, i) => (
             <div key={i} className="text-center">
-              <div className="text-gradient-sunset font-display text-6xl mb-4 inline-block tracking-wider">{step.number}</div>
+              <div className="text-gradient-sunset font-display text-4xl md:text-6xl mb-3 md:mb-4 inline-block tracking-wider">{step.number}</div>
               <div className="w-14 h-14 rounded-full bg-deep-purple/10 flex items-center justify-center mx-auto mb-5">
                 <step.icon className="w-6 h-6 text-deep-purple" />
               </div>

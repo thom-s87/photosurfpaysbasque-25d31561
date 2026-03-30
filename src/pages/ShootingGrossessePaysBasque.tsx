@@ -134,10 +134,10 @@ const ShootingGrossessePaysBasque = () => {
             <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               La grossesse est un moment fort, intense et éphémère. Mon approche est simple : créer des images sincères, naturelles et intemporelles, dans un cadre qui vous ressemble.
             </p>
-            <div className="mt-10 flex justify-center px-2">
+            <div className="mt-10 px-5">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-5 md:px-10 md:py-6 text-base md:text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 max-w-full whitespace-normal text-center leading-snug"
+                className="w-full sm:w-auto mx-auto block bg-primary hover:bg-primary/90 text-primary-foreground px-5 py-4 md:px-10 md:py-6 text-sm min-[375px]:text-base md:text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-normal text-center leading-snug"
                 asChild
               >
                 <a href="/spot-photo-petite-chambre-amour-anglet">

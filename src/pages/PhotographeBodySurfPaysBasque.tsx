@@ -29,7 +29,7 @@ const faqItems = [
   },
   {
     question: "Où se déroulent les séances photo body surf ?",
-    answer: "Principalement sur les plages d'Anglet (La Barre, Les Cavaliers, Petite Chambre d'Amour) et Biarritz. Le spot est choisi en fonction des conditions de houle, de vent et de marée pour garantir les meilleures images.",
+    answer: "Sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Le spot est choisi en fonction des conditions de houle, de vent et de marée pour garantir les meilleures images.",
   },
   {
     question: "Faut-il être un bon body surfeur pour faire un shooting ?",

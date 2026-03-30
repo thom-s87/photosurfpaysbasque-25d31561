@@ -15,7 +15,7 @@ export const ContactCTA = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="contact" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
+    <section id="contact" className="py-16 min-[375px]:py-20 md:py-32 px-5 md:px-4 bg-gradient-night relative overflow-hidden retro-grain">
       {/* Wave decoration top */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" className="w-full h-[40px] rotate-180">

@@ -11,6 +11,7 @@ import { WatermarkedImage } from "@/components/WatermarkedImage";
 import coupleGoalImg from "@/assets/couple_goal.JPG";
 import rocherImg from "@/assets/femme_enceinte_rocher.JPG";
 import vvfImg from "@/assets/femme_enceinte_vvf.JPG";
+import wifeBabyImg from "@/assets/wife_ice_baby.JPG";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 

@@ -31,6 +31,7 @@ const highlights = [
 const galleryImages = [
   { src: coupleGoalImg, alt: "Shooting grossesse couple plage Anglet Petite Chambre d'Amour photographe" },
   { src: rocherImg, alt: "Photographe Anglet Petite Chambre d'Amour femme enceinte rochers coucher de soleil" },
+  { src: wifeBabyImg, alt: "photographe anglet petite chambre d'amour vvf" },
   { src: vvfImg, alt: "Photo famille grossesse plage Anglet VVF lumière dorée photographe" },
 ];
 

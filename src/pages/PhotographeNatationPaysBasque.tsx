@@ -165,13 +165,13 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== SECTION 2 ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <Droplets className="w-10 h-10 text-accent-foreground mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Droplets className="w-8 h-8 md:w-10 md:h-10 text-accent-foreground mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               En piscine privée ou en océan
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               Les shootings peuvent se faire en piscine privée pour un rendu maîtrisé et technique, ou en extérieur dans l'océan pour une approche plus immersive et dynamique, notamment pour les préparations type traversée de Biarritz.
             </p>
           </div>

@@ -192,13 +192,13 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== SECTION 3 ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <Trophy className="w-10 h-10 text-golden mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Trophy className="w-8 h-8 md:w-10 md:h-10 text-golden mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Préparation à la traversée de Biarritz
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               J'accompagne également les nageurs dans leur préparation à la traversée de Biarritz avec des images qui capturent l'intensité, la concentration et l'effort avant le jour J.
             </p>
           </div>

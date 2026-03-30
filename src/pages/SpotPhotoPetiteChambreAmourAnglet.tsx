@@ -170,7 +170,7 @@ const SpotPhotoPetiteChambreAmour = () => {
             <p className="text-sm uppercase tracking-widest text-primary-foreground/80 font-medium mb-3">
               Mon spot coup de cœur · Anglet
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide mb-6">
+            <h1 className="text-2xl min-[375px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide mb-5 md:mb-6">
               La Petite Chambre d'Amour (VVF) 🌊
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

@@ -118,7 +118,7 @@ const PhotographeBodySurfPaysBasque = () => {
               <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
                 Photographe Body Surf au Pays Basque 🌊
               </h1>
-              <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-10">
+              <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-8 md:mb-10">
                 Le body surf, c'est le plaisir brut de la glisse, au plus près de l'eau et des sensations. Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers.
               </p>
               <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" asChild>

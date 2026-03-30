@@ -55,7 +55,7 @@ export const Footer = () => {
 
         <div className="text-center text-primary-foreground/30 text-sm space-y-2">
           <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe surf à Anglet, Biarritz</p>
-          <p>Photographe surf Anglet · Photo & vidéo surf Pays Basque · Cavaliers · Marinella · Chambre d'Amour · Hossegor</p>
+          <p>Toute la côte d'Anglet : Petite Chambre d'Amour (VVF) · Sables d'Or · Marinella · Corsaires · Madrague · Dunes · Cavaliers · La Barre</p>
         </div>
       </div>
     </footer>

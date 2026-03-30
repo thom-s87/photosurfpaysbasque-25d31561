@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import { MapPin } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
@@ -50,21 +51,18 @@ export const Hero = () => {
             <span className="text-primary-foreground block">SURF</span>
             <span className="text-gradient-sunset block">PAYS BASQUE</span>
           </h1>
-          
-          <p className="text-base min-[375px]:text-xl md:text-2xl text-primary-foreground/90 font-light mb-2 min-[375px]:mb-3 max-w-xl">
-            Vos moments dans l'océan méritent plus qu'un souvenir.
+
+          <p className="text-lg min-[375px]:text-xl md:text-2xl text-primary-foreground font-medium mb-2 min-[375px]:mb-3 max-w-xl">
+            Shooting photo à Anglet, Biarritz & Hossegor 📸
           </p>
           
-          <p className="text-xs min-[375px]:text-sm md:text-base text-primary-foreground/50 mb-3 min-[375px]:mb-4 uppercase tracking-widest">
-            Photographe de l'océan au Pays Basque
+          <p className="text-base min-[375px]:text-lg md:text-xl text-primary-foreground/80 font-light mb-3 min-[375px]:mb-4 max-w-xl">
+            Capture tes meilleures vagues avec un photographe local spécialisé surf
           </p>
 
-          <div className="flex flex-wrap gap-2 min-[375px]:gap-3 text-xs min-[375px]:text-sm text-primary-foreground/40 mb-6 min-[375px]:mb-10 tracking-widest uppercase font-light">
-            <span>Surf</span><span className="text-hot-pink">·</span>
-            <span>Famille</span><span className="text-sunset-orange">·</span>
-            <span>Grossesse</span><span className="text-golden">·</span>
-            <span>Sports aquatiques</span><span className="text-hot-pink">·</span>
-            <span>Lifestyle plage</span>
+          <div className="flex items-center gap-2 text-primary-foreground/50 text-sm mb-6 min-[375px]:mb-8">
+            <MapPin className="w-4 h-4 flex-shrink-0" />
+            <span>Basé à Anglet — Déplacements Biarritz / Hossegor</span>
           </div>
           
           <div className="flex flex-col min-[375px]:flex-row flex-wrap gap-3 min-[375px]:gap-4">
@@ -73,9 +71,8 @@ export const Hero = () => {
               className="bg-gradient-sunset text-foreground px-6 min-[375px]:px-10 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full min-[375px]:w-auto whitespace-normal text-center leading-tight"
               asChild
             >
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3 flex-shrink-0" />
-                Réserver sur WhatsApp
+              <a href="#tarifs">
+                📸 Réserver ma session
               </a>
             </Button>
             <Button 
@@ -84,8 +81,9 @@ export const Hero = () => {
               className="border-primary-foreground/30 text-primary-foreground px-5 min-[375px]:px-8 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg rounded-full hover:bg-primary-foreground/10 hover:text-primary-foreground bg-transparent w-full min-[375px]:w-auto whitespace-normal text-center leading-tight"
               asChild
             >
-              <a href="#galerie">
-                Découvrir la galerie
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3 flex-shrink-0" />
+                💬 Me contacter sur WhatsApp
               </a>
             </Button>
           </div>

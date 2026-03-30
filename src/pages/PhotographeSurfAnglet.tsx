@@ -302,7 +302,7 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== FAQ SEO ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
               Questions fréquentes – Photographe surf à Anglet

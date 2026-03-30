@@ -188,7 +188,7 @@ const PhotographeBodySurfPaysBasque = () => {
               Les spots de body surf au Pays Basque
             </h2>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center mb-8">
-              Les shootings body surf se déroulent principalement sur les plages d'Anglet, reconnues pour la qualité de leurs vagues et la variété de leurs bancs de sable. La Barre, avec ses vagues longues et régulières, est idéale pour le body surf. Les Cavaliers offrent des conditions puissantes, parfaites pour des images dynamiques. La Petite Chambre d'Amour, avec ses digues, permet des angles de prise de vue uniques en contre-plongée. Je couvre également Biarritz et la côte basque selon les conditions de houle, de vent et de marée.
+              Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. La Barre, avec ses vagues longues et régulières, est idéale pour le body surf. Les Cavaliers offrent des conditions puissantes, parfaites pour des images dynamiques. La Petite Chambre d'Amour, avec ses digues, permet des angles de prise de vue uniques en contre-plongée.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {[

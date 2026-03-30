@@ -48,9 +48,9 @@ const faqItems = [
 
 const PhotographeNatationPaysBasque = () => {
   useEffect(() => {
-    document.title = "Photographe Natation Pays Basque 🏊 | Shooting sportif Anglet & Biarritz";
+    document.title = "Photographe Natation Pays Basque | Shooting Piscine & Océan";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe natation et performance au Pays Basque. Shootings en piscine privée ou en océan pour nageurs, triathlètes et sportifs. Réservation via WhatsApp.";
+    const descContent = "Photographe natation au Pays Basque 📸 Shooting piscine & océan pour nageurs, triathlètes et sportifs à Anglet et Biarritz. Photos professionnelles et naturelles 🌊";
     if (metaDesc) {
       metaDesc.setAttribute("content", descContent);
     } else {

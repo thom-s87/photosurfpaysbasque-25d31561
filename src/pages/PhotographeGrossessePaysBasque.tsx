@@ -48,9 +48,9 @@ const faqItems = [
 
 const PhotographeGrossessePaysBasque = () => {
   useEffect(() => {
-    document.title = "Photographe Grossesse Pays Basque 🤍 | Shooting maternité Anglet & Biarritz";
+    document.title = "Photographe Grossesse Pays Basque | Shooting plage & eau";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Shooting grossesse naturel au Pays Basque. Séances photo maternité en extérieur à Anglet, Biarritz et sur la côte basque. Réservation rapide via WhatsApp.";
+    const descContent = "Photographe grossesse au Pays Basque 📸 Shooting maternité naturel en extérieur à Anglet et Biarritz. Photos plage & eau, douces et authentiques. Réservation WhatsApp 🌊";
     if (metaDesc) {
       metaDesc.setAttribute("content", descContent);
     } else {

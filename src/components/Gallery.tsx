@@ -97,7 +97,7 @@ export const Gallery = () => {
           {/* Scrollable track */}
           <div
             ref={scrollRef}
-            className="flex gap-4 overflow-x-auto scrollbar-hide px-4 md:px-8 snap-x snap-mandatory"
+            className="flex gap-3 min-[375px]:gap-4 overflow-x-auto scrollbar-hide px-5 md:px-8 snap-x snap-mandatory"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}
           >
             {galleryImages.map((photo, i) => (

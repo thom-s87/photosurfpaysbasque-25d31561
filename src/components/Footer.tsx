@@ -13,7 +13,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 export const Footer = () => {
   return (
-    <footer className="bg-night text-primary-foreground py-16 border-t border-electric-violet/10">
+    <footer className="bg-night text-primary-foreground py-12 md:py-16 border-t border-electric-violet/10">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div>

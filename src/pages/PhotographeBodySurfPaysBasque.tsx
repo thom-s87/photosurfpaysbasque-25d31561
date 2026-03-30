@@ -201,7 +201,7 @@ const PhotographeBodySurfPaysBasque = () => {
                 { name: "La Madrague", description: "Cadre sauvage, lumière spectaculaire" },
                 { name: "Les Dunes", description: "Espace dégagé, houle constante" },
               ].map((spot) => (
-                <div key={spot.name} className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-border/50">
+                <div key={spot.name} className="bg-background/80 backdrop-blur-sm rounded-xl p-5 md:p-6 shadow-md hover:shadow-xl transition-all border border-border/50">
                   <div className="flex items-center gap-3 mb-3">
                     <MapPin className="w-6 h-6 text-primary shrink-0" />
                     <h3 className="text-lg font-bold text-foreground">{spot.name}</h3>

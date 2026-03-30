@@ -198,7 +198,7 @@ const PhotographeSurfAnglet = () => {
             <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Pourquoi faire appel à un photographe surf à Anglet ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Anglet est l'un des spots les plus réputés du Pays Basque pour le surf. Avec ses nombreuses plages et ses bancs de sable changeants, chaque session est unique. Faire appel à un photographe surf local permet de capturer les meilleures vagues, au bon moment, avec une vraie connaissance du spot.
             </p>
           </div>

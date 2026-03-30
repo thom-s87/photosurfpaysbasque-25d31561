@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { MapPin, Waves } from "lucide-react";
 import { SurfContactForm } from "@/components/SurfContactForm";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import {
   Accordion,
   AccordionContent,
@@ -59,9 +60,9 @@ const faqItems = [
 
 const PhotographeSurfAnglet = () => {
   useEffect(() => {
-    document.title = "Photographe Surf Anglet 🏄 | Photos dans l'eau – Pays Basque";
+    document.title = "Photographe Surf Pays Basque | Shooting Surf Anglet, Biarritz, Hossegor";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe surf à Anglet. Photos immersives dans l'eau sur les spots des Cavaliers, La Barre et la Petite Chambre d'Amour. Réservation rapide via WhatsApp.";
+    const descContent = "Photographe surf au Pays Basque 📸 Shooting surf immersif à Anglet, Biarritz et Hossegor. Photos dans l'eau, naturelles et professionnelles. Réservation rapide via WhatsApp 🌊";
     if (metaDesc) {
       metaDesc.setAttribute("content", descContent);
     } else {
@@ -124,7 +125,7 @@ const PhotographeSurfAnglet = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -355,6 +356,7 @@ const PhotographeSurfAnglet = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

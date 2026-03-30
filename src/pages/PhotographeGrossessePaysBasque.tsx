@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Sun, Users, Camera } from "lucide-react";
 import { UniversContactForm } from "@/components/UniversContactForm";
 import { GrossesseContactForm } from "@/components/GrossesseContactForm";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import heroImg from "@/assets/grossesse-hero.jpg";
 import middleImg from "@/assets/grossesse-middle.jpg";
 import bottomImg from "@/assets/grossesse-bottom.jpg";
@@ -48,9 +49,9 @@ const faqItems = [
 
 const PhotographeGrossessePaysBasque = () => {
   useEffect(() => {
-    document.title = "Photographe Grossesse Pays Basque 🤍 | Shooting maternité Anglet & Biarritz";
+    document.title = "Photographe Grossesse Pays Basque | Shooting plage & eau";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Shooting grossesse naturel au Pays Basque. Séances photo maternité en extérieur à Anglet, Biarritz et sur la côte basque. Réservation rapide via WhatsApp.";
+    const descContent = "Photographe grossesse au Pays Basque 📸 Shooting maternité naturel en extérieur à Anglet et Biarritz. Photos plage & eau, douces et authentiques. Réservation WhatsApp 🌊";
     if (metaDesc) {
       metaDesc.setAttribute("content", descContent);
     } else {
@@ -106,7 +107,7 @@ const PhotographeGrossessePaysBasque = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -272,6 +273,7 @@ const PhotographeGrossessePaysBasque = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

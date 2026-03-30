@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Heart, Sun, Baby, Sparkles, Users } from "lucide-react";
 import { FamilleContactForm } from "@/components/FamilleContactForm";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import {
   Accordion,
   AccordionContent,
@@ -47,9 +48,9 @@ const faqItems = [
 
 const ShootingFamilleBebeEauPaysBasque = () => {
   useEffect(() => {
-    document.title = "Shooting Famille & Bébé à l'eau au Pays Basque 👶🌊 | Séance photo Anglet & Biarritz";
+    document.title = "Photographe Famille Pays Basque | Séance plage & bébé nageur";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Shooting famille et bébé dans l'eau au Pays Basque. Séances photo naturelles en bord de mer à Anglet et Biarritz. Réservation rapide via WhatsApp.";
+    const descContent = "Photographe famille au Pays Basque 📸 Séance plage & bébé nageur à Anglet et Biarritz. Photos naturelles en famille dans l'eau. Réservation rapide via WhatsApp 🌊";
     if (metaDesc) {
       metaDesc.setAttribute("content", descContent);
     } else {
@@ -92,7 +93,7 @@ const ShootingFamilleBebeEauPaysBasque = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -268,6 +269,7 @@ const ShootingFamilleBebeEauPaysBasque = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

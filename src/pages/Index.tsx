@@ -11,10 +11,11 @@ import { SessionForm } from "@/components/SessionForm";
 import { ContactCTA } from "@/components/ContactCTA";
 import { SeoAccordion } from "@/components/SeoAccordion";
 import { Footer } from "@/components/Footer";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background pb-16 md:pb-0">
       <Header />
       <main>
         <Hero />
@@ -30,6 +31,7 @@ const Index = () => {
         <SeoAccordion />
       </main>
       <Footer />
+      <MobileFixedCTA />
 
       {/* JSON-LD LocalBusiness */}
       <script
@@ -40,16 +42,21 @@ const Index = () => {
             "@type": "LocalBusiness",
             name: "PhotoSurfPaysBasque",
             description: "Photographe de l'océan au Pays Basque — surf, famille, grossesse, sports aquatiques, lifestyle plage",
-            url: "https://photosurfpaysbasque.lovable.app",
+            url: "https://photosurfpaysbasque.fr",
             telephone: "+33695349187",
             areaServed: ["Anglet", "Biarritz", "Pays Basque", "Hossegor"],
             priceRange: "€",
-            image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200&q=80",
             address: {
               "@type": "PostalAddress",
               addressLocality: "Anglet",
               addressRegion: "Pyrénées-Atlantiques",
+              postalCode: "64600",
               addressCountry: "FR",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 43.483,
+              longitude: -1.522,
             },
           }),
         }}

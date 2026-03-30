@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Waves, Target, Droplets, Trophy, Users } from "lucide-react";
 import { NatationContactForm } from "@/components/NatationContactForm";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import {
   Accordion,
   AccordionContent,
@@ -48,9 +49,9 @@ const faqItems = [
 
 const PhotographeNatationPaysBasque = () => {
   useEffect(() => {
-    document.title = "Photographe Natation Pays Basque 🏊 | Shooting sportif Anglet & Biarritz";
+    document.title = "Photographe Natation Pays Basque | Shooting Piscine & Océan";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe natation et performance au Pays Basque. Shootings en piscine privée ou en océan pour nageurs, triathlètes et sportifs. Réservation via WhatsApp.";
+    const descContent = "Photographe natation au Pays Basque 📸 Shooting piscine & océan pour nageurs, triathlètes et sportifs à Anglet et Biarritz. Photos professionnelles et naturelles 🌊";
     if (metaDesc) {
       metaDesc.setAttribute("content", descContent);
     } else {
@@ -105,7 +106,7 @@ const PhotographeNatationPaysBasque = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -299,6 +300,7 @@ const PhotographeNatationPaysBasque = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

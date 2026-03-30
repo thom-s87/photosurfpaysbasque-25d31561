@@ -231,7 +231,7 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== SECTION 3 : SPOTS ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
               Les spots couverts à Anglet

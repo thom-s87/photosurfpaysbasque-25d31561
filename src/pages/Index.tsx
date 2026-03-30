@@ -2,16 +2,19 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Story } from "@/components/Story";
 import { Univers } from "@/components/Univers";
+import { UrgencyBanner } from "@/components/UrgencyBanner";
 import { Tarifs } from "@/components/Tarifs";
 import { Gallery } from "@/components/Gallery";
 import { Tirages } from "@/components/Tirages";
 import { Process } from "@/components/Process";
 import { GoogleReviews } from "@/components/GoogleReviews";
+import { FAQ } from "@/components/FAQ";
 import { SessionForm } from "@/components/SessionForm";
 import { ContactCTA } from "@/components/ContactCTA";
 import { SeoAccordion } from "@/components/SeoAccordion";
 import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
@@ -21,17 +24,20 @@ const Index = () => {
         <Hero />
         <Story />
         <Univers />
+        <UrgencyBanner />
         <Tarifs />
         <Gallery />
         <Tirages />
         <Process />
         <GoogleReviews />
+        <FAQ />
         <SessionForm />
         <ContactCTA />
         <SeoAccordion />
       </main>
       <Footer />
       <MobileFixedCTA />
+      <FloatingWhatsApp />
 
       {/* JSON-LD LocalBusiness */}
       <script

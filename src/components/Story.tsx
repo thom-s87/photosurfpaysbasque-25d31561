@@ -16,7 +16,7 @@ export const Story = () => {
               <WatermarkedImage
                 src={surfeurProNight}
                 alt="Surfeur professionnel session photographe Pays Basque"
-                className="w-full h-[500px] lg:h-[600px] object-cover"
+                className="w-full h-[350px] min-[375px]:h-[420px] md:h-[500px] lg:h-[600px] object-cover"
                 loading="eager"
               />
             </div>

@@ -160,10 +160,10 @@ const SpotPhotoPetiteChambreAmour = () => {
         {/* ===== HERO VISUEL ===== */}
         <section className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
           <WatermarkedImage
-            src={vvfImg}
-            alt="Shooting grossesse plage Anglet Petite Chambre d'Amour VVF lumière dorée photographe"
+            src={wifeBabyImg}
+            alt="photographe anglet petite chambre d'amour vvf"
             loading="eager"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 px-4 pb-10 md:pb-16 text-center">

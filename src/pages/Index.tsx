@@ -24,12 +24,16 @@ const Index = () => {
       <main>
         <Hero />
         <Story />
+        <SectionCTA />
         <Univers />
         <UrgencyBanner />
         <Tarifs />
         <Gallery />
+        <SectionCTA />
         <Tirages />
+        <SectionCTA />
         <Process />
+        <SectionCTA />
         <GoogleReviews />
         <FAQ />
         <SessionForm />

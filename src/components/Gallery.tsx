@@ -108,7 +108,7 @@ export const Gallery = () => {
                 <WatermarkedImage
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-[50vh] md:h-[60vh] object-cover transition-transform duration-700 group-hover:scale-[1.01]"
+                  className="w-full h-[45vh] min-[375px]:h-[50vh] md:h-[60vh] object-cover transition-transform duration-700 group-hover:scale-[1.01]"
                 />
               </div>
             ))}

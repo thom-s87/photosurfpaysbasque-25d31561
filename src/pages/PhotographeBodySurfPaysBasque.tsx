@@ -282,7 +282,7 @@ const PhotographeBodySurfPaysBasque = () => {
                   Réserver via WhatsApp
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="px-10 py-6 text-xl font-bold rounded-full shadow-lg" asChild>
+              <Button size="lg" variant="outline" className="px-7 py-4 md:px-10 md:py-6 text-base md:text-xl font-bold rounded-full shadow-lg w-full sm:w-auto" asChild>
                 <a href="tel:+33695349187">
                   📞 Appeler directement
                 </a>

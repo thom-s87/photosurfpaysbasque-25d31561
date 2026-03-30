@@ -273,6 +273,7 @@ const PhotographeGrossessePaysBasque = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

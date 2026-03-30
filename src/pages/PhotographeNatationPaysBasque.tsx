@@ -300,6 +300,7 @@ const PhotographeNatationPaysBasque = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

@@ -269,6 +269,7 @@ const ShootingFamilleBebeEauPaysBasque = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

@@ -231,6 +231,7 @@ const ShootingGrossessePaysBasque = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

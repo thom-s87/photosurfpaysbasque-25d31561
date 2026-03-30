@@ -356,6 +356,7 @@ const PhotographeSurfAnglet = () => {
         </section>
       </main>
       <Footer />
+      <MobileFixedCTA />
     </div>
   );
 };

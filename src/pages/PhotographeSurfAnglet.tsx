@@ -145,7 +145,7 @@ const PhotographeSurfAnglet = () => {
             <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
               Photographe Surf à Anglet 🌊
             </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments.
             </p>
             <Button

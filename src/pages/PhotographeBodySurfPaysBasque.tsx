@@ -214,13 +214,13 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 4: POUR QUI */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <Users className="w-10 h-10 text-hot-pink mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Users className="w-8 h-8 md:w-10 md:h-10 text-hot-pink mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Pour qui ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               Le shooting body surf s'adresse aux passionnés d'océan, aux amateurs de sensations fortes, aux groupes d'amis qui partagent une session, aux familles sportives ou à tous ceux qui veulent garder un souvenir unique de leur passage sur la côte basque. Que tu sois en vacances au Pays Basque ou résident à Anglet, Biarritz ou Hossegor, je m'adapte à ton niveau et à tes envies pour créer des images qui te ressemblent.
             </p>
           </div>

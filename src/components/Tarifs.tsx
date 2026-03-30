@@ -67,7 +67,7 @@ export const Tarifs = () => {
         <h3 className="font-display text-2xl md:text-3xl text-primary-foreground mb-6 text-center tracking-wider">
           Choisis ton pack photos
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-1 min-[375px]:grid-cols-3 gap-3 min-[375px]:gap-3 md:gap-4 mb-8">
           {packs.map((pack, i) => (
             <div
               key={i}

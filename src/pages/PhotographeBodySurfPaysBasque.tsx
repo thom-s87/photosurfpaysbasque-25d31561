@@ -227,7 +227,7 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* IMAGE LIFESTYLE */}
-        <section className="px-4 py-8">
+        <section className="px-5 md:px-4 py-6 md:py-8">
           <div className="container mx-auto max-w-5xl">
             <img
               src={bodysurfLifestyle}

@@ -40,7 +40,7 @@ export const Tarifs = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="tarifs" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
+    <section id="tarifs" className="py-16 min-[375px]:py-20 md:py-32 px-5 md:px-4 bg-gradient-night relative overflow-hidden retro-grain">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-hot-pink/5 blur-3xl" />
 
       <div ref={ref} className="container mx-auto max-w-4xl relative z-10 fade-in-section">

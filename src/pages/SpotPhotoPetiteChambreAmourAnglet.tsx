@@ -1,15 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Heart, Sun, Camera, MapPin } from "lucide-react";
+import { Heart, Sun, Camera, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { SectionCTA } from "@/components/SectionCTA";
+import { WatermarkedImage } from "@/components/WatermarkedImage";
 
-import heroImg from "@/assets/grossesse-plage-1.jpg";
-import coupleImg from "@/assets/grossesse-couple-2.jpg";
-import silhouetteImg from "@/assets/grossesse-silhouette-3.jpg";
+import coupleGoalImg from "@/assets/couple_goal.JPG";
+import rocherImg from "@/assets/femme_enceinte_rocher.JPG";
+import vvfImg from "@/assets/femme_enceinte_vvf.JPG";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
@@ -25,6 +26,86 @@ const highlights = [
   { icon: Sun, text: "Bord rocheux naturel" },
   { icon: Camera, text: "Lumière exceptionnelle au coucher de soleil" },
 ];
+
+const galleryImages = [
+  { src: coupleGoalImg, alt: "Shooting grossesse couple plage Anglet Petite Chambre d'Amour photographe" },
+  { src: rocherImg, alt: "Photographe Anglet Petite Chambre d'Amour femme enceinte rochers coucher de soleil" },
+  { src: vvfImg, alt: "Photo famille grossesse plage Anglet VVF lumière dorée photographe" },
+];
+
+const HorizontalGallery = ({ images, id }: { images: typeof galleryImages; id: string }) => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkScroll = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 10);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 10);
+  };
+
+  const scroll = (dir: "left" | "right") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const amount = el.clientWidth * 0.8;
+    el.scrollBy({ left: dir === "left" ? -amount : amount, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    checkScroll();
+    el.addEventListener("scroll", checkScroll, { passive: true });
+    return () => el.removeEventListener("scroll", checkScroll);
+  }, []);
+
+  return (
+    <div className="relative group">
+      {/* Scroll buttons – desktop */}
+      {canScrollLeft && (
+        <button
+          onClick={() => scroll("left")}
+          className="hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 items-center justify-center rounded-full bg-background/80 backdrop-blur-sm shadow-lg border border-border/50 text-foreground hover:bg-background transition-all"
+          aria-label="Précédent"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+      )}
+      {canScrollRight && (
+        <button
+          onClick={() => scroll("right")}
+          className="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 z-10 w-11 h-11 items-center justify-center rounded-full bg-background/80 backdrop-blur-sm shadow-lg border border-border/50 text-foreground hover:bg-background transition-all"
+          aria-label="Suivant"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      )}
+
+      <div
+        ref={scrollRef}
+        className="flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 px-4 md:px-0"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+      >
+        {images.map((img, i) => (
+          <div
+            key={`${id}-${i}`}
+            className="flex-none w-[85vw] sm:w-[70vw] md:w-[45%] lg:w-[40%] snap-center"
+          >
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <WatermarkedImage
+                src={img.src}
+                alt={img.alt}
+                loading={i === 0 ? "eager" : "lazy"}
+                className="w-full h-[55vh] sm:h-[60vh] md:h-[500px] object-cover"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const SpotPhotoPetiteChambreAmour = () => {
   useEffect(() => {
@@ -74,50 +155,62 @@ const SpotPhotoPetiteChambreAmour = () => {
       <Header />
       <main className="pt-24">
 
-        {/* ===== HERO ===== */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">
-            <div className="text-center md:text-left">
-              <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
-                Mon spot coup de cœur · Anglet
-              </p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-                La Petite Chambre d'Amour (VVF) 🌊
-              </h1>
-              <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-10">
-                La plage de la Petite Chambre d'Amour, appelée encore aujourd'hui le VVF par les locaux, est l'un de mes spots préférés à Anglet pour réaliser des séances photo en famille ou pendant la grossesse.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <Button
-                  size="lg"
-                  className="bg-gradient-sunset text-foreground px-10 py-6 text-lg font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
-                  asChild
-                >
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    📸 Réserver ma séance à Anglet
-                  </a>
-                </Button>
-                <Button
-                  size="lg"
-                  className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-10 py-6 text-lg font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
-                  asChild
-                >
-                  <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                    <WhatsAppIcon className="w-6 h-6 mr-2" />
-                    Contact rapide WhatsApp
-                  </a>
-                </Button>
-              </div>
+        {/* ===== HERO VISUEL ===== */}
+        <section className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden">
+          <WatermarkedImage
+            src={vvfImg}
+            alt="Shooting grossesse plage Anglet Petite Chambre d'Amour VVF lumière dorée photographe"
+            loading="eager"
+            className="w-full h-full object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 px-4 pb-10 md:pb-16 text-center">
+            <p className="text-sm uppercase tracking-widest text-primary-foreground/80 font-medium mb-3">
+              Mon spot coup de cœur · Anglet
+            </p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide mb-6">
+              La Petite Chambre d'Amour (VVF) 🌊
+            </h1>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-sunset text-foreground px-8 py-5 text-base font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                asChild
+              >
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                  📸 Réserver ma séance à Anglet
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-5 text-base font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                asChild
+              >
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                  <WhatsAppIcon className="w-5 h-5 mr-2" />
+                  Contact WhatsApp
+                </a>
+              </Button>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={heroImg}
-                alt="Shooting grossesse au coucher de soleil à la Petite Chambre d'Amour Anglet"
-                width={1280}
-                height={864}
-                className="w-full h-auto object-cover"
-              />
-            </div>
+          </div>
+        </section>
+
+        {/* ===== INTRO ===== */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-3xl text-center">
+            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
+              La plage de la Petite Chambre d'Amour, appelée encore aujourd'hui le VVF par les locaux, est l'un de mes spots préférés à Anglet pour réaliser des séances photo en famille ou pendant la grossesse.
+            </p>
+          </div>
+        </section>
+
+        {/* ===== GALERIE 1 ===== */}
+        <section className="py-8 md:py-12">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary mb-8">
+              Ambiance & lumière au VVF
+            </h2>
+            <HorizontalGallery images={galleryImages} id="gallery-top" />
           </div>
         </section>
 
@@ -144,16 +237,13 @@ const SpotPhotoPetiteChambreAmour = () => {
 
         <SectionCTA />
 
-        {/* ===== LA LUMIÈRE ===== */}
+        {/* ===== LA LUMIÈRE + IMAGE ===== */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">
             <div className="rounded-2xl overflow-hidden shadow-2xl order-2 md:order-1">
-              <img
-                src={coupleImg}
-                alt="Lumière dorée coucher de soleil Petite Chambre d'Amour Anglet photographe famille"
-                loading="lazy"
-                width={1280}
-                height={864}
+              <WatermarkedImage
+                src={rocherImg}
+                alt="Photographe Anglet Petite Chambre d'Amour shooting grossesse rochers coucher de soleil"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -176,7 +266,7 @@ const SpotPhotoPetiteChambreAmour = () => {
 
         <SectionCTA />
 
-        {/* ===== MON APPROCHE ===== */}
+        {/* ===== MON APPROCHE + IMAGE ===== */}
         <section className="py-16 px-4 bg-card/60">
           <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">
             <div className="text-center md:text-left">
@@ -197,15 +287,22 @@ const SpotPhotoPetiteChambreAmour = () => {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={silhouetteImg}
-                alt="Séance photo naturelle famille grossesse Petite Chambre d'Amour VVF Anglet"
-                loading="lazy"
-                width={1280}
-                height={864}
+              <WatermarkedImage
+                src={coupleGoalImg}
+                alt="Photo famille plage Anglet couple grossesse Petite Chambre d'Amour photographe"
                 className="w-full h-auto object-cover"
               />
             </div>
+          </div>
+        </section>
+
+        {/* ===== GALERIE 2 ===== */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto max-w-6xl">
+            <h2 className="text-2xl md:text-3xl font-bold text-center text-primary mb-8">
+              Moments capturés au coucher de soleil
+            </h2>
+            <HorizontalGallery images={[...galleryImages].reverse()} id="gallery-bottom" />
           </div>
         </section>
 

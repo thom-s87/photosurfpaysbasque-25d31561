@@ -127,7 +127,7 @@ export const SessionForm = () => {
   const fieldClasses = "bg-background/80 border-border/60 text-foreground placeholder:text-muted-foreground focus:border-ring";
 
   return (
-    <section id="seance" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-background relative overflow-hidden">
+    <section id="seance" className="py-16 min-[375px]:py-20 md:py-32 px-5 md:px-4 bg-background relative overflow-hidden">
       {/* Subtle decorations */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-sunset-orange/5 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-electric-violet/5 blur-3xl" />

@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Waves, Target, Droplets, Trophy, Users } from "lucide-react";
 import { NatationContactForm } from "@/components/NatationContactForm";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import {
   Accordion,
   AccordionContent,

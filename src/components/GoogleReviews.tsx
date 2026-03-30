@@ -32,7 +32,7 @@ export const GoogleReviews = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section className="py-16 min-[375px]:py-20 md:py-28 px-4 bg-sand-light">
+    <section className="py-16 min-[375px]:py-20 md:py-28 px-5 md:px-4 bg-sand-light">
       <div ref={ref} className="container mx-auto max-w-4xl fade-in-section">
         <div className="text-center mb-10 min-[375px]:mb-14">
           <p className="text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">

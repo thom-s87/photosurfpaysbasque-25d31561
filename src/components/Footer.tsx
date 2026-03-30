@@ -15,7 +15,7 @@ export const Footer = () => {
   return (
     <footer className="bg-night text-primary-foreground py-12 md:py-16 border-t border-electric-violet/10">
       <div className="container mx-auto px-5 md:px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 mb-8 md:mb-12">
           <div>
             <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-12 w-auto" />
             <p className="text-primary-foreground/40 text-sm mt-1 uppercase tracking-widest">Photographe de l'océan au Pays Basque</p>

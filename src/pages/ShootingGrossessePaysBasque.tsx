@@ -30,7 +30,7 @@ const faqItems = [
   },
   {
     question: "Où se déroulent les séances photo maternité ?",
-    answer: "Les séances ont lieu en extérieur sur la côte basque : plages d'Anglet, Biarritz, Bidart ou Guéthary. Le lieu est choisi ensemble selon vos envies.",
+    answer: "Les séances ont lieu sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Le lieu est choisi ensemble selon vos envies.",
   },
   {
     question: "Combien de temps dure la séance ?",

@@ -15,6 +15,7 @@ import { SeoAccordion } from "@/components/SeoAccordion";
 import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { SectionCTA } from "@/components/SectionCTA";
 
 const Index = () => {
   return (

@@ -146,7 +146,7 @@ const PhotographeSurfAnglet = () => {
               Photographe Surf à Anglet 🌊
             </h1>
             <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-10">
-              Je suis photographe surf à Anglet, spécialisé dans la capture de sessions directement dans l'eau, au plus près de l'action. Des Cavaliers à la Barre, en passant par la Petite Chambre d'Amour, chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments.
+              Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments.
             </p>
             <Button
               size="lg"

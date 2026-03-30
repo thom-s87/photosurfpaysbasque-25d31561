@@ -241,12 +241,12 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 5: DÉROULEMENT */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Comment se déroule une séance photo body surf ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               On commence par échanger sur les conditions du jour : direction de la houle, force du vent, coefficient de marée. Je choisis ensuite le spot le plus adapté entre La Barre, Les Cavaliers ou la Petite Chambre d'Amour à Anglet. Je me positionne depuis les digues ou directement dans l'eau selon l'angle recherché. Tu surfes ta session normalement, et je capture les meilleurs moments. Les photos sont livrées rapidement via un lien sécurisé. Chaque séance dure entre 1h et 2h, en fonction de la lumière et de l'énergie.
             </p>
           </div>

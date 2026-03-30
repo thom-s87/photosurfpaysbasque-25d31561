@@ -25,10 +25,14 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const spots = [
+  { name: "Petite Chambre d'Amour (VVF)", description: "Digues immersives, angles uniques en contre-plongée" },
+  { name: "Les Sables d'Or", description: "Ambiance familiale, lumières douces en fin de journée" },
+  { name: "Marinella", description: "Beach break régulier, idéal pour les longboardeurs" },
+  { name: "Les Corsaires", description: "Vagues techniques, spot pour les confirmés" },
+  { name: "La Madrague", description: "Cadre sauvage, lumière spectaculaire" },
+  { name: "Les Dunes", description: "Espace dégagé, houle constante" },
   { name: "Les Cavaliers", description: "Beach break puissant, idéal pour des images dynamiques" },
   { name: "La Barre", description: "Vagues longues et régulières, parfait pour le suivi en série" },
-  { name: "Petite Chambre d'Amour", description: "Digues immersives, angles uniques en contre-plongée" },
-  { name: "Les Sables d'Or", description: "Ambiance familiale, lumières douces en fin de journée" },
 ];
 
 const faqItems = [

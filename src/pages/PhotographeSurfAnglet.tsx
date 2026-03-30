@@ -285,7 +285,7 @@ const PhotographeSurfAnglet = () => {
             <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Réserver votre session photo à Anglet
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Envie de garder un souvenir unique de votre session surf à Anglet ? Contactez-moi directement pour organiser votre séance en fonction des conditions météo et des marées.
             </p>
             <Button

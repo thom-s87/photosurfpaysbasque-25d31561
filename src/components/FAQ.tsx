@@ -38,7 +38,7 @@ export const FAQ = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="faq" className="py-16 min-[375px]:py-20 md:py-28 px-4 bg-background">
+    <section id="faq" className="py-16 min-[375px]:py-20 md:py-28 px-5 md:px-4 bg-background">
       <div ref={ref} className="container mx-auto max-w-2xl fade-in-section">
         <p className="text-center text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">
           Questions fréquentes

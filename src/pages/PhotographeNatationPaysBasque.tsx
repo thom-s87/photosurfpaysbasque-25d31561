@@ -106,7 +106,7 @@ const PhotographeNatationPaysBasque = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0 overflow-x-hidden">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -114,20 +114,20 @@ const PhotographeNatationPaysBasque = () => {
       <main className="pt-24">
 
         {/* ===== HERO ===== */}
-        <section className="py-16 md:py-24 px-4">
+        <section className="py-12 md:py-24 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
               Photographe natation · Pays Basque
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
+            <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
               Photographe Natation & Performance au Pays Basque 🏊‍♂️
             </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Capturez vos entraînements et vos performances dans l'eau avec un shooting dédié aux nageurs, triathlètes et sportifs en préparation. En piscine privée ou en milieu naturel, chaque séance met en valeur votre technique, votre effort et votre progression.
             </p>
             <Button
               size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -139,7 +139,7 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== IMAGE HERO ===== */}
-        <section className="px-4">
+        <section className="px-5 md:px-4">
           <div className="container mx-auto max-w-5xl">
             <img
               src={natationHero}
@@ -152,33 +152,33 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== SECTION 1 ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <Target className="w-10 h-10 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Target className="w-8 h-8 md:w-10 md:h-10 text-primary mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Un regard précis sur votre performance
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               La natation est un sport exigeant où chaque détail compte. Grâce à des prises de vue adaptées, je capture votre technique, votre posture et vos mouvements pour sublimer votre progression et votre engagement.
             </p>
           </div>
         </section>
 
         {/* ===== SECTION 2 ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <Droplets className="w-10 h-10 text-accent-foreground mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Droplets className="w-8 h-8 md:w-10 md:h-10 text-accent-foreground mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               En piscine privée ou en océan
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               Les shootings peuvent se faire en piscine privée pour un rendu maîtrisé et technique, ou en extérieur dans l'océan pour une approche plus immersive et dynamique, notamment pour les préparations type traversée de Biarritz.
             </p>
           </div>
         </section>
 
         {/* ===== IMAGE PRÉPARATION ===== */}
-        <section className="px-4 py-8">
+        <section className="px-5 md:px-4 py-6 md:py-8">
           <div className="container mx-auto max-w-5xl">
             <img
               src={natationPreparation}
@@ -192,33 +192,33 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== SECTION 3 ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <Trophy className="w-10 h-10 text-golden mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Trophy className="w-8 h-8 md:w-10 md:h-10 text-golden mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Préparation à la traversée de Biarritz
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               J'accompagne également les nageurs dans leur préparation à la traversée de Biarritz avec des images qui capturent l'intensité, la concentration et l'effort avant le jour J.
             </p>
           </div>
         </section>
 
         {/* ===== SECTION 4 ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <Users className="w-10 h-10 text-hot-pink mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Users className="w-8 h-8 md:w-10 md:h-10 text-hot-pink mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Pour qui ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               Nageurs, triathlètes, sportifs en préparation ou passionnés souhaitant garder une trace de leur progression.
             </p>
           </div>
         </section>
 
         {/* ===== IMAGE EFFORT ===== */}
-        <section className="px-4 py-8">
+        <section className="px-5 md:px-4 py-6 md:py-8">
           <div className="container mx-auto max-w-5xl">
             <img
               src={natationEffort}
@@ -232,17 +232,17 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== SECTION 5 : RÉSERVER ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Réserver votre shooting natation
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Envie d'images fortes de vos entraînements ou de votre préparation ? Contactez-moi pour organiser une séance adaptée à votre niveau et à vos objectifs.
             </p>
             <Button
               size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -254,9 +254,9 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         {/* ===== FAQ SEO ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-primary">
               Questions fréquentes – Shooting natation Pays Basque
             </h2>
             <Accordion type="single" collapsible className="space-y-3">
@@ -277,22 +277,22 @@ const PhotographeNatationPaysBasque = () => {
         <NatationContactForm />
 
         {/* ===== CTA FINAL ===== */}
-        <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
+        <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">
-            <Waves className="w-12 h-12 text-primary-foreground/80 mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <Waves className="w-10 h-10 md:w-12 md:h-12 text-primary-foreground/80 mx-auto mb-5 md:mb-6" />
+            <h2 className="text-3xl min-[375px]:text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               Prêt à capturer votre performance ?
             </h2>
-            <p className="text-primary-foreground/90 text-xl mb-10 leading-relaxed">
+            <p className="text-primary-foreground/90 text-base min-[375px]:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed">
               Un message suffit pour organiser votre shooting natation au Pays Basque.
             </p>
             <Button
               size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 md:px-12 md:py-7 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon className="w-8 h-8 mr-3" />
+                <WhatsAppIcon className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-3" />
                 Réserver via WhatsApp
               </a>
             </Button>

@@ -5,7 +5,7 @@ export const SeoAccordion = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="py-12 px-4 bg-background">
+    <section className="py-12 px-5 md:px-4 bg-background">
       <div className="container mx-auto max-w-3xl">
         <div className="flex justify-center">
           <button

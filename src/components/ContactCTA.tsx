@@ -15,7 +15,7 @@ export const ContactCTA = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="contact" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-gradient-night relative overflow-hidden retro-grain">
+    <section id="contact" className="py-16 min-[375px]:py-20 md:py-32 px-5 md:px-4 bg-gradient-night relative overflow-hidden retro-grain">
       {/* Wave decoration top */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden leading-[0]">
         <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" className="w-full h-[40px] rotate-180">
@@ -36,7 +36,7 @@ export const ContactCTA = () => {
 
         <Button 
           size="lg" 
-          className="bg-gradient-sunset text-foreground px-10 py-7 text-lg font-semibold rounded-full shadow-2xl mb-8 hover:opacity-90 transition-opacity"
+          className="bg-gradient-sunset text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 md:py-7 text-base min-[375px]:text-lg font-semibold rounded-full shadow-2xl mb-8 hover:opacity-90 transition-opacity w-full sm:w-auto"
           asChild
         >
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

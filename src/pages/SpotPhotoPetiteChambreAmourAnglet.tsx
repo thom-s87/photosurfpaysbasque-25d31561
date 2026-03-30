@@ -151,7 +151,7 @@ const SpotPhotoPetiteChambreAmour = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0 overflow-x-hidden">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <Header />
@@ -170,13 +170,13 @@ const SpotPhotoPetiteChambreAmour = () => {
             <p className="text-sm uppercase tracking-widest text-primary-foreground/80 font-medium mb-3">
               Mon spot coup de cœur · Anglet
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide mb-6">
+            <h1 className="text-2xl min-[375px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide mb-5 md:mb-6">
               La Petite Chambre d'Amour (VVF) 🌊
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
                 size="lg"
-                className="bg-gradient-sunset text-foreground px-8 py-5 text-base font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="bg-gradient-sunset text-foreground px-6 py-4 min-[375px]:px-8 min-[375px]:py-5 text-sm min-[375px]:text-base font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
                 asChild
               >
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -185,7 +185,7 @@ const SpotPhotoPetiteChambreAmour = () => {
               </Button>
               <Button
                 size="lg"
-                className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-5 text-base font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-4 min-[375px]:px-8 min-[375px]:py-5 text-sm min-[375px]:text-base font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
                 asChild
               >
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -331,19 +331,19 @@ const SpotPhotoPetiteChambreAmour = () => {
         <SectionCTA />
 
         {/* ===== CTA FINAL ===== */}
-        <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
+        <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">
-            <Heart className="w-12 h-12 text-primary-foreground/80 mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <Heart className="w-10 h-10 md:w-12 md:h-12 text-primary-foreground/80 mx-auto mb-5 md:mb-6" />
+            <h2 className="text-3xl min-[375px]:text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               Envie d'une séance à la Petite Chambre d'Amour ?
             </h2>
-            <p className="text-primary-foreground/90 text-xl mb-10 leading-relaxed">
+            <p className="text-primary-foreground/90 text-base min-[375px]:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed">
               Un message suffit pour organiser votre shooting grossesse ou famille sur mon spot coup de cœur à Anglet.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-golden hover:bg-golden/90 text-foreground px-12 py-8 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="bg-golden hover:bg-golden/90 text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
                 asChild
               >
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -352,7 +352,7 @@ const SpotPhotoPetiteChambreAmour = () => {
               </Button>
               <Button
                 size="lg"
-                className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-12 py-8 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
                 asChild
               >
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

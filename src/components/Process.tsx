@@ -32,22 +32,22 @@ export const Process = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section id="process" className="py-16 min-[375px]:py-20 md:py-32 px-4 bg-background">
+    <section id="process" className="py-16 min-[375px]:py-20 md:py-32 px-5 md:px-4 bg-background">
       <div ref={ref} className="container mx-auto max-w-4xl fade-in-section">
         <p className="text-center text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">Simple & rapide</p>
         <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl text-foreground text-center mb-10 min-[375px]:mb-16 tracking-wide">
           COMMENT ÇA MARCHE
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-6">
           {steps.map((step, i) => (
             <div key={i} className="text-center">
-              <div className="text-gradient-sunset font-display text-6xl mb-4 inline-block tracking-wider">{step.number}</div>
-              <div className="w-14 h-14 rounded-full bg-deep-purple/10 flex items-center justify-center mx-auto mb-5">
-                <step.icon className="w-6 h-6 text-deep-purple" />
+              <div className="text-gradient-sunset font-display text-4xl md:text-6xl mb-3 md:mb-4 inline-block tracking-wider">{step.number}</div>
+              <div className="w-11 h-11 md:w-14 md:h-14 rounded-full bg-deep-purple/10 flex items-center justify-center mx-auto mb-3 md:mb-5">
+                <step.icon className="w-5 h-5 md:w-6 md:h-6 text-deep-purple" />
               </div>
-              <h3 className="font-display text-xl text-foreground mb-3 tracking-wider">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">{step.description}</p>
+              <h3 className="font-display text-lg md:text-xl text-foreground mb-2 md:mb-3 tracking-wider">{step.title}</h3>
+              <p className="text-muted-foreground leading-relaxed text-xs md:text-sm">{step.description}</p>
             </div>
           ))}
         </div>

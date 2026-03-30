@@ -101,7 +101,7 @@ const PhotographeBodySurfPaysBasque = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0 overflow-x-hidden">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -109,19 +109,19 @@ const PhotographeBodySurfPaysBasque = () => {
       <main className="pt-24">
 
         {/* HERO */}
-        <section className="py-16 md:py-24 px-4">
-          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">
+        <section className="py-12 md:py-24 px-5 md:px-4">
+          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-8 md:gap-10 items-center">
             <div className="text-center md:text-left">
               <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
                 Photographe body surf · Anglet, Pays Basque
               </p>
-              <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
+              <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
                 Photographe Body Surf au Pays Basque 🌊
               </h1>
-              <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-10">
+              <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-8 md:mb-10">
                 Le body surf, c'est le plaisir brut de la glisse, au plus près de l'eau et des sensations. Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers.
               </p>
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" asChild>
+              <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="w-6 h-6 mr-3" />
                   Réserver via WhatsApp
@@ -141,20 +141,20 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 1: AU CŒUR DE L'ACTION */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <Camera className="w-10 h-10 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Camera className="w-8 h-8 md:w-10 md:h-10 text-primary mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Des images au cœur de l'action
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               En body surf, tout se joue dans l'instant. Mon approche consiste à photographier au plus près de la session, dans l'eau, pour capter les trajectoires, les éclaboussures, les regards et l'énergie de chaque vague. Contrairement au surf classique, le body surf place le pratiquant au ras de l'eau, ce qui offre des perspectives uniques et des images chargées d'émotion. Je travaille depuis les digues d'Anglet ou directement dans l'océan pour saisir chaque moment avec précision.
             </p>
           </div>
         </section>
 
         {/* IMAGE ACTION */}
-        <section className="px-4 py-8">
+        <section className="px-5 md:px-4 py-6 md:py-8">
           <div className="container mx-auto max-w-5xl">
             <img
               src={bodysurfAction}
@@ -168,29 +168,29 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 2: PRATIQUE LIBRE */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <Waves className="w-10 h-10 text-accent-foreground mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Waves className="w-8 h-8 md:w-10 md:h-10 text-accent-foreground mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Une pratique libre et accessible
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               Le body surf séduit autant les passionnés d'océan que ceux qui recherchent une glisse plus instinctive et naturelle. Que vous soyez habitué des vagues ou simplement en quête de sensations, une séance photo body surf permet de garder une trace forte et authentique de ce moment. C'est la forme de glisse la plus pure : pas de planche, pas d'équipement complexe, juste le corps et la vague. Le résultat en images est brut, puissant et sincère.
             </p>
           </div>
         </section>
 
         {/* SECTION 3: SPOTS */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-5xl">
-            <MapPin className="w-10 h-10 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
+            <MapPin className="w-8 h-8 md:w-10 md:h-10 text-primary mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Les spots de body surf au Pays Basque
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center mb-8">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center mb-6 md:mb-8">
               Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. La Barre, avec ses vagues longues et régulières, est idéale pour le body surf. Les Cavaliers offrent des conditions puissantes, parfaites pour des images dynamiques. La Petite Chambre d'Amour, avec ses digues, permet des angles de prise de vue uniques en contre-plongée.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
               {[
                 { name: "La Barre", description: "Vagues longues et régulières, spot idéal pour le body surf" },
                 { name: "Les Cavaliers", description: "Beach break puissant, images dynamiques et intenses" },
@@ -201,7 +201,7 @@ const PhotographeBodySurfPaysBasque = () => {
                 { name: "La Madrague", description: "Cadre sauvage, lumière spectaculaire" },
                 { name: "Les Dunes", description: "Espace dégagé, houle constante" },
               ].map((spot) => (
-                <div key={spot.name} className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-border/50">
+                <div key={spot.name} className="bg-background/80 backdrop-blur-sm rounded-xl p-5 md:p-6 shadow-md hover:shadow-xl transition-all border border-border/50">
                   <div className="flex items-center gap-3 mb-3">
                     <MapPin className="w-6 h-6 text-primary shrink-0" />
                     <h3 className="text-lg font-bold text-foreground">{spot.name}</h3>
@@ -214,20 +214,20 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 4: POUR QUI */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
-            <Users className="w-10 h-10 text-hot-pink mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Users className="w-8 h-8 md:w-10 md:h-10 text-hot-pink mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Pour qui ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               Le shooting body surf s'adresse aux passionnés d'océan, aux amateurs de sensations fortes, aux groupes d'amis qui partagent une session, aux familles sportives ou à tous ceux qui veulent garder un souvenir unique de leur passage sur la côte basque. Que tu sois en vacances au Pays Basque ou résident à Anglet, Biarritz ou Hossegor, je m'adapte à ton niveau et à tes envies pour créer des images qui te ressemblent.
             </p>
           </div>
         </section>
 
         {/* IMAGE LIFESTYLE */}
-        <section className="px-4 py-8">
+        <section className="px-5 md:px-4 py-6 md:py-8">
           <div className="container mx-auto max-w-5xl">
             <img
               src={bodysurfLifestyle}
@@ -241,24 +241,24 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 5: DÉROULEMENT */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Comment se déroule une séance photo body surf ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               On commence par échanger sur les conditions du jour : direction de la houle, force du vent, coefficient de marée. Je choisis ensuite le spot le plus adapté entre La Barre, Les Cavaliers ou la Petite Chambre d'Amour à Anglet. Je me positionne depuis les digues ou directement dans l'eau selon l'angle recherché. Tu surfes ta session normalement, et je capture les meilleurs moments. Les photos sont livrées rapidement via un lien sécurisé. Chaque séance dure entre 1h et 2h, en fonction de la lumière et de l'énergie.
             </p>
           </div>
         </section>
 
         {/* SECTION LIEN SURF */}
-        <section className="py-10 px-4">
+        <section className="py-8 md:py-10 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl text-center">
-            <p className="text-lg text-foreground/70 mb-5">
+            <p className="text-base md:text-lg text-foreground/70 mb-5">
               Tu pratiques aussi le surf classique ? Découvre mes shootings surf à Anglet pour une couverture complète de tes sessions.
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-5 text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300" asChild>
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 md:px-8 md:py-5 text-base md:text-lg font-bold rounded-full shadow-lg hover:opacity-90 transition-opacity w-full sm:w-auto" asChild>
               <a href="/photographe-surf-anglet">
                 Découvrir le Shooting Surf 🏄
               </a>
@@ -267,22 +267,22 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* RÉSERVER */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Réserver votre séance body surf
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Envie de capturer une session body surf au Pays Basque ? Contactez-moi pour organiser votre séance en fonction des conditions météo et des marées sur les spots d'Anglet et Biarritz.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" asChild>
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+              <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="w-6 h-6 mr-3" />
                   Réserver via WhatsApp
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="px-10 py-6 text-xl font-bold rounded-full shadow-lg" asChild>
+              <Button size="lg" variant="outline" className="px-7 py-4 md:px-10 md:py-6 text-base md:text-xl font-bold rounded-full shadow-lg w-full sm:w-auto" asChild>
                 <a href="tel:+33695349187">
                   📞 Appeler directement
                 </a>
@@ -292,9 +292,9 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* FAQ SEO */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-primary">
               Questions fréquentes – Body surf Pays Basque
             </h2>
             <Accordion type="single" collapsible className="space-y-3">
@@ -315,16 +315,16 @@ const PhotographeBodySurfPaysBasque = () => {
         <SurfContactForm />
 
         {/* CTA FINAL */}
-        <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
+        <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">
-            <Waves className="w-12 h-12 text-primary-foreground/80 mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <Waves className="w-10 h-10 md:w-12 md:h-12 text-primary-foreground/80 mx-auto mb-5 md:mb-6" />
+            <h2 className="text-3xl min-[375px]:text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               Prêt à capturer ta session body surf ?
             </h2>
-            <p className="text-primary-foreground/90 text-xl mb-10 leading-relaxed">
+            <p className="text-primary-foreground/90 text-base min-[375px]:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed">
               Un message suffit. Je vérifie les conditions à Anglet et on s'organise dans l'heure.
             </p>
-            <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" asChild>
+            <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 md:px-12 md:py-7 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto" asChild>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <WhatsAppIcon className="w-8 h-8 mr-3" />
                 Réserver via WhatsApp

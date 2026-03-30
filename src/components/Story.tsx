@@ -6,7 +6,7 @@ export const Story = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section className="pt-16 min-[375px]:pt-20 md:pt-36 pb-10 min-[375px]:pb-12 md:pb-16 px-4 bg-background overflow-hidden">
+    <section className="pt-14 min-[375px]:pt-16 md:pt-36 pb-10 min-[375px]:pb-12 md:pb-16 px-5 md:px-4 bg-background overflow-hidden">
       <div ref={ref} className="container mx-auto fade-in-section">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image with retro grain */}
@@ -16,14 +16,14 @@ export const Story = () => {
               <WatermarkedImage
                 src={surfeurProNight}
                 alt="Surfeur professionnel session photographe Pays Basque"
-                className="w-full h-[500px] lg:h-[600px] object-cover"
+                className="w-full h-[350px] min-[375px]:h-[420px] md:h-[500px] lg:h-[600px] object-cover"
                 loading="eager"
               />
             </div>
             {/* Retro sunset accent bar */}
-            <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-gradient-sunset opacity-30 -z-10" />
+            <div className="absolute -bottom-3 -right-3 w-24 h-24 bg-gradient-sunset opacity-30 -z-10 hidden md:block" />
             {/* Thin retro line */}
-            <div className="absolute -top-3 -left-3 w-16 h-[3px] bg-gradient-sunset" />
+            <div className="absolute -top-3 -left-3 w-16 h-[3px] bg-gradient-sunset hidden md:block" />
           </div>
 
           {/* Text */}

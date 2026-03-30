@@ -129,7 +129,7 @@ const PhotographeSurfAnglet = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0">
+    <div className="min-h-screen bg-gradient-to-br from-accent via-background to-secondary pb-16 md:pb-0 overflow-x-hidden">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
@@ -137,20 +137,20 @@ const PhotographeSurfAnglet = () => {
       <main className="pt-24">
 
         {/* ===== HERO ===== */}
-        <section className="py-16 md:py-24 px-4">
+        <section className="py-12 md:py-24 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl text-center">
             <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
               Photographe surf · Anglet, Pays Basque
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
+            <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
               Photographe Surf à Anglet 🌊
             </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments.
             </p>
             <Button
               size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -162,7 +162,7 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== IMAGE HERO ===== */}
-        <section className="px-4">
+        <section className="px-5 md:px-4">
           <div className="container mx-auto max-w-5xl">
             <img
               src={surfHero}
@@ -175,14 +175,14 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== BODY SURF CTA ===== */}
-        <section className="py-10 px-4">
+        <section className="py-8 md:py-10 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl text-center">
-            <p className="text-lg text-foreground/70 mb-5">
+            <p className="text-base md:text-lg text-foreground/70 mb-5">
               Je propose également des shootings en body surf pour une approche encore plus immersive de l'océan.
             </p>
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-5 text-lg font-bold rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-4 md:px-8 md:py-5 text-base md:text-lg font-bold rounded-full shadow-lg hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href="/photographe-body-surf-pays-basque">
@@ -193,31 +193,31 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== SECTION 1 : POURQUOI ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Pourquoi faire appel à un photographe surf à Anglet ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Anglet est l'un des spots les plus réputés du Pays Basque pour le surf. Avec ses nombreuses plages et ses bancs de sable changeants, chaque session est unique. Faire appel à un photographe surf local permet de capturer les meilleures vagues, au bon moment, avec une vraie connaissance du spot.
             </p>
           </div>
         </section>
 
         {/* ===== SECTION 2 : DANS L'EAU ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Des photos dans l'eau, au cœur de votre session
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Je travaille directement dans l'océan pour vous offrir des images immersives, dynamiques et naturelles. L'objectif : capturer vos sensations, vos trajectoires et l'énergie de chaque vague.
             </p>
           </div>
         </section>
 
         {/* ===== IMAGE SESSION ===== */}
-        <section className="px-4 py-8">
+        <section className="px-5 md:px-4 py-6 md:py-8">
           <div className="container mx-auto max-w-5xl">
             <img
               src={surfSession}
@@ -231,16 +231,16 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== SECTION 3 : SPOTS ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-primary">
               Les spots couverts à Anglet
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
               {spots.map((spot) => (
                 <div
                   key={spot.name}
-                  className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-border/50"
+                  className="bg-background/80 backdrop-blur-sm rounded-xl p-5 md:p-6 shadow-md hover:shadow-xl transition-all border border-border/50"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <MapPin className="w-6 h-6 text-primary shrink-0" />
@@ -254,19 +254,19 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== SECTION 4 : POUR QUI ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Pour qui ?
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Que vous soyez débutant, confirmé ou en vacances au Pays Basque, je vous propose des séances adaptées à votre niveau. Surf, bodyboard, paddle ou simplement des moments dans l'eau.
             </p>
           </div>
         </section>
 
         {/* ===== IMAGE LIFESTYLE ===== */}
-        <section className="px-4 py-8">
+        <section className="px-5 md:px-4 py-6 md:py-8">
           <div className="container mx-auto max-w-5xl">
             <img
               src={surfLifestyle}
@@ -280,17 +280,17 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== SECTION 5 : RÉSERVER ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Réserver votre session photo à Anglet
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Envie de garder un souvenir unique de votre session surf à Anglet ? Contactez-moi directement pour organiser votre séance en fonction des conditions météo et des marées.
             </p>
             <Button
               size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -302,9 +302,9 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== FAQ SEO ===== */}
-        <section className="py-16 px-4">
+        <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-primary">
               Questions fréquentes – Photographe surf à Anglet
             </h2>
             <Accordion type="single" collapsible className="space-y-3">
@@ -323,7 +323,7 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         {/* ===== SECTION COURS DE SURF ===== */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-3xl text-center">
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
               Tu prends un cours de surf ? Profite-en pour capturer ta session en photo et garder un vrai souvenir de ton moment dans l'eau.
@@ -337,18 +337,18 @@ const PhotographeSurfAnglet = () => {
         <SurfContactForm />
 
         {/* ===== CTA FINAL ===== */}
-        <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
+        <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">
-            <Waves className="w-12 h-12 text-primary-foreground/80 mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <Waves className="w-10 h-10 md:w-12 md:h-12 text-primary-foreground/80 mx-auto mb-5 md:mb-6" />
+            <h2 className="text-3xl min-[375px]:text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               Prêt à capturer ta prochaine session ?
             </h2>
-            <p className="text-primary-foreground/90 text-xl mb-10 leading-relaxed">
+            <p className="text-primary-foreground/90 text-base min-[375px]:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed">
               Un message suffit. Je vérifie les conditions à Anglet et on s'organise dans l'heure.
             </p>
             <Button
               size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 md:px-12 md:py-7 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

@@ -32,7 +32,7 @@ export const GoogleReviews = () => {
   const ref = useScrollFadeIn();
 
   return (
-    <section className="py-16 min-[375px]:py-20 md:py-28 px-4 bg-sand-light">
+    <section className="py-16 min-[375px]:py-20 md:py-28 px-5 md:px-4 bg-sand-light">
       <div ref={ref} className="container mx-auto max-w-4xl fade-in-section">
         <div className="text-center mb-10 min-[375px]:mb-14">
           <p className="text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">
@@ -62,7 +62,7 @@ export const GoogleReviews = () => {
         </div>
 
         {/* Reviews grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 mb-10">
           {reviews.map((review, i) => (
             <div
               key={i}

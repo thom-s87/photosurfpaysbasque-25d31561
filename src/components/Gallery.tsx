@@ -97,25 +97,25 @@ export const Gallery = () => {
           {/* Scrollable track */}
           <div
             ref={scrollRef}
-            className="flex gap-4 overflow-x-auto scrollbar-hide px-4 md:px-8 snap-x snap-mandatory"
+            className="flex gap-3 min-[375px]:gap-4 overflow-x-auto scrollbar-hide px-5 md:px-8 snap-x snap-mandatory"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}
           >
             {galleryImages.map((photo, i) => (
               <div
                 key={i}
-                className="carousel-card flex-shrink-0 w-[72vw] min-[375px]:w-[75vw] sm:w-[45vw] md:w-[32vw] lg:w-[28vw] snap-start overflow-hidden rounded-xl retro-grain"
+                className="carousel-card flex-shrink-0 w-[75vw] min-[375px]:w-[78vw] sm:w-[45vw] md:w-[32vw] lg:w-[28vw] snap-center overflow-hidden rounded-xl retro-grain"
               >
                 <WatermarkedImage
                   src={photo.src}
                   alt={photo.alt}
-                  className="w-full h-[50vh] md:h-[60vh] object-cover transition-transform duration-700 group-hover:scale-[1.01]"
+                  className="w-full h-[45vh] min-[375px]:h-[50vh] md:h-[60vh] object-cover transition-transform duration-700 group-hover:scale-[1.01]"
                 />
               </div>
             ))}
           </div>
         </div>
 
-        <div className="text-center mt-16 px-4">
+        <div className="text-center mt-10 md:mt-16 px-5 md:px-4">
           <Button
             variant="outline"
             className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-4 min-[375px]:px-8 py-6 text-xs min-[375px]:text-base tracking-wider uppercase max-w-full whitespace-normal"

@@ -119,10 +119,10 @@ const PhotographeNatationPaysBasque = () => {
             <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
               Photographe natation · Pays Basque
             </p>
-            <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
+            <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
               Photographe Natation & Performance au Pays Basque 🏊‍♂️
             </h1>
-            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
               Capturez vos entraînements et vos performances dans l'eau avec un shooting dédié aux nageurs, triathlètes et sportifs en préparation. En piscine privée ou en milieu naturel, chaque séance met en valeur votre technique, votre effort et votre progression.
             </p>
             <Button

@@ -282,7 +282,7 @@ const PhotographeSurfAnglet = () => {
         {/* ===== SECTION 5 : RÉSERVER ===== */}
         <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Réserver votre session photo à Anglet
             </h2>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-10">

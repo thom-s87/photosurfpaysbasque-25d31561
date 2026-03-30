@@ -42,14 +42,20 @@ export const Footer = () => {
           <div className="flex-1 h-[2px] bg-electric-violet/30" />
         </div>
 
+        {/* SEO links */}
+        <nav className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8 text-sm">
+          <a href="/photographe-surf-anglet" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe surf Anglet</a>
+          <a href="/photographe-body-surf-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe body surf</a>
+          <a href="/photographe-grossesse-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe grossesse</a>
+          <a href="/shooting-grossesse-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Shooting grossesse</a>
+          <a href="/photographe-natation-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe natation</a>
+          <a href="/shooting-famille-bebe-eau-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Shooting famille & bébé</a>
+          <a href="/spot-report-anglet" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Spot report Anglet</a>
+        </nav>
+
         <div className="text-center text-primary-foreground/30 text-sm space-y-2">
           <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe surf à Anglet, Biarritz</p>
-          <p>Photographe surf Anglet · Photo & vidéo surf Pays Basque · Cavaliers · Marinella · Chambre d'Amour</p>
-          <nav className="flex justify-center gap-4 pt-2">
-            <a href="/photographe-surf-anglet" className="hover:text-primary-foreground transition-colors">Photographe surf Anglet</a>
-            <span>·</span>
-            <a href="/spot-report-anglet" className="hover:text-primary-foreground transition-colors">Spot report Anglet</a>
-          </nav>
+          <p>Photographe surf Anglet · Photo & vidéo surf Pays Basque · Cavaliers · Marinella · Chambre d'Amour · Hossegor</p>
         </div>
       </div>
     </footer>

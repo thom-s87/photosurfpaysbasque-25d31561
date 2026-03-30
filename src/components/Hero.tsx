@@ -62,7 +62,7 @@ export const Hero = () => {
 
           <div className="flex items-center gap-2 text-primary-foreground/50 text-sm mb-6 min-[375px]:mb-8">
             <MapPin className="w-4 h-4 flex-shrink-0" />
-            <span>Basé à Anglet — Déplacements Biarritz / Hossegor</span>
+            <span>Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers.</span>
           </div>
           
           <div className="flex flex-col min-[375px]:flex-row flex-wrap gap-3 min-[375px]:gap-4">

@@ -27,7 +27,7 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 const faqItems = [
   {
     question: "Où se déroulent les shootings natation au Pays Basque ?",
-    answer: "Les séances peuvent avoir lieu en piscine privée pour un rendu technique et maîtrisé, ou en milieu naturel dans l'océan, notamment sur les plages d'Anglet et Biarritz. Le choix dépend de vos objectifs et de votre discipline.",
+    answer: "Les séances peuvent avoir lieu en piscine privée pour un rendu technique et maîtrisé, ou en milieu naturel sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Le choix dépend de vos objectifs et de votre discipline.",
   },
   {
     question: "Peut-on faire un shooting pour préparer la traversée de Biarritz ?",

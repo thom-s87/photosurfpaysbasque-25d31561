@@ -29,7 +29,7 @@ const faqItems = [
   },
   {
     question: "Où se déroulent les séances photo body surf ?",
-    answer: "Principalement sur les plages d'Anglet (La Barre, Les Cavaliers, Petite Chambre d'Amour) et Biarritz. Le spot est choisi en fonction des conditions de houle, de vent et de marée pour garantir les meilleures images.",
+    answer: "Sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Le spot est choisi en fonction des conditions de houle, de vent et de marée pour garantir les meilleures images.",
   },
   {
     question: "Faut-il être un bon body surfeur pour faire un shooting ?",
@@ -119,7 +119,7 @@ const PhotographeBodySurfPaysBasque = () => {
                 Photographe Body Surf au Pays Basque 🌊
               </h1>
               <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-10">
-                Le body surf, c'est le plaisir brut de la glisse, au plus près de l'eau et des sensations. Je propose des shootings photo body surf au Pays Basque pour capturer l'énergie, le mouvement et l'intensité de vos sessions dans l'océan.
+                Le body surf, c'est le plaisir brut de la glisse, au plus près de l'eau et des sensations. Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers.
               </p>
               <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-10 py-6 text-xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -188,14 +188,18 @@ const PhotographeBodySurfPaysBasque = () => {
               Les spots de body surf au Pays Basque
             </h2>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center mb-8">
-              Les shootings body surf se déroulent principalement sur les plages d'Anglet, reconnues pour la qualité de leurs vagues et la variété de leurs bancs de sable. La Barre, avec ses vagues longues et régulières, est idéale pour le body surf. Les Cavaliers offrent des conditions puissantes, parfaites pour des images dynamiques. La Petite Chambre d'Amour, avec ses digues, permet des angles de prise de vue uniques en contre-plongée. Je couvre également Biarritz et la côte basque selon les conditions de houle, de vent et de marée.
+              Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. La Barre, avec ses vagues longues et régulières, est idéale pour le body surf. Les Cavaliers offrent des conditions puissantes, parfaites pour des images dynamiques. La Petite Chambre d'Amour, avec ses digues, permet des angles de prise de vue uniques en contre-plongée.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {[
                 { name: "La Barre", description: "Vagues longues et régulières, spot idéal pour le body surf" },
                 { name: "Les Cavaliers", description: "Beach break puissant, images dynamiques et intenses" },
-                { name: "Petite Chambre d'Amour", description: "Angles uniques depuis les digues, contre-plongées immersives" },
+               { name: "Petite Chambre d'Amour (VVF)", description: "Angles uniques depuis les digues, contre-plongées immersives" },
                 { name: "Les Sables d'Or", description: "Ambiance douce, lumières de fin de journée" },
+                { name: "Marinella", description: "Beach break régulier, spot polyvalent" },
+                { name: "Les Corsaires", description: "Vagues techniques pour les confirmés" },
+                { name: "La Madrague", description: "Cadre sauvage, lumière spectaculaire" },
+                { name: "Les Dunes", description: "Espace dégagé, houle constante" },
               ].map((spot) => (
                 <div key={spot.name} className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border border-border/50">
                   <div className="flex items-center gap-3 mb-3">

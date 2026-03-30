@@ -55,7 +55,7 @@ const Index = () => {
             description: "Photographe de l'océan au Pays Basque — surf, famille, grossesse, sports aquatiques, lifestyle plage",
             url: "https://photosurfpaysbasque.fr",
             telephone: "+33695349187",
-            areaServed: ["Anglet", "Biarritz", "Pays Basque", "Hossegor"],
+            areaServed: ["Anglet", "Petite Chambre d'Amour", "VVF", "Sables d'Or", "Marinella", "Corsaires", "Madrague", "Dunes", "Cavaliers", "La Barre", "Biarritz", "Pays Basque"],
             priceRange: "€",
             address: {
               "@type": "PostalAddress",

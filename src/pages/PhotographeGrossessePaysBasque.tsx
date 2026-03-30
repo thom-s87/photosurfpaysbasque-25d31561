@@ -31,7 +31,7 @@ const faqItems = [
   },
   {
     question: "Où se déroulent les shootings grossesse ?",
-    answer: "Les séances ont lieu principalement en extérieur sur les plages du Pays Basque : Anglet, Biarritz, Bidart ou Guéthary. Le choix du lieu dépend de vos envies et des conditions de lumière du jour.",
+    answer: "Les séances ont lieu sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Le choix du lieu dépend de vos envies et des conditions de lumière du jour.",
   },
   {
     question: "Combien de temps dure une séance photo grossesse ?",
@@ -167,7 +167,7 @@ const PhotographeGrossessePaysBasque = () => {
                 Des lieux naturels entre océan et lumière
               </h2>
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Les shootings se déroulent principalement en extérieur, sur les plages d'Anglet, Biarritz ou les spots plus calmes du Pays Basque. La lumière, le mouvement de l'océan et l'environnement créent une ambiance douce et authentique.
+                Les shootings se déroulent sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. La lumière, le mouvement de l'océan et l'environnement créent une ambiance douce et authentique.
               </p>
             </div>
           </div>

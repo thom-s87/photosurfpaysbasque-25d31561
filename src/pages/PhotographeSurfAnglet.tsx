@@ -25,20 +25,24 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 );
 
 const spots = [
+  { name: "Petite Chambre d'Amour (VVF)", description: "Digues immersives, angles uniques en contre-plongée" },
+  { name: "Les Sables d'Or", description: "Ambiance familiale, lumières douces en fin de journée" },
+  { name: "Marinella", description: "Beach break régulier, idéal pour les longboardeurs" },
+  { name: "Les Corsaires", description: "Vagues techniques, spot pour les confirmés" },
+  { name: "La Madrague", description: "Cadre sauvage, lumière spectaculaire" },
+  { name: "Les Dunes", description: "Espace dégagé, houle constante" },
   { name: "Les Cavaliers", description: "Beach break puissant, idéal pour des images dynamiques" },
   { name: "La Barre", description: "Vagues longues et régulières, parfait pour le suivi en série" },
-  { name: "Petite Chambre d'Amour", description: "Digues immersives, angles uniques en contre-plongée" },
-  { name: "Les Sables d'Or", description: "Ambiance familiale, lumières douces en fin de journée" },
 ];
 
 const faqItems = [
   {
     question: "Où trouver un photographe de surf à Anglet ?",
-    answer: "Je suis basé à Anglet, à quelques minutes des plages de la Petite Chambre d'Amour, des Cavaliers et de La Barre. Je shoote exclusivement sur la côte basque, entre Anglet et Biarritz. Un message WhatsApp suffit pour organiser une session sur le spot le plus adapté aux conditions du jour.",
+    answer: "Je suis basé à Anglet et je shoote sur toute la côte, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Un message WhatsApp suffit pour organiser une session sur le spot le plus adapté aux conditions du jour.",
   },
   {
     question: "Comment se déroule une session photo surf à Anglet ?",
-    answer: "On échange d'abord sur les conditions du jour : houle, vent, marée. Je choisis le spot le plus adapté entre la Petite Chambre d'Amour, Les Cavaliers ou La Barre. Je me positionne depuis les digues ou la plage selon l'angle idéal, et je shoote ta session en conditions réelles. Les photos sont livrées rapidement via un lien sécurisé.",
+    answer: "On échange d'abord sur les conditions du jour : houle, vent, marée. Je choisis le spot le plus adapté sur toute la côte d'Anglet – Petite Chambre d'Amour (VVF), Sables d'Or, Marinella, Corsaires, Madrague, Dunes, Cavaliers ou La Barre. Je me positionne depuis les digues ou la plage selon l'angle idéal, et je shoote ta session en conditions réelles. Les photos sont livrées rapidement via un lien sécurisé.",
   },
   {
     question: "Quel est le meilleur spot photo surf à Anglet ?",
@@ -142,7 +146,7 @@ const PhotographeSurfAnglet = () => {
               Photographe Surf à Anglet 🌊
             </h1>
             <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-10">
-              Je suis photographe surf à Anglet, spécialisé dans la capture de sessions directement dans l'eau, au plus près de l'action. Des Cavaliers à la Barre, en passant par la Petite Chambre d'Amour, chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments.
+              Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments.
             </p>
             <Button
               size="lg"
@@ -325,7 +329,7 @@ const PhotographeSurfAnglet = () => {
               Tu prends un cours de surf ? Profite-en pour capturer ta session en photo et garder un vrai souvenir de ton moment dans l'eau.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Disponible sur les plages d'Anglet aux côtés des écoles de surf locales.
+              Disponible sur toute la côte d'Anglet : Petite Chambre d'Amour (VVF), Sables d'Or, Marinella, Corsaires, Madrague, Dunes, Cavaliers, La Barre.
             </p>
           </div>
         </section>

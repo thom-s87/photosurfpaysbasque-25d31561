@@ -14,8 +14,8 @@ export const About = () => {
         </div>
         <p className="text-muted-foreground leading-relaxed">
           Photographe et vidéaste spécialisé sports nautiques au Pays Basque depuis plusieurs années. 
-          Connaissance terrain des spots d'Anglet à Hossegor. Équipement pro adapté aux conditions marines. 
-          Réactif et disponible – un message WhatsApp suffit pour organiser ta session.
+          Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. 
+          Équipement pro adapté aux conditions marines. Réactif et disponible – un message WhatsApp suffit pour organiser ta session.
         </p>
       </div>
     </section>

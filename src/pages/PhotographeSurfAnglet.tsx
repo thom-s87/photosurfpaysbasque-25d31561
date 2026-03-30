@@ -210,7 +210,7 @@ const PhotographeSurfAnglet = () => {
             <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Des photos dans l'eau, au cœur de votre session
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center">
               Je travaille directement dans l'océan pour vous offrir des images immersives, dynamiques et naturelles. L'objectif : capturer vos sensations, vos trajectoires et l'énergie de chaque vague.
             </p>
           </div>

@@ -304,7 +304,7 @@ const PhotographeSurfAnglet = () => {
         {/* ===== FAQ SEO ===== */}
         <section className="py-12 md:py-16 px-5 md:px-4">
           <div className="container mx-auto max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-primary">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-center text-primary">
               Questions fréquentes – Photographe surf à Anglet
             </h2>
             <Accordion type="single" collapsible className="space-y-3">

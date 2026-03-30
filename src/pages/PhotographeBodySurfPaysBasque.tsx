@@ -181,16 +181,16 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 3: SPOTS */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-5xl">
-            <MapPin className="w-10 h-10 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
+            <MapPin className="w-8 h-8 md:w-10 md:h-10 text-primary mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-center text-primary">
               Les spots de body surf au Pays Basque
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center mb-8">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto text-center mb-6 md:mb-8">
               Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. La Barre, avec ses vagues longues et régulières, est idéale pour le body surf. Les Cavaliers offrent des conditions puissantes, parfaites pour des images dynamiques. La Petite Chambre d'Amour, avec ses digues, permet des angles de prise de vue uniques en contre-plongée.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 max-w-3xl mx-auto">
               {[
                 { name: "La Barre", description: "Vagues longues et régulières, spot idéal pour le body surf" },
                 { name: "Les Cavaliers", description: "Beach break puissant, images dynamiques et intenses" },

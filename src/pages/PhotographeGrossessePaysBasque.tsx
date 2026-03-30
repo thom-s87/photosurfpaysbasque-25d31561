@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Sun, Users, Camera } from "lucide-react";
 import { UniversContactForm } from "@/components/UniversContactForm";
 import { GrossesseContactForm } from "@/components/GrossesseContactForm";
+import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import heroImg from "@/assets/grossesse-hero.jpg";
 import middleImg from "@/assets/grossesse-middle.jpg";
 import bottomImg from "@/assets/grossesse-bottom.jpg";

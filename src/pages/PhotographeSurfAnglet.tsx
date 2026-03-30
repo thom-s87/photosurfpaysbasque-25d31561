@@ -337,18 +337,18 @@ const PhotographeSurfAnglet = () => {
         <SurfContactForm />
 
         {/* ===== CTA FINAL ===== */}
-        <section className="py-20 px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
+        <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">
-            <Waves className="w-12 h-12 text-primary-foreground/80 mx-auto mb-6" />
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+            <Waves className="w-10 h-10 md:w-12 md:h-12 text-primary-foreground/80 mx-auto mb-5 md:mb-6" />
+            <h2 className="text-3xl min-[375px]:text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
               Prêt à capturer ta prochaine session ?
             </h2>
-            <p className="text-primary-foreground/90 text-xl mb-10 leading-relaxed">
+            <p className="text-primary-foreground/90 text-base min-[375px]:text-lg md:text-xl mb-8 md:mb-10 leading-relaxed">
               Un message suffit. Je vérifie les conditions à Anglet et on s'organise dans l'heure.
             </p>
             <Button
               size="lg"
-              className="bg-golden hover:bg-golden/90 text-foreground px-12 py-8 text-2xl font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+              className="bg-golden hover:bg-golden/90 text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 md:px-12 md:py-7 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">

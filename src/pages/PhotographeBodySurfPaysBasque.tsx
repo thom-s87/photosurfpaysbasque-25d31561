@@ -141,13 +141,13 @@ const PhotographeBodySurfPaysBasque = () => {
         </section>
 
         {/* SECTION 1: AU CŒUR DE L'ACTION */}
-        <section className="py-16 px-4 bg-card/60">
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-4xl text-center">
-            <Camera className="w-10 h-10 text-primary mx-auto mb-6" />
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">
+            <Camera className="w-8 h-8 md:w-10 md:h-10 text-primary mx-auto mb-5 md:mb-6" />
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
               Des images au cœur de l'action
             </h2>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               En body surf, tout se joue dans l'instant. Mon approche consiste à photographier au plus près de la session, dans l'eau, pour capter les trajectoires, les éclaboussures, les regards et l'énergie de chaque vague. Contrairement au surf classique, le body surf place le pratiquant au ras de l'eau, ce qui offre des perspectives uniques et des images chargées d'émotion. Je travaille depuis les digues d'Anglet ou directement dans l'océan pour saisir chaque moment avec précision.
             </p>
           </div>

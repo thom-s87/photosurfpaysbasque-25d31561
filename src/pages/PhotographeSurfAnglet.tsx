@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Waves } from "lucide-react";
 import { SurfContactForm } from "@/components/SurfContactForm";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
+import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
   Accordion,
   AccordionContent,
@@ -145,9 +146,12 @@ const PhotographeSurfAnglet = () => {
             <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
               Photographe Surf à Anglet 🌊
             </h1>
-            <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
-              Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers. Chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments.
-            </p>
+             <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6">
+               Photographe surf à Anglet, je réalise des shootings directement dans les vagues sur toute la côte, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre 🌊
+             </p>
+             <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
+               Chaque session est pensée pour capturer l'énergie de l'océan et vos meilleurs moments sur les plages d'Anglet.
+             </p>
             <Button
               size="lg"
               className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
@@ -335,6 +339,9 @@ const PhotographeSurfAnglet = () => {
         </section>
 
         <SurfContactForm />
+
+        {/* ===== DÉCOUVRIR AUSSI ===== */}
+        <DiscoverAlso links={[allLinks.famille, allLinks.grossesse, allLinks.vvf]} />
 
         {/* ===== CTA FINAL ===== */}
         <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

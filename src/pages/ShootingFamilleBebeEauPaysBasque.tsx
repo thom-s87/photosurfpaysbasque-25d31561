@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Sun, Baby, Sparkles, Users } from "lucide-react";
 import { FamilleContactForm } from "@/components/FamilleContactForm";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
+import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
   Accordion,
   AccordionContent,
@@ -110,8 +111,11 @@ const ShootingFamilleBebeEauPaysBasque = () => {
               <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
                 Shooting Famille & Bébé à l'eau au Pays Basque 👶🌊
               </h1>
-              <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-8 md:mb-10">
-                Capturez vos moments en famille dans l'océan avec un shooting naturel et authentique. Entre rires, éclaboussures et douceur, chaque séance est pensée pour créer des souvenirs uniques avec votre bébé ou vos enfants.
+              <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-4 md:mb-6">
+                Photographe famille à Anglet, je propose des séances photo naturelles à la plage, idéales pour capturer des moments simples et authentiques en bord d'océan 🌊
+              </p>
+              <p className="text-base md:text-lg text-foreground/70 leading-relaxed mb-8 md:mb-10">
+                Entre rires, éclaboussures et douceur, chaque séance est pensée pour créer des souvenirs uniques avec votre bébé ou vos enfants sur les plages d'Anglet.
               </p>
               <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -250,6 +254,9 @@ const ShootingFamilleBebeEauPaysBasque = () => {
         </section>
 
         <FamilleContactForm />
+
+        {/* ===== DÉCOUVRIR AUSSI ===== */}
+        <DiscoverAlso links={[allLinks.surf, allLinks.grossesse, allLinks.vvf]} />
 
         {/* CTA FINAL */}
         <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

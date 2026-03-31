@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Waves, Target, Droplets, Trophy, Users } from "lucide-react";
 import { NatationContactForm } from "@/components/NatationContactForm";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
+import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
   Accordion,
   AccordionContent,
@@ -122,9 +123,12 @@ const PhotographeNatationPaysBasque = () => {
             <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
               Photographe Natation & Performance au Pays Basque 🏊‍♂️
             </h1>
-            <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
-              Capturez vos entraînements et vos performances dans l'eau avec un shooting dédié aux nageurs, triathlètes et sportifs en préparation. En piscine privée ou en milieu naturel, chaque séance met en valeur votre technique, votre effort et votre progression.
-            </p>
+             <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6">
+               Photographe natation à Anglet, je réalise des shootings en eau libre et en conditions réelles pour les nageurs et sportifs 🌊
+             </p>
+             <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto mb-8 md:mb-10">
+               En piscine privée ou en milieu naturel sur les plages d'Anglet, chaque séance met en valeur votre technique, votre effort et votre progression.
+             </p>
             <Button
               size="lg"
               className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
@@ -275,6 +279,9 @@ const PhotographeNatationPaysBasque = () => {
         </section>
 
         <NatationContactForm />
+
+        {/* ===== DÉCOUVRIR AUSSI ===== */}
+        <DiscoverAlso links={[allLinks.surf, allLinks.famille, allLinks.vvf]} />
 
         {/* ===== CTA FINAL ===== */}
         <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

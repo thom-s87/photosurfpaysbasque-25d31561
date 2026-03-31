@@ -18,7 +18,8 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 mb-8 md:mb-12">
           <div>
             <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-12 w-auto" />
-            <p className="text-primary-foreground/40 text-sm mt-1 uppercase tracking-widest">Photographe de l'océan au Pays Basque</p>
+            <p className="text-primary-foreground/50 text-sm mt-1 uppercase tracking-widest">Photographe & vidéaste spécialisé océan 🌊</p>
+            <p className="text-primary-foreground/40 text-xs mt-1">Surf, sport et moments de vie à Anglet 📸</p>
           </div>
 
           <div className="flex items-center gap-6">
@@ -54,8 +55,8 @@ export const Footer = () => {
         </nav>
 
         <div className="text-center text-primary-foreground/30 text-sm space-y-2">
-          <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe surf à Anglet, Biarritz</p>
-          <p>Toute la côte d'Anglet : Petite Chambre d'Amour (VVF) · Sables d'Or · Marinella · Corsaires · Madrague · Dunes · Cavaliers · La Barre</p>
+          <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe à Anglet, Biarritz</p>
+          <p>📍 Basé à Anglet – shootings sur toute la côte : Petite Chambre d'Amour (VVF) · Sables d'Or · Marinella · Corsaires · Madrague · Dunes · Cavaliers · La Barre</p>
         </div>
       </div>
     </footer>

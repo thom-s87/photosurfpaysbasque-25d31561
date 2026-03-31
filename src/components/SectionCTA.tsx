@@ -15,7 +15,7 @@ export const SectionCTA = ({ variant = "light" }: SectionCTAProps) => {
         asChild
       >
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-          👉 Réserver ma session
+          📸 Réserver ma session
         </a>
       </Button>
     </div>

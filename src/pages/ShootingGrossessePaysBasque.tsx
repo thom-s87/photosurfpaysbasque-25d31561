@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Sun, Camera, Users } from "lucide-react";
 import { UniversContactForm } from "@/components/UniversContactForm";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
+import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
   Accordion,
   AccordionContent,
@@ -110,8 +111,11 @@ const ShootingGrossessePaysBasque = () => {
               <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
                 Shooting Grossesse au Pays Basque 🤍
               </h1>
-              <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-8 md:mb-10">
-                Immortalisez ce moment unique avec un shooting grossesse naturel, en extérieur, entre océan et lumière du Pays Basque. Chaque séance est pensée pour capturer la douceur, la connexion et l'émotion de cette période si particulière.
+              <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-4 md:mb-6">
+                Photographe grossesse à Anglet, je réalise des séances photo sur la plage, notamment à la Petite Chambre d'Amour (VVF), un spot idéal pour des images douces et naturelles.
+              </p>
+              <p className="text-base md:text-lg text-foreground/70 leading-relaxed mb-8 md:mb-10">
+                Immortalisez ce moment unique avec un shooting grossesse naturel, en extérieur, entre océan et lumière du Pays Basque.
               </p>
               <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-7 py-4 min-[375px]:px-8 min-[375px]:py-5 md:px-10 md:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -223,6 +227,9 @@ const ShootingGrossessePaysBasque = () => {
         </section>
 
         <UniversContactForm />
+
+        {/* ===== DÉCOUVRIR AUSSI ===== */}
+        <DiscoverAlso links={[allLinks.famille, allLinks.vvf, allLinks.surf]} />
 
         {/* CTA FINAL */}
         <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">

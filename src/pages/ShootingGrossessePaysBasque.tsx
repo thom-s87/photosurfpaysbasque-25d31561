@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Sun, Camera, Users } from "lucide-react";
 import { UniversContactForm } from "@/components/UniversContactForm";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
+import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
   Accordion,
   AccordionContent,

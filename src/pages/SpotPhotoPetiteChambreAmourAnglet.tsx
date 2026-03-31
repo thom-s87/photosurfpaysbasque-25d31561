@@ -7,6 +7,7 @@ import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { SectionCTA } from "@/components/SectionCTA";
 import { WatermarkedImage } from "@/components/WatermarkedImage";
+import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 
 import coupleGoalImg from "@/assets/couple_goal.JPG";
 import rocherImg from "@/assets/femme_enceinte_rocher.JPG";

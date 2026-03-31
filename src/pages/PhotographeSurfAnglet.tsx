@@ -339,6 +339,9 @@ const PhotographeSurfAnglet = () => {
 
         <SurfContactForm />
 
+        {/* ===== DÉCOUVRIR AUSSI ===== */}
+        <DiscoverAlso links={[allLinks.famille, allLinks.grossesse, allLinks.vvf]} />
+
         {/* ===== CTA FINAL ===== */}
         <section className="py-14 md:py-20 px-5 md:px-4 bg-gradient-to-r from-primary via-hot-pink to-golden">
           <div className="container mx-auto text-center max-w-3xl">

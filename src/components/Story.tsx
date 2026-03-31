@@ -32,8 +32,14 @@ export const Story = () => {
             <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl lg:text-7xl text-foreground mb-6 min-[375px]:mb-8 leading-[0.9] tracking-wide">
               L'OCÉAN CRÉE DES SOUVENIRS UNIQUES
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-4">
+              Photographe & vidéaste spécialisé océan 🌊 Surf, sport et moments de vie à Anglet 📸
+            </p>
+            <p className="text-muted-foreground text-base leading-relaxed mb-4">
               Entre surf, lumière, instants partagés et émotions brutes, chaque séance capture un moment vrai face à l'océan.
+            </p>
+            <p className="text-muted-foreground/70 text-sm leading-relaxed mb-8">
+              📍 Basé à Anglet – shootings sur toute la côte : Petite Chambre d'Amour (VVF), Sables d'Or, Marinella, Corsaires, Madrague, Dunes, Cavaliers, La Barre.
             </p>
             {/* Retro sunset stripe */}
             <div className="flex gap-1">

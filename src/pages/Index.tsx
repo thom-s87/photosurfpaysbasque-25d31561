@@ -52,7 +52,7 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             name: "PhotoSurfPaysBasque",
-            description: "Photographe de l'océan au Pays Basque — surf, famille, grossesse, sports aquatiques, lifestyle plage",
+            description: "Photographe & vidéaste spécialisé océan à Anglet — surf, famille, grossesse, sports aquatiques, shooting plage",
             url: "https://photosurfpaysbasque.fr",
             telephone: "+33695349187",
             areaServed: ["Anglet", "Petite Chambre d'Amour", "VVF", "Sables d'Or", "Marinella", "Corsaires", "Madrague", "Dunes", "Cavaliers", "La Barre", "Biarritz", "Pays Basque"],

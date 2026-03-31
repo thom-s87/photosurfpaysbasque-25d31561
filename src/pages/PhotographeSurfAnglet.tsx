@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Waves } from "lucide-react";
 import { SurfContactForm } from "@/components/SurfContactForm";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
+import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
   Accordion,
   AccordionContent,

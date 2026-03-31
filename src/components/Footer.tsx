@@ -55,8 +55,8 @@ export const Footer = () => {
         </nav>
 
         <div className="text-center text-primary-foreground/30 text-sm space-y-2">
-          <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe surf à Anglet, Biarritz</p>
-          <p>Toute la côte d'Anglet : Petite Chambre d'Amour (VVF) · Sables d'Or · Marinella · Corsaires · Madrague · Dunes · Cavaliers · La Barre</p>
+          <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe à Anglet, Biarritz</p>
+          <p>📍 Basé à Anglet – shootings sur toute la côte : Petite Chambre d'Amour (VVF) · Sables d'Or · Marinella · Corsaires · Madrague · Dunes · Cavaliers · La Barre</p>
         </div>
       </div>
     </footer>

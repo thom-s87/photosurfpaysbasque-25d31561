@@ -200,8 +200,11 @@ const SpotPhotoPetiteChambreAmour = () => {
         {/* ===== INTRO ===== */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-3xl text-center">
-            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
-              La plage de la Petite Chambre d'Amour, appelée encore aujourd'hui le VVF par les locaux, est l'un de mes spots préférés à Anglet pour réaliser des séances photo en famille ou pendant la grossesse.
+            <p className="text-lg md:text-xl text-foreground/80 leading-relaxed mb-4">
+              La Petite Chambre d'Amour (VVF) à Anglet est l'un des meilleurs spots pour des shootings photo en bord d'océan, notamment pour la grossesse et les séances en famille.
+            </p>
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
+              En tant que photographe à Anglet, c'est mon spot préféré pour un shooting plage authentique. La lumière, les rochers et l'océan créent un cadre idéal pour des photos naturelles.
             </p>
           </div>
         </section>

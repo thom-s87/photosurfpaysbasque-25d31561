@@ -234,6 +234,33 @@ const PhotographeSurfAnglet = () => {
           </div>
         </section>
 
+        {/* ===== SECTION : RETROUVE TES PHOTOS ===== */}
+        <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
+          <div className="container mx-auto max-w-3xl text-center">
+            <h2 className="text-2xl min-[375px]:text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-primary">
+              📸 Tu cherches tes photos de surf à Anglet ?
+            </h2>
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto mb-4">
+              Tu as surfé aujourd'hui à Anglet ?
+            </p>
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto mb-4">
+              Je capture les sessions directement dans l'eau sur les spots des Cavaliers, de la Chambre d'Amour, Marinella et la Barre.
+            </p>
+            <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto mb-8">
+              Retrouve tes photos de surf en ligne après ta session.
+            </p>
+            <Button
+              size="lg"
+              className="bg-gradient-sunset text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
+              asChild
+            >
+              <a href="/photos-surf-anglet">
+                Voir mes photos de surf 📸
+              </a>
+            </Button>
+          </div>
+        </section>
+
         {/* ===== SECTION 3 : SPOTS ===== */}
         <section className="py-12 md:py-16 px-5 md:px-4 bg-card/60">
           <div className="container mx-auto max-w-5xl">

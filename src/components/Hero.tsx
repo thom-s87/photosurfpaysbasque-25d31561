@@ -53,7 +53,7 @@ export const Hero = () => {
           </h1>
 
           <p className="text-lg min-[375px]:text-xl md:text-2xl text-primary-foreground font-medium mb-2 min-[375px]:mb-3 max-w-xl">
-            Shooting photo à Anglet, Biarritz & Hossegor 📸
+            Shooting photo à Anglet, Biarritz & sud des Landes 📸
           </p>
           
           <p className="text-base min-[375px]:text-lg md:text-xl text-primary-foreground/80 font-light mb-5 min-[375px]:mb-6 max-w-xl">

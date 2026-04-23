@@ -1,6 +1,6 @@
 # PhotoSurfPaysBasque
 
-Site officiel de **PhotoSurfPaysBasque** — photographe & vidéaste spécialisé océan à Anglet, Biarritz et Hossegor.
+Site officiel de **PhotoSurfPaysBasque** — photographe & vidéaste spécialisé océan à Anglet, Biarritz et dans le sud des Landes.
 
 🌐 [photosurfpaysbasque.fr](https://photosurfpaysbasque.fr)
 

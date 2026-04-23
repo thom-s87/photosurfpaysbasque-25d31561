@@ -184,7 +184,7 @@ export const SessionForm = () => {
                   <SelectItem value="Biarritz">Biarritz</SelectItem>
                   <SelectItem value="Bidart">Bidart</SelectItem>
                   <SelectItem value="Guéthary">Guéthary</SelectItem>
-                  <SelectItem value="Hossegor">Hossegor</SelectItem>
+                  
                   <SelectItem value="Autre">Autre</SelectItem>
                 </SelectContent>
               </Select>

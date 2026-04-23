@@ -26,7 +26,7 @@ export const SeoAccordion = () => {
               Tu cherches un <strong className="text-foreground">photographe surf à Anglet</strong> capable de capturer l'intensité de tes sessions sur les meilleurs spots de la côte basque ? Basé à Anglet, je connais chaque plage, chaque marée, chaque créneau de lumière idéal pour immortaliser tes vagues.
             </p>
             <p>
-              Je shoote sur toute la côte d'Anglet, de la <strong className="text-foreground">Petite Chambre d'Amour (VVF)</strong> jusqu'à <strong className="text-foreground">La Barre</strong>, en passant par les <strong className="text-foreground">Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers</strong>. Je couvre aussi <strong className="text-foreground">Biarritz</strong> (Grande Plage, Côte des Basques), Bidart, Guéthary et le sud des Landes jusqu'à Hossegor.
+              Je shoote sur toute la côte d'Anglet, de la <strong className="text-foreground">Petite Chambre d'Amour (VVF)</strong> jusqu'à <strong className="text-foreground">La Barre</strong>, en passant par les <strong className="text-foreground">Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers</strong>. Je couvre aussi <strong className="text-foreground">Biarritz</strong> (Grande Plage, Côte des Basques), Bidart, Guéthary et le sud des Landes.
             </p>
             <p>
               En tant que <strong className="text-foreground">photographe sport nautique à Anglet</strong>, j'utilise du matériel professionnel adapté aux conditions marines : boîtiers haute performance, objectifs longue focale, et prises de vue depuis la plage ou l'eau. Les photos et vidéos sont livrées rapidement via une plateforme sécurisée.

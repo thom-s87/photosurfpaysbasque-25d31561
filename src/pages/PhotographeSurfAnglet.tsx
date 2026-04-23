@@ -65,9 +65,9 @@ const faqItems = [
 
 const PhotographeSurfAnglet = () => {
   useEffect(() => {
-    document.title = "Photographe Surf Pays Basque | Shooting Surf Anglet, Biarritz, Hossegor";
+    document.title = "Photographe Surf Pays Basque | Shooting Surf Anglet, Biarritz & sud des Landes";
     const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe surf au Pays Basque 📸 Shooting surf immersif à Anglet, Biarritz et Hossegor. Photos dans l'eau, naturelles et professionnelles. Réservation rapide via WhatsApp 🌊";
+    const descContent = "Photographe surf au Pays Basque 📸 Shooting surf immersif à Anglet, Biarritz et dans le sud des Landes. Photos dans l'eau, naturelles et professionnelles. Réservation rapide via WhatsApp 🌊";
     if (metaDesc) {
       metaDesc.setAttribute("content", descContent);
     } else {

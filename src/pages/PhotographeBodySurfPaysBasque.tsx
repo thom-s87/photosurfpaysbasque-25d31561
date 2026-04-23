@@ -85,7 +85,7 @@ const PhotographeBodySurfPaysBasque = () => {
     areaServed: [
       { "@type": "City", name: "Anglet" },
       { "@type": "City", name: "Biarritz" },
-      { "@type": "City", name: "Hossegor" },
+      { "@type": "City", name: "Bidart" },
     ],
     priceRange: "€€",
   };
@@ -221,7 +221,7 @@ const PhotographeBodySurfPaysBasque = () => {
               Pour qui ?
             </h2>
             <p className="text-base md:text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
-              Le shooting body surf s'adresse aux passionnés d'océan, aux amateurs de sensations fortes, aux groupes d'amis qui partagent une session, aux familles sportives ou à tous ceux qui veulent garder un souvenir unique de leur passage sur la côte basque. Que tu sois en vacances au Pays Basque ou résident à Anglet, Biarritz ou Hossegor, je m'adapte à ton niveau et à tes envies pour créer des images qui te ressemblent.
+              Le shooting body surf s'adresse aux passionnés d'océan, aux amateurs de sensations fortes, aux groupes d'amis qui partagent une session, aux familles sportives ou à tous ceux qui veulent garder un souvenir unique de leur passage sur la côte basque. Que tu sois en vacances au Pays Basque ou résident à Anglet, Biarritz ou dans le sud des Landes, je m'adapte à ton niveau et à tes envies pour créer des images qui te ressemblent.
             </p>
           </div>
         </section>

@@ -155,7 +155,30 @@ body {
   .safe-area-bottom {
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
+
+  /* Prevent iOS auto-zoom on focus: inputs must be ≥16px */
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
 }
+
+/* Touch targets: ensure all buttons & button-like links are ≥44px tall (WCAG) */
+button,
+a[role="button"],
+[type="button"],
+[type="submit"] {
+  min-height: 44px;
+}
+
+/* Safety: images never overflow their container */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Premium image hover */
 .gallery-item {

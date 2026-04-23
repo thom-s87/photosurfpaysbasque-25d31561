@@ -1,4 +1,4 @@
-const WHATSAPP_URL = "https://wa.me/33695349187";
+const WHATSAPP_URL = "https://wa.me/33695349187?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20une%20s%C3%A9ance%20photo%20surf%20%F0%9F%8F%84";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -12,10 +12,18 @@ export const FloatingWhatsApp = () => {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform"
-      aria-label="Contacter sur WhatsApp"
+      className="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-50 flex items-center gap-2 group"
+      aria-label="Réserver sur WhatsApp"
     >
-      <WhatsAppIcon className="w-7 h-7 text-white" />
+      <span
+        className="bg-foreground/85 text-background font-semibold rounded-full px-3 py-1.5 shadow-lg backdrop-blur-sm"
+        style={{ fontSize: "12px" }}
+      >
+        Réserver
+      </span>
+      <span className="w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+        <WhatsAppIcon className="w-7 h-7 text-white" />
+      </span>
     </a>
   );
 };

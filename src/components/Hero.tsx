@@ -66,7 +66,7 @@ export const Hero = () => {
               href="https://wa.me/33695349187?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20une%20s%C3%A9ance%20photo%20surf%20%F0%9F%8F%84"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-gradient-sunset text-foreground font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto text-center"
+              className="inline-flex items-center justify-center gap-3 bg-gradient-sunset text-foreground font-bold rounded-full shadow-2xl hover:opacity-90 w-full sm:w-auto text-center animate-pulse-wave booking-hover"
               style={{ padding: "16px 32px", fontSize: "18px" }}
             >
               <WhatsAppIcon className="w-6 h-6 flex-shrink-0" />

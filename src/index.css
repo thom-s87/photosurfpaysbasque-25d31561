@@ -284,6 +284,16 @@ body {
   animation: pulse-wave 2s infinite;
 }
 
+/* Pulse wave (yellow/orange halo for sunset CTAs) */
+@keyframes pulse-wave-yellow {
+  0% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.5); }
+  70% { box-shadow: 0 0 0 12px rgba(245, 166, 35, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0); }
+}
+.animate-pulse-wave-yellow {
+  animation: pulse-wave-yellow 2s infinite;
+}
+
 /* Shimmer reflective sweep */
 @keyframes shimmer-sweep {
   0% { background-position: -200% center; }
@@ -319,3 +329,45 @@ body {
   transform: translateY(-2px);
   filter: brightness(1.1);
 }
+
+/* === Global button micro-interactions (hover lift + click press) === */
+button,
+a[role="button"],
+[type="button"],
+[type="submit"],
+.btn {
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+button:hover:not(:disabled),
+a[role="button"]:hover,
+[type="button"]:hover:not(:disabled),
+[type="submit"]:hover:not(:disabled),
+.btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+button:active:not(:disabled),
+a[role="button"]:active,
+[type="button"]:active:not(:disabled),
+[type="submit"]:active:not(:disabled),
+.btn:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse-wave,
+  .animate-pulse-wave-yellow,
+  .shimmer-cta::after {
+    animation: none !important;
+  }
+  button,
+  a[role="button"],
+  [type="button"],
+  [type="submit"],
+  .btn {
+    transition: none !important;
+  }
+}
+

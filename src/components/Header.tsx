@@ -30,7 +30,7 @@ export const Header = () => {
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <Button size="sm" className="bg-gradient-sunset text-foreground font-semibold rounded-full px-6 hover:opacity-90 transition-opacity" asChild>
+              <Button size="sm" className="bg-gradient-sunset text-foreground font-semibold rounded-full px-6 hover:opacity-90 transition-opacity animate-pulse-wave-yellow booking-hover" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="w-4 h-4 mr-2" />
                   Réserver
@@ -43,8 +43,8 @@ export const Header = () => {
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <Button size="sm" className="bg-gradient-sunset text-foreground rounded-full hover:opacity-90" asChild>
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            <Button size="sm" className="bg-gradient-sunset text-foreground rounded-full hover:opacity-90 animate-pulse-wave-yellow booking-hover" asChild>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" aria-label="Réserver sur WhatsApp">
                 <WhatsAppIcon className="w-4 h-4" />
               </a>
             </Button>

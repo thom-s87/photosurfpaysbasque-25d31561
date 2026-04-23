@@ -271,3 +271,51 @@ body {
     right: 14px;
   }
 }
+
+/* === Booking CTA micro-animations === */
+
+/* Pulse wave (WhatsApp green halo) */
+@keyframes pulse-wave {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.animate-pulse-wave {
+  animation: pulse-wave 2s infinite;
+}
+
+/* Shimmer reflective sweep */
+@keyframes shimmer-sweep {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.shimmer-cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.shimmer-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.25) 50%, transparent 100%);
+  background-size: 200% auto;
+  animation: shimmer-sweep 3s infinite;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: inherit;
+}
+.shimmer-cta-fast::after {
+  animation-duration: 2s;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%);
+  background-size: 200% auto;
+}
+
+/* Booking hover lift */
+.booking-hover {
+  transition: all 0.2s ease;
+}
+.booking-hover:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}

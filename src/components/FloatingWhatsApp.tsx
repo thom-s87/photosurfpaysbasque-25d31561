@@ -21,7 +21,7 @@ export const FloatingWhatsApp = () => {
       >
         Réserver
       </span>
-      <span className="w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+      <span className="w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform animate-pulse-wave booking-hover">
         <WhatsAppIcon className="w-7 h-7 text-white" />
       </span>
     </a>

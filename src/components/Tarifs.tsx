@@ -159,13 +159,13 @@ export const Tarifs = () => {
 
               <Button
                 asChild
-                className={`w-full rounded-full font-semibold transition-opacity hover:opacity-90 ${
+                className={`w-full rounded-full font-semibold hover:opacity-95 booking-hover shimmer-cta ${
                   pack.highlight
-                    ? "bg-gradient-sunset text-foreground py-6 text-base shadow-2xl"
+                    ? "bg-gradient-sunset text-foreground py-6 text-base shadow-2xl shimmer-cta-fast"
                     : "bg-electric-violet/30 text-primary-foreground border border-electric-violet/40 py-5 text-sm"
                 }`}
               >
-                <a href={pack.whatsapp} target="_blank" rel="noopener noreferrer">
+                <a href={pack.whatsapp} target="_blank" rel="noopener noreferrer" className="relative z-[2]">
                   Réserver ce pack
                 </a>
               </Button>

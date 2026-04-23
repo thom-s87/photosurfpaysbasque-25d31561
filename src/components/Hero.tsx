@@ -66,11 +66,12 @@ export const Hero = () => {
               href="https://wa.me/33695349187?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20une%20s%C3%A9ance%20photo%20surf%20%F0%9F%8F%84"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-gradient-sunset text-foreground font-bold rounded-full shadow-2xl hover:opacity-90 w-full sm:w-auto text-center animate-pulse-wave booking-hover"
+              role="button"
+              className="relative inline-flex items-center justify-center gap-3 bg-gradient-sunset text-foreground font-bold rounded-full shadow-2xl hover:opacity-90 w-full sm:w-auto text-center animate-pulse-wave-yellow booking-hover shimmer-cta"
               style={{ padding: "16px 32px", fontSize: "18px" }}
             >
-              <WhatsAppIcon className="w-6 h-6 flex-shrink-0" />
-              Réserver ma séance sur WhatsApp
+              <WhatsAppIcon className="w-6 h-6 flex-shrink-0 relative z-[2]" />
+              <span className="relative z-[2]">Réserver ma séance sur WhatsApp</span>
             </a>
             <p className="text-primary-foreground text-center sm:text-left mt-3" style={{ fontSize: "14px" }}>
               À partir de 45€ · Livraison photos en 48h

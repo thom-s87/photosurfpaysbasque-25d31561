@@ -89,7 +89,7 @@ export const Hero = () => {
               className="bg-gradient-sunset text-foreground px-6 min-[375px]:px-10 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full min-[375px]:w-auto whitespace-normal text-center leading-tight"
               asChild
             >
-              <a href="#tarifs">
+              <a href="#nos-univers">
                 📸 Réserver ma session
               </a>
             </Button>

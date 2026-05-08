@@ -49,6 +49,7 @@ export const Univers = () => {
 
   return (
     <section id="univers" className="scroll-mt-24 pt-10 min-[375px]:pt-12 md:pt-16 pb-16 min-[375px]:pb-20 md:pb-32 px-5 md:px-4 bg-background">
+      <span id="nos-univers" className="block -mt-24 pt-24" aria-hidden="true" />
       <div ref={ref} className="container mx-auto fade-in-section">
         <p className="text-center text-hot-pink font-medium tracking-[0.3em] uppercase text-xs mb-4">Nos univers</p>
         <h2 className="font-display text-4xl min-[375px]:text-5xl md:text-6xl lg:text-7xl text-foreground text-center mb-4 tracking-wide">
@@ -60,29 +61,35 @@ export const Univers = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
           {blocks.map((block, i) => (
-            <Link
+            <div
               key={i}
-              to={block.to}
-              className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item cursor-pointer shadow-lg retro-grain block"
+              className="group relative aspect-[3/4] overflow-hidden rounded-lg gallery-item shadow-lg retro-grain block"
             >
-              <img
-                src={block.image}
-                alt={block.alt}
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
+              <Link to={block.to} className="absolute inset-0 z-[1]" aria-label={block.title}>
+                <img
+                  src={block.image}
+                  alt={block.alt}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </Link>
+              <div className="absolute bottom-0 left-0 right-0 p-6 z-[2] pointer-events-none">
                 <h3 className="font-display text-3xl text-primary-foreground mb-2 tracking-wider">{block.title}</h3>
                 <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">{block.desc}</p>
-                <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-golden opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300">
+                <a
+                  href={block.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="button"
+                  className="pointer-events-auto inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-sunset text-foreground text-xs font-semibold tracking-widest uppercase shadow-lg hover:opacity-90 transition-opacity"
+                >
                   <Camera className="w-4 h-4" />
-                  Réserver cette séance
-                </span>
+                  Réserver sur WhatsApp
+                </a>
               </div>
-              {/* Retro top accent stripe */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </Link>
+            </div>
           ))}
         </div>
       </div>

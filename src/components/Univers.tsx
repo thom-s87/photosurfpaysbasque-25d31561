@@ -6,6 +6,9 @@ import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
 
+const wa = (msg: string) =>
+  `https://wa.me/33695349187?text=${encodeURIComponent(msg)}`;
+
 const blocks = [
   {
     title: "SURF",
@@ -13,6 +16,7 @@ const blocks = [
     image: boySurfer,
     alt: "Surfeur action photographe surf Anglet Pays Basque",
     to: "/photographe-surf-anglet",
+    whatsapp: wa("Bonjour, je souhaite réserver une session photo surf avec Photosurf Pays Basque 🏄"),
   },
   {
     title: "FAMILLE & MOMENTS PLAGE OU PISCINE",
@@ -20,6 +24,7 @@ const blocks = [
     image: dadAndBaby,
     alt: "Séance photo famille plage Pays Basque",
     to: "/shooting-famille-bebe-eau-pays-basque",
+    whatsapp: wa("Bonjour, je souhaite réserver une séance famille / bébé près de l'eau avec Photosurf Pays Basque 👨‍👩‍👧"),
   },
   {
     title: "SHOOTING PRÉNATAL",
@@ -27,6 +32,7 @@ const blocks = [
     image: shootingMaternite,
     alt: "Shooting grossesse aquatique Pays Basque",
     to: "/shooting-grossesse-pays-basque",
+    whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse à la plage avec Photosurf Pays Basque 🤰"),
   },
   {
     title: "SPORTS AQUATIQUES",
@@ -34,6 +40,7 @@ const blocks = [
     image: surfGlassy,
     alt: "Photo sport aquatique côte basque",
     to: "/photographe-natation-pays-basque",
+    whatsapp: wa("Bonjour, je souhaite réserver une séance sports aquatiques avec Photosurf Pays Basque 🌊"),
   },
 ];
 

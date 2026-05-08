@@ -41,7 +41,7 @@ export const Hero = () => {
       <div className="absolute inset-0 vhs-lines" />
       
       <div className="container mx-auto relative z-10 px-4 pb-16 pt-28 min-[375px]:pb-20 min-[375px]:pt-32 md:pb-32 md:pt-40">
-        <div className="max-w-4xl" style={{ opacity: Math.max(0.85, 1 - Math.max(0, scrollY - 400) / 1200), transform: `translateY(${scrollY * 0.03}px)` }}>
+        <div className="max-w-4xl" style={{ opacity: Math.max(0.9, 1 - Math.max(0, scrollY - 600) / 2000), transform: `translateY(${scrollY * 0.02}px)` }}>
           
           {/* Retro top accent — thin sunset stripe */}
           <div className="w-16 min-[375px]:w-20 h-[3px] bg-gradient-sunset mb-6 min-[375px]:mb-8" />

@@ -41,7 +41,7 @@ export const Hero = () => {
       <div className="absolute inset-0 vhs-lines" />
       
       <div className="container mx-auto relative z-10 px-4 pb-16 pt-28 min-[375px]:pb-20 min-[375px]:pt-32 md:pb-32 md:pt-40">
-        <div className="max-w-4xl" style={{ opacity: Math.max(0.85, 1 - Math.max(0, scrollY - 400) / 1200), transform: `translateY(${scrollY * 0.03}px)` }}>
+        <div className="max-w-4xl" style={{ opacity: Math.max(0.9, 1 - Math.max(0, scrollY - 600) / 2000), transform: `translateY(${scrollY * 0.02}px)` }}>
           
           {/* Retro top accent — thin sunset stripe */}
           <div className="w-16 min-[375px]:w-20 h-[3px] bg-gradient-sunset mb-6 min-[375px]:mb-8" />
@@ -60,50 +60,24 @@ export const Hero = () => {
             Capture tes meilleures vagues avec un photographe local spécialisé surf
           </p>
 
-          {/* Hero CTA WhatsApp */}
-          <div className="mb-5 min-[375px]:mb-6 max-w-xl">
-            <a
-              href="https://wa.me/33695349187?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20une%20s%C3%A9ance%20photo%20surf%20%F0%9F%8F%84"
-              target="_blank"
-              rel="noopener noreferrer"
-              role="button"
-              className="relative inline-flex items-center justify-center gap-3 bg-gradient-sunset text-foreground font-bold rounded-full shadow-2xl hover:opacity-90 w-full sm:w-auto text-center animate-pulse-wave-yellow booking-hover shimmer-cta"
-              style={{ padding: "16px 32px", fontSize: "18px" }}
-            >
-              <WhatsAppIcon className="w-6 h-6 flex-shrink-0 relative z-[2]" />
-              <span className="relative z-[2]">Réserver ma séance sur WhatsApp</span>
-            </a>
-            <p className="text-primary-foreground text-center sm:text-left mt-3" style={{ fontSize: "14px" }}>
-              À partir de 45€ · Livraison photos en 48h
-            </p>
-          </div>
-
-          <div className="flex items-center gap-2 text-primary-foreground/50 text-sm mb-6 min-[375px]:mb-8">
+          <div className="flex items-center gap-2 text-primary-foreground/50 text-sm mb-6 min-[375px]:mb-8 max-w-xl">
             <MapPin className="w-4 h-4 flex-shrink-0" />
             <span>Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers.</span>
           </div>
-          
-          <div className="flex flex-col min-[375px]:flex-row flex-wrap gap-3 min-[375px]:gap-4">
-            <Button 
-              size="lg" 
-              className="bg-gradient-sunset text-foreground px-6 min-[375px]:px-10 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full min-[375px]:w-auto whitespace-normal text-center leading-tight"
+
+          <div className="max-w-xl">
+            <Button
+              size="lg"
+              className="bg-gradient-sunset text-foreground px-6 min-[375px]:px-10 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg font-semibold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full min-[375px]:w-auto whitespace-normal text-center leading-tight animate-pulse-wave-yellow booking-hover shimmer-cta"
               asChild
             >
               <a href="#nos-univers">
                 📸 Réserver ma session
               </a>
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground px-5 min-[375px]:px-8 py-5 min-[375px]:py-7 text-sm min-[375px]:text-lg rounded-full hover:bg-primary-foreground/10 hover:text-primary-foreground bg-transparent w-full min-[375px]:w-auto whitespace-normal text-center leading-tight"
-              asChild
-            >
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                <WhatsAppIcon className="w-5 h-5 min-[375px]:w-6 min-[375px]:h-6 mr-2 min-[375px]:mr-3 flex-shrink-0" />
-                💬 Me contacter sur WhatsApp
-              </a>
-            </Button>
+            <p className="text-primary-foreground/80 mt-3 text-sm">
+              À partir de 45€ · Livraison photos en 48h
+            </p>
           </div>
         </div>
       </div>

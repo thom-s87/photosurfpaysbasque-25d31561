@@ -52,7 +52,7 @@ const packs = [
   {
     name: "Pack Complet",
     subtitle: "Toutes les photos + vidéos",
-    price: "120€",
+    price: "75€",
     badge: "⭐ Full Pack",
     highlight: false,
     features: [
@@ -63,7 +63,7 @@ const packs = [
       "Galerie privée premium",
     ],
     whatsapp:
-      "https://wa.me/33695349187?text=Bonjour%2C%20je%20souhaite%20le%20Pack%20Complet%20%28120%E2%82%AC%29%20apr%C3%A8s%20ma%20session%20%F0%9F%8F%84",
+      "https://wa.me/33695349187?text=Bonjour%2C%20je%20souhaite%20le%20Pack%20Complet%20%2875%E2%82%AC%29%20apr%C3%A8s%20ma%20session%20%F0%9F%8F%84",
   },
 ];
 

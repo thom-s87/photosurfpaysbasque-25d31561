@@ -57,7 +57,7 @@ export const SurfEnClub = () => {
                 lineHeight: 1.65,
               }}
             >
-              Tu surfs en club ? Chaque session est une étape, chaque vague une progression. Je capture ces moments — en eau, sur le sable, avant et après la session.
+              Tu surfs en club ? Chaque session est une étape, chaque vague une progression. Je capture ces moments en eau, sur le sable, avant et après la session.
             </p>
             <p
               className="mb-6"

@@ -16,6 +16,7 @@ import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { SectionCTA } from "@/components/SectionCTA";
+import { SurfEnClub } from "@/components/SurfEnClub";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
         <Story />
         <SectionCTA />
         <Univers />
+        <SurfEnClub />
         <UrgencyBanner />
         <Tarifs />
         <Gallery />

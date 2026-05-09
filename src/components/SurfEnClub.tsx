@@ -59,21 +59,8 @@ export const SurfEnClub = () => {
             >
               Tu surfs en club ? Chaque session est une étape, chaque vague une progression. Je capture ces moments en eau, sur le sable, avant et après la session.
             </p>
-            <p
-              className="mb-6"
-              style={{
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 400,
-                fontSize: "16px",
-                color: "#3a3a3a",
-                lineHeight: 1.65,
-              }}
-            >
-              Demande à ton club s'ils ont déjà leur photographe attitré, et sinon parle-leur de moi. Dis-moi à quel club tu adhères et on planifie un shooting sur mesure.
-            </p>
-
             <div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-10"
               style={{
                 backgroundColor: "#ede3f7",
                 color: "#5a3e8a",
@@ -85,7 +72,7 @@ export const SurfEnClub = () => {
               Anglet Surf Club · Plage de la Barre
             </div>
 
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start mt-2">
               <a
                 href="#tarifs"
                 className="inline-flex items-center justify-center gap-3 booking-hover"
@@ -104,6 +91,20 @@ export const SurfEnClub = () => {
                 Réserver ma session
               </a>
             </div>
+
+            <p
+              className="mt-5 text-center md:text-left"
+              style={{
+                fontFamily: "Inter, sans-serif",
+                fontWeight: 400,
+                fontSize: "13.5px",
+                color: "rgba(58, 58, 58, 0.65)",
+                lineHeight: 1.55,
+                fontStyle: "italic",
+              }}
+            >
+              Demande à ton club s'ils ont déjà leur photographe attitré, et sinon parle-leur de moi. Dis-moi à quel club tu adhères et on planifie un shooting sur mesure.
+            </p>
           </div>
 
           {/* Photos */}

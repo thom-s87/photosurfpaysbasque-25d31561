@@ -85,15 +85,15 @@ export const Hero = () => {
       {/* Scroll down indicator */}
       <a
         href="#nos-univers"
-        className="absolute bottom-[70px] md:bottom-[110px] left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 group"
+        className="absolute bottom-[70px] md:bottom-[110px] left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-3 group"
         aria-label="Faire défiler vers le bas"
-        style={{ opacity: Math.max(0, 0.8 - scrollY / 400) }}
+        style={{ opacity: Math.max(0.25, 1 - scrollY / 900) }}
       >
-        <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase font-medium text-primary-foreground/70 group-hover:text-primary-foreground transition-colors">
+        <span className="text-xs md:text-sm tracking-[0.25em] uppercase font-semibold text-primary-foreground/90 group-hover:text-primary-foreground transition-colors drop-shadow-lg">
           Découvrir
         </span>
-        <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-golden/60 flex items-center justify-center backdrop-blur-sm bg-night/30 group-hover:border-golden group-hover:bg-night/50 transition-all duration-300 animate-pulse-ring">
-          <ChevronDown className="w-5 h-5 md:w-6 md:h-6 text-golden animate-bounce-strong" />
+        <div className="relative w-11 h-11 md:w-14 md:h-14 rounded-full border-[3px] border-golden/80 flex items-center justify-center backdrop-blur-sm bg-night/50 group-hover:border-golden group-hover:bg-night/60 transition-all duration-300 animate-pulse-ring shadow-[0_0_20px_rgba(255,200,58,0.25)]">
+          <ChevronDown className="w-5 h-5 md:w-7 md:h-7 text-golden animate-bounce-strong" />
         </div>
       </a>
 

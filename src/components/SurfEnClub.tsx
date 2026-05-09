@@ -87,22 +87,21 @@ export const SurfEnClub = () => {
 
             <div>
               <a
-                href="https://wa.me/33695349187"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 booking-hover"
+                href="#tarifs"
+                className="inline-flex items-center justify-center gap-3 booking-hover"
                 style={{
-                  backgroundColor: "#e8b830",
-                  color: "#000",
-                  fontWeight: 700,
-                  borderRadius: "50px",
-                  padding: "14px 28px",
-                  fontSize: "15px",
-                  boxShadow: "0 8px 20px rgba(232, 184, 48, 0.3)",
+                  background: "linear-gradient(90deg, #f9b35a 0%, #f08a5d 50%, #e85a8a 100%)",
+                  color: "#1a1033",
+                  fontWeight: 800,
+                  borderRadius: "9999px",
+                  padding: "18px 36px",
+                  fontSize: "18px",
+                  boxShadow: "0 10px 28px rgba(232, 90, 138, 0.35)",
+                  fontFamily: "Inter, sans-serif",
                 }}
               >
-                <WhatsAppIcon className="w-5 h-5" />
-                Contacter via WhatsApp
+                <span style={{ fontSize: "20px" }}>📸</span>
+                Réserver ma session
               </a>
             </div>
           </div>

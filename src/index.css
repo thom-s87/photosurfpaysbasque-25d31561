@@ -316,6 +316,26 @@ video {
   animation: bounce-slow 2s ease-in-out infinite;
 }
 
+/* Strong bounce for scroll arrow */
+@keyframes bounce-strong {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(8px); }
+  60% { transform: translateY(4px); }
+}
+.animate-bounce-strong {
+  animation: bounce-strong 1.6s ease-in-out infinite;
+}
+
+/* Pulse ring glow for scroll indicator circle */
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 hsl(42 100% 61% / 0.4); }
+  70% { box-shadow: 0 0 0 10px hsl(42 100% 61% / 0); }
+  100% { box-shadow: 0 0 0 0 hsl(42 100% 61% / 0); }
+}
+.animate-pulse-ring {
+  animation: pulse-ring 2s ease-out infinite;
+}
+
 /* Pulse wave (yellow/orange halo for sunset CTAs) */
 @keyframes pulse-wave-yellow {
   0% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.5); }

@@ -76,7 +76,7 @@ export const SurfEnClub = () => {
                 }}
               >
                 <span style={{ color: "#d44faa", fontSize: "14px" }}>●</span>
-                Anglet Surf Club · Plage de la Barre
+                Anglet Surf Club · Plage du club
               </div>
             </a>
 

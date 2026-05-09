@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import { MapPin } from "lucide-react";
+import { ChevronDown, MapPin } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 
@@ -81,6 +81,17 @@ export const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Scroll down indicator */}
+      <a
+        href="#nos-univers"
+        className="absolute bottom-[70px] md:bottom-[110px] left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+        aria-label="Faire défiler vers le bas"
+        style={{ opacity: Math.max(0, 0.8 - scrollY / 400) }}
+      >
+        <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase font-medium">Découvrir</span>
+        <ChevronDown className="w-5 h-5 md:w-6 md:h-6 animate-bounce-slow" />
+      </a>
 
       {/* Wave transition SVG */}
       <div className="wave-transition z-10">

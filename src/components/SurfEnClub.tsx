@@ -59,20 +59,22 @@ export const SurfEnClub = () => {
             >
               Tu surfs en club ? Chaque session est une étape, chaque vague une progression. Je capture ces moments en eau, sur le sable, avant et après la session.
             </p>
-            <div
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-10"
-              style={{
-                backgroundColor: "#ede3f7",
-                color: "#5a3e8a",
-                fontSize: "13px",
-                fontWeight: 600,
-              }}
-            >
-              <span style={{ color: "#d44faa", fontSize: "14px" }}>●</span>
-              Anglet Surf Club · Plage de la Barre
+            <div className="flex justify-center md:justify-start mb-12">
+              <div
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                style={{
+                  backgroundColor: "#ede3f7",
+                  color: "#5a3e8a",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                }}
+              >
+                <span style={{ color: "#d44faa", fontSize: "14px" }}>●</span>
+                Anglet Surf Club · Plage de la Barre
+              </div>
             </div>
 
-            <div className="flex justify-center md:justify-start mt-2">
+            <div className="flex justify-center">
               <a
                 href="#tarifs"
                 className="inline-flex items-center justify-center gap-3 booking-hover"
@@ -83,7 +85,7 @@ export const SurfEnClub = () => {
                   borderRadius: "9999px",
                   padding: "18px 36px",
                   fontSize: "18px",
-                  boxShadow: "0 10px 28px rgba(232, 90, 138, 0.35)",
+                  boxShadow: "0 12px 32px rgba(232, 90, 138, 0.4)",
                   fontFamily: "Inter, sans-serif",
                 }}
               >
@@ -93,14 +95,15 @@ export const SurfEnClub = () => {
             </div>
 
             <p
-              className="mt-5 text-center md:text-left"
+              className="mt-8 mx-auto text-center"
               style={{
                 fontFamily: "Inter, sans-serif",
                 fontWeight: 400,
-                fontSize: "13.5px",
-                color: "rgba(58, 58, 58, 0.65)",
-                lineHeight: 1.55,
+                fontSize: "13px",
+                color: "rgba(58, 58, 58, 0.55)",
+                lineHeight: 1.6,
                 fontStyle: "italic",
+                maxWidth: "360px",
               }}
             >
               Demande à ton club s'ils ont déjà leur photographe attitré, et sinon parle-leur de moi. Dis-moi à quel club tu adhères et on planifie un shooting sur mesure.

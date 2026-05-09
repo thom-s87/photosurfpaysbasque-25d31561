@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import { MapPin } from "lucide-react";
+import { ChevronDown, MapPin } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 

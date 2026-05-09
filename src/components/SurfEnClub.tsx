@@ -69,7 +69,7 @@ export const SurfEnClub = () => {
                 lineHeight: 1.65,
               }}
             >
-              Dis-moi à quel club tu adhères et on planifie un shooting sur mesure.
+              Demande à ton club s'ils ont déjà leur photographe attitré, et sinon parle-leur de moi. Dis-moi à quel club tu adhères et on planifie un shooting sur mesure.
             </p>
 
             <div

@@ -85,7 +85,7 @@ export const SurfEnClub = () => {
               Anglet Surf Club · Plage de la Barre
             </div>
 
-            <div>
+            <div className="flex justify-center md:justify-start">
               <a
                 href="#tarifs"
                 className="inline-flex items-center justify-center gap-3 booking-hover"

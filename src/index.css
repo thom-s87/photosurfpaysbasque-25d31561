@@ -307,6 +307,15 @@ video {
   animation: pulse-wave 2s infinite;
 }
 
+/* Bounce slow for scroll indicator */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 2s ease-in-out infinite;
+}
+
 /* Pulse wave (yellow/orange halo for sunset CTAs) */
 @keyframes pulse-wave-yellow {
   0% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.5); }

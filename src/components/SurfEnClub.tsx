@@ -59,9 +59,15 @@ export const SurfEnClub = () => {
             >
               Tu surfs en club ? Chaque session est une étape, chaque vague une progression. Je capture ces moments en eau, sur le sable, avant et après la session.
             </p>
-            <div className="flex justify-center md:justify-start mb-12">
+            <a
+              href="https://www.angletsurfclub.fr/reservation-en-ligne.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center md:justify-start mb-12"
+              style={{ textDecoration: "none" }}
+            >
               <div
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-transform duration-300 hover:scale-105"
                 style={{
                   backgroundColor: "#ede3f7",
                   color: "#5a3e8a",
@@ -72,7 +78,7 @@ export const SurfEnClub = () => {
                 <span style={{ color: "#d44faa", fontSize: "14px" }}>●</span>
                 Anglet Surf Club · Plage de la Barre
               </div>
-            </div>
+            </a>
 
             <div className="flex justify-center">
               <a

@@ -85,12 +85,16 @@ export const Hero = () => {
       {/* Scroll down indicator */}
       <a
         href="#nos-univers"
-        className="absolute bottom-[70px] md:bottom-[110px] left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-primary-foreground/60 hover:text-primary-foreground transition-colors"
+        className="absolute bottom-[70px] md:bottom-[110px] left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 group"
         aria-label="Faire défiler vers le bas"
         style={{ opacity: Math.max(0, 0.8 - scrollY / 400) }}
       >
-        <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase font-medium">Découvrir</span>
-        <ChevronDown className="w-5 h-5 md:w-6 md:h-6 animate-bounce-slow" />
+        <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase font-medium text-primary-foreground/70 group-hover:text-primary-foreground transition-colors">
+          Découvrir
+        </span>
+        <div className="relative w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-golden/60 flex items-center justify-center backdrop-blur-sm bg-night/30 group-hover:border-golden group-hover:bg-night/50 transition-all duration-300 animate-pulse-ring">
+          <ChevronDown className="w-5 h-5 md:w-6 md:h-6 text-golden animate-bounce-strong" />
+        </div>
       </a>
 
       {/* Wave transition SVG */}

@@ -97,7 +97,7 @@ const ShootingGrossessePaysBasque = () => {
                 Shooting grossesse · Pays Basque
               </p>
               <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-                Shooting Grossesse au Pays Basque 🤍
+                Shooting grossesse Pays Basque — Maternité & Océan 🤍
               </h1>
               <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-4 md:mb-6">
                 Photographe grossesse à Anglet, je réalise des séances photo sur la plage, notamment à la Petite Chambre d'Amour (VVF), un spot idéal pour des images douces et naturelles.

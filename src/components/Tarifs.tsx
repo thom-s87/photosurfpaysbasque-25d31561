@@ -9,7 +9,7 @@ import {
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 
 const WHATSAPP_BOOK =
-  "https://wa.me/33695349187?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20session%20photo%2Fvid%C3%A9o%20%2845%E2%82%AC%29%20%F0%9F%93%B8";
+  "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...";
 
 const sessionInclus = [
   "Session surf, lifestyle ou océan",
@@ -32,7 +32,7 @@ const packs = [
       "Galerie privée en ligne",
     ],
     whatsapp:
-      "https://wa.me/33695349187?text=Bonjour%2C%20je%20souhaite%20le%20Pack%20D%C3%A9couverte%20%2825%E2%82%AC%29%20apr%C3%A8s%20ma%20session%20%F0%9F%93%B8",
+      "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...",
   },
   {
     name: "Pack Session",
@@ -47,7 +47,7 @@ const packs = [
       "Galerie privée en ligne",
     ],
     whatsapp:
-      "https://wa.me/33695349187?text=Bonjour%2C%20je%20souhaite%20le%20Pack%20Session%20%2840%E2%82%AC%29%20apr%C3%A8s%20ma%20session%20%F0%9F%8C%8A",
+      "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...",
   },
   {
     name: "Pack Complet",
@@ -63,7 +63,7 @@ const packs = [
       "Galerie privée premium",
     ],
     whatsapp:
-      "https://wa.me/33695349187?text=Bonjour%2C%20je%20souhaite%20le%20Pack%20Complet%20%2875%E2%82%AC%29%20apr%C3%A8s%20ma%20session%20%F0%9F%8F%84",
+      "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...",
   },
 ];
 
@@ -263,7 +263,7 @@ export const Tarifs = () => {
                   }`}
                 >
                   <a href={pack.whatsapp} target="_blank" rel="noopener noreferrer" className="relative z-[2]">
-                    Choisir ce pack
+                    Réserver cette formule
                   </a>
                 </Button>
               </div>

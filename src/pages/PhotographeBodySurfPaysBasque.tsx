@@ -52,7 +52,7 @@ const faqItems = [
 
 const PhotographeBodySurfPaysBasque = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Bodysurf Pays Basque | Anglet', description: "Photographe bodysurf au Pays Basque : shooting dans l'eau à Anglet, La Barre et les Cavaliers. Photos immersives, réservation par WhatsApp.", path: '/photographe-body-surf-pays-basque' });
+    setSeo({ title: "Photographe Body Surf Pays Basque | Photos à l'eau — PhotoSurfPaysBasque", description: "Spécialiste de la photo body surf au Pays Basque. Immortalise tes rides sans planche dans l'océan basque. Sessions dès 45€ à Anglet et Biarritz.", keywords: "photographe body surf pays basque, photo bodysurf anglet, body surf biarritz, bodysurf photography basque country", path: '/photographe-body-surf-pays-basque' });
   }, []);
 
   const jsonLd = {
@@ -104,7 +104,7 @@ const PhotographeBodySurfPaysBasque = () => {
                 Photographe body surf · Anglet, Pays Basque
               </p>
               <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-                Photographe Body Surf au Pays Basque 🌊
+                Photographe body surf Pays Basque — Photos à l'eau 🌊
               </h1>
               <p className="text-base min-[375px]:text-lg md:text-xl text-foreground/80 leading-relaxed mb-8 md:mb-10">
                 Le body surf, c'est le plaisir brut de la glisse, au plus près de l'eau et des sensations. Je shoote sur toute la côte d'Anglet, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre, en passant par les Sables d'Or, Marinella, les Corsaires, la Madrague, les Dunes et les Cavaliers.

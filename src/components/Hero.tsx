@@ -46,10 +46,11 @@ export const Hero = () => {
           {/* Retro top accent — thin sunset stripe */}
           <div className="w-16 min-[375px]:w-20 h-[3px] bg-gradient-sunset mb-6 min-[375px]:mb-8" />
           
-          <h1 className="font-display text-[3.2rem] min-[375px]:text-6xl md:text-9xl lg:text-[10rem] leading-[0.85] mb-4 min-[375px]:mb-6 tracking-wider">
-            <span className="text-primary-foreground block">PHOTO</span>
-            <span className="text-primary-foreground block">SURF</span>
-            <span className="text-gradient-sunset block">PAYS BASQUE</span>
+          <h1 aria-label="PHOTO SURF PAYS BASQUE — Photographe Océan à Anglet" className="font-display text-[3.2rem] min-[375px]:text-6xl md:text-9xl lg:text-[10rem] leading-[0.85] mb-4 min-[375px]:mb-6 tracking-wider">
+            <span className="sr-only">PHOTO SURF PAYS BASQUE — Photographe Océan à Anglet</span>
+            <span aria-hidden="true" className="text-primary-foreground block">PHOTO</span>
+            <span aria-hidden="true" className="text-primary-foreground block">SURF</span>
+            <span aria-hidden="true" className="text-gradient-sunset block">PAYS BASQUE</span>
           </h1>
 
           <p className="text-lg min-[375px]:text-xl md:text-2xl text-primary-foreground font-medium mb-2 min-[375px]:mb-3 max-w-xl">

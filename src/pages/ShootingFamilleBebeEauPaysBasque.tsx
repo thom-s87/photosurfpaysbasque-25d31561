@@ -50,7 +50,7 @@ const faqItems = [
 
 const ShootingFamilleBebeEauPaysBasque = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Famille Pays Basque | Bébé Nageur', description: "Photographe famille au Pays Basque : séance plage & bébé nageur à Anglet et Biarritz. Photos naturelles dans l'eau, réservation par WhatsApp.", path: '/shooting-famille-bebe-eau-pays-basque' });
+    setSeo({ title: "Shooting Famille & Bébé à l'eau Pays Basque | Photographe — PhotoSurfPaysBasque", description: "Photos de famille et bébé à l'eau au Pays Basque. Souvenirs inoubliables sur la plage d'Anglet ou Biarritz. Shooting dès 90€. Réserve par WhatsApp.", keywords: "shooting famille plage pays basque, photographe bébé eau anglet, photo famille biarritz, shooting enfants plage basque", path: '/shooting-famille-bebe-eau-pays-basque' });
   }, []);
 
   const jsonLd = {

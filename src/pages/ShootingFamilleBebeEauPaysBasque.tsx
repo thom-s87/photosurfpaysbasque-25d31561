@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -49,20 +50,7 @@ const faqItems = [
 
 const ShootingFamilleBebeEauPaysBasque = () => {
   useEffect(() => {
-    document.title = "Photographe Famille Pays Basque | Séance plage & bébé nageur";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe famille au Pays Basque 📸 Séance plage & bébé nageur à Anglet et Biarritz. Photos naturelles en famille dans l'eau. Réservation rapide via WhatsApp 🌊";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descContent);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = descContent;
-      document.head.appendChild(meta);
-    }
-    return () => {
-      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
-    };
+    setSeo({ title: 'Photographe Famille Pays Basque | Bébé Nageur', description: "Photographe famille au Pays Basque : séance plage & bébé nageur à Anglet et Biarritz. Photos naturelles dans l'eau, réservation par WhatsApp.", path: '/shooting-famille-bebe-eau-pays-basque' });
   }, []);
 
   const jsonLd = {

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -49,20 +50,7 @@ const faqItems = [
 
 const ShootingGrossessePaysBasque = () => {
   useEffect(() => {
-    document.title = "Photographe Grossesse Pays Basque | Shooting plage & eau";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe grossesse au Pays Basque 📸 Shooting maternité en extérieur à Anglet et Biarritz. Photos naturelles, plage et eau. Réservation rapide via WhatsApp 🌊";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descContent);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = descContent;
-      document.head.appendChild(meta);
-    }
-    return () => {
-      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
-    };
+    setSeo({ title: 'Shooting Grossesse Pays Basque | Plage & Eau', description: 'Shooting grossesse au Pays Basque : séance maternité naturelle, plage et eau, à Anglet et Biarritz. Réservation rapide par WhatsApp.', path: '/shooting-grossesse-pays-basque' });
   }, []);
 
   const jsonLd = {

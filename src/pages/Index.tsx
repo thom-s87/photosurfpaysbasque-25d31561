@@ -17,8 +17,17 @@ import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { SectionCTA } from "@/components/SectionCTA";
 import { SurfEnClub } from "@/components/SurfEnClub";
+import { useEffect } from "react";
+import { setSeo } from "@/lib/seo";
 
 const Index = () => {
+  useEffect(() => {
+    setSeo({
+      title: "Photographe Surf Pays Basque | Photos & Vidéos à l'eau",
+      description: "Session photo surf au Pays Basque : Anglet, Biarritz, Chambre d'Amour. Shooting dès 45€, photos à l'unité ou packs. Réserve simplement par WhatsApp.",
+      path: "/",
+    });
+  }, []);
   return (
     <div className="min-h-screen bg-background pb-16 md:pb-0">
       <Header />

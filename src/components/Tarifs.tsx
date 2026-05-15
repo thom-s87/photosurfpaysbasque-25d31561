@@ -263,7 +263,7 @@ export const Tarifs = () => {
                   }`}
                 >
                   <a href={pack.whatsapp} target="_blank" rel="noopener noreferrer" className="relative z-[2]">
-                    Choisir ce pack
+                    Réserver cette formule
                   </a>
                 </Button>
               </div>

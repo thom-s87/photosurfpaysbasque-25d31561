@@ -38,6 +38,7 @@ export const Footer = () => {
             <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" aria-label="Avis Google PhotoSurfPaysBasque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               <ExternalLink className="w-5 h-5" />
             </a>
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -65,20 +66,7 @@ const faqItems = [
 
 const PhotographeSurfAnglet = () => {
   useEffect(() => {
-    document.title = "Photographe Surf Pays Basque | Shooting Surf Anglet, Biarritz & sud des Landes";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe surf au Pays Basque 📸 Shooting surf immersif à Anglet, Biarritz et dans le sud des Landes. Photos dans l'eau, naturelles et professionnelles. Réservation rapide via WhatsApp 🌊";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descContent);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = descContent;
-      document.head.appendChild(meta);
-    }
-    return () => {
-      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
-    };
+    setSeo({ title: 'Photographe Surf Anglet | Shooting Pays Basque', description: "Photographe surf à Anglet : shooting immersif dans l'eau à la Petite Chambre d'Amour, Cavaliers et La Barre. Réservation rapide via WhatsApp.", path: '/photographe-surf-anglet' });
   }, []);
 
   const jsonLd = {

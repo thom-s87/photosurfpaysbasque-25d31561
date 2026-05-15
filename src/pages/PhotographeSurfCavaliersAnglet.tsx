@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -55,20 +56,7 @@ const faqItems = [
 
 const PhotographeSurfCavaliersAnglet = () => {
   useEffect(() => {
-    document.title = "Photographe Surf Anglet Cavaliers 🌊 Shooting surf Pays Basque";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe surf aux Cavaliers à Anglet 📸 Shooting photo surf sur le spot le plus puissant de la côte basque. Photos naturelles, immersives et professionnelles. Réservation WhatsApp 🌊";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descContent);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = descContent;
-      document.head.appendChild(meta);
-    }
-    return () => {
-      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
-    };
+    setSeo({ title: 'Photographe Surf Cavaliers Anglet | Pays Basque', description: "Photographe surf aux Cavaliers à Anglet : shooting dans l'eau sur ce beach break puissant. Réservation rapide par WhatsApp.", path: '/photographe-surf-cavaliers-anglet' });
   }, []);
 
   const jsonLd = {

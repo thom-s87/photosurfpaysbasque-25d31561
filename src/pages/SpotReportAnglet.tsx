@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Wind, Waves, Sun, Calendar, Clock, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { setSeo } from "@/lib/seo";
 
 const WHATSAPP_URL = "https://wa.me/33695349187";
 const WINDY_URL = "https://www.windy.com/?43.505,-1.541,12";
@@ -21,6 +23,13 @@ const conditions = [
 ];
 
 const SpotReportAnglet = () => {
+  useEffect(() => {
+    setSeo({
+      title: "Spot Report Anglet | Conditions Surf VVF",
+      description: "Conditions surf à Anglet (VVF, Petite Chambre d'Amour) : houle, vent, marée. Idéal pour planifier ta session photo surf au Pays Basque.",
+      path: "/spot-report-anglet",
+    });
+  }, []);
   const today = new Date();
   const dateStr = today.toLocaleDateString("fr-FR", {
     weekday: "long",

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -112,20 +113,7 @@ const HorizontalGallery = ({ images, id }: { images: typeof galleryImages; id: s
 
 const SpotPhotoPetiteChambreAmour = () => {
   useEffect(() => {
-    document.title = "Mon spot coup de cœur à Anglet 🌊 Petite Chambre d'Amour (VVF)";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Découvrez la Petite Chambre d'Amour (VVF) à Anglet, mon spot coup de cœur pour vos shootings grossesse et famille 📸 Bord rocheux, lumière dorée et ambiance intimiste. Photographe Anglet.";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descContent);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = descContent;
-      document.head.appendChild(meta);
-    }
-    return () => {
-      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
-    };
+    setSeo({ title: "Spot Petite Chambre d'Amour | Photographe Surf Anglet", description: "Mon spot coup de cœur à Anglet : la Petite Chambre d'Amour (VVF). Sessions photo surf au Pays Basque, réservation par WhatsApp.", path: '/spot-photo-petite-chambre-amour-anglet' });
   }, []);
 
   const jsonLd = {

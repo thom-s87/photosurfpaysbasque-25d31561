@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -51,20 +52,7 @@ const faqItems = [
 
 const PhotographeBodySurfPaysBasque = () => {
   useEffect(() => {
-    document.title = "Photographe Bodysurf Pays Basque | Anglet La Barre Cavaliers";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const descContent = "Photographe bodysurf au Pays Basque 📸 Shooting body surf à Anglet, La Barre et Les Cavaliers. Photos immersives dans l'eau, naturelles et professionnelles. Réservation WhatsApp 🌊";
-    if (metaDesc) {
-      metaDesc.setAttribute("content", descContent);
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content = descContent;
-      document.head.appendChild(meta);
-    }
-    return () => {
-      document.title = "PhotoSurfPaysBasque – Photographe Surf & Océan au Pays Basque";
-    };
+    setSeo({ title: 'Photographe Bodysurf Pays Basque | Anglet', description: "Photographe bodysurf au Pays Basque : shooting dans l'eau à Anglet, La Barre et les Cavaliers. Photos immersives, réservation par WhatsApp.", path: '/photographe-body-surf-pays-basque' });
   }, []);
 
   const jsonLd = {

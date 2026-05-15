@@ -66,7 +66,7 @@ const faqItems = [
 
 const PhotographeSurfAnglet = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Surf Anglet | Shooting Pays Basque', description: "Photographe surf à Anglet : shooting immersif dans l'eau à la Petite Chambre d'Amour, Cavaliers et La Barre. Réservation rapide via WhatsApp.", path: '/photographe-surf-anglet' });
+    setSeo({ title: 'Photographe Surf Anglet | Sessions photo à l\'eau — PhotoSurfPaysBasque', description: "Photographe surf à Anglet : Chambre d'Amour, VVF, Sables d'Or. Capture ta session dans l'eau dès 45€. Réservation rapide sur WhatsApp. Thom, photographe local.", keywords: "photographe surf anglet, photo surf anglet, photographe anglet, chambre d'amour surf photo, session surf anglet", path: '/photographe-surf-anglet' });
   }, []);
 
   const jsonLd = {
@@ -132,7 +132,7 @@ const PhotographeSurfAnglet = () => {
               Photographe surf · Anglet, Pays Basque
             </p>
             <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-              Photographe Surf à Anglet 🌊
+              Photographe surf Anglet — Sessions photo à l'eau 🌊
             </h1>
              <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6">
                Photographe surf à Anglet, je réalise des shootings directement dans les vagues sur toute la côte, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre 🌊

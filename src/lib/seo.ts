@@ -25,6 +25,7 @@ export function setSeo(opts: {
   title: string;
   description: string;
   path: string; // e.g. "/photographe-surf-anglet"
+  keywords?: string;
 }) {
   const url = `${SITE}${opts.path}`;
   document.title = opts.title;
@@ -33,4 +34,7 @@ export function setSeo(opts: {
   setMeta("property", "og:title", opts.title);
   setMeta("property", "og:description", opts.description);
   setMeta("property", "og:url", url);
+  if (opts.keywords) {
+    setMeta("name", "keywords", opts.keywords);
+  }
 }

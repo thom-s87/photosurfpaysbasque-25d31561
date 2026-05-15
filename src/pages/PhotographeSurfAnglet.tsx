@@ -132,7 +132,7 @@ const PhotographeSurfAnglet = () => {
               Photographe surf · Anglet, Pays Basque
             </p>
             <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-              Photographe Surf à Anglet 🌊
+              Photographe surf Anglet — Sessions photo à l'eau 🌊
             </h1>
              <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6">
                Photographe surf à Anglet, je réalise des shootings directement dans les vagues sur toute la côte, de la Petite Chambre d'Amour (VVF) jusqu'à La Barre 🌊

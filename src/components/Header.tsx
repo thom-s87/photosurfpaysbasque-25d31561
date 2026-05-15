@@ -40,7 +40,7 @@ export const Header = () => {
           </nav>
 
           <div className="flex md:hidden items-center gap-3">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram PhotoSurfPaysBasque" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
             <Button size="sm" className="bg-gradient-sunset text-foreground rounded-full hover:opacity-90 animate-pulse-wave-yellow booking-hover" asChild>

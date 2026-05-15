@@ -25,8 +25,9 @@ import { setSeo } from "@/lib/seo";
 const Index = () => {
   useEffect(() => {
     setSeo({
-      title: "Photographe Surf Pays Basque | Photos & Vidéos à l'eau",
-      description: "Session photo surf au Pays Basque : Anglet, Biarritz, Chambre d'Amour. Shooting dès 45€, photos à l'unité ou packs. Réserve simplement par WhatsApp.",
+      title: "Photographe Surf Pays Basque | Photos & Vidéos à l'eau · Anglet · Biarritz",
+      description: "📸 Photographe surf à Anglet & Biarritz. Sessions photo à l'eau dès 45€. Famille, grossesse, natation. Réservation en 2 min par WhatsApp · Réponse en 15 min !",
+      keywords: "photographe surf pays basque, photographe surf anglet, photo surf biarritz, photographe eau anglet, photographe plage pays basque",
       path: "/",
     });
   }, []);

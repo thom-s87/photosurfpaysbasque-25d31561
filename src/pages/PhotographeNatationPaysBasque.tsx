@@ -109,7 +109,7 @@ const PhotographeNatationPaysBasque = () => {
               Photographe natation · Pays Basque
             </p>
             <h1 className="text-3xl min-[375px]:text-4xl md:text-6xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-primary via-primary to-ring bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-              Photographe Natation & Performance au Pays Basque 🏊‍♂️
+              Photographe natation Pays Basque — Open water, triathlon & entraînements 🏊‍♂️
             </h1>
              <p className="text-base min-[375px]:text-lg md:text-2xl text-foreground/80 leading-relaxed max-w-3xl mx-auto mb-4 md:mb-6">
                Photographe natation à Anglet, je réalise des shootings en eau libre et en conditions réelles pour les nageurs et sportifs 🌊

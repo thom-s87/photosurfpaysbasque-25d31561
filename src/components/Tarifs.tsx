@@ -183,7 +183,7 @@ export const Tarifs = () => {
         {/* SÉPARATEUR */}
         <div className="flex items-center justify-center gap-4 mb-12 md:mb-16">
           <span className="h-px flex-1 max-w-[120px] bg-electric-violet/30" />
-          <span className="text-primary-foreground/40 text-xs tracking-[0.4em] uppercase">
+          <span className="text-primary-foreground/70 text-xs tracking-[0.4em] uppercase">
             puis
           </span>
           <span className="h-px flex-1 max-w-[120px] bg-electric-violet/30" />

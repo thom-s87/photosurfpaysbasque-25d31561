@@ -19,17 +19,17 @@ export const Footer = () => {
           <div>
             <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-12 w-auto" />
             <p className="text-primary-foreground/50 text-sm mt-1 uppercase tracking-widest">Photographe & vidéaste spécialisé océan 🌊</p>
-            <p className="text-primary-foreground/40 text-xs mt-1">Surf, sport et moments de vie à Anglet 📸</p>
+            <p className="text-primary-foreground/70 text-xs mt-1">Surf, sport et moments de vie à Anglet 📸</p>
           </div>
 
           <div className="flex items-center gap-6">
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               <WhatsAppIcon className="w-5 h-5" />
             </a>
-            <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">
+            <a href={GOOGLE_URL} target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
               <ExternalLink className="w-5 h-5" />
             </a>
           </div>
@@ -45,16 +45,16 @@ export const Footer = () => {
 
         {/* SEO links */}
         <nav className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3 mb-8 text-xs md:text-sm">
-          <a href="/photographe-surf-anglet" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe surf Anglet</a>
-          <a href="/photographe-body-surf-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe body surf</a>
-          <a href="/photographe-grossesse-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe grossesse</a>
-          <a href="/shooting-grossesse-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Shooting grossesse</a>
-          <a href="/photographe-natation-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Photographe natation</a>
-          <a href="/shooting-famille-bebe-eau-pays-basque" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Shooting famille & bébé</a>
-          <a href="/spot-report-anglet" className="text-primary-foreground/40 hover:text-primary-foreground transition-colors">Spot report Anglet</a>
+          <a href="/photographe-surf-anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Photographe surf Anglet</a>
+          <a href="/photographe-body-surf-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Photographe body surf</a>
+          <a href="/photographe-grossesse-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Photographe grossesse</a>
+          <a href="/shooting-grossesse-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Shooting grossesse</a>
+          <a href="/photographe-natation-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Photographe natation</a>
+          <a href="/shooting-famille-bebe-eau-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Shooting famille & bébé</a>
+          <a href="/spot-report-anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Spot report Anglet</a>
         </nav>
 
-        <div className="text-center text-primary-foreground/30 text-sm space-y-2">
+        <div className="text-center text-primary-foreground/60 text-sm space-y-2">
           <p>&copy; 2026 PhotoSurfPaysBasque — Thom, photographe à Anglet, Biarritz</p>
           <p>📍 Basé à Anglet – shootings sur toute la côte : Petite Chambre d'Amour (VVF) · Sables d'Or · Marinella · Corsaires · Madrague · Dunes · Cavaliers · La Barre</p>
         </div>

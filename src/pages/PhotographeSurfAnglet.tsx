@@ -66,7 +66,7 @@ const faqItems = [
 
 const PhotographeSurfAnglet = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Surf Anglet | Shooting Pays Basque', description: "Photographe surf à Anglet : shooting immersif dans l'eau à la Petite Chambre d'Amour, Cavaliers et La Barre. Réservation rapide via WhatsApp.", path: '/photographe-surf-anglet' });
+    setSeo({ title: 'Photographe Surf Anglet | Sessions photo à l\'eau — PhotoSurfPaysBasque', description: "Photographe surf à Anglet : Chambre d'Amour, VVF, Sables d'Or. Capture ta session dans l'eau dès 45€. Réservation rapide sur WhatsApp. Thom, photographe local.", keywords: "photographe surf anglet, photo surf anglet, photographe anglet, chambre d'amour surf photo, session surf anglet", path: '/photographe-surf-anglet' });
   }, []);
 
   const jsonLd = {

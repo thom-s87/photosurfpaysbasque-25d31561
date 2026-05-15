@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Heart } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const WHATSAPP_URL = "https://wa.me/33695349187";
+const WHATSAPP_URL = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...";
 
 const moisOptions = ["3", "4", "5", "6", "7", "8", "9"];
 const typeSeanceOptions = ["Seule", "En couple", "En famille"];

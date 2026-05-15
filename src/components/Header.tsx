@@ -2,7 +2,7 @@ import { Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImg from "@/assets/logo-photosurf.png";
 
-const WHATSAPP_URL = "https://wa.me/33695349187";
+const WHATSAPP_URL = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...";
 const INSTAGRAM_URL = "https://www.instagram.com/photosurfpaysbasque?igsh=MTBybTU2ejM2bDB5dQ%3D%3D&utm_source=qr";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (

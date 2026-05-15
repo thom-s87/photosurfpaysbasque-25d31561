@@ -6,7 +6,7 @@ import { Wind, Waves, Sun, Calendar, Clock, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { setSeo } from "@/lib/seo";
 
-const WHATSAPP_URL = "https://wa.me/33695349187";
+const WHATSAPP_URL = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...";
 const WINDY_URL = "https://www.windy.com/?43.505,-1.541,12";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (

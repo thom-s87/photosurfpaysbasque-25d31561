@@ -229,6 +229,49 @@ const SpotPhotoPetiteChambreAmour = () => {
           </div>
         </section>
 
+        {/* ===== CARTE GOOGLE MAPS ===== */}
+        <section className="py-12 md:py-16 px-4 bg-card/60">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-primary">
+              Accès & infos pratiques VVF Anglet
+            </h2>
+            <p className="text-center text-foreground/70 mb-8 max-w-2xl mx-auto">
+              La Petite Chambre d'Amour se situe au nord d'Anglet, face à l'océan. Parking disponible à proximité, accès PMR possible selon marées.
+            </p>
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-border/50">
+              <iframe
+                title="Localisation Google Maps — Plage de la Petite Chambre d'Amour, Anglet"
+                aria-label="Carte interactive de la plage VVF Anglet — Petite Chambre d'Amour"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2895.5!2d-1.5407!3d43.5052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd516b1d3c8e8b5b%3A0x8e8e8e8e8e8e8e8e!2sPlage%20de%20la%20Petite%20Chambre%20d'Amour%2C%20Anglet!5e0!3m2!1sfr!2sfr!4v1"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="mt-6 text-center">
+              <Button
+                variant="outline"
+                size="lg"
+                className="rounded-full px-6 py-4 font-bold border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                asChild
+              >
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=43.5052,-1.5407"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ouvrir la localisation VVF Anglet dans Google Maps dans un nouvel onglet"
+                >
+                  <MapPin className="w-5 h-5 mr-2" />
+                  Ouvrir dans Google Maps
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         <SectionCTA />
 
         {/* ===== LA LUMIÈRE + IMAGE ===== */}

@@ -113,7 +113,7 @@ const HorizontalGallery = ({ images, id }: { images: typeof galleryImages; id: s
 
 const SpotPhotoPetiteChambreAmour = () => {
   useEffect(() => {
-    setSeo({ title: "Spot Petite Chambre d'Amour | Photographe Surf Anglet", description: "Mon spot coup de cœur à Anglet : la Petite Chambre d'Amour (VVF). Sessions photo surf au Pays Basque, réservation par WhatsApp.", path: '/spot-photo-petite-chambre-amour-anglet' });
+    setSeo({ title: "VVF Anglet — Plage de la Petite Chambre d'Amour | Spot Surf & Photo", description: "Plage VVF Anglet (Petite Chambre d'Amour) : mon spot coup de cœur pour des sessions photo surf, grossesse et famille au Pays Basque. Réservation WhatsApp.", path: '/spot-photo-petite-chambre-amour-anglet' });
   }, []);
 
   const jsonLd = {
@@ -160,7 +160,7 @@ const SpotPhotoPetiteChambreAmour = () => {
               Mon spot coup de cœur · Anglet
             </p>
             <h1 className="text-2xl min-[375px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide mb-5 md:mb-6">
-              La Petite Chambre d'Amour (VVF) 🌊
+              Plage VVF Anglet — La Petite Chambre d'Amour 🌊
             </h1>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button

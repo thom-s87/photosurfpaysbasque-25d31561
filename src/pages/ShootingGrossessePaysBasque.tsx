@@ -140,6 +140,28 @@ const ShootingGrossessePaysBasque = () => {
           </div>
         </section>
 
+        {/* SECTION POURQUOI ANGLET — SEO */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-4xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
+              Pourquoi faire son shooting grossesse à Anglet ?
+            </h2>
+            <div className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto space-y-4">
+              <p>
+                Anglet offre un cadre rare pour un <strong className="text-foreground">shooting grossesse au Pays Basque</strong> : 4,5 km de plages de sable fin orientées plein ouest, idéales pour capturer la lumière dorée du coucher de soleil. C'est cette lumière chaude et enveloppante, propre à la côte basque, qui rend les photos de maternité aussi douces et intemporelles.
+              </p>
+              <p>
+                La <strong className="text-foreground">Petite Chambre d'Amour (VVF)</strong> et la Grande Chambre d'Amour offrent un décor unique entre rochers sculptés et océan, parfait pour des images intimes et naturelles. Plus au nord, les plages des Sables d'Or, des Corsaires ou des Cavaliers proposent de grandes étendues de sable idéales pour les silhouettes en contre-jour.
+              </p>
+              <p>
+                En tant que <strong className="text-foreground">photographe grossesse à Anglet</strong>, je connais chaque spot, chaque marée, chaque heure de lumière. Cette expertise locale me permet de te proposer le meilleur lieu selon la date de ta séance, la saison, et l'ambiance que tu recherches — douce et lumineuse, ou plus graphique et contrastée.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+
         {/* SECTION 2 + IMAGE */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-10 items-center">

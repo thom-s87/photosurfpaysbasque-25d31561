@@ -51,7 +51,7 @@ const faqItems = [
 
 const PhotographeNatationPaysBasque = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Natation Pays Basque | Photos sports aquatiques — PhotoSurfPaysBasque', description: "Photographe spécialisé natation et sports aquatiques au Pays Basque. Captures sous-marines et à l'eau. Triathlons, open water, entraînements. Devis sur WhatsApp.", keywords: "photographe natation pays basque, photo sports aquatiques anglet, photographe open water basque, triathlon photo pays basque", path: '/photographe-natation-pays-basque' });
+    setSeo({ title: 'Photographe Natation Pays Basque | Sports aquatiques', description: "Photographe spécialisé natation et sports aquatiques au Pays Basque. Captures sous-marines et à l'eau. Triathlons, open water, entraînements. Devis sur WhatsApp.", keywords: "photographe natation pays basque, photo sports aquatiques anglet, photographe open water basque, triathlon photo pays basque", path: '/photographe-natation-pays-basque' });
   }, []);
 
   const jsonLd = {

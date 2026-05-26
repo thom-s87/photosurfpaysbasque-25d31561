@@ -52,7 +52,7 @@ const faqItems = [
 
 const PhotographeBodySurfPaysBasque = () => {
   useEffect(() => {
-    setSeo({ title: "Photographe Body Surf Pays Basque | Photos à l'eau — PhotoSurfPaysBasque", description: "Spécialiste de la photo body surf au Pays Basque. Immortalise tes rides sans planche dans l'océan basque. Sessions dès 45€ à Anglet et Biarritz.", keywords: "photographe body surf pays basque, photo bodysurf anglet, body surf biarritz, bodysurf photography basque country", path: '/photographe-body-surf-pays-basque' });
+    setSeo({ title: "Photographe Body Surf Pays Basque | Photos à l'eau", description: "Spécialiste de la photo body surf au Pays Basque. Immortalise tes rides sans planche dans l'océan basque. Sessions dès 45€ à Anglet et Biarritz.", keywords: "photographe body surf pays basque, photo bodysurf anglet, body surf biarritz, bodysurf photography basque country", path: '/photographe-body-surf-pays-basque' });
   }, []);
 
   const jsonLd = {

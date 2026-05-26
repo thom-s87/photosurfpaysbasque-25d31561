@@ -50,7 +50,7 @@ const faqItems = [
 
 const ShootingGrossessePaysBasque = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Grossesse Anglet & Pays Basque | Shooting Maternité Plage', description: "Photographe grossesse à Anglet et au Pays Basque. Shooting maternité sur la plage (Petite Chambre d'Amour, Biarritz), à l'eau ou en bord de mer. Dès 120€.", keywords: "photographe grossesse anglet, shooting grossesse pays basque, photographe maternité anglet, photo grossesse plage biarritz, séance grossesse basque", path: '/shooting-grossesse-pays-basque' });
+    setSeo({ title: 'Photographe Grossesse Anglet | Shooting Maternité Plage', description: "Photographe grossesse à Anglet et au Pays Basque. Shooting maternité sur la plage (Petite Chambre d'Amour, Biarritz), à l'eau ou en bord de mer. Dès 120€.", keywords: "photographe grossesse anglet, shooting grossesse pays basque, photographe maternité anglet, photo grossesse plage biarritz, séance grossesse basque", path: '/shooting-grossesse-pays-basque' });
   }, []);
 
   const jsonLd = {

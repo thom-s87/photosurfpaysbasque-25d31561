@@ -236,8 +236,34 @@ const SpotPhotoPetiteChambreAmour = () => {
               Accès & infos pratiques VVF Anglet
             </h2>
             <p className="text-center text-foreground/70 mb-8 max-w-2xl mx-auto">
-              La Petite Chambre d'Amour se situe au nord d'Anglet, face à l'océan. Parking disponible à proximité, accès PMR possible selon marées.
+              La Petite Chambre d'Amour se situe au sud d'Anglet, à la limite avec Biarritz, face à l'océan Atlantique.
             </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-10 max-w-4xl mx-auto text-foreground/80">
+              <div className="bg-background/40 rounded-xl p-5 border border-border/40">
+                <h3 className="font-bold text-primary mb-2">🚗 Parking & accès</h3>
+                <p className="text-base leading-relaxed">
+                  Parking gratuit le long de l'avenue des Plages et au niveau du phare de la Chambre d'Amour. Accès direct à la plage par escalier ou rampe douce. Bus Chronoplus ligne 4, arrêt « Chambre d'Amour ».
+                </p>
+              </div>
+              <div className="bg-background/40 rounded-xl p-5 border border-border/40">
+                <h3 className="font-bold text-primary mb-2">🌊 Marées & meilleur moment</h3>
+                <p className="text-base leading-relaxed">
+                  Le spot est plus photogénique à marée basse à mi-marée, quand les rochers et les bassins naturels se découvrent. Lumière idéale en fin d'après-midi, 1h à 2h avant le coucher du soleil.
+                </p>
+              </div>
+              <div className="bg-background/40 rounded-xl p-5 border border-border/40">
+                <h3 className="font-bold text-primary mb-2">♿ Accès PMR</h3>
+                <p className="text-base leading-relaxed">
+                  Accès PMR possible depuis l'esplanade du phare via la rampe. La plage elle-même reste sableuse — prévoir un fauteuil tout-terrain ou rester sur l'esplanade panoramique pour les prises de vue.
+                </p>
+              </div>
+              <div className="bg-background/40 rounded-xl p-5 border border-border/40">
+                <h3 className="font-bold text-primary mb-2">📍 Repères sur place</h3>
+                <p className="text-base leading-relaxed">
+                  Le phare de la Chambre d'Amour, le rocher du même nom et la promenade panoramique sont les meilleurs points de rendez-vous. Boulangerie, toilettes et restaurants à 2 minutes à pied.
+                </p>
+              </div>
+            </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-border/50">
               <iframe
                 title="Localisation Google Maps — Plage de la Petite Chambre d'Amour, Anglet"

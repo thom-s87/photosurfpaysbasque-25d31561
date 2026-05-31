@@ -36,6 +36,14 @@ const blocks = [
     whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse ou EVJF avec Photosurf Pays Basque 🤰"),
   },
   {
+    title: "EVJF",
+    desc: "Shooting entre copines à la plage, fous rires et complicité avant le grand jour.",
+    image: duoFriends,
+    alt: "Shooting EVJF entre copines plage Pays Basque",
+    to: "/shooting-evjf-pays-basque",
+    whatsapp: wa("Bonjour, je souhaite organiser un shooting EVJF avec Photosurf Pays Basque 👯‍♀️"),
+  },
+  {
     title: "SPORTS AQUATIQUES",
     desc: "Paddle, natation, longe-côte et disciplines nautiques.",
     image: surfGlassy,

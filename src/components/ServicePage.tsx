@@ -184,6 +184,36 @@ export const ServicePage = ({
           </div>
         </section>
 
+        {/* FAQ */}
+        {faqItems && faqItems.length > 0 && (
+          <section className="px-5 md:px-4 py-12 md:py-16">
+            <div className="container mx-auto max-w-3xl">
+              <div className="text-center mb-8">
+                <HelpCircle className="w-10 h-10 text-hot-pink mx-auto mb-4" />
+                <h2 className="font-display text-3xl md:text-4xl text-foreground tracking-wide">
+                  QUESTIONS FRÉQUENTES
+                </h2>
+              </div>
+              <Accordion type="single" collapsible className="space-y-3">
+                {faqItems.map((item, i) => (
+                  <AccordionItem
+                    key={i}
+                    value={`q${i}`}
+                    className="bg-card/80 rounded-xl px-5 border-0"
+                  >
+                    <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </section>
+        )}
+
         {/* DISCOVER */}
         <DiscoverAlso links={discoverLinks} />
 

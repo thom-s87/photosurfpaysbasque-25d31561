@@ -45,6 +45,17 @@ const ShootingBebeNageurPaysBasque = () => (
     discoverLinks={[allLinks.famille, allLinks.grossesse, allLinks.hubFamille]}
     hubHref="/famille-bebe-groupes-pays-basque"
     hubLabel="Retour à l'univers Famille, bébé & groupes"
+    breadcrumb={[
+      { name: "Accueil", path: "/" },
+      { name: "Famille, bébé & groupes", path: "/famille-bebe-groupes-pays-basque" },
+      { name: "Bébé nageur", path: "/shooting-bebe-nageur-pays-basque" },
+    ]}
+    faqItems={[
+      { question: "À partir de quel âge peut-on faire une séance bébé nageur ?", answer: "Dès que bébé est à l'aise dans l'eau, souvent à partir de 4-6 mois. On adapte toujours la séance à son rythme." },
+      { question: "Où se déroule la séance ?", answer: "En piscine privée, en bassin bébé nageur ou dans l'océan selon la saison et le confort de bébé. On choisit ensemble." },
+      { question: "Combien de temps dure une séance ?", answer: "30 à 45 minutes, c'est l'idéal pour respecter la fatigue de bébé tout en capturant de vraies émotions." },
+      { question: "Un parent doit-il être dans l'eau ?", answer: "Oui, toujours. La présence d'un parent rassure bébé et permet des photos pleines de complicité." },
+    ]}
   />
 );
 

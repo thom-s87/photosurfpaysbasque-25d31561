@@ -1,13 +1,19 @@
 import { useEffect, ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { Camera, Clock, MapPin, Heart } from "lucide-react";
+import { Camera, Clock, MapPin, Heart, HelpCircle } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import { Button } from "@/components/ui/button";
-import { setSeo } from "@/lib/seo";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { setSeo, buildLocalBusiness, buildFaqPage, buildBreadcrumbs } from "@/lib/seo";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -29,6 +35,8 @@ export interface ServicePageProps {
   discoverLinks: { label: string; href: string }[];
   hubHref: string;
   hubLabel: string;
+  faqItems?: { question: string; answer: string }[];
+  breadcrumb?: { name: string; path: string }[];
 }
 
 export const ServicePage = ({
@@ -45,10 +53,23 @@ export const ServicePage = ({
   discoverLinks,
   hubHref,
   hubLabel,
+  faqItems,
+  breadcrumb,
 }: ServicePageProps) => {
   useEffect(() => {
-    setSeo(seo);
-  }, [seo]);
+    const schemas: object[] = [
+      buildLocalBusiness({
+        name: `PhotoSurfPaysBasque — ${seo.title.split("|")[0].trim()}`,
+        description: seo.description,
+        path: seo.path,
+        image: heroImage,
+      }),
+    ];
+    if (faqItems && faqItems.length > 0) schemas.push(buildFaqPage(faqItems));
+    if (breadcrumb && breadcrumb.length > 0) schemas.push(buildBreadcrumbs(breadcrumb));
+    setSeo({ ...seo, image: heroImage, type: "article", jsonLd: schemas });
+  }, [seo, heroImage, faqItems, breadcrumb]);
+
 
   return (
     <div className="min-h-screen bg-background pb-16 md:pb-0 overflow-x-hidden">
@@ -162,6 +183,36 @@ export const ServicePage = ({
             </Button>
           </div>
         </section>
+
+        {/* FAQ */}
+        {faqItems && faqItems.length > 0 && (
+          <section className="px-5 md:px-4 py-12 md:py-16">
+            <div className="container mx-auto max-w-3xl">
+              <div className="text-center mb-8">
+                <HelpCircle className="w-10 h-10 text-hot-pink mx-auto mb-4" />
+                <h2 className="font-display text-3xl md:text-4xl text-foreground tracking-wide">
+                  QUESTIONS FRÉQUENTES
+                </h2>
+              </div>
+              <Accordion type="single" collapsible className="space-y-3">
+                {faqItems.map((item, i) => (
+                  <AccordionItem
+                    key={i}
+                    value={`q${i}`}
+                    className="bg-card/80 rounded-xl px-5 border-0"
+                  >
+                    <AccordionTrigger className="text-left font-medium text-foreground hover:no-underline">
+                      {item.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                      {item.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </section>
+        )}
 
         {/* DISCOVER */}
         <DiscoverAlso links={discoverLinks} />

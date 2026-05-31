@@ -45,6 +45,17 @@ const PhotographeLongeCotePaysBasque = () => (
     discoverLinks={[allLinks.natation, allLinks.apnee, allLinks.hubSports]}
     hubHref="/sports-aquatiques-pays-basque"
     hubLabel="Retour à l'univers Sports aquatiques"
+    breadcrumb={[
+      { name: "Accueil", path: "/" },
+      { name: "Sports aquatiques", path: "/sports-aquatiques-pays-basque" },
+      { name: "Longe-côte", path: "/photographe-longe-cote-pays-basque" },
+    ]}
+    faqItems={[
+      { question: "Travaillez-vous avec des clubs de longe-côte ?", answer: "Oui, je collabore régulièrement avec des clubs et associations du Pays Basque pour leurs sessions, événements et communication." },
+      { question: "Où se déroulent les séances ?", answer: "Sur les plages d'Anglet, Biarritz, Bidart et tout le littoral basque, selon les conditions de mer et le souhait du groupe." },
+      { question: "Les photos sont-elles utilisables sur les réseaux du club ?", answer: "Oui, les droits d'usage sont adaptés à ton besoin (perso, club, asso, presse). On en parle au brief." },
+      { question: "Comment réserver ?", answer: "Par WhatsApp, en précisant la date, le nombre de pratiquants et le spot souhaité. Je reviens vers toi en moins d'une heure." },
+    ]}
   />
 );
 

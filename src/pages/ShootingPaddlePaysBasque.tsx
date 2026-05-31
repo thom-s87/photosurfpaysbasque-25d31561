@@ -45,6 +45,17 @@ const ShootingPaddlePaysBasque = () => (
     discoverLinks={[allLinks.surf, allLinks.bodysurf, allLinks.hubSurf]}
     hubHref="/surf-glisse-pays-basque"
     hubLabel="Retour à l'univers Surf & glisse"
+    breadcrumb={[
+      { name: "Accueil", path: "/" },
+      { name: "Surf & glisse", path: "/surf-glisse-pays-basque" },
+      { name: "Paddle", path: "/shooting-paddle-pays-basque" },
+    ]}
+    faqItems={[
+      { question: "Où se déroule la séance paddle ?", answer: "Sur les plans d'eau calmes du Pays Basque : plages d'Anglet protégées, lac d'Hossegor ou spots glassy au lever du soleil selon les conditions." },
+      { question: "Faut-il avoir son propre paddle ?", answer: "Idéalement oui. Si besoin, je peux te conseiller des loueurs sur Anglet et Biarritz pour récupérer une planche à proximité du spot." },
+      { question: "Combien de temps dure la session ?", answer: "Environ 1h sur l'eau, le temps de profiter de la lumière douce du matin ou du coucher de soleil." },
+      { question: "Comment réserver ?", answer: "Un message WhatsApp suffit : on cale ensemble la date, le spot et le créneau selon la météo." },
+    ]}
   />
 );
 

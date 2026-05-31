@@ -14,6 +14,7 @@ import ShootingFamilleBebeEauPaysBasque from "./pages/ShootingFamilleBebeEauPays
 import PhotographeBodySurfPaysBasque from "./pages/PhotographeBodySurfPaysBasque";
 import PhotographeSurfCavaliersAnglet from "./pages/PhotographeSurfCavaliersAnglet";
 import SpotPhotoPetiteChambreAmourAnglet from "./pages/SpotPhotoPetiteChambreAmourAnglet";
+import ShootingEVJFPaysBasque from "./pages/ShootingEVJFPaysBasque";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

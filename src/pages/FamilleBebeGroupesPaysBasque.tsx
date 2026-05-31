@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { setSeo } from "@/lib/seo";
+import { setSeo, buildLocalBusiness, buildBreadcrumbs } from "@/lib/seo";
 import { UniverseHub } from "@/components/UniverseHub";
 import heroImg from "@/assets/gallery/dad-and-baby.jpg";
 import familleImg from "@/assets/gallery/dad-and-baby.jpg";
@@ -15,8 +15,22 @@ const FamilleBebeGroupesPaysBasque = () => {
       description: "📸 Séances famille à la plage, bébé nageur et shootings de groupe au Pays Basque. Des souvenirs naturels et vivants à Anglet et Biarritz.",
       keywords: "shooting famille pays basque, bébé nageur anglet, evjf pays basque, photo groupe plage",
       path: "/famille-bebe-groupes-pays-basque",
+      image: heroImg,
+      jsonLd: [
+        buildLocalBusiness({
+          name: "PhotoSurfPaysBasque — Famille, bébé & groupes",
+          description: "Photographe famille, bébé nageur et groupes au Pays Basque.",
+          path: "/famille-bebe-groupes-pays-basque",
+          image: heroImg,
+        }),
+        buildBreadcrumbs([
+          { name: "Accueil", path: "/" },
+          { name: "Famille, bébé & groupes", path: "/famille-bebe-groupes-pays-basque" },
+        ]),
+      ],
     });
   }, []);
+
 
   return (
     <UniverseHub

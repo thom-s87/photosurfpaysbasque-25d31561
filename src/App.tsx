@@ -15,6 +15,13 @@ import PhotographeBodySurfPaysBasque from "./pages/PhotographeBodySurfPaysBasque
 import PhotographeSurfCavaliersAnglet from "./pages/PhotographeSurfCavaliersAnglet";
 import SpotPhotoPetiteChambreAmourAnglet from "./pages/SpotPhotoPetiteChambreAmourAnglet";
 import ShootingEVJFPaysBasque from "./pages/ShootingEVJFPaysBasque";
+import SurfGlissePaysBasque from "./pages/SurfGlissePaysBasque";
+import FamilleBebeGroupesPaysBasque from "./pages/FamilleBebeGroupesPaysBasque";
+import SportsAquatiquesPaysBasque from "./pages/SportsAquatiquesPaysBasque";
+import ShootingPaddlePaysBasque from "./pages/ShootingPaddlePaysBasque";
+import ShootingBebeNageurPaysBasque from "./pages/ShootingBebeNageurPaysBasque";
+import PhotographeLongeCotePaysBasque from "./pages/PhotographeLongeCotePaysBasque";
+import PhotographeApneePaysBasque from "./pages/PhotographeApneePaysBasque";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

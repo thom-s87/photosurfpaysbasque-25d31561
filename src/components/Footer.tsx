@@ -56,6 +56,7 @@ export const Footer = () => {
           <a href="/photographe-body-surf-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Photographe body surf</a>
           <a href="/photographe-grossesse-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Photographe grossesse</a>
           <a href="/shooting-grossesse-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Shooting grossesse</a>
+          <a href="/shooting-evjf-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Shooting EVJF</a>
           <a href="/photographe-natation-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Photographe natation</a>
           <a href="/shooting-famille-bebe-eau-pays-basque" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Shooting famille & bébé</a>
           <a href="/spot-report-anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Spot report Anglet</a>

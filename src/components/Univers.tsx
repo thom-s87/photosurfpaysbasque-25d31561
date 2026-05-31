@@ -31,7 +31,7 @@ const blocks = [
     desc: "Séances grossesse et EVJF à la plage — un vrai partage entre vous, les femmes, lumière douce, émotion et complicité.",
     image: shootingMaternite,
     alt: "Shooting grossesse et EVJF Pays Basque",
-    to: "/shooting-evjf-pays-basque",
+    to: "/shooting-grossesse-pays-basque",
     whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse ou EVJF avec Photosurf Pays Basque 🤰"),
   },
   {

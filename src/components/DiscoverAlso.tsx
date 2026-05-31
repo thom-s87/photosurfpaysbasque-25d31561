@@ -16,6 +16,7 @@ const allLinks: Record<string, DiscoverLink> = {
   grossesse: { label: "Séance grossesse au bord de l'eau", href: "/shooting-grossesse-pays-basque" },
   vvf: { label: "Mon spot coup de cœur à Anglet", href: "/spot-photo-petite-chambre-amour-anglet" },
   natation: { label: "Photographe natation à Anglet", href: "/photographe-natation-pays-basque" },
+  evjf: { label: "Shooting EVJF au Pays Basque", href: "/shooting-evjf-pays-basque" },
 };
 
 export { allLinks };

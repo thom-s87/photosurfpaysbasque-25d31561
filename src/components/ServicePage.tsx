@@ -1,13 +1,19 @@
 import { useEffect, ReactNode } from "react";
 import { Link } from "react-router-dom";
-import { Camera, Clock, MapPin, Heart } from "lucide-react";
+import { Camera, Clock, MapPin, Heart, HelpCircle } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import { Button } from "@/components/ui/button";
-import { setSeo } from "@/lib/seo";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { setSeo, buildLocalBusiness, buildFaqPage, buildBreadcrumbs } from "@/lib/seo";
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -29,6 +35,8 @@ export interface ServicePageProps {
   discoverLinks: { label: string; href: string }[];
   hubHref: string;
   hubLabel: string;
+  faqItems?: { question: string; answer: string }[];
+  breadcrumb?: { name: string; path: string }[];
 }
 
 export const ServicePage = ({
@@ -45,10 +53,23 @@ export const ServicePage = ({
   discoverLinks,
   hubHref,
   hubLabel,
+  faqItems,
+  breadcrumb,
 }: ServicePageProps) => {
   useEffect(() => {
-    setSeo(seo);
-  }, [seo]);
+    const schemas: object[] = [
+      buildLocalBusiness({
+        name: `PhotoSurfPaysBasque — ${seo.title.split("|")[0].trim()}`,
+        description: seo.description,
+        path: seo.path,
+        image: heroImage,
+      }),
+    ];
+    if (faqItems && faqItems.length > 0) schemas.push(buildFaqPage(faqItems));
+    if (breadcrumb && breadcrumb.length > 0) schemas.push(buildBreadcrumbs(breadcrumb));
+    setSeo({ ...seo, image: heroImage, type: "article", jsonLd: schemas });
+  }, [seo, heroImage, faqItems, breadcrumb]);
+
 
   return (
     <div className="min-h-screen bg-background pb-16 md:pb-0 overflow-x-hidden">

@@ -27,12 +27,12 @@ const blocks = [
     whatsapp: wa("Bonjour, je souhaite réserver une séance famille / bébé près de l'eau avec Photosurf Pays Basque 👨‍👩‍👧"),
   },
   {
-    title: "SHOOTING PRÉNATAL",
-    desc: "Séances grossesse à la plage, lumière douce, émotion et élégance.",
+    title: "PRÉNATAL & EVJF",
+    desc: "Séances grossesse à la plage et EVJF au Pays Basque, lumière douce, émotion et élégance.",
     image: shootingMaternite,
-    alt: "Shooting grossesse aquatique Pays Basque",
+    alt: "Shooting grossesse et EVJF Pays Basque",
     to: "/shooting-grossesse-pays-basque",
-    whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse à la plage avec Photosurf Pays Basque 🤰"),
+    whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse ou EVJF avec Photosurf Pays Basque 🤰"),
   },
   {
     title: "SPORTS AQUATIQUES",

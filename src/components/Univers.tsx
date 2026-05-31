@@ -1,46 +1,43 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
-import { Camera } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
 import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
 
-const wa = (msg: string) =>
-  `https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%20au%20Pays%20Basque.%20Voici%20mes%20disponibilit%C3%A9s%20%3A%20...`;
-
 const blocks = [
   {
-    title: "SURF",
-    desc: "Sessions surf, body surf et performances dans l'eau.",
+    title: "SURF & GLISSE",
+    desc: "Sessions surf, body surf et paddle sur les spots du Pays Basque.",
     image: boySurfer,
-    alt: "Surfeur action photographe surf Anglet Pays Basque",
-    to: "/photographe-surf-anglet",
-    whatsapp: wa("Bonjour, je souhaite réserver une session photo surf avec Photosurf Pays Basque 🏄"),
+    alt: "Photographe surf, body surf et paddle au Pays Basque",
+    to: "/surf-glisse-pays-basque",
+    cta: "Découvrir les sessions",
   },
   {
-    title: "FAMILLE & MOMENTS PLAGE OU PISCINE",
-    desc: "Parents, enfants, bébés nageurs et souvenirs naturels entre plage et piscine.",
+    title: "FAMILLE, BÉBÉ & GROUPES",
+    desc: "Famille, bébé nageur, souvenirs à la plage et moments entre amis.",
     image: dadAndBaby,
-    alt: "Séance photo famille plage Pays Basque",
-    to: "/shooting-famille-bebe-eau-pays-basque",
-    whatsapp: wa("Bonjour, je souhaite réserver une séance famille / bébé près de l'eau avec Photosurf Pays Basque 👨‍👩‍👧"),
+    alt: "Shooting famille, bébé nageur et groupes au Pays Basque",
+    to: "/famille-bebe-groupes-pays-basque",
+    cta: "Découvrir les séances",
   },
   {
-    title: "PRÉNATAL & EVJF",
-    desc: "Séances grossesse et EVJF à la plage — un vrai partage entre vous, les femmes, lumière douce, émotion et complicité.",
+    title: "GROSSESSE & MATERNITÉ",
+    desc: "Séances grossesse à la plage, lumière douce et souvenirs naturels.",
     image: shootingMaternite,
-    alt: "Shooting grossesse et EVJF Pays Basque",
-    to: "/shooting-grossesse-pays-basque",
-    whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse ou EVJF avec Photosurf Pays Basque 🤰"),
+    alt: "Shooting grossesse et maternité Pays Basque",
+    to: "/photographe-grossesse-pays-basque",
+    cta: "Découvrir les séances",
   },
   {
     title: "SPORTS AQUATIQUES",
-    desc: "Paddle, natation, longe-côte et disciplines nautiques.",
+    desc: "Natation, longe-côte, apnée et suivi de clubs ou d'athlètes.",
     image: surfGlassy,
-    alt: "Photo sport aquatique côte basque",
-    to: "/photographe-natation-pays-basque",
-    whatsapp: wa("Bonjour, je souhaite réserver une séance sports aquatiques avec Photosurf Pays Basque 🌊"),
+    alt: "Photographe sports aquatiques au Pays Basque",
+    to: "/sports-aquatiques-pays-basque",
+    cta: "Découvrir les disciplines",
   },
 ];
 
@@ -56,7 +53,7 @@ export const Univers = () => {
           L'OCÉAN COMME TERRAIN DE JEU
         </h2>
         <p className="text-center text-muted-foreground text-base min-[375px]:text-lg mb-10 min-[375px]:mb-16 max-w-2xl mx-auto">
-          Chaque séance capture l'énergie de l'océan et la beauté du moment.
+          Quatre grandes familles de prestations — choisis ton univers pour voir le détail.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
@@ -76,18 +73,15 @@ export const Univers = () => {
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </Link>
               <div className="absolute bottom-0 left-0 right-0 p-6 z-[2] pointer-events-none">
-                <h3 className="font-display text-3xl text-primary-foreground mb-2 tracking-wider">{block.title}</h3>
+                <h3 className="font-display text-2xl min-[375px]:text-3xl text-primary-foreground mb-2 tracking-wider">{block.title}</h3>
                 <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">{block.desc}</p>
-                <a
-                  href={block.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  role="button"
-                  className="pointer-events-auto inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-sunset text-foreground text-xs font-semibold tracking-widest uppercase shadow-lg hover:opacity-90 transition-opacity"
+                <Link
+                  to={block.to}
+                  className="pointer-events-auto inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-sunset text-foreground text-xs font-semibold tracking-widest uppercase shadow-lg hover:opacity-90 transition-opacity whitespace-normal"
                 >
-                  <Camera className="w-4 h-4" />
-                  Réserver sur WhatsApp
-                </a>
+                  {block.cta}
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           ))}

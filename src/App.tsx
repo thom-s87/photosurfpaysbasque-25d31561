@@ -14,6 +14,7 @@ import ShootingFamilleBebeEauPaysBasque from "./pages/ShootingFamilleBebeEauPays
 import PhotographeBodySurfPaysBasque from "./pages/PhotographeBodySurfPaysBasque";
 import PhotographeSurfCavaliersAnglet from "./pages/PhotographeSurfCavaliersAnglet";
 import SpotPhotoPetiteChambreAmourAnglet from "./pages/SpotPhotoPetiteChambreAmourAnglet";
+import ShootingEVJFPaysBasque from "./pages/ShootingEVJFPaysBasque";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/photographe-body-surf-pays-basque" element={<PhotographeBodySurfPaysBasque />} />
           <Route path="/photographe-surf-cavaliers-anglet" element={<PhotographeSurfCavaliersAnglet />} />
           <Route path="/spot-photo-petite-chambre-amour-anglet" element={<SpotPhotoPetiteChambreAmourAnglet />} />
+          <Route path="/shooting-evjf-pays-basque" element={<ShootingEVJFPaysBasque />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

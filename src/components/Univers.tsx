@@ -1,6 +1,7 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { Camera } from "lucide-react";
 import { Link } from "react-router-dom";
+import duoFriends from "@/assets/gallery/duo-friends.jpg";
 import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
@@ -33,6 +34,14 @@ const blocks = [
     alt: "Shooting grossesse et EVJF Pays Basque",
     to: "/shooting-grossesse-pays-basque",
     whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse ou EVJF avec Photosurf Pays Basque 🤰"),
+  },
+  {
+    title: "EVJF",
+    desc: "Shooting entre copines à la plage, fous rires et complicité avant le grand jour.",
+    image: duoFriends,
+    alt: "Shooting EVJF entre copines plage Pays Basque",
+    to: "/shooting-evjf-pays-basque",
+    whatsapp: wa("Bonjour, je souhaite organiser un shooting EVJF avec Photosurf Pays Basque 👯‍♀️"),
   },
   {
     title: "SPORTS AQUATIQUES",

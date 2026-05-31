@@ -45,6 +45,17 @@ const PhotographeApneePaysBasque = () => (
     discoverLinks={[allLinks.natation, allLinks.longecote, allLinks.hubSports]}
     hubHref="/sports-aquatiques-pays-basque"
     hubLabel="Retour à l'univers Sports aquatiques"
+    breadcrumb={[
+      { name: "Accueil", path: "/" },
+      { name: "Sports aquatiques", path: "/sports-aquatiques-pays-basque" },
+      { name: "Apnée", path: "/photographe-apnee-pays-basque" },
+    ]}
+    faqItems={[
+      { question: "Où se déroule la séance apnée ?", answer: "En piscine profonde, en fosse ou dans l'océan selon ton niveau et la mise en scène souhaitée. Les spots du Pays Basque s'y prêtent bien en eaux calmes." },
+      { question: "Quel niveau faut-il avoir ?", answer: "La séance s'adapte à ton niveau, du pratiquant régulier à l'apnéiste confirmé. L'important est ton confort dans l'eau." },
+      { question: "Quels usages pour les photos ?", answer: "Portfolio personnel, réseaux, presse spécialisée ou communication de club : on définit les droits ensemble." },
+      { question: "Comment réserver ?", answer: "Sur WhatsApp, en me décrivant ton projet et tes contraintes de planning. Devis personnalisé sous 24h." },
+    ]}
   />
 );
 

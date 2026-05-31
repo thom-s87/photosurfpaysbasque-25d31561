@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { setSeo } from "@/lib/seo";
+import { setSeo, buildLocalBusiness, buildBreadcrumbs } from "@/lib/seo";
 import { UniverseHub } from "@/components/UniverseHub";
 import heroImg from "@/assets/gallery/surf-glassy-session.jpg";
 import surfImg from "@/assets/gallery/surfeur-pro-competition.jpg";
@@ -15,8 +15,22 @@ const SurfGlissePaysBasque = () => {
       description: "📸 Photographe surf, body surf et paddle à Anglet et au Pays Basque. Choisis ta discipline et réserve ta session photo à l'eau.",
       keywords: "photographe surf pays basque, photographe body surf, paddle anglet, sessions photo glisse",
       path: "/surf-glisse-pays-basque",
+      image: heroImg,
+      jsonLd: [
+        buildLocalBusiness({
+          name: "PhotoSurfPaysBasque — Surf, body surf & paddle",
+          description: "Photographe surf, body surf et paddle à Anglet et au Pays Basque.",
+          path: "/surf-glisse-pays-basque",
+          image: heroImg,
+        }),
+        buildBreadcrumbs([
+          { name: "Accueil", path: "/" },
+          { name: "Surf & glisse", path: "/surf-glisse-pays-basque" },
+        ]),
+      ],
     });
   }, []);
+
 
   return (
     <UniverseHub

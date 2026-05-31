@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { setSeo } from "@/lib/seo";
+import { setSeo, buildLocalBusiness, buildBreadcrumbs } from "@/lib/seo";
 import { UniverseHub } from "@/components/UniverseHub";
 import heroImg from "@/assets/gallery/natation-split-underwater.jpg";
 import natationImg from "@/assets/gallery/natation-entrainement.jpg";
@@ -15,8 +15,22 @@ const SportsAquatiquesPaysBasque = () => {
       description: "📸 Natation, longe-côte et apnée au Pays Basque. Photographe spécialisé sports aquatiques pour clubs, athlètes et passionnés à Anglet et Biarritz.",
       keywords: "photographe natation pays basque, photographe longe-côte, photographe apnée anglet, sports aquatiques",
       path: "/sports-aquatiques-pays-basque",
+      image: heroImg,
+      jsonLd: [
+        buildLocalBusiness({
+          name: "PhotoSurfPaysBasque — Sports aquatiques",
+          description: "Photographe natation, longe-côte et apnée au Pays Basque.",
+          path: "/sports-aquatiques-pays-basque",
+          image: heroImg,
+        }),
+        buildBreadcrumbs([
+          { name: "Accueil", path: "/" },
+          { name: "Sports aquatiques", path: "/sports-aquatiques-pays-basque" },
+        ]),
+      ],
     });
   }, []);
+
 
   return (
     <UniverseHub

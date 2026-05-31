@@ -12,11 +12,18 @@ interface DiscoverAlsoProps {
 const allLinks: Record<string, DiscoverLink> = {
   surf: { label: "Photographe surf à Anglet", href: "/photographe-surf-anglet" },
   bodysurf: { label: "Photographe body surf", href: "/photographe-body-surf-pays-basque" },
+  paddle: { label: "Shooting paddle au Pays Basque", href: "/shooting-paddle-pays-basque" },
   famille: { label: "Shooting famille à la plage", href: "/shooting-famille-bebe-eau-pays-basque" },
+  bebe: { label: "Shooting bébé nageur", href: "/shooting-bebe-nageur-pays-basque" },
   grossesse: { label: "Séance grossesse au bord de l'eau", href: "/shooting-grossesse-pays-basque" },
   vvf: { label: "Mon spot coup de cœur à Anglet", href: "/spot-photo-petite-chambre-amour-anglet" },
   natation: { label: "Photographe natation à Anglet", href: "/photographe-natation-pays-basque" },
+  longecote: { label: "Photographe longe-côte", href: "/photographe-longe-cote-pays-basque" },
+  apnee: { label: "Photographe apnée", href: "/photographe-apnee-pays-basque" },
   evjf: { label: "Shooting EVJF au Pays Basque", href: "/shooting-evjf-pays-basque" },
+  hubSurf: { label: "Univers Surf & glisse", href: "/surf-glisse-pays-basque" },
+  hubFamille: { label: "Univers Famille, bébé & groupes", href: "/famille-bebe-groupes-pays-basque" },
+  hubSports: { label: "Univers Sports aquatiques", href: "/sports-aquatiques-pays-basque" },
 };
 
 export { allLinks };

@@ -15,6 +15,13 @@ import PhotographeBodySurfPaysBasque from "./pages/PhotographeBodySurfPaysBasque
 import PhotographeSurfCavaliersAnglet from "./pages/PhotographeSurfCavaliersAnglet";
 import SpotPhotoPetiteChambreAmourAnglet from "./pages/SpotPhotoPetiteChambreAmourAnglet";
 import ShootingEVJFPaysBasque from "./pages/ShootingEVJFPaysBasque";
+import SurfGlissePaysBasque from "./pages/SurfGlissePaysBasque";
+import FamilleBebeGroupesPaysBasque from "./pages/FamilleBebeGroupesPaysBasque";
+import SportsAquatiquesPaysBasque from "./pages/SportsAquatiquesPaysBasque";
+import ShootingPaddlePaysBasque from "./pages/ShootingPaddlePaysBasque";
+import ShootingBebeNageurPaysBasque from "./pages/ShootingBebeNageurPaysBasque";
+import PhotographeLongeCotePaysBasque from "./pages/PhotographeLongeCotePaysBasque";
+import PhotographeApneePaysBasque from "./pages/PhotographeApneePaysBasque";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +45,13 @@ const App = () => (
           <Route path="/photographe-surf-cavaliers-anglet" element={<PhotographeSurfCavaliersAnglet />} />
           <Route path="/spot-photo-petite-chambre-amour-anglet" element={<SpotPhotoPetiteChambreAmourAnglet />} />
           <Route path="/shooting-evjf-pays-basque" element={<ShootingEVJFPaysBasque />} />
+          <Route path="/surf-glisse-pays-basque" element={<SurfGlissePaysBasque />} />
+          <Route path="/famille-bebe-groupes-pays-basque" element={<FamilleBebeGroupesPaysBasque />} />
+          <Route path="/sports-aquatiques-pays-basque" element={<SportsAquatiquesPaysBasque />} />
+          <Route path="/shooting-paddle-pays-basque" element={<ShootingPaddlePaysBasque />} />
+          <Route path="/shooting-bebe-nageur-pays-basque" element={<ShootingBebeNageurPaysBasque />} />
+          <Route path="/photographe-longe-cote-pays-basque" element={<PhotographeLongeCotePaysBasque />} />
+          <Route path="/photographe-apnee-pays-basque" element={<PhotographeApneePaysBasque />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -29,19 +29,11 @@ const blocks = [
   },
   {
     title: "PRÉNATAL & EVJF",
-    desc: "Séances grossesse à la plage et EVJF au Pays Basque, lumière douce, émotion et élégance.",
+    desc: "Séances grossesse et EVJF à la plage — un vrai partage entre vous, les femmes, lumière douce, émotion et complicité.",
     image: shootingMaternite,
     alt: "Shooting grossesse et EVJF Pays Basque",
-    to: "/shooting-grossesse-pays-basque",
-    whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse ou EVJF avec Photosurf Pays Basque 🤰"),
-  },
-  {
-    title: "EVJF",
-    desc: "Shooting entre copines à la plage, fous rires et complicité avant le grand jour.",
-    image: duoFriends,
-    alt: "Shooting EVJF entre copines plage Pays Basque",
     to: "/shooting-evjf-pays-basque",
-    whatsapp: wa("Bonjour, je souhaite organiser un shooting EVJF avec Photosurf Pays Basque 👯‍♀️"),
+    whatsapp: wa("Bonjour, je souhaite réserver une séance grossesse ou EVJF avec Photosurf Pays Basque 🤰"),
   },
   {
     title: "SPORTS AQUATIQUES",

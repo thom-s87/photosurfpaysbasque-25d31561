@@ -3,7 +3,7 @@ import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Heart, Sparkles, Sun, Users, Camera } from "lucide-react";
+import { Heart, Sparkles, Sun, Users, Camera, Clock, CalendarDays } from "lucide-react";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
@@ -15,6 +15,12 @@ import {
 import heroImg from "@/assets/gallery/duo-friends.jpg";
 import detailImg from "@/assets/gallery/surfeuse-pink-board.jpg";
 import silhouetteImg from "@/assets/gallery/surfeuse-biarritz.jpg";
+import g1 from "@/assets/gallery/surfeuse-hossegor.jpg";
+import g2 from "@/assets/gallery/surf-coucher-soleil.jpg";
+import g3 from "@/assets/gallery/satisfaction-surfer.jpg";
+import g4 from "@/assets/gallery/photo-aquatique-artistique.jpg";
+import g5 from "@/assets/gallery/surf-night-girl.jpg";
+import g6 from "@/assets/gallery/surfer-ilbaritz.jpg";
 
 const WHATSAPP_URL = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20organiser%20un%20shooting%20EVJF%20au%20Pays%20Basque.%20Voici%20nos%20disponibilit%C3%A9s%20%3A%20...";
 

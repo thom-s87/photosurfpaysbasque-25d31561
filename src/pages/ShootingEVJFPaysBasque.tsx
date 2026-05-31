@@ -3,7 +3,7 @@ import { setSeo } from "@/lib/seo";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Heart, Sparkles, Sun, Users, Camera } from "lucide-react";
+import { Heart, Sparkles, Sun, Users, Camera, Clock, CalendarDays } from "lucide-react";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
 import {
@@ -15,6 +15,12 @@ import {
 import heroImg from "@/assets/gallery/duo-friends.jpg";
 import detailImg from "@/assets/gallery/surfeuse-pink-board.jpg";
 import silhouetteImg from "@/assets/gallery/surfeuse-biarritz.jpg";
+import g1 from "@/assets/gallery/surfeuse-hossegor.jpg";
+import g2 from "@/assets/gallery/surf-coucher-soleil.jpg";
+import g3 from "@/assets/gallery/satisfaction-surfer.jpg";
+import g4 from "@/assets/gallery/photo-aquatique-artistique.jpg";
+import g5 from "@/assets/gallery/surf-night-girl.jpg";
+import g6 from "@/assets/gallery/surfer-ilbaritz.jpg";
 
 const WHATSAPP_URL = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20organiser%20un%20shooting%20EVJF%20au%20Pays%20Basque.%20Voici%20nos%20disponibilit%C3%A9s%20%3A%20...";
 
@@ -172,6 +178,93 @@ const ShootingEVJFPaysBasque = () => {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img src={silhouetteImg} alt="Copines dans les vagues au coucher du soleil à Biarritz" loading="lazy" width={1280} height={864} className="w-full h-auto object-cover" />
+            </div>
+          </div>
+        </section>
+
+        {/* GALERIE EXEMPLES */}
+        <section className="py-16 px-5 md:px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-10 md:mb-12">
+              <Camera className="w-10 h-10 text-hot-pink mx-auto mb-4" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Exemples de shootings</h2>
+              <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
+                Quelques images pour vous projeter — ambiance, lumière, complicité.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+              {[
+                { src: g1, alt: "Copines à la plage shooting EVJF Pays Basque" },
+                { src: g2, alt: "Shooting EVJF coucher de soleil à Anglet" },
+                { src: g3, alt: "Future mariée et témoins sur la plage" },
+                { src: g4, alt: "Photo artistique EVJF dans l'eau à Biarritz" },
+                { src: g5, alt: "Ambiance EVJF en fin de journée au Pays Basque" },
+                { src: g6, alt: "Groupe de copines bord de mer Anglet" },
+              ].map((img, i) => (
+                <div key={i} className="aspect-square overflow-hidden rounded-xl shadow-lg group">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    width={800}
+                    height={800}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CRÉNEAUX */}
+        <section className="py-16 px-5 md:px-4 bg-card/60">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-10 md:mb-12">
+              <Clock className="w-10 h-10 text-golden mx-auto mb-4" />
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Créneaux de réservation</h2>
+              <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
+                Trois moments parfaits pour capturer la lumière du Pays Basque — choisissez celui qui colle à votre EVJF.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-5">
+              {[
+                {
+                  icon: <Sun className="w-7 h-7 text-golden" />,
+                  title: "Matin doré",
+                  time: "7h — 10h",
+                  desc: "Lumière douce, plage tranquille, ambiance fraîche et intimiste avant le brunch.",
+                },
+                {
+                  icon: <Sparkles className="w-7 h-7 text-hot-pink" />,
+                  title: "Golden hour",
+                  time: "1h avant le coucher",
+                  desc: "La lumière la plus magique de la journée, idéale pour des photos cinématiques.",
+                },
+                {
+                  icon: <CalendarDays className="w-7 h-7 text-primary" />,
+                  title: "Sunset & after",
+                  time: "Coucher de soleil",
+                  desc: "Couleurs sunset, silhouettes et début de soirée — parfait avant la fête.",
+                },
+              ].map((c, i) => (
+                <div key={i} className="bg-background/80 backdrop-blur-sm rounded-2xl p-6 border border-border/40 shadow-md">
+                  <div className="mb-4">{c.icon}</div>
+                  <h3 className="font-bold text-xl text-foreground mb-1">{c.title}</h3>
+                  <p className="text-sm uppercase tracking-widest text-primary font-medium mb-3">{c.time}</p>
+                  <p className="text-foreground/70 leading-relaxed text-sm">{c.desc}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-center text-foreground/60 text-sm mt-8 max-w-2xl mx-auto">
+              Séances proposées du lundi au dimanche, week-ends inclus. Réservation conseillée 48h à l'avance (selon météo et marée).
+            </p>
+            <div className="text-center mt-8">
+              <Button size="lg" className="bg-golden hover:bg-golden/90 text-foreground px-8 py-5 md:px-10 md:py-6 text-base md:text-lg font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity" asChild>
+                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                  <WhatsAppIcon className="w-5 h-5 mr-2" />
+                  Choisir un créneau sur WhatsApp
+                </a>
+              </Button>
             </div>
           </div>
         </section>

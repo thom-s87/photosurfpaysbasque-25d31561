@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/accordion";
 import heroImg from "@/assets/gallery/duo-friends.jpg";
 import detailImg from "@/assets/gallery/surfeuse-pink-board.jpg";
-import silhouetteImg from "@/assets/gallery/surfeuse-biarritz.jpg";
+import silhouetteImg from "@/assets/gallery/souvenir-surfeuse.jpg";
 import g1 from "@/assets/gallery/surfeuse-hossegor.jpg";
 import g2 from "@/assets/gallery/surf-coucher-soleil.jpg";
 import g3 from "@/assets/gallery/satisfaction-surfer.jpg";

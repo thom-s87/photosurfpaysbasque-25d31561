@@ -1,12 +1,11 @@
 import { ServicePage } from "@/components/ServicePage";
 import { allLinks } from "@/components/DiscoverAlso";
-import heroImg from "@/assets/gallery/photo-aquatique-artistique.jpg";
-import g1 from "@/assets/gallery/surf-glassy-session.jpg";
-import g2 from "@/assets/gallery/surf-coucher-soleil.jpg";
-import g3 from "@/assets/gallery/surfeuse-biarritz.jpg";
-import g4 from "@/assets/gallery/surf-immersif-eau.jpg";
-import g5 from "@/assets/gallery/surfer-ilbaritz.jpg";
-import g6 from "@/assets/gallery/surfeuse-hossegor.jpg";
+import heroImg from "@/assets/gallery/paddle-hero.jpg";
+import g1 from "@/assets/gallery/paddle-silhouette.jpg";
+import g2 from "@/assets/gallery/paddle-femme-assise.jpg";
+import g3 from "@/assets/gallery/paddle-aerien.jpg";
+import g4 from "@/assets/gallery/paddle-couple.jpg";
+import g5 from "@/assets/gallery/paddle-detail-pieds.jpg";
 
 const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20organiser%20une%20s%C3%A9ance%20photo%20paddle%20au%20Pays%20Basque.%20Pouvez-vous%20me%20renseigner%20sur%20les%20disponibilit%C3%A9s%20%3F";
 
@@ -25,12 +24,11 @@ const ShootingPaddlePaysBasque = () => (
     heroAlt="Shooting paddle au lever du soleil au Pays Basque"
     whatsapp={WHATSAPP}
     galleryImages={[
-      { src: g1, alt: "Paddle sur eau glassy au Pays Basque" },
-      { src: g2, alt: "Paddle au coucher de soleil à Anglet" },
-      { src: g3, alt: "Silhouette sur paddle à Biarritz" },
-      { src: g4, alt: "Photo immersive sur l'eau" },
-      { src: g5, alt: "Paddle vers Ilbarritz" },
-      { src: g6, alt: "Paddle Hossegor lumière douce" },
+      { src: g1, alt: "Silhouette d'un paddleur au coucher de soleil au Pays Basque" },
+      { src: g2, alt: "Paddle assise sur eau turquoise" },
+      { src: g3, alt: "Paddle vue aérienne sur eau cristalline" },
+      { src: g4, alt: "Couple en paddle au lever du soleil" },
+      { src: g5, alt: "Détail des pieds sur un paddle dans l'eau claire" },
     ]}
     process={[
       { title: "On échange par WhatsApp", desc: "Tu me dis tes envies, on choisit le spot et le créneau (idéalement matin ou golden hour)." },

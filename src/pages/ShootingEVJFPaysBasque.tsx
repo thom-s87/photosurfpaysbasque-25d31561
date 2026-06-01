@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/accordion";
 import heroImg from "@/assets/gallery/duo-friends.jpg";
 import detailImg from "@/assets/gallery/surfeuse-pink-board.jpg";
-import silhouetteImg from "@/assets/gallery/surfeuse-biarritz.jpg";
+import silhouetteImg from "@/assets/gallery/souvenir-surfeuse.jpg";
 import g1 from "@/assets/gallery/surfeuse-hossegor.jpg";
 import g2 from "@/assets/gallery/surf-coucher-soleil.jpg";
 import g3 from "@/assets/gallery/satisfaction-surfer.jpg";
@@ -177,7 +177,7 @@ const ShootingEVJFPaysBasque = () => {
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img src={silhouetteImg} alt="Copines dans les vagues au coucher du soleil à Biarritz" loading="lazy" width={1280} height={864} className="w-full h-auto object-cover" />
+              <img src={silhouetteImg} alt="Surfeuse en action - shooting EVJF Pays Basque" loading="lazy" width={1280} height={864} className="w-full h-auto object-cover" />
             </div>
           </div>
         </section>

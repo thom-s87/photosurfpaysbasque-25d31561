@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { setSeo, buildLocalBusiness, buildBreadcrumbs } from "@/lib/seo";
 import { UniverseHub } from "@/components/UniverseHub";
-import heroImg from "@/assets/gallery/dad-and-baby.jpg";
-import familleImg from "@/assets/gallery/dad-and-baby.jpg";
-import bebeImg from "@/assets/gallery/pregnant-aqua.jpg";
+import heroImg from "@/assets/gallery/couple-goal-grossesse.JPG";
+import familleImg from "@/assets/gallery/couple-goal-grossesse.JPG";
+import bebeImg from "@/assets/gallery/dad-and-baby.jpg";
 import evjfImg from "@/assets/gallery/duo-friends.jpg";
 
 const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20organiser%20une%20s%C3%A9ance%20famille%2C%20b%C3%A9b%C3%A9%20ou%20groupe%20au%20Pays%20Basque.";

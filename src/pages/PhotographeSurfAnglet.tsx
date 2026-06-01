@@ -242,7 +242,7 @@ const PhotographeSurfAnglet = () => {
               className="bg-gradient-sunset text-foreground px-8 py-5 min-[375px]:px-10 min-[375px]:py-6 text-base min-[375px]:text-lg md:text-xl font-bold rounded-full shadow-2xl hover:opacity-90 transition-opacity w-full sm:w-auto"
               asChild
             >
-              <a href="/photos-surf-anglet">
+              <a href="/#galerie">
                 Voir mes photos de surf 📸
               </a>
             </Button>

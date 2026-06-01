@@ -3,7 +3,7 @@ import { setSeo, buildLocalBusiness, buildBreadcrumbs } from "@/lib/seo";
 import { UniverseHub } from "@/components/UniverseHub";
 import heroImg from "@/assets/natation-hero.jpg";
 import natationImg from "@/assets/natation-preparation.jpg";
-import longeImg from "@/assets/natation-effort.jpg";
+import longeImg from "@/assets/gallery/longe-cote-ocean.jpg";
 import apneeImg from "@/assets/natation-hero.jpg";
 
 const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20s%C3%A9ance%20photo%20sports%20aquatiques%20au%20Pays%20Basque.";

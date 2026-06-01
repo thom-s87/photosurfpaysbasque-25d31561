@@ -177,7 +177,7 @@ const ShootingEVJFPaysBasque = () => {
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img src={silhouetteImg} alt="Copines dans les vagues au coucher du soleil à Biarritz" loading="lazy" width={1280} height={864} className="w-full h-auto object-cover" />
+              <img src={silhouetteImg} alt="Surfeuse en action - shooting EVJF Pays Basque" loading="lazy" width={1280} height={864} className="w-full h-auto object-cover" />
             </div>
           </div>
         </section>

@@ -110,7 +110,7 @@ const PhotographeGrossessePaysBasque = () => {
                 Photographe grossesse · Pays Basque
               </p>
               <h1 className="text-4xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary via-hot-pink to-primary bg-clip-text text-transparent leading-tight font-bebas-neue tracking-wide">
-                Shooting Grossesse au Pays Basque 🤍
+                Photographe Grossesse Pays Basque 🤍
               </h1>
               <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-10">
                 Immortalisez ce moment unique avec un shooting grossesse naturel, en extérieur, entre océan et lumière du Pays Basque. Chaque séance est pensée pour capturer la douceur, la connexion et l'émotion de cette période si particulière.

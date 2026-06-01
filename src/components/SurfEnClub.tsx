@@ -13,7 +13,7 @@ export const SurfEnClub = () => {
 
   return (
     <section
-      id="surf-en-club"
+      id="anglet"
       className="scroll-mt-24 py-16 min-[375px]:py-20 md:py-28 px-5 md:px-4"
       style={{ backgroundColor: "#f5efe8" }}
     >

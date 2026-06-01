@@ -24,12 +24,11 @@ const PhotographeApneePaysBasque = () => (
     heroAlt="Photographe apnée au Pays Basque shooting aquatique"
     whatsapp={WHATSAPP}
     galleryImages={[
-      { src: g1, alt: "Photo aquatique artistique apnée" },
-      { src: g2, alt: "Vue split sous l'eau" },
-      { src: g3, alt: "Nageur en immersion" },
-      { src: g4, alt: "Eau glassy au Pays Basque" },
-      { src: g5, alt: "Apnée au coucher de soleil" },
-      { src: g6, alt: "Entraînement aquatique" },
+      { src: g1, alt: "Apnéiste à la surface" },
+      { src: g2, alt: "Flottement apnéique" },
+      { src: g3, alt: "Silhouette sous l'eau" },
+      { src: g4, alt: "Portrait apnée" },
+      { src: g5, alt: "Palmes sous l'eau" },
     ]}
     process={[
       { title: "Brief technique", desc: "On échange sur ton niveau, le lieu (piscine profonde, océan) et la mise en scène souhaitée." },

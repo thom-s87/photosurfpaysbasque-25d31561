@@ -4,7 +4,7 @@ import { UniverseHub } from "@/components/UniverseHub";
 import heroImg from "@/assets/gallery/surf-glassy-session.jpg";
 import surfImg from "@/assets/gallery/surfeur-pro-competition.jpg";
 import bodyImg from "@/assets/gallery/body-surfer-yellow.jpg";
-import paddleImg from "@/assets/gallery/photo-aquatique-artistique.jpg";
+import paddleImg from "@/assets/gallery/paddle-sup-ocean.jpg";
 
 const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20r%C3%A9server%20une%20session%20photo%20surf%2C%20body%20surf%20ou%20paddle%20au%20Pays%20Basque.";
 

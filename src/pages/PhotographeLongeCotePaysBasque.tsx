@@ -1,12 +1,11 @@
 import { ServicePage } from "@/components/ServicePage";
 import { allLinks } from "@/components/DiscoverAlso";
-import heroImg from "@/assets/gallery/nageur-action-eau.jpg";
-import g1 from "@/assets/gallery/natation-entrainement.jpg";
-import g2 from "@/assets/gallery/natation-split-underwater.jpg";
-import g3 from "@/assets/gallery/surf-immersif-eau.jpg";
-import g4 from "@/assets/gallery/photo-aquatique-artistique.jpg";
-import g5 from "@/assets/gallery/surf-coucher-soleil.jpg";
-import g6 from "@/assets/gallery/surf-glassy-session.jpg";
+import heroImg from "@/assets/gallery/longe-cote-ocean.jpg";
+import g1 from "@/assets/gallery/longe-cote-couple.jpg";
+import g2 from "@/assets/gallery/longe-cote-solo.jpg";
+import g3 from "@/assets/gallery/longe-cote-vue-large.jpg";
+import g4 from "@/assets/gallery/longe-cote-dos.jpg";
+import g5 from "@/assets/gallery/longe-cote-detail.jpg";
 
 const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20organiser%20une%20s%C3%A9ance%20photo%20longe-c%C3%B4te%20au%20Pays%20Basque.";
 
@@ -25,12 +24,11 @@ const PhotographeLongeCotePaysBasque = () => (
     heroAlt="Photographe longe-côte au Pays Basque dans l'océan"
     whatsapp={WHATSAPP}
     galleryImages={[
-      { src: g1, alt: "Pratiquants longe-côte à l'entraînement" },
-      { src: g2, alt: "Vue split sous l'eau" },
-      { src: g3, alt: "Photo immersive dans l'océan" },
-      { src: g4, alt: "Photo aquatique artistique" },
-      { src: g5, alt: "Longe-côte au coucher de soleil" },
-      { src: g6, alt: "Session glassy au Pays Basque" },
+      { src: g1, alt: "Couple pratiquant le longe-côte sur la côte basque" },
+      { src: g2, alt: "Pratiquante solo de longe-côte dans l'océan" },
+      { src: g3, alt: "Groupe de longe-côte vue large sur le littoral basque" },
+      { src: g4, alt: "Pratiquants de longe-côte de dos au coucher du soleil" },
+      { src: g5, alt: "Détail des jambes et de la pagaie en longe-côte" },
     ]}
     process={[
       { title: "Brief club ou groupe", desc: "On définit ensemble le nombre de participants, le spot et les objectifs (réseaux, presse, souvenirs)." },

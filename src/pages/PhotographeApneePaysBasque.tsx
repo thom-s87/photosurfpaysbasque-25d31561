@@ -1,12 +1,11 @@
 import { ServicePage } from "@/components/ServicePage";
 import { allLinks } from "@/components/DiscoverAlso";
-import heroImg from "@/assets/gallery/surf-immersif-eau.jpg";
-import g1 from "@/assets/gallery/photo-aquatique-artistique.jpg";
-import g2 from "@/assets/gallery/natation-split-underwater.jpg";
-import g3 from "@/assets/gallery/nageur-action-eau.jpg";
-import g4 from "@/assets/gallery/surf-glassy-session.jpg";
-import g5 from "@/assets/gallery/surf-coucher-soleil.jpg";
-import g6 from "@/assets/gallery/natation-entrainement.jpg";
+import heroImg from "@/assets/gallery/apnee-hero.jpg";
+import g1 from "@/assets/gallery/apnee-surface.jpg";
+import g2 from "@/assets/gallery/apnee-flottant.jpg";
+import g3 from "@/assets/gallery/apnee-silhouette.jpg";
+import g4 from "@/assets/gallery/apnee-portrait.jpg";
+import g5 from "@/assets/gallery/apnee-palmes.jpg";
 
 const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20organiser%20un%20shooting%20apn%C3%A9e%20au%20Pays%20Basque.";
 

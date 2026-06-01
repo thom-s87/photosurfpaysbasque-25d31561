@@ -178,7 +178,7 @@ const PhotographeNatationPaysBasque = () => {
               loading="lazy"
               width={1920}
               height={1080}
-              className="w-full h-[40vh] md:h-[50vh] object-cover rounded-2xl shadow-xl"
+              className="w-full h-[40vh] md:h-[50vh] object-cover object-bottom rounded-2xl shadow-xl"
             />
           </div>
         </section>

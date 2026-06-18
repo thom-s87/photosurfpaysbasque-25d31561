@@ -12,6 +12,7 @@ import pereFilsImg from "@/assets/pere_et_fils_surf.JPG";
 const WA_MESSAGE =
   "Bonjour Thom, je souhaite réserver le bon cadeau Fête des Pères à 45 € avec les 5 photos offertes.";
 const WA_URL = `https://wa.me/33695349187?text=${encodeURIComponent(WA_MESSAGE)}`;
+const SMS_URL = `sms:+33695349187?&body=${encodeURIComponent(WA_MESSAGE)}`;
 
 const PATH = "/bon-cadeau-fete-des-peres";
 
@@ -136,14 +137,22 @@ const BonCadeauFeteDesPeres = () => {
               L'offre est valable <strong>jusqu'à dimanche uniquement</strong>. Le rendez-vous photo
               pourra être pris plus tard, selon les disponibilités.
             </p>
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-yellow-300 text-[#2a0a4a] font-bold text-base md:text-lg shadow-xl hover:bg-yellow-200 transition whitespace-normal text-center"
-            >
-              🎁 Réserver le bon cadeau sur WhatsApp
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href={WA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-yellow-300 text-[#2a0a4a] font-bold text-base md:text-lg shadow-xl hover:bg-yellow-200 transition whitespace-normal text-center"
+              >
+                🎁 Réserver sur WhatsApp
+              </a>
+              <a
+                href={SMS_URL}
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white text-[#2a0a4a] font-bold text-base md:text-lg shadow-xl hover:bg-white/90 transition whitespace-normal text-center border-2 border-yellow-300"
+              >
+                📱 Réserver par SMS
+              </a>
+            </div>
           </div>
         </section>
 
@@ -266,14 +275,22 @@ const BonCadeauFeteDesPeres = () => {
               dimanche soir. Après cette date, l'offre spéciale Fête des Pères ne sera plus
               disponible.
             </p>
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#2a0a4a] text-yellow-300 font-bold text-base md:text-lg shadow-xl hover:bg-[#3a1066] transition whitespace-normal text-center"
-            >
-              🎁 Je réserve mon bon cadeau
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a
+                href={WA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#2a0a4a] text-yellow-300 font-bold text-base md:text-lg shadow-xl hover:bg-[#3a1066] transition whitespace-normal text-center"
+              >
+                🎁 Réserver sur WhatsApp
+              </a>
+              <a
+                href={SMS_URL}
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white text-[#2a0a4a] font-bold text-base md:text-lg shadow-xl hover:bg-white/90 transition whitespace-normal text-center border-2 border-[#2a0a4a]"
+              >
+                📱 Réserver par SMS
+              </a>
+            </div>
           </div>
         </section>
 

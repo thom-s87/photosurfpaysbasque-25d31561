@@ -13,6 +13,7 @@ const WA_MESSAGE =
   "Bonjour Thom, je souhaite réserver le bon cadeau Fête des Pères à 45 € avec les 5 photos offertes.";
 const WA_URL = `https://wa.me/33695349187?text=${encodeURIComponent(WA_MESSAGE)}`;
 const SMS_URL = `sms:+33695349187?&body=${encodeURIComponent(WA_MESSAGE)}`;
+// iOS utilise `&body=`, Android `?body=` — la forme `?&body=` est compatible avec les deux.
 
 const PATH = "/bon-cadeau-fete-des-peres";
 

@@ -22,6 +22,8 @@ import ShootingPaddlePaysBasque from "./pages/ShootingPaddlePaysBasque";
 import ShootingBebeNageurPaysBasque from "./pages/ShootingBebeNageurPaysBasque";
 import PhotographeLongeCotePaysBasque from "./pages/PhotographeLongeCotePaysBasque";
 import PhotographeApneePaysBasque from "./pages/PhotographeApneePaysBasque";
+import BonCadeauFeteDesPeres from "./pages/BonCadeauFeteDesPeres";
+import { FeteDesPeresPopup } from "./components/FeteDesPeresPopup";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,9 +54,11 @@ const App = () => (
           <Route path="/shooting-bebe-nageur-pays-basque" element={<ShootingBebeNageurPaysBasque />} />
           <Route path="/photographe-longe-cote-pays-basque" element={<PhotographeLongeCotePaysBasque />} />
           <Route path="/photographe-apnee-pays-basque" element={<PhotographeApneePaysBasque />} />
+          <Route path="/bon-cadeau-fete-des-peres" element={<BonCadeauFeteDesPeres />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <FeteDesPeresPopup />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

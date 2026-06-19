@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import { MessageCircle, ChevronLeft, ChevronRight } from "lucide-react";
+import { WHATSAPP_URL } from "@/lib/contact";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { WatermarkedImage } from "@/components/WatermarkedImage";
 import { useRef, useState, useEffect, useCallback } from "react";
@@ -119,11 +120,14 @@ export const Gallery = () => {
           <Button
             variant="outline"
             className="border-deep-purple text-deep-purple hover:bg-deep-purple hover:text-primary-foreground rounded-full px-4 min-[375px]:px-8 py-6 text-xs min-[375px]:text-base tracking-wider uppercase max-w-full whitespace-normal"
-            onClick={() => window.open('https://www.app.sportpxl.com', '_blank')}
+            onClick={() => window.open(WHATSAPP_URL, '_blank')}
           >
-            <ExternalLink className="w-4 h-4 mr-2 flex-shrink-0" />
-            Accéder à vos photos — SportPXL
+            <MessageCircle className="w-4 h-4 mr-2 flex-shrink-0" />
+            Demander l'accès aux photos
           </Button>
+          <p className="mt-4 text-sm text-muted-foreground max-w-xl mx-auto">
+            Les galeries photo sont envoyées après chaque session. Contactez-moi avec la date et le spot pour retrouver vos images.
+          </p>
         </div>
       </div>
     </section>

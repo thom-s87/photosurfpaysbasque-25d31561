@@ -1,6 +1,6 @@
 import { Instagram, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/logo-photosurf-final.png.asset.json";
+import logoAsset from "@/assets/logo-photosurf-2026.png.asset.json";
 const logoImg = logoAsset.url;
 import { PHONE_TEL, PHONE_DISPLAY } from "@/lib/contact";
 

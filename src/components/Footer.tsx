@@ -1,5 +1,5 @@
 import { Instagram, ExternalLink, Phone } from "lucide-react";
-import logoAsset from "@/assets/logo-photosurf-2026.png.asset.json";
+import logoAsset from "@/assets/logo-photosurf-final.png.asset.json";
 const logoImg = logoAsset.url;
 import { PHONE_TEL, PHONE_DISPLAY } from "@/lib/contact";
 

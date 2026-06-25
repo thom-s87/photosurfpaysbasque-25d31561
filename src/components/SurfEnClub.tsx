@@ -117,7 +117,7 @@ export const SurfEnClub = () => {
                   maxWidth: "360px",
                 }}
               >
-                ⚠️ Réserver ta session au club <strong>ne garantit pas ma présence</strong> sur l'eau. Pense à <strong>me réserver aussi</strong> pour être sûr d'avoir tes photos.
+                ⚠️ Réserver ta session au club <strong>ne garantit pas ma présence</strong> à l'eau. Pense à <strong>me réserver aussi</strong> pour être sûr d'avoir tes photos.
               </p>
             </div>
 

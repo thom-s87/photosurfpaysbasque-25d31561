@@ -63,22 +63,33 @@ export const SurfEnClub = () => {
               href="https://www.angletsurfclub.fr/reservation-en-ligne.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center md:justify-start mb-12"
+              className="flex justify-center md:justify-start mb-8"
               style={{ textDecoration: "none" }}
             >
               <div
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="inline-flex items-center justify-center gap-3 cursor-pointer transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_16px_40px_rgba(212,79,170,0.55)]"
                 style={{
-                  backgroundColor: "#ede3f7",
-                  color: "#5a3e8a",
-                  fontSize: "13px",
-                  fontWeight: 600,
+                  background: "linear-gradient(90deg, #5a3e8a 0%, #d44faa 55%, #f08a5d 100%)",
+                  color: "#fff",
+                  fontWeight: 800,
+                  borderRadius: "9999px",
+                  padding: "16px 28px",
+                  fontSize: "16px",
+                  boxShadow: "0 10px 28px rgba(90, 62, 138, 0.45), 0 0 0 1px rgba(255,255,255,0.15) inset",
+                  fontFamily: "Inter, sans-serif",
+                  letterSpacing: "0.01em",
+                  textAlign: "center",
                 }}
               >
-                <span style={{ color: "#d44faa", fontSize: "14px" }}>●</span>
-                Anglet Surf Club · Plage du club
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M2 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2" />
+                  <path d="M2 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2" />
+                  <path d="M2 7c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2" />
+                </svg>
+                Réserve ta session au Surf Club ici
               </div>
             </a>
+
 
             <div className="flex justify-center">
               <a

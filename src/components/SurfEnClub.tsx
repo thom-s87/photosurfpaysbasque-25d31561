@@ -90,6 +90,36 @@ export const SurfEnClub = () => {
               </div>
             </a>
 
+            <div className="flex flex-col items-center my-6">
+              <div className="flex items-center gap-3 w-full max-w-xs">
+                <span className="flex-1 h-px" style={{ backgroundColor: "rgba(90, 62, 138, 0.25)" }} />
+                <span
+                  className="uppercase"
+                  style={{
+                    fontFamily: "'Barlow Condensed', 'Bebas Neue', sans-serif",
+                    fontWeight: 900,
+                    color: "#5a3e8a",
+                    fontSize: "20px",
+                    letterSpacing: "0.2em",
+                  }}
+                >
+                  Et
+                </span>
+                <span className="flex-1 h-px" style={{ backgroundColor: "rgba(90, 62, 138, 0.25)" }} />
+              </div>
+              <p
+                className="mt-3 text-center"
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  fontSize: "13px",
+                  color: "#3a3a3a",
+                  lineHeight: 1.55,
+                  maxWidth: "360px",
+                }}
+              >
+                ⚠️ Réserver ta session au club <strong>ne garantit pas ma présence</strong> sur l'eau. Pense à <strong>me réserver aussi</strong> pour être sûr d'avoir tes photos.
+              </p>
+            </div>
 
             <div className="flex justify-center">
               <a

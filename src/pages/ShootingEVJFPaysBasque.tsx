@@ -56,8 +56,8 @@ const faqItems = [
 const ShootingEVJFPaysBasque = () => {
   useEffect(() => {
     setSeo({
-      title: "Shooting EVJF Pays Basque | Anglet · Biarritz",
-      description: "📸 Shooting EVJF au Pays Basque. Séance photo entre copines à la plage d'Anglet ou Biarritz, ambiance fun et naturelle. Réserve par WhatsApp.",
+      title: "Photographe EVJF Biarritz | Shooting plage & océan",
+      description: "Shooting EVJF à Biarritz, Anglet et au Pays Basque : photos naturelles à la plage, ambiance fun, océan, sunset et souvenirs de groupe.",
       keywords: "shooting evjf pays basque, evjf anglet, evjf biarritz, photographe evjf, enterrement vie jeune fille pays basque, shooting copines plage",
       path: "/shooting-evjf-pays-basque",
     });

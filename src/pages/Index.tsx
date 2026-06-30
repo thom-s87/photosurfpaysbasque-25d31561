@@ -25,8 +25,8 @@ import { setSeo } from "@/lib/seo";
 const Index = () => {
   useEffect(() => {
     setSeo({
-      title: "Photographe Surf Pays Basque | Anglet · Biarritz",
-      description: "📸 Photographe surf à Anglet & Biarritz. Sessions photo à l'eau dès 45€. Famille, grossesse, natation. Réservation en 2 min par WhatsApp · Réponse en 15 min !",
+      title: "Photo Surf Pays Basque | Photographe océan à Anglet",
+      description: "Photos et vidéos dans l'océan à Anglet, Biarritz et sur la côte basque : surf, famille, grossesse, EVJF et sports aquatiques. Réservation rapide via WhatsApp.",
       keywords: "photographe surf pays basque, photographe surf anglet, photo surf biarritz, photographe eau anglet, photographe plage pays basque",
       path: "/",
     });

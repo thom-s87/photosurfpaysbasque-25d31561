@@ -11,8 +11,8 @@ const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%2
 const SportsAquatiquesPaysBasque = () => {
   useEffect(() => {
     setSeo({
-      title: "Photographe de sports aquatiques au Pays Basque",
-      description: "📸 Natation, longe-côte et apnée au Pays Basque. Photographe spécialisé sports aquatiques pour clubs, athlètes et passionnés à Anglet et Biarritz.",
+      title: "Photographe sports aquatiques Pays Basque",
+      description: "Photos et vidéos pour clubs, athlètes et passionnés de sports aquatiques : natation, apnée, longe-côte, paddle et suivi sportif.",
       keywords: "photographe natation pays basque, photographe longe-côte, photographe apnée anglet, sports aquatiques",
       path: "/sports-aquatiques-pays-basque",
       image: heroImg,

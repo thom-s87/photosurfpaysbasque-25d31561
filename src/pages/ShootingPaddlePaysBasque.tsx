@@ -12,8 +12,8 @@ const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%2
 const ShootingPaddlePaysBasque = () => (
   <ServicePage
     seo={{
-      title: "Shooting paddle au Pays Basque | Photo sur l'eau",
-      description: "📸 Séance photo paddle au Pays Basque. Images naturelles sur l'eau, lever ou coucher de soleil à Anglet et Biarritz. Réservation WhatsApp.",
+      title: "Shooting paddle Pays Basque | Photos à l'eau",
+      description: "Shooting paddle à Anglet, Biarritz et sur la côte basque. Photos depuis l'eau ou depuis la plage, pour solo, couple, groupe ou club.",
       keywords: "shooting paddle pays basque, photographe paddle anglet, stand up paddle biarritz",
       path: "/shooting-paddle-pays-basque",
     }}

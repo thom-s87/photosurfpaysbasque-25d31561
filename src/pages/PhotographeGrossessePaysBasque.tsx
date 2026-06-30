@@ -50,7 +50,7 @@ const faqItems = [
 
 const PhotographeGrossessePaysBasque = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Grossesse Pays Basque | Plage & Eau', description: 'Shooting grossesse au Pays Basque : séance maternité plage & eau à Anglet et Biarritz, douce et authentique. Réservation par WhatsApp.', path: '/photographe-grossesse-pays-basque' });
+    setSeo({ title: 'Photographe grossesse Pays Basque | Plage & océan', description: "Séance photo grossesse au Pays Basque, à la plage ou dans l'eau, à Anglet et Biarritz. Images naturelles, douces et authentiques.", path: '/photographe-grossesse-pays-basque' });
   }, []);
 
   const jsonLd = {

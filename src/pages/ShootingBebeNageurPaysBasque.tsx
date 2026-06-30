@@ -13,8 +13,8 @@ const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%2
 const ShootingBebeNageurPaysBasque = () => (
   <ServicePage
     seo={{
-      title: "Shooting bébé nageur au Pays Basque | Piscine et océan",
-      description: "📸 Shooting bébé nageur au Pays Basque. Photos uniques de votre enfant dans l'eau, en piscine ou dans l'océan. Réservation par WhatsApp.",
+      title: "Shooting bébé nageur Pays Basque | Photos dans l'eau",
+      description: "Séance photo bébé nageur au Pays Basque, en piscine ou dans l'eau, pour des souvenirs doux, naturels et sécurisés.",
       keywords: "shooting bébé nageur pays basque, photo bébé piscine anglet, photographe bébé eau biarritz",
       path: "/shooting-bebe-nageur-pays-basque",
     }}

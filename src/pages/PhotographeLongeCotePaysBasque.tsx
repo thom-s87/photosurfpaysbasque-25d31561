@@ -12,8 +12,8 @@ const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%2
 const PhotographeLongeCotePaysBasque = () => (
   <ServicePage
     seo={{
-      title: "Photographe longe-côte au Pays Basque | Photos dans l'océan",
-      description: "📸 Photographe longe-côte au Pays Basque. Images dynamiques dans l'eau pour pratiquants, groupes et clubs à Anglet et Biarritz.",
+      title: "Photographe longe-côte Pays Basque | Clubs & groupes",
+      description: "Photos et vidéos de longe-côte au Pays Basque pour clubs, groupes et événements. Images naturelles dans l'océan.",
       keywords: "photographe longe-côte pays basque, longe côte anglet, longe côte biarritz photo",
       path: "/photographe-longe-cote-pays-basque",
     }}

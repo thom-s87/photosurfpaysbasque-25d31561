@@ -25,8 +25,8 @@ const conditions = [
 const SpotReportAnglet = () => {
   useEffect(() => {
     setSeo({
-      title: "Spot Report Anglet | Conditions Surf VVF",
-      description: "Conditions surf à Anglet (VVF, Petite Chambre d'Amour) : houle, vent, marée. Idéal pour planifier ta session photo surf au Pays Basque.",
+      title: "Spot report Anglet | Conditions surf VVF & photos",
+      description: "Conditions surf à Anglet : VVF, Petite Chambre d'Amour, houle, vent, marée et conseils pour organiser une session photo surf.",
       path: "/spot-report-anglet",
     });
   }, []);

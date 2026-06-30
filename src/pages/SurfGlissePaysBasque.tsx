@@ -11,8 +11,8 @@ const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%2
 const SurfGlissePaysBasque = () => {
   useEffect(() => {
     setSeo({
-      title: "Surf, body surf & paddle au Pays Basque | Photo Surf",
-      description: "📸 Photographe surf, body surf et paddle à Anglet et au Pays Basque. Choisis ta discipline et réserve ta session photo à l'eau.",
+      title: "Photos surf, body surf & paddle au Pays Basque",
+      description: "Sessions photo et vidéo pour surf, body surf, bodyboard et paddle à Anglet, Biarritz et sur la côte basque.",
       keywords: "photographe surf pays basque, photographe body surf, paddle anglet, sessions photo glisse",
       path: "/surf-glisse-pays-basque",
       image: heroImg,

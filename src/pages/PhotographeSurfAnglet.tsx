@@ -66,7 +66,7 @@ const faqItems = [
 
 const PhotographeSurfAnglet = () => {
   useEffect(() => {
-    setSeo({ title: 'Photographe Surf Anglet | Sessions photo à l\'eau', description: "Photographe surf à Anglet : Chambre d'Amour, VVF, Sables d'Or. Capture ta session dans l'eau dès 45€. Réservation rapide sur WhatsApp. Thom, photographe local.", keywords: "photographe surf anglet, photo surf anglet, photographe anglet, chambre d'amour surf photo, session surf anglet", path: '/photographe-surf-anglet' });
+    setSeo({ title: "Photographe Surf Anglet | Shooting photo dans l'eau", description: "Shooting photo surf à Anglet, dans l'eau ou depuis la plage. Sessions au VVF, Cavaliers, La Barre, Sables d'Or et Biarritz selon les conditions.", keywords: "photographe surf anglet, photo surf anglet, photographe anglet, chambre d'amour surf photo, session surf anglet", path: '/photographe-surf-anglet' });
   }, []);
 
   const jsonLd = {

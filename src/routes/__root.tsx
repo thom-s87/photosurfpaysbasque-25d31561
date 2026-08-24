@@ -32,10 +32,59 @@ const LOCAL_BUSINESS_JSONLD = JSON.stringify({
     addressCountry: "FR",
   },
   geo: { "@type": "GeoCoordinates", latitude: 43.483, longitude: -1.522 },
-  areaServed: ["Anglet", "Biarritz", "Bidart", "Guéthary", "Hendaye"],
-  priceRange: "€",
+  areaServed: ["Anglet", "Biarritz", "Bidart", "Guéthary", "Hendaye"].map(
+    (name) => ({ "@type": "City", name }),
+  ),
+  priceRange: "45€ - 150€",
+  currenciesAccepted: "EUR",
   openingHours: "Mo-Su 07:00-20:00",
   sameAs: ["https://www.instagram.com/photosurfpaysbasque"],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "Réservation WhatsApp",
+      telephone: "+33695349187",
+      url: "https://wa.me/33695349187",
+      availableLanguage: ["fr", "en"],
+    },
+    {
+      "@type": "ContactPoint",
+      contactType: "Téléphone / SMS",
+      telephone: "+33695349187",
+      availableLanguage: ["fr", "en"],
+    },
+  ],
+  potentialAction: {
+    "@type": "ReserveAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://wa.me/33695349187",
+      inLanguage: "fr",
+      actionPlatform: [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform",
+      ],
+    },
+  },
+  makesOffer: [
+    {
+      "@type": "Offer",
+      name: "Session photo dans l'eau",
+      description:
+        "Shooting photo surf / sports aquatiques dans l'eau au Pays Basque, à partir de 45 € l'heure.",
+      price: "45",
+      priceCurrency: "EUR",
+      availability: "https://schema.org/InStock",
+      areaServed: ["Anglet", "Biarritz", "Bidart"],
+      url: "https://photosurfpaysbasque.fr/#tarifs",
+    },
+  ],
+  offers: {
+    "@type": "AggregateOffer",
+    lowPrice: "45",
+    priceCurrency: "EUR",
+    offerCount: 1,
+  },
   knowsAbout: [
     "Photographie de surf",
     "Vidéo de surf",

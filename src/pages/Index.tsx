@@ -64,34 +64,7 @@ const Index = () => {
       <FloatingWhatsApp />
       <SessionLibrePopup />
 
-      {/* JSON-LD LocalBusiness */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "PhotoSurfPaysBasque",
-            description: "Photographe & vidéaste spécialisé océan à Anglet — surf, famille, grossesse, sports aquatiques, shooting plage",
-            url: "https://photosurfpaysbasque.fr",
-            telephone: "+33695349187",
-            areaServed: ["Anglet", "Petite Chambre d'Amour", "VVF", "Sables d'Or", "Marinella", "Corsaires", "Madrague", "Dunes", "Cavaliers", "La Barre", "Biarritz", "Pays Basque"],
-            priceRange: "€",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Anglet",
-              addressRegion: "Pyrénées-Atlantiques",
-              postalCode: "64600",
-              addressCountry: "FR",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 43.483,
-              longitude: -1.522,
-            },
-          }),
-        }}
-      />
+      {/* LocalBusiness / Photographer JSON-LD : défini une seule fois dans __root.tsx */}
     </div>
   );
 };

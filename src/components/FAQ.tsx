@@ -32,6 +32,11 @@ const faqs = [
     answer:
       "Virement bancaire, PayPal ou espèces. Le paiement se fait après la séance, une fois que tu as vu les photos. Pas de mauvaise surprise.",
   },
+  {
+    question: "Comment retrouver mes photos si je n'ai pas réservé de session ?",
+    answer:
+      "Pas besoin d'avoir réservé ! Je shoote régulièrement en session libre sur les spots d'Anglet. Après chaque session, les photos sont mises en ligne sur Water Social Club, classées par date et par spot. Tu navigues, tu repères tes vagues et tu télécharges directement en haute résolution.",
+  },
 ];
 
 export const FAQ = () => {

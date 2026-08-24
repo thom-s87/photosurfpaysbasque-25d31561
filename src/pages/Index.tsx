@@ -5,6 +5,7 @@ import { Hero } from "@/components/Hero";
 import { Story } from "@/components/Story";
 import { Univers } from "@/components/Univers";
 import { UrgencyBanner } from "@/components/UrgencyBanner";
+import { SessionLibre } from "@/components/SessionLibre";
 import { Tarifs } from "@/components/Tarifs";
 import { Gallery } from "@/components/Gallery";
 import { Tirages } from "@/components/Tirages";
@@ -43,6 +44,7 @@ const Index = () => {
         <Univers />
         <SurfEnClub />
         <UrgencyBanner />
+        <SessionLibre />
         <Tarifs />
         <Gallery />
         <SectionCTA />

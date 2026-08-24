@@ -14,30 +14,30 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 
 export const Header = () => {
   return (
-    <header className="fixed top-[36px] w-full bg-night/90 backdrop-blur-md z-50 border-b border-primary-foreground/5">
-      <div className="container mx-auto px-4 py-2 md:py-3">
+    <header className="fixed top-[30px] w-full bg-night/85 backdrop-blur-md z-50 border-b border-primary-foreground/10">
+      <div className="container mx-auto px-4 py-1.5 md:py-2">
         <div className="flex justify-between items-center">
           <a href="/" className="flex items-center">
-            <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-12 min-[375px]:h-[72px] md:h-[88px] w-auto" />
+            <img src={logoImg} alt="PhotoSurf Pays Basque" className="h-10 min-[375px]:h-11 md:h-16 w-auto" />
           </a>
           
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <a href="/#univers" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Univers</a>
-            <a href="/#galerie" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Galerie</a>
-            <a href="/#session-libre" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Session libre</a>
-            <a href="/#tarifs" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Tarifs</a>
-            <a href="/#anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Anglet</a>
+          <nav className="hidden md:flex items-center gap-5 lg:gap-7">
+            <a href="/#univers" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-[11px] lg:text-xs leading-none tracking-[0.18em] uppercase font-medium">Univers</a>
+            <a href="/#galerie" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-[11px] lg:text-xs leading-none tracking-[0.18em] uppercase font-medium">Galerie</a>
+            <a href="/#session-libre" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-[11px] lg:text-xs leading-none tracking-[0.18em] uppercase font-medium">Session libre</a>
+            <a href="/#tarifs" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-[11px] lg:text-xs leading-none tracking-[0.18em] uppercase font-medium">Tarifs</a>
+            <a href="/#anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-[11px] lg:text-xs leading-none tracking-[0.18em] uppercase font-medium">Anglet</a>
             
             
-            <div className="flex items-center gap-3 ml-4">
-            <a href={PHONE_TEL} aria-label={`Appeler Thom au ${PHONE_DISPLAY}`} className="flex items-center gap-1.5 whitespace-nowrap text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
+            <div className="flex items-center gap-3 ml-3">
+            <a href={PHONE_TEL} aria-label={`Appeler Thom au ${PHONE_DISPLAY}`} className="flex items-center gap-1.5 whitespace-nowrap text-primary-foreground/80 hover:text-primary-foreground transition-colors text-[13px] leading-none font-medium">
               <Phone className="w-4 h-4" />
               {PHONE_DISPLAY}
             </a>
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram PhotoSurfPaysBasque" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-              <Button size="sm" className="bg-gradient-sunset text-foreground font-semibold rounded-full px-6 hover:opacity-90 transition-opacity animate-pulse-wave-yellow booking-hover" asChild>
+              <Button size="sm" className="bg-gradient-sunset text-foreground font-semibold rounded-full px-5 h-9 text-[13px] hover:opacity-90 transition-opacity animate-pulse-wave-yellow booking-hover" asChild>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                   <WhatsAppIcon className="w-4 h-4 mr-2" />
                   Réserver

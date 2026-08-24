@@ -5,7 +5,7 @@ export type GoogleReview = {
   rating: number;
   text: string;
   date: string;
-  profilePhoto?: string;
+  profilePhoto?: string | undefined;
 };
 
 export type GoogleReviewsPayload = {

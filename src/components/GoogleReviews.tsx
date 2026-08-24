@@ -6,24 +6,25 @@ const GOOGLE_REVIEWS_URL = "https://share.google/zXtao4SCc4KVm0ePV";
 
 const reviews = [
   {
-    name: "Camille L.",
+    name: "Emilie Peffau",
     rating: 5,
-    text: "Super expérience, photos incroyables à Anglet ! Thom a un œil de fou, on revit chaque vague.",
-    date: "Mars 2026",
+    text: "Séance photo parfaite pour avoir de beaux souvenirs de sa séance !! Merci Tom !",
+    date: "Il y a 14 semaines",
   },
   {
-    name: "Julien R.",
+    name: "Nicolas FR",
     rating: 5,
-    text: "Top photographe, très pro et rapide. Séance famille sur la plage des Cavaliers, résultat magnifique.",
-    date: "Février 2026",
+    text: "Merci pour ce super shooting pendant un entraînement natation 🔥",
+    date: "Il y a 14 semaines",
   },
   {
-    name: "Marine D.",
+    name: "Lilo DELAJUNGLE",
     rating: 5,
-    text: "Un shooting maternité dans l'eau absolument magique. Résultat au-delà de nos attentes. On recommande à 100%.",
-    date: "Janvier 2026",
+    text: "Photographe doté d'une qualité artistique et d'une générosité hors du commun !!",
+    date: "Il y a 22 semaines",
   },
 ];
+
 
 const averageRating = 5.0;
 const totalReviews = 12;

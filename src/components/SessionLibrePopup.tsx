@@ -67,11 +67,11 @@ export const SessionLibrePopup = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Photo — en haut sur mobile, à droite sur desktop */}
-            <div className="md:order-2 h-44 min-[375px]:h-52 md:h-auto md:min-h-[260px]">
+            <div className="md:order-2 aspect-[3/4] md:aspect-[4/5]">
               <img
                 src={popupPhoto.url}
                 alt="Photographe avec son bob jaune dans l'eau à Anglet"
-                className="h-full w-full object-cover md:rounded-l-none"
+                className="h-full w-full object-cover object-center md:rounded-l-none"
                 loading="eager"
               />
             </div>

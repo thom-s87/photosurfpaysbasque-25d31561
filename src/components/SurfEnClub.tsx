@@ -17,8 +17,8 @@ export const SurfEnClub = () => {
       className="scroll-mt-24 py-16 min-[375px]:py-20 md:py-28 px-5 md:px-4"
       style={{ backgroundColor: "#f5efe8" }}
     >
-      <div ref={ref} className="container mx-auto max-w-6xl fade-in-section">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div ref={ref} className="container mx-auto max-w-6xl fade-in-section">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_1.25fr] gap-8 md:gap-10 items-center">
           {/* Texte */}
           <div>
             <p
@@ -164,7 +164,6 @@ export const SurfEnClub = () => {
               style={{
                 borderRadius: "10px",
                 aspectRatio: "3 / 4",
-                marginTop: "32px",
               }}
             >
               <img

@@ -34,13 +34,14 @@ export const Hero = () => {
         }}
       />
       {/* Premium purple overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-night via-deep-purple/70 to-night/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-night via-deep-purple/55 to-night/55" />
       {/* Sunset glow overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-hot-pink/10 to-sunset-orange/15" />
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-hot-pink/5 to-sunset-orange/8" />
       {/* VHS scanlines */}
+      <div className="absolute inset-0 bg-night/25" />
       <div className="absolute inset-0 vhs-lines" />
       
-      <div className="container mx-auto relative z-10 px-4 pb-16 pt-28 min-[375px]:pb-20 min-[375px]:pt-32 md:pb-32 md:pt-40">
+      <div className="container mx-auto relative z-10 px-4 pb-16 pt-32 min-[375px]:pb-20 min-[375px]:pt-36 md:pb-32 md:pt-44">
         <div className="max-w-4xl" style={{ opacity: Math.max(0.9, 1 - Math.max(0, scrollY - 600) / 2000), transform: `translateY(${scrollY * 0.02}px)` }}>
           
           {/* Retro top accent — thin sunset stripe */}

@@ -49,10 +49,11 @@ export const Hero = () => {
           
           <h1 aria-label="PHOTO SURF PAYS BASQUE — Photographe Océan à Anglet" className="font-display text-[3.2rem] min-[375px]:text-6xl md:text-9xl lg:text-[10rem] leading-[0.85] mb-4 min-[375px]:mb-6 tracking-wider">
             <span className="sr-only">PHOTO SURF PAYS BASQUE — Photographe Océan à Anglet</span>
-            <span aria-hidden="true" className="text-primary-foreground block">PHOTO</span>
-            <span aria-hidden="true" className="text-primary-foreground block">SURF</span>
-            <span aria-hidden="true" className="text-gradient-sunset block">PAYS BASQUE</span>
+            <span aria-hidden="true" className="text-primary-foreground block animate-title-line animate-title-line-1">PHOTO</span>
+            <span aria-hidden="true" className="text-primary-foreground block animate-title-line animate-title-line-2">SURF</span>
+            <span aria-hidden="true" className="text-gradient-sunset block animate-title-line animate-title-line-3">PAYS BASQUE</span>
           </h1>
+
 
           <p className="text-lg min-[375px]:text-xl md:text-2xl text-primary-foreground font-medium mb-2 min-[375px]:mb-3 max-w-xl">
             Shooting photo à Anglet, Biarritz & sud des Landes 📸

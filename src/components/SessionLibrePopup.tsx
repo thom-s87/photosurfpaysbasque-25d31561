@@ -18,7 +18,7 @@ export const SessionLibrePopup = () => {
     if (typeof window === "undefined") return;
     if (sessionStorage.getItem(STORAGE_KEY)) return;
 
-    const timer = window.setTimeout(() => setOpen(true), 2500);
+    const timer = window.setTimeout(() => setOpen(true), 400);
     return () => window.clearTimeout(timer);
   }, [isSessionLibrePage]);
 

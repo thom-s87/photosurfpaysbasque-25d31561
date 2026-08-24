@@ -1,5 +1,5 @@
 import { useEffect, ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import { Camera, Clock, MapPin, Heart, HelpCircle } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -59,7 +59,7 @@ export const ServicePage = ({
   useEffect(() => {
     const schemas: object[] = [
       buildLocalBusiness({
-        name: `PhotoSurfPaysBasque — ${seo.title.split("|")[0].trim()}`,
+        name: `PhotoSurfPaysBasque — ${(seo.title.split("|")[0] ?? seo.title).trim()}`,
         description: seo.description,
         path: seo.path,
         image: heroImage,

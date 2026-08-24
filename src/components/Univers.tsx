@@ -1,6 +1,6 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "@/lib/router-compat";
 import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";

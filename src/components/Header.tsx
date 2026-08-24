@@ -28,7 +28,7 @@ export const Header = () => {
             <a href="/#anglet" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs tracking-[0.2em] uppercase font-medium">Anglet</a>
             
             <div className="flex items-center gap-3 ml-4">
-            <a href={PHONE_TEL} aria-label={`Appeler Thom au ${PHONE_DISPLAY}`} className="flex items-center gap-1.5 text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
+            <a href={PHONE_TEL} aria-label={`Appeler Thom au ${PHONE_DISPLAY}`} className="flex items-center gap-1.5 whitespace-nowrap text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium">
               <Phone className="w-4 h-4" />
               {PHONE_DISPLAY}
             </a>

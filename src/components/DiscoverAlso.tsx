@@ -9,7 +9,7 @@ interface DiscoverAlsoProps {
   links: DiscoverLink[];
 }
 
-const allLinks: Record<string, DiscoverLink> = {
+const allLinks = {
   surf: { label: "Photographe surf à Anglet", href: "/photographe-surf-anglet" },
   bodysurf: { label: "Photographe body surf", href: "/photographe-body-surf-pays-basque" },
   paddle: { label: "Shooting paddle au Pays Basque", href: "/shooting-paddle-pays-basque" },
@@ -24,7 +24,7 @@ const allLinks: Record<string, DiscoverLink> = {
   hubSurf: { label: "Univers Surf & glisse", href: "/surf-glisse-pays-basque" },
   hubFamille: { label: "Univers Famille, bébé & groupes", href: "/famille-bebe-groupes-pays-basque" },
   hubSports: { label: "Univers Sports aquatiques", href: "/sports-aquatiques-pays-basque" },
-};
+} satisfies Record<string, DiscoverLink>;
 
 export { allLinks };
 

@@ -1,10 +1,13 @@
 import { Star, ExternalLink } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { useServerFn } from "@tanstack/react-start";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { SectionCTA } from "@/components/SectionCTA";
+import { getGoogleReviews } from "@/lib/googleReviews.functions";
 
 const GOOGLE_REVIEWS_URL = "https://share.google/zXtao4SCc4KVm0ePV";
 
-const reviews = [
+const fallbackReviews = [
   {
     name: "Camille L.",
     rating: 5,

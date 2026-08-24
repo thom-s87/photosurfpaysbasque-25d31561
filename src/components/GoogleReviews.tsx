@@ -1,10 +1,13 @@
 import { Star, ExternalLink } from "lucide-react";
+import { useQuery } from "@tanstack/react-query";
+import { useServerFn } from "@tanstack/react-start";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { SectionCTA } from "@/components/SectionCTA";
+import { getGoogleReviews } from "@/lib/googleReviews.functions";
 
 const GOOGLE_REVIEWS_URL = "https://share.google/zXtao4SCc4KVm0ePV";
 
-const reviews = [
+const fallbackReviews = [
   {
     name: "Camille L.",
     rating: 5,
@@ -25,11 +28,23 @@ const reviews = [
   },
 ];
 
-const averageRating = 5.0;
-const totalReviews = 12;
+const FALLBACK_AVERAGE = 5.0;
+const FALLBACK_TOTAL = 12;
 
 export const GoogleReviews = () => {
   const ref = useScrollFadeIn();
+  const fetchReviews = useServerFn(getGoogleReviews);
+
+  const { data } = useQuery({
+    queryKey: ["google-reviews"],
+    queryFn: () => fetchReviews(),
+    staleTime: 1000 * 60 * 60,
+  });
+
+  const live = data?.live === true && data.reviews.length > 0;
+  const reviews = live ? data.reviews : fallbackReviews;
+  const averageRating = live && data.averageRating ? data.averageRating : FALLBACK_AVERAGE;
+  const totalReviews = live && data.totalReviews ? data.totalReviews : FALLBACK_TOTAL;
 
   return (
     <section className="py-16 min-[375px]:py-20 md:py-28 px-5 md:px-4 bg-sand-light">

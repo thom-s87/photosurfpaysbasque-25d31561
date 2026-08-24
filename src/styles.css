@@ -371,7 +371,28 @@ a[role="button"],
   }
 }
 
+/* === Hero title entrance animation === */
+@keyframes hero-title-in {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-title-line {
+  opacity: 0;
+  animation: hero-title-in 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+.animate-title-line-1 { animation-delay: 0ms; }
+.animate-title-line-2 { animation-delay: 130ms; }
+.animate-title-line-3 { animation-delay: 260ms; }
+
 /* === Booking CTA micro-animations === */
+
 
 /* Pulse wave (WhatsApp green halo) */
 @keyframes pulse-wave {

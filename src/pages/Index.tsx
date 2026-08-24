@@ -62,6 +62,7 @@ const Index = () => {
       <Footer />
       <MobileFixedCTA />
       <FloatingWhatsApp />
+      <SessionLibrePopup />
 
       {/* JSON-LD LocalBusiness */}
       <script

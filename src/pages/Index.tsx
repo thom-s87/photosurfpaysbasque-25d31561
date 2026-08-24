@@ -20,6 +20,7 @@ import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { SectionCTA } from "@/components/SectionCTA";
 import { SurfEnClub } from "@/components/SurfEnClub";
+import { SessionLibrePopup } from "@/components/SessionLibrePopup";
 import { useEffect } from "react";
 import { setSeo } from "@/lib/seo";
 

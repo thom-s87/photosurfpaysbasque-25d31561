@@ -246,12 +246,15 @@ a[role="button"],
   min-height: 44px;
 }
 
-/* Safety: images never overflow their container */
-img,
-video {
-  max-width: 100%;
-  height: auto;
+/* Safety: images never overflow their container (utilities keep priority) */
+@layer base {
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
 }
+
 
 /* Premium image hover */
 .gallery-item {

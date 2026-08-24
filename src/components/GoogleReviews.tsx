@@ -66,7 +66,7 @@ export const GoogleReviews = () => {
           {reviews.map((review, i) => (
             <div
               key={i}
-              className="bg-card rounded-xl p-6 md:p-8 border border-border/60 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-card rounded-xl p-6 md:p-8 border border-border/60 shadow-xs hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex gap-0.5 mb-4">
                 {[...Array(review.rating)].map((_, j) => (

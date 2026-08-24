@@ -164,7 +164,6 @@ export const SurfEnClub = () => {
               style={{
                 borderRadius: "10px",
                 aspectRatio: "3 / 4",
-                marginTop: "32px",
               }}
             >
               <img

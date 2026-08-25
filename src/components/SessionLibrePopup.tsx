@@ -79,7 +79,7 @@ export const SessionLibrePopup = () => {
             {/* Texte */}
             <div className="md:order-1 flex flex-col justify-center gap-4 p-6 min-[375px]:p-8 text-center md:text-left">
               <h2 className="font-display text-2xl min-[375px]:text-3xl tracking-wide text-foreground">
-                📸 Tu m'as vue à l'eau ?
+                📸 Tu m'as vu à l'eau ?
               </h2>
               <p className="text-muted-foreground text-sm min-[375px]:text-base leading-relaxed">
                 Si tu as croisé ce bob jaune en session libre sur les spots

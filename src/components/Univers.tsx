@@ -1,17 +1,17 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/lib/router-compat";
-import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
+import surfNightFeminin from "@/assets/gallery/surf-de-nuit-feminin.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
-import surfGlassy from "@/assets/gallery/surf-de-nuit-feminin.jpg";
+import longeCote from "@/assets/gallery/longe-cote-ocean.jpg";
 
 const blocks = [
   {
     title: "SURF & GLISSE",
     desc: "Sessions surf, body surf et paddle sur les spots du Pays Basque.",
-    image: boySurfer,
-    alt: "Photographe surf, body surf et paddle au Pays Basque",
+    image: surfNightFeminin,
+    alt: "Photographe surf de nuit féminin au Pays Basque",
     to: "/surf-glisse-pays-basque",
     cta: "Découvrir les sessions",
   },
@@ -34,8 +34,8 @@ const blocks = [
   {
     title: "SPORTS AQUATIQUES",
     desc: "Natation, longe-côte, apnée et suivi de clubs ou d'athlètes.",
-    image: surfGlassy,
-    alt: "Photographe sports aquatiques au Pays Basque",
+    image: longeCote,
+    alt: "Photographe longe-côte et sports aquatiques au Pays Basque",
     to: "/sports-aquatiques-pays-basque",
     cta: "Découvrir les disciplines",
   },

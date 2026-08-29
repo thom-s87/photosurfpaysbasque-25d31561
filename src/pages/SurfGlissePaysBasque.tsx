@@ -38,7 +38,7 @@ const SurfGlissePaysBasque = () => {
       h1="Photographe surf, body surf et paddle au Pays Basque"
       intro="Que tu sois sur une planche, dans les vagues ou sur l'eau au lever du soleil, je capture tes sessions dans leur environnement naturel. Découvre les différentes prestations disponibles à Anglet et sur les spots du Pays Basque."
       heroImage={heroImg}
-      heroAlt="Sessions surf, body surf et paddle au Pays Basque"
+      heroAlt="Surf de nuit féminin au Pays Basque"
       whatsapp={WHATSAPP}
       cards={[
         {

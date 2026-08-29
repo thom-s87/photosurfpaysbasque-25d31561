@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { setSeo, buildLocalBusiness, buildBreadcrumbs } from "@/lib/seo";
 import { UniverseHub } from "@/components/UniverseHub";
-import heroImg from "@/assets/gallery/photographe-surf-nuit-pays-basque.jpg";
+import heroImg from "@/assets/gallery/surf-de-nuit-feminin.jpg";
 import surfImg from "@/assets/gallery/surfeur-pro-competition.jpg";
 import bodyImg from "@/assets/gallery/body-surfer-yellow.jpg";
 import paddleImg from "@/assets/gallery/paddle-sup-ocean.jpg";

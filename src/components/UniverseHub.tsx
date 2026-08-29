@@ -77,16 +77,22 @@ export const UniverseHub = ({
                   key={i}
                   className="group relative aspect-[3/4] overflow-hidden rounded-lg shadow-lg retro-grain"
                 >
-                  <Link to={c.to} className="absolute inset-0 z-[1]" aria-label={c.title}>
-                    <img
-                      src={c.image}
-                      alt={c.alt}
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  </Link>
+                  {c.placeholder ? (
+                    <div className="absolute inset-0 z-[1]">
+                      <PlaceholderCard whatsapp={whatsapp} />
+                    </div>
+                  ) : (
+                    <Link to={c.to} className="absolute inset-0 z-[1]" aria-label={c.title}>
+                      <img
+                        src={c.image}
+                        alt={c.alt}
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-sunset opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    </Link>
+                  )}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-[2] pointer-events-none">
                     <h2 className="font-display text-2xl min-[375px]:text-3xl text-primary-foreground mb-2 tracking-wider">
                       {c.title}

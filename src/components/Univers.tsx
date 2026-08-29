@@ -4,7 +4,7 @@ import { Link } from "@/lib/router-compat";
 import surfNightFeminin from "@/assets/gallery/surf-de-nuit-feminin.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
-import longeCote from "@/assets/gallery/longe-cote-ocean.jpg";
+import natationPiscine from "@/assets/natation-piscine-pays-basque.png.asset.json";
 
 const blocks = [
   {
@@ -34,8 +34,8 @@ const blocks = [
   {
     title: "SPORTS AQUATIQUES",
     desc: "Natation, longe-côte, apnée et suivi de clubs ou d'athlètes.",
-    image: longeCote,
-    alt: "Photographe longe-côte et sports aquatiques au Pays Basque",
+    image: natationPiscine.url,
+    alt: "Photographe natation et sports aquatiques au Pays Basque",
     to: "/sports-aquatiques-pays-basque",
     cta: "Découvrir les disciplines",
   },

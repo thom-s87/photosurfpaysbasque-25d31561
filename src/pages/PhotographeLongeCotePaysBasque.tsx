@@ -1,11 +1,6 @@
 import { ServicePage } from "@/components/ServicePage";
 import { allLinks } from "@/components/DiscoverAlso";
 import heroImg from "@/assets/gallery/longe-cote-ocean.jpg";
-import g1 from "@/assets/gallery/longe-cote-couple.jpg";
-import g2 from "@/assets/gallery/longe-cote-solo.jpg";
-import g3 from "@/assets/gallery/longe-cote-vue-large.jpg";
-import g4 from "@/assets/gallery/longe-cote-dos.jpg";
-import g5 from "@/assets/gallery/longe-cote-detail.jpg";
 
 const WHATSAPP = "https://wa.me/33695349187?text=Bonjour%20Thom%20%F0%9F%8C%8A%20Je%20souhaite%20organiser%20une%20s%C3%A9ance%20photo%20longe-c%C3%B4te%20au%20Pays%20Basque.";
 

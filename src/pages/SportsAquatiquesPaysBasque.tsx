@@ -51,10 +51,9 @@ const SportsAquatiquesPaysBasque = () => {
         {
           title: "LONGE-CÔTE",
           desc: "Des images dynamiques dans l'eau pour les pratiquants, les groupes et les clubs.",
-          image: longeImg,
-          alt: "Photographe longe-côte au Pays Basque",
           to: "/photographe-longe-cote-pays-basque",
           cta: "Découvrir le longe-côte",
+          placeholder: true,
         },
         {
           title: "APNÉE",

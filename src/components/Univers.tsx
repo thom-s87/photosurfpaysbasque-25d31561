@@ -4,7 +4,7 @@ import { Link } from "@/lib/router-compat";
 import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
-import surfGlassy from "@/assets/gallery/surf-glassy-session.jpg";
+import surfGlassy from "@/assets/gallery/photographe-surf-nuit-pays-basque.jpg";
 
 const blocks = [
   {

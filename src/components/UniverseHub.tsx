@@ -4,15 +4,17 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { PlaceholderCard } from "@/components/PlaceholderCard";
 import { Button } from "@/components/ui/button";
 
 export interface HubCard {
   title: string;
   desc: string;
-  image: string;
-  alt: string;
+  image?: string;
+  alt?: string;
   to: string;
   cta: string;
+  placeholder?: boolean;
 }
 
 interface UniverseHubProps {

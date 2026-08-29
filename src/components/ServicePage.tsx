@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
+import { PlaceholderCard } from "@/components/PlaceholderCard";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,

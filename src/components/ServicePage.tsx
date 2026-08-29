@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { MobileFixedCTA } from "@/components/MobileFixedCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { DiscoverAlso, allLinks } from "@/components/DiscoverAlso";
+import { PlaceholderCard } from "@/components/PlaceholderCard";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -29,7 +30,7 @@ export interface ServicePageProps {
   heroImage: string;
   heroAlt: string;
   whatsapp: string;
-  galleryImages: { src: string; alt: string }[];
+  galleryImages: { src?: string; alt?: string; placeholder?: boolean }[];
   process: { title: string; desc: string }[];
   pricing: ReactNode;
   discoverLinks: { label: string; href: string }[];
@@ -123,14 +124,18 @@ export const ServicePage = ({
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
               {galleryImages.map((img, i) => (
                 <div key={i} className="aspect-square overflow-hidden rounded-xl shadow-lg group">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    loading="lazy"
-                    width={800}
-                    height={800}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  {img.placeholder ? (
+                    <PlaceholderCard whatsapp={whatsapp} />
+                  ) : (
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      width={800}
+                      height={800}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  )}
                 </div>
               ))}
             </div>

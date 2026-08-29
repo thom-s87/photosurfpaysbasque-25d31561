@@ -1,10 +1,10 @@
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/lib/router-compat";
-import boySurfer from "@/assets/gallery/surf-night-girl.jpg";
+import surfNightFeminin from "@/assets/gallery/surf-de-nuit-feminin.jpg";
 import shootingMaternite from "@/assets/gallery/shooting-aquatique-maternite.jpg";
 import dadAndBaby from "@/assets/gallery/dad-and-baby.jpg";
-import surfGlassy from "@/assets/gallery/surf-de-nuit-feminin.jpg";
+import longeCote from "@/assets/gallery/longe-cote-ocean.jpg";
 
 const blocks = [
   {

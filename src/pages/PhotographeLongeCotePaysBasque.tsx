@@ -19,11 +19,11 @@ const PhotographeLongeCotePaysBasque = () => (
     heroAlt="Photographe longe-côte au Pays Basque dans l'océan"
     whatsapp={WHATSAPP}
     galleryImages={[
-      { src: g1, alt: "Couple pratiquant le longe-côte sur la côte basque" },
-      { src: g2, alt: "Pratiquante solo de longe-côte dans l'océan" },
-      { src: g3, alt: "Groupe de longe-côte vue large sur le littoral basque" },
-      { src: g4, alt: "Pratiquants de longe-côte de dos au coucher du soleil" },
-      { src: g5, alt: "Détail des jambes et de la pagaie en longe-côte" },
+      { placeholder: true },
+      { placeholder: true },
+      { placeholder: true },
+      { placeholder: true },
+      { placeholder: true },
     ]}
     process={[
       { title: "Brief club ou groupe", desc: "On définit ensemble le nombre de participants, le spot et les objectifs (réseaux, presse, souvenirs)." },

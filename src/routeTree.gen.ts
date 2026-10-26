@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CarteCadeauSurfPaysBasqueRouteImport } from './routes/carte-cadeau-surf-pays-basque'
 import { Route as FamilleBebeGroupesPaysBasqueRouteImport } from './routes/famille-bebe-groupes-pays-basque'
 import { Route as PhotographeApneePaysBasqueRouteImport } from './routes/photographe-apnee-pays-basque'
 import { Route as PhotographeBodySurfPaysBasqueRouteImport } from './routes/photographe-body-surf-pays-basque'
@@ -33,6 +34,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CarteCadeauSurfPaysBasqueRoute =
+  CarteCadeauSurfPaysBasqueRouteImport.update({
+    id: '/carte-cadeau-surf-pays-basque',
+    path: '/carte-cadeau-surf-pays-basque',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const FamilleBebeGroupesPaysBasqueRoute =
   FamilleBebeGroupesPaysBasqueRouteImport.update({
     id: '/famille-bebe-groupes-pays-basque',
@@ -134,6 +141,7 @@ const SurfGlissePaysBasqueRoute = SurfGlissePaysBasqueRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/carte-cadeau-surf-pays-basque': typeof CarteCadeauSurfPaysBasqueRoute
   '/famille-bebe-groupes-pays-basque': typeof FamilleBebeGroupesPaysBasqueRoute
   '/photographe-apnee-pays-basque': typeof PhotographeApneePaysBasqueRoute
   '/photographe-body-surf-pays-basque': typeof PhotographeBodySurfPaysBasqueRoute
@@ -154,6 +162,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/carte-cadeau-surf-pays-basque': typeof CarteCadeauSurfPaysBasqueRoute
   '/famille-bebe-groupes-pays-basque': typeof FamilleBebeGroupesPaysBasqueRoute
   '/photographe-apnee-pays-basque': typeof PhotographeApneePaysBasqueRoute
   '/photographe-body-surf-pays-basque': typeof PhotographeBodySurfPaysBasqueRoute
@@ -175,6 +184,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/carte-cadeau-surf-pays-basque': typeof CarteCadeauSurfPaysBasqueRoute
   '/famille-bebe-groupes-pays-basque': typeof FamilleBebeGroupesPaysBasqueRoute
   '/photographe-apnee-pays-basque': typeof PhotographeApneePaysBasqueRoute
   '/photographe-body-surf-pays-basque': typeof PhotographeBodySurfPaysBasqueRoute
@@ -197,6 +207,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/carte-cadeau-surf-pays-basque'
     | '/famille-bebe-groupes-pays-basque'
     | '/photographe-apnee-pays-basque'
     | '/photographe-body-surf-pays-basque'
@@ -217,6 +228,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/carte-cadeau-surf-pays-basque'
     | '/famille-bebe-groupes-pays-basque'
     | '/photographe-apnee-pays-basque'
     | '/photographe-body-surf-pays-basque'
@@ -237,6 +249,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/carte-cadeau-surf-pays-basque'
     | '/famille-bebe-groupes-pays-basque'
     | '/photographe-apnee-pays-basque'
     | '/photographe-body-surf-pays-basque'
@@ -258,6 +271,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CarteCadeauSurfPaysBasqueRoute: typeof CarteCadeauSurfPaysBasqueRoute
   FamilleBebeGroupesPaysBasqueRoute: typeof FamilleBebeGroupesPaysBasqueRoute
   PhotographeApneePaysBasqueRoute: typeof PhotographeApneePaysBasqueRoute
   PhotographeBodySurfPaysBasqueRoute: typeof PhotographeBodySurfPaysBasqueRoute
@@ -284,6 +298,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/carte-cadeau-surf-pays-basque': {
+      id: '/carte-cadeau-surf-pays-basque'
+      path: '/carte-cadeau-surf-pays-basque'
+      fullPath: '/carte-cadeau-surf-pays-basque'
+      preLoaderRoute: typeof CarteCadeauSurfPaysBasqueRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/famille-bebe-groupes-pays-basque': {
@@ -410,6 +431,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CarteCadeauSurfPaysBasqueRoute: CarteCadeauSurfPaysBasqueRoute,
   FamilleBebeGroupesPaysBasqueRoute: FamilleBebeGroupesPaysBasqueRoute,
   PhotographeApneePaysBasqueRoute: PhotographeApneePaysBasqueRoute,
   PhotographeBodySurfPaysBasqueRoute: PhotographeBodySurfPaysBasqueRoute,

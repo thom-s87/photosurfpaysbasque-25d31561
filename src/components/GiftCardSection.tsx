@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, CalendarDays, Gift, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import giftCardAsset from "@/assets/carte-cadeau-photosurf-pays-basque.png.asset.json";
-import { giftCardPolicy } from "@/lib/gift-card-policy";
+import { giftCardPolicy, giftCardPrice, giftCardDuration } from "@/lib/gift-card-policy";
 
 export function GiftCardSection() {
   return (
@@ -10,7 +10,8 @@ export function GiftCardSection() {
       <div className="mx-auto max-w-5xl">
         <p className="mb-3 flex items-center justify-center gap-2 text-sm font-semibold text-primary"><Gift className="size-4" aria-hidden="true" /> Nouveauté</p>
         <h2 id="gift-card-heading" className="mb-4 text-center font-display text-4xl text-foreground md:text-5xl">Carte cadeau PhotoSurfPaysBasque</h2>
-        <p className="mx-auto mb-8 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">Ton shooting photo surf. Toutes les photos numériques incluses.</p>
+        <p className="mx-auto mb-4 max-w-2xl text-center text-base leading-relaxed text-muted-foreground">Ton shooting photo surf. Toutes les photos numériques incluses.</p>
+        <p className="mb-8 text-center text-lg font-semibold text-primary">{giftCardDuration} de shooting · {giftCardPrice}</p>
         <Link to="/carte-cadeau-surf-pays-basque" className="block overflow-hidden rounded-lg shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4" aria-label="Découvrir la carte cadeau surf au Pays Basque">
           <img src={giftCardAsset.url} alt="Exemple de carte cadeau PhotoSurfPaysBasque : shooting photo surf avec toutes les photos numériques incluses" width={1536} height={1024} loading="lazy" className="aspect-[3/2] h-auto w-full object-contain" />
         </Link>

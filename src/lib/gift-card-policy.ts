@@ -4,7 +4,17 @@ export const giftCardPolicy = {
   refundable: false,
 } as const;
 
-export const GIFT_CARD_WHATSAPP_URL = `https://wa.me/33695349187?text=${encodeURIComponent("Bonjour Thom, je souhaite offrir une carte cadeau pour un shooting photo surf avec toutes les photos numériques incluses. Peux-tu me préciser le tarif et la durée de la séance ?")}`;
+export const giftCardOffer = {
+  priceCents: 12000,
+  currency: "EUR",
+  durationMinutes: 60,
+  allDigitalPhotosIncluded: true,
+} as const;
+
+export const giftCardPrice = new Intl.NumberFormat("fr-FR", { style: "currency", currency: giftCardOffer.currency, maximumFractionDigits: 0 }).format(giftCardOffer.priceCents / 100);
+export const giftCardDuration = `${giftCardOffer.durationMinutes / 60} h`;
+
+export const GIFT_CARD_WHATSAPP_URL = `https://wa.me/33695349187?text=${encodeURIComponent(`Bonjour Thom, je souhaite offrir une carte cadeau pour un shooting photo surf de ${giftCardDuration} à ${giftCardPrice}, avec toutes les photos numériques incluses. Peux-tu m’aider à préparer ma carte cadeau ?`)}`;
 
 export function giftCardExpiresAt(purchasedAt: Date): Date {
   if (Number.isNaN(purchasedAt.getTime())) throw new Error("Date d’achat invalide");

@@ -5,7 +5,7 @@ import { TopBanner } from "@/components/TopBanner";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import giftCardAsset from "@/assets/carte-cadeau-photosurf-pays-basque.png.asset.json";
-import { giftCardPolicy, GIFT_CARD_WHATSAPP_URL } from "@/lib/gift-card-policy";
+import { giftCardPolicy, giftCardPrice, giftCardDuration, GIFT_CARD_WHATSAPP_URL } from "@/lib/gift-card-policy";
 
 export default function CarteCadeauSurfPaysBasque() {
   return (
@@ -17,7 +17,8 @@ export default function CarteCadeauSurfPaysBasque() {
           <Button asChild variant="link" className="mb-6 h-auto px-0 text-muted-foreground"><Link to="/"><ArrowLeft aria-hidden="true" /> Accueil</Link></Button>
           <p className="mb-3 flex items-center justify-center gap-2 text-sm font-semibold text-primary"><Gift className="size-4" aria-hidden="true" /> Nouveauté · PhotoSurfPaysBasque</p>
           <h1 className="mb-4 text-center font-display text-4xl leading-tight text-foreground md:text-6xl">Carte cadeau shooting photo surf au Pays Basque</h1>
-          <p className="mx-auto mb-8 max-w-2xl text-center text-base leading-relaxed text-muted-foreground md:text-lg">Ton shooting photo surf. Toutes les photos numériques incluses.</p>
+          <p className="mx-auto mb-4 max-w-2xl text-center text-base leading-relaxed text-muted-foreground md:text-lg">Ton shooting photo surf. Toutes les photos numériques incluses.</p>
+          <p className="mb-8 text-center text-xl font-semibold text-primary">{giftCardDuration} de shooting · {giftCardPrice}</p>
           <figure>
             <img src={giftCardAsset.url} alt="Carte cadeau PhotoSurfPaysBasque avec un surfeur dans une vague : ton shooting photo surf, toutes les photos numériques incluses" width={1536} height={1024} fetchPriority="high" className="aspect-[3/2] h-auto w-full rounded-lg object-contain shadow-xl" />
             <figcaption className="mt-3 text-center text-xs text-muted-foreground">Exemple de carte cadeau PhotoSurfPaysBasque.</figcaption>
@@ -40,7 +41,8 @@ export default function CarteCadeauSurfPaysBasque() {
 
           <section aria-labelledby="gift-offer" className="mt-10 border-t border-border pt-10">
             <h2 id="gift-offer" className="mb-4 font-display text-3xl text-foreground">Offrir une carte cadeau</h2>
-            <p className="mb-6 max-w-2xl leading-relaxed text-muted-foreground">Contacte Thom pour connaître le tarif et la durée de la séance, puis préparer ta carte cadeau.</p>
+            <p className="mb-3 text-lg font-semibold text-primary">{giftCardPrice} · {giftCardDuration} de shooting · Toutes les photos numériques incluses</p>
+            <p className="mb-6 max-w-2xl leading-relaxed text-muted-foreground">Contacte Thom pour préparer ta carte cadeau.</p>
             <Button asChild size="lg" className="h-auto min-h-11 whitespace-normal rounded-full bg-gradient-sunset px-7 py-3 text-foreground hover:opacity-90"><a href={GIFT_CARD_WHATSAPP_URL} target="_blank" rel="noopener noreferrer"><MessageCircle aria-hidden="true" /> Demander ma carte cadeau</a></Button>
           </section>
         </div>

@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import CarteCadeauSurfPaysBasque from "@/pages/CarteCadeauSurfPaysBasque";
+import { giftCardDuration, giftCardPrice } from "@/lib/gift-card-policy";
 
 const title = "Carte cadeau shooting surf Pays Basque | PhotoSurfPaysBasque";
-const description = "Offre un shooting photo surf au Pays Basque avec toutes les photos numériques incluses. Carte cadeau valable 6 mois, un report accepté. Anglet et Biarritz.";
+const description = `Carte cadeau surf au Pays Basque : ${giftCardDuration} de shooting à ${giftCardPrice}, toutes les photos numériques incluses. Valable 6 mois, un report accepté. Anglet et Biarritz.`;
 const url = "https://photosurfpaysbasque.fr/carte-cadeau-surf-pays-basque";
 
 export const Route = createFileRoute("/carte-cadeau-surf-pays-basque")({

@@ -7,6 +7,7 @@ import { Univers } from "@/components/Univers";
 import { UrgencyBanner } from "@/components/UrgencyBanner";
 import { SessionLibre } from "@/components/SessionLibre";
 import { Tarifs } from "@/components/Tarifs";
+import { GiftCardSection } from "@/components/GiftCardSection";
 import { Gallery } from "@/components/Gallery";
 import { Tirages } from "@/components/Tirages";
 import { Process } from "@/components/Process";
@@ -47,6 +48,7 @@ const Index = () => {
         <UrgencyBanner />
         <SessionLibre />
         <Tarifs />
+        <GiftCardSection />
         <Gallery />
         <SectionCTA />
         <Tirages />

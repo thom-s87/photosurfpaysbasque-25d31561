@@ -6,6 +6,6 @@
 - [x] Afficher et tester les conditions : validité 6 mois, non remboursable sous réserve des droits légaux, un report accepté.
 - [ ] Utiliser Stripe pour les cartes cadeaux — aucune connexion ni clé Stripe configurée trouvée ; attendre le lien de paiement du compte existant de Thom.
 - [x] Valider la formule avec Thom : 120 € pour une heure, toutes les photos numériques incluses.
-- [ ] Afficher et tester le prix et la durée validés sur l’accueil et la page carte cadeau.
+- [x] Afficher et tester le prix et la durée validés sur l’accueil et la page carte cadeau.
 - [ ] Ajouter l’achat de cartes cadeaux — bloqué par le lien de paiement Stripe non créé ; lien WhatsApp provisoire en place.
 - [ ] Vérifier l’achat et la confirmation dans le mode test avant toute mise en ligne des paiements réels.

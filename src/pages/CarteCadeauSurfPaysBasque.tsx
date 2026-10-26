@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { TopBanner } from "@/components/TopBanner";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import giftCardAsset from "@/assets/carte-cadeau-photosurf-pays-basque.png.asset.json";
+import giftCardImg from "@/assets/carte-cadeau-photosurf-pays-basque.jpg";
 import { giftCardPolicy, giftCardPrice, giftCardDuration, GIFT_CARD_WHATSAPP_URL } from "@/lib/gift-card-policy";
 
 export default function CarteCadeauSurfPaysBasque() {
@@ -20,7 +20,7 @@ export default function CarteCadeauSurfPaysBasque() {
           <p className="mx-auto mb-4 max-w-2xl text-center text-base leading-relaxed text-muted-foreground md:text-lg">Ton shooting photo surf. Toutes les photos numériques incluses.</p>
           <p className="mb-8 text-center text-xl font-semibold text-primary">{giftCardDuration} de shooting · {giftCardPrice}</p>
           <figure>
-            <img src={giftCardAsset.url} alt="Carte cadeau PhotoSurfPaysBasque avec un surfeur dans une vague : ton shooting photo surf, toutes les photos numériques incluses" width={1536} height={1024} fetchPriority="high" className="aspect-[3/2] h-auto w-full rounded-lg object-contain shadow-xl" />
+            <img src={giftCardImg} alt="Carte cadeau PhotoSurfPaysBasque avec un surfeur dans une vague : ton shooting photo surf, toutes les photos numériques incluses" width={1536} height={1024} fetchPriority="high" className="aspect-[3/2] h-auto w-full rounded-lg object-contain shadow-xl" />
             <figcaption className="mt-3 text-center text-xs text-muted-foreground">Exemple de carte cadeau PhotoSurfPaysBasque.</figcaption>
           </figure>
 
